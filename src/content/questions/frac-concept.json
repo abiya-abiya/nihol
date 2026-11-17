@@ -1,0 +1,82 @@
+[
+  {
+    "id": "frac-concept-01",
+    "skillId": "frac-concept",
+    "difficulty": 1,
+    "stem": "Pirog 8 ta teng bo'lakka bo'lindi. Ali 3 ta bo'lagini yedi. Ali pirogning qancha qismini yedi?",
+    "choices": [
+      { "id": "a", "text": "[[8/3]]" },
+      { "id": "b", "text": "[[3/8]]" },
+      { "id": "c", "text": "[[5/8]]" },
+      { "id": "d", "text": "[[3/5]]" }
+    ],
+    "correct": "b",
+    "explanation": "Maxraj butun nechta teng bo'lakka bo'linganini ko'rsatadi: 8. Surat nechta bo'lak olinganini ko'rsatadi: 3. Javob: [[3/8]].",
+    "hint": "Maxraj pastda turadi va jami bo'laklar sonini bildiradi.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-concept-02",
+    "skillId": "frac-concept",
+    "difficulty": 2,
+    "stem": "Qaysi kasr eng katta?",
+    "choices": [
+      { "id": "a", "text": "[[1/10]]", "misconceptionId": "bigger-den-bigger" },
+      { "id": "b", "text": "[[1/5]]" },
+      { "id": "c", "text": "[[1/3]]" },
+      { "id": "d", "text": "[[1/8]]" }
+    ],
+    "correct": "c",
+    "explanation": "Hamma kasrlarning surati 1. Butun qancha kam bo'lakka bo'linsa, har bir bo'lak shuncha katta bo'ladi. 3 ta bo'lakdan biri 10 ta bo'lakdan biridan katta. Javob: [[1/3]].",
+    "hint": "Bitta nonni 3 kishiga yoki 10 kishiga bo'lsang, qaysi holda bo'lak katta bo'ladi?",
+    "source": "bank"
+  },
+  {
+    "id": "frac-concept-03",
+    "skillId": "frac-concept",
+    "difficulty": 2,
+    "stem": "Sinfda 25 ta o'quvchi bor, ulardan 12 tasi qiz bola. O'quvchilarning qancha qismi qiz bolalar?",
+    "choices": [
+      { "id": "a", "text": "[[12/13]]" },
+      { "id": "b", "text": "[[13/25]]" },
+      { "id": "c", "text": "[[25/12]]" },
+      { "id": "d", "text": "[[12/25]]" }
+    ],
+    "correct": "d",
+    "explanation": "Butun bu sinfdagi barcha o'quvchilar: 25 ta, u maxrajga yoziladi. Qiz bolalar 12 ta, bu surat. Javob: [[12/25]].",
+    "hint": "Maxrajga hamma o'quvchilar sonini yoz.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-concept-04",
+    "skillId": "frac-concept",
+    "difficulty": 3,
+    "stem": "Qaysi kasr 1 dan katta?",
+    "choices": [
+      { "id": "a", "text": "[[5/7]]" },
+      { "id": "b", "text": "[[4/4]]" },
+      { "id": "c", "text": "[[7/5]]" },
+      { "id": "d", "text": "[[1/2]]" }
+    ],
+    "correct": "c",
+    "explanation": "Kasrning surati maxrajidan katta bo'lsa, kasr 1 dan katta bo'ladi. [[7/5]] da 7 > 5. [[4/4]] esa 1 ga teng, 1 dan katta emas.",
+    "hint": "Surat bilan maxrajni solishtir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-concept-05",
+    "skillId": "frac-concept",
+    "difficulty": 3,
+    "stem": "Qaysi kasr [[1/2]] dan kichik?",
+    "choices": [
+      { "id": "a", "text": "[[4/7]]" },
+      { "id": "b", "text": "[[3/8]]" },
+      { "id": "c", "text": "[[5/9]]" },
+      { "id": "d", "text": "[[6/11]]" }
+    ],
+    "correct": "b",
+    "explanation": "Kasr [[1/2]] dan kichik bo'lishi uchun surati maxrajining yarmidan kichik bo'lishi kerak. 8 ning yarmi 4, 3 < 4, demak [[3/8]] < [[1/2]]. Qolganlarida surat maxrajning yarmidan katta.",
+    "hint": "Har bir maxrajning yarmini top va surat bilan solishtir.",
+    "source": "bank"
+  }
+]

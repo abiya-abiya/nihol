@@ -1,0 +1,82 @@
+[
+  {
+    "id": "nat-div-01",
+    "skillId": "nat-div",
+    "difficulty": 1,
+    "stem": "Hisobla: 56 : 7",
+    "choices": [
+      { "id": "a", "text": "7", "misconceptionId": "times-table" },
+      { "id": "b", "text": "9", "misconceptionId": "times-table" },
+      { "id": "c", "text": "8" },
+      { "id": "d", "text": "6", "misconceptionId": "times-table" }
+    ],
+    "correct": "c",
+    "explanation": "7 · 8 = 56, demak 56 : 7 = 8.",
+    "hint": "7 ni qaysi songa ko'paytirsang, 56 chiqadi?",
+    "source": "bank"
+  },
+  {
+    "id": "nat-div-02",
+    "skillId": "nat-div",
+    "difficulty": 2,
+    "stem": "29 ni 4 ga qoldiqli bo'l. Bo'linma va qoldiq nechaga teng?",
+    "choices": [
+      { "id": "a", "text": "bo'linma 6, qoldiq 5", "misconceptionId": "remainder-error" },
+      { "id": "b", "text": "bo'linma 7, qoldiq 1" },
+      { "id": "c", "text": "bo'linma 8, qoldiq 3", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "bo'linma 7, qoldiq 2", "misconceptionId": "remainder-error" }
+    ],
+    "correct": "b",
+    "explanation": "4 · 7 = 28, bu 29 dan oshmaydi. 4 · 8 = 32 esa oshib ketadi. Qoldiq: 29 − 28 = 1. Tekshiruv: 4 · 7 + 1 = 29.",
+    "hint": "Qoldiq doim bo'luvchidan, ya'ni 4 dan kichik bo'lishi kerak.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-div-03",
+    "skillId": "nat-div",
+    "difficulty": 2,
+    "stem": "47 ni 6 ga qoldiqli bo'l. Bo'linma va qoldiq nechaga teng?",
+    "choices": [
+      { "id": "a", "text": "bo'linma 7, qoldiq 5" },
+      { "id": "b", "text": "bo'linma 8, qoldiq 1", "misconceptionId": "remainder-error" },
+      { "id": "c", "text": "bo'linma 6, qoldiq 11", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "bo'linma 7, qoldiq 4", "misconceptionId": "remainder-error" }
+    ],
+    "correct": "a",
+    "explanation": "6 · 7 = 42, bu 47 dan oshmaydi. 6 · 8 = 48 esa oshib ketadi. Qoldiq: 47 − 42 = 5. Tekshiruv: 6 · 7 + 5 = 47.",
+    "hint": "6 ni nechaga ko'paytirsang, 47 ga eng yaqin, lekin undan katta bo'lmagan son chiqadi?",
+    "source": "bank"
+  },
+  {
+    "id": "nat-div-04",
+    "skillId": "nat-div",
+    "difficulty": 3,
+    "stem": "58 ni 7 ga qoldiqli bo'lish natijasini qaysi tenglik to'g'ri ko'rsatadi?",
+    "choices": [
+      { "id": "a", "text": "58 = 7 · 7 + 9", "misconceptionId": "remainder-error" },
+      { "id": "b", "text": "58 = 7 · 9 − 5" },
+      { "id": "c", "text": "58 = 7 · 8 + 3", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "58 = 7 · 8 + 2" }
+    ],
+    "correct": "d",
+    "explanation": "7 · 8 = 56, 58 − 56 = 2. Qoldiq 2, u 7 dan kichik. 58 = 7 · 7 + 9 hisobda to'g'ri, lekin qoldiq 9 bo'luvchi 7 dan katta, shuning uchun bo'lish oxiriga yetmagan.",
+    "hint": "Har bir tenglikni hisoblab ko'r va qoldiq 7 dan kichikmi, tekshir.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-div-05",
+    "skillId": "nat-div",
+    "difficulty": 3,
+    "stem": "100 ta olma 8 ta savatga teng taqsimlandi. Har bir savatga nechta olma tushdi va nechta olma ortib qoldi?",
+    "choices": [
+      { "id": "a", "text": "11 tadan, 12 ta ortdi", "misconceptionId": "remainder-error" },
+      { "id": "b", "text": "12 tadan, 4 ta ortdi" },
+      { "id": "c", "text": "13 tadan, 4 ta ortdi", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "12 tadan, 2 ta ortdi", "misconceptionId": "remainder-error" }
+    ],
+    "correct": "b",
+    "explanation": "100 ni 8 ga qoldiqli bo'lamiz. 8 · 12 = 96, 8 · 13 = 104 esa 100 dan katta. Qoldiq: 100 − 96 = 4. Har bir savatga 12 tadan olma tushdi, 4 ta ortib qoldi.",
+    "hint": "8 ni nechaga ko'paytirsang, 100 ga eng yaqin, lekin undan katta bo'lmagan son chiqadi?",
+    "source": "bank"
+  }
+]

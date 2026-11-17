@@ -1,0 +1,82 @@
+[
+  {
+    "id": "frac-mul-01",
+    "skillId": "frac-mul",
+    "difficulty": 1,
+    "stem": "Hisobla: [[2/3]] · [[4/5]]",
+    "choices": [
+      { "id": "a", "text": "[[6/8]]" },
+      { "id": "b", "text": "[[8/15]]" },
+      { "id": "c", "text": "[[10/12]]" },
+      { "id": "d", "text": "[[2/15]]" }
+    ],
+    "correct": "b",
+    "explanation": "Suratni suratga, maxrajni maxrajga ko'paytiramiz: 2 · 4 = 8, 3 · 5 = 15. Javob: [[8/15]].",
+    "hint": "Ko'paytirishda umumiy maxraj kerak emas.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-mul-02",
+    "skillId": "frac-mul",
+    "difficulty": 2,
+    "stem": "Hisobla: [[2/5]] · [[3/5]]",
+    "choices": [
+      { "id": "a", "text": "[[6/5]]", "misconceptionId": "mul-common-denom" },
+      { "id": "b", "text": "[[5/10]]" },
+      { "id": "c", "text": "[[6/10]]" },
+      { "id": "d", "text": "[[6/25]]" }
+    ],
+    "correct": "d",
+    "explanation": "Suratlar: 2 · 3 = 6. Maxrajlar: 5 · 5 = 25. Javob: [[6/25]]. Maxrajlar bir xil bo'lsa ham, ko'paytirishda ular ham ko'paytiriladi.",
+    "hint": "Qo'shishdagi qoidani bu yerda ishlatma: maxrajni ham ko'paytir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-mul-03",
+    "skillId": "frac-mul",
+    "difficulty": 2,
+    "stem": "Hisobla: 3 · [[2/7]]",
+    "choices": [
+      { "id": "a", "text": "[[6/21]]", "misconceptionId": "whole-times-both" },
+      { "id": "b", "text": "[[6/7]]" },
+      { "id": "c", "text": "[[2/21]]" },
+      { "id": "d", "text": "[[5/7]]" }
+    ],
+    "correct": "b",
+    "explanation": "Natural songa ko'paytirganda faqat surat ko'paytiriladi: 3 · 2 = 6, maxraj 7 qoladi. Javob: [[6/7]]. Bu [[2/7]] + [[2/7]] + [[2/7]] ga teng.",
+    "hint": "3 · [[2/7]] bu [[2/7]] ni uch marta qo'shish demak.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-mul-04",
+    "skillId": "frac-mul",
+    "difficulty": 3,
+    "stem": "Hisobla va javobni qisqarmas kasr ko'rinishida yoz: [[4/9]] · [[3/8]]",
+    "choices": [
+      { "id": "a", "text": "[[7/17]]" },
+      { "id": "b", "text": "[[12/9]]", "misconceptionId": "mul-common-denom" },
+      { "id": "c", "text": "[[1/6]]" },
+      { "id": "d", "text": "[[32/27]]" }
+    ],
+    "correct": "c",
+    "explanation": "Ko'paytiramiz: [[4/9]] · [[3/8]] = [[12/72]]. EKUB(12; 72) = 12, qisqartiramiz: [[12/72]] = [[1/6]]. Ko'paytirishdan oldin ham qisqartirish mumkin: 4 va 8 ni 4 ga, 3 va 9 ni 3 ga.",
+    "hint": "Ko'paytirishdan oldin surat va maxrajdagi sonlarni qisqartirib ol.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-mul-05",
+    "skillId": "frac-mul",
+    "difficulty": 3,
+    "stem": "Hisobla: [[1 1/2]] · [[2/3]]",
+    "choices": [
+      { "id": "a", "text": "[[1 1/3]]" },
+      { "id": "b", "text": "[[2/3]]", "misconceptionId": "mixed-convert" },
+      { "id": "c", "text": "1" },
+      { "id": "d", "text": "[[1/3]]" }
+    ],
+    "correct": "c",
+    "explanation": "Avval aralash sonni noto'g'ri kasrga aylantiramiz: [[1 1/2]] = [[3/2]]. Ko'paytiramiz: [[3/2]] · [[2/3]] = [[6/6]] = 1.",
+    "hint": "Aralash sonni ko'paytirishdan oldin noto'g'ri kasrga aylantir.",
+    "source": "bank"
+  }
+]

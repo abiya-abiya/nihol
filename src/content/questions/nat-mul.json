@@ -1,0 +1,82 @@
+[
+  {
+    "id": "nat-mul-01",
+    "skillId": "nat-mul",
+    "difficulty": 1,
+    "stem": "Hisobla: 7 · 8",
+    "choices": [
+      { "id": "a", "text": "54", "misconceptionId": "times-table" },
+      { "id": "b", "text": "56" },
+      { "id": "c", "text": "48", "misconceptionId": "times-table" },
+      { "id": "d", "text": "63", "misconceptionId": "times-table" }
+    ],
+    "correct": "b",
+    "explanation": "7 · 8 = 56. Tekshirish: 7 · 4 = 28, 28 ning ikki hissasi 56.",
+    "hint": "7 ni 4 ga ko'paytir, keyin natijani ikki marta ol.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-mul-02",
+    "skillId": "nat-mul",
+    "difficulty": 2,
+    "stem": "Hisobla: 24 · 3",
+    "choices": [
+      { "id": "a", "text": "62", "misconceptionId": "carry-forgot" },
+      { "id": "b", "text": "27" },
+      { "id": "c", "text": "72" },
+      { "id": "d", "text": "612" }
+    ],
+    "correct": "c",
+    "explanation": "Birliklar: 4 · 3 = 12, 2 ni yozamiz, 1 o'nlik keyingi xonaga o'tadi. O'nliklar: 2 · 3 = 6, unga 1 qo'shamiz, 7 bo'ladi. Javob: 72.",
+    "hint": "4 · 3 = 12 bo'ladi. 12 dagi o'nlikni unutma.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-mul-03",
+    "skillId": "nat-mul",
+    "difficulty": 2,
+    "stem": "Qaysi ko'paytma 42 ga teng?",
+    "choices": [
+      { "id": "a", "text": "5 · 8", "misconceptionId": "times-table" },
+      { "id": "b", "text": "7 · 7", "misconceptionId": "times-table" },
+      { "id": "c", "text": "4 · 9", "misconceptionId": "times-table" },
+      { "id": "d", "text": "6 · 7" }
+    ],
+    "correct": "d",
+    "explanation": "6 · 7 = 42. Qolganlari: 5 · 8 = 40, 7 · 7 = 49, 4 · 9 = 36.",
+    "hint": "Har bir ko'paytmani hisoblab, 42 bilan solishtir.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-mul-04",
+    "skillId": "nat-mul",
+    "difficulty": 3,
+    "stem": "Hisobla: 125 · 8",
+    "choices": [
+      { "id": "a", "text": "1000" },
+      { "id": "b", "text": "960", "misconceptionId": "times-table" },
+      { "id": "c", "text": "800" },
+      { "id": "d", "text": "1200" }
+    ],
+    "correct": "a",
+    "explanation": "125 = 100 + 25. 100 · 8 = 800, 25 · 8 = 200. Qo'shamiz: 800 + 200 = 1000.",
+    "hint": "125 ni 100 va 25 ga ajrat, har birini 8 ga ko'paytir.",
+    "source": "bank"
+  },
+  {
+    "id": "nat-mul-05",
+    "skillId": "nat-mul",
+    "difficulty": 3,
+    "stem": "Bir qutida 36 ta qalam bor. Shunday 7 ta qutida nechta qalam bor?",
+    "choices": [
+      { "id": "a", "text": "43" },
+      { "id": "b", "text": "212", "misconceptionId": "carry-forgot" },
+      { "id": "c", "text": "242", "misconceptionId": "times-table" },
+      { "id": "d", "text": "252" }
+    ],
+    "correct": "d",
+    "explanation": "36 ni 7 ga ko'paytiramiz. 6 · 7 = 42, 2 ni yozamiz, 4 o'nlik o'tadi. 3 · 7 = 21, 21 + 4 = 25. Javob: 252 ta qalam.",
+    "hint": "Qutilar soni bir xil bo'lsa, qo'shish o'rniga ko'paytirish qulay.",
+    "source": "bank"
+  }
+]

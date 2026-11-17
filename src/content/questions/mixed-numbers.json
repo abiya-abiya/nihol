@@ -1,0 +1,82 @@
+[
+  {
+    "id": "mixed-numbers-01",
+    "skillId": "mixed-numbers",
+    "difficulty": 1,
+    "stem": "[[2 1/3]] ni noto'g'ri kasrga aylantir.",
+    "choices": [
+      { "id": "a", "text": "[[3/3]]", "misconceptionId": "mixed-convert" },
+      { "id": "b", "text": "[[7/3]]" },
+      { "id": "c", "text": "[[21/3]]", "misconceptionId": "mixed-convert" },
+      { "id": "d", "text": "[[6/3]]" }
+    ],
+    "correct": "b",
+    "explanation": "Butun qismni maxrajga ko'paytiramiz va suratni qo'shamiz: 2 · 3 + 1 = 7. Maxraj o'zgarmaydi: [[2 1/3]] = [[7/3]].",
+    "hint": "2 butunda nechta uchdan bir bor?",
+    "source": "bank"
+  },
+  {
+    "id": "mixed-numbers-02",
+    "skillId": "mixed-numbers",
+    "difficulty": 2,
+    "stem": "[[3 2/5]] ni noto'g'ri kasr ko'rinishida yoz.",
+    "choices": [
+      { "id": "a", "text": "[[32/5]]", "misconceptionId": "mixed-convert" },
+      { "id": "b", "text": "[[15/5]]" },
+      { "id": "c", "text": "[[17/5]]" },
+      { "id": "d", "text": "[[5/5]]", "misconceptionId": "mixed-convert" }
+    ],
+    "correct": "c",
+    "explanation": "3 · 5 + 2 = 17, maxraj 5 qoladi: [[3 2/5]] = [[17/5]].",
+    "hint": "Butun qismni maxrajga ko'paytir, keyin suratni qo'sh.",
+    "source": "bank"
+  },
+  {
+    "id": "mixed-numbers-03",
+    "skillId": "mixed-numbers",
+    "difficulty": 2,
+    "stem": "[[17/4]] ni aralash son ko'rinishida yoz.",
+    "choices": [
+      { "id": "a", "text": "[[4 3/4]]", "misconceptionId": "remainder-error" },
+      { "id": "b", "text": "[[3 1/4]]", "misconceptionId": "remainder-error" },
+      { "id": "c", "text": "[[5 1/4]]", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "[[4 1/4]]" }
+    ],
+    "correct": "d",
+    "explanation": "17 ni 4 ga qoldiqli bo'lamiz: 4 · 4 = 16, qoldiq 17 − 16 = 1. Bo'linma butun qism bo'ladi, qoldiq esa surat: [[17/4]] = [[4 1/4]].",
+    "hint": "17 ichida nechta to'liq 4 bor? Ortib qolgani surat bo'ladi.",
+    "source": "bank"
+  },
+  {
+    "id": "mixed-numbers-04",
+    "skillId": "mixed-numbers",
+    "difficulty": 3,
+    "stem": "Qaysi son [[23/6]] ga teng?",
+    "choices": [
+      { "id": "a", "text": "[[3 5/6]]" },
+      { "id": "b", "text": "[[3 1/6]]", "misconceptionId": "remainder-error" },
+      { "id": "c", "text": "[[4 1/6]]", "misconceptionId": "remainder-error" },
+      { "id": "d", "text": "[[2 3/6]]" }
+    ],
+    "correct": "a",
+    "explanation": "23 ni 6 ga qoldiqli bo'lamiz: 6 · 3 = 18, qoldiq 23 − 18 = 5. Demak, [[23/6]] = [[3 5/6]]. Tekshiruv: 3 · 6 + 5 = 23.",
+    "hint": "6 · 4 = 24, bu 23 dan katta. Demak butun qism nechaga teng?",
+    "source": "bank"
+  },
+  {
+    "id": "mixed-numbers-05",
+    "skillId": "mixed-numbers",
+    "difficulty": 3,
+    "stem": "[[4 3/8]] ni noto'g'ri kasrga aylantir.",
+    "choices": [
+      { "id": "a", "text": "[[43/8]]", "misconceptionId": "mixed-convert" },
+      { "id": "b", "text": "[[12/8]]" },
+      { "id": "c", "text": "[[7/8]]", "misconceptionId": "mixed-convert" },
+      { "id": "d", "text": "[[35/8]]" }
+    ],
+    "correct": "d",
+    "explanation": "4 · 8 + 3 = 32 + 3 = 35. Maxraj 8 qoladi: [[4 3/8]] = [[35/8]].",
+    "hint": "4 butunda nechta sakkizdan bir bor? Unga yana 3 tasini qo'sh.",
+    "source": "bank"
+  }
+]

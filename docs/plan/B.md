@@ -74,13 +74,13 @@ Import each JSON file statically (one import per questions file) and cast to the
 ### B2. Full question bank — target T+6h
 **Needs:** B1.
 
-- [ ] 5 questions for every remaining skill (14 files), difficulties 1, 2, 2, 3, 3.
-- [ ] Word problems (`frac-word`) use everyday Uzbek contexts (non, paxta
+- [x] 5 questions for every remaining skill (14 files), difficulties 1, 2, 2, 3, 3.
+- [x] Word problems (`frac-word`) use everyday Uzbek contexts (non, paxta
   daladagi ish, kitob sahifalari, yo'l masofasi, sinfdagi o'quvchilar), and
   include at least two `part-of-rest` traps.
-- [ ] Every question: `explanation` (worked steps with the real numbers)
+- [x] Every question: `explanation` (worked steps with the real numbers)
   and `hint` (nudge only).
-- [ ] Self-check pass: recompute every answer with a throwaway script or by
+- [x] Self-check pass: recompute every answer with a throwaway script or by
   hand; read every stem aloud for natural Uzbek. Validator green. Commit, push.
 
 ### B3. Deterministic generators — target T+10h

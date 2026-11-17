@@ -1,0 +1,82 @@
+[
+  {
+    "id": "frac-compare-01",
+    "skillId": "frac-compare",
+    "difficulty": 1,
+    "stem": "Qaysi kasr eng katta?",
+    "choices": [
+      { "id": "a", "text": "[[2/9]]" },
+      { "id": "b", "text": "[[5/9]]" },
+      { "id": "c", "text": "[[7/9]]" },
+      { "id": "d", "text": "[[4/9]]" }
+    ],
+    "correct": "c",
+    "explanation": "Maxrajlar bir xil, demak bo'laklar bir xil o'lchamda. Qaysi kasrda bo'lak ko'p bo'lsa, o'sha katta: 7 > 5 > 4 > 2. Javob: [[7/9]].",
+    "hint": "Maxrajlar teng bo'lsa, suratlarni solishtir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-compare-02",
+    "skillId": "frac-compare",
+    "difficulty": 2,
+    "stem": "Qaysi kasr eng kichik?",
+    "choices": [
+      { "id": "a", "text": "[[1/2]]", "misconceptionId": "bigger-den-bigger" },
+      { "id": "b", "text": "[[2/3]]" },
+      { "id": "c", "text": "[[5/12]]" },
+      { "id": "d", "text": "[[3/4]]" }
+    ],
+    "correct": "c",
+    "explanation": "Hammasini maxraji 12 bo'lgan kasrga keltiramiz: [[1/2]] = [[6/12]], [[2/3]] = [[8/12]], [[3/4]] = [[9/12]]. Eng kichik surat 5, demak eng kichik kasr [[5/12]].",
+    "hint": "Kasrlarni umumiy maxrajga keltir, keyin suratlarni solishtir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-compare-03",
+    "skillId": "frac-compare",
+    "difficulty": 2,
+    "stem": "Qaysi kasr eng katta?",
+    "choices": [
+      { "id": "a", "text": "[[2/3]]" },
+      { "id": "b", "text": "[[3/4]]" },
+      { "id": "c", "text": "[[1/2]]" },
+      { "id": "d", "text": "[[5/12]]", "misconceptionId": "bigger-den-bigger" }
+    ],
+    "correct": "b",
+    "explanation": "Umumiy maxraj 12: [[2/3]] = [[8/12]], [[3/4]] = [[9/12]], [[1/2]] = [[6/12]]. Eng katta surat 9, demak eng katta kasr [[3/4]]. Maxrajning kattaligi kasrni katta qilmaydi.",
+    "hint": "Hammasini maxraji 12 bo'lgan kasrlarga aylantir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-compare-04",
+    "skillId": "frac-compare",
+    "difficulty": 3,
+    "stem": "Qaysi kasr eng katta?",
+    "choices": [
+      { "id": "a", "text": "[[11/18]]", "misconceptionId": "bigger-den-bigger" },
+      { "id": "b", "text": "[[2/3]]" },
+      { "id": "c", "text": "[[7/9]]" },
+      { "id": "d", "text": "[[5/6]]" }
+    ],
+    "correct": "d",
+    "explanation": "Umumiy maxraj 18: [[5/6]] = [[15/18]], [[7/9]] = [[14/18]], [[2/3]] = [[12/18]]. Suratlarni solishtiramiz: 15 > 14 > 12 > 11. Javob: [[5/6]].",
+    "hint": "6, 9, 3 va 18 ning hammasiga bo'linadigan eng kichik son 18.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-compare-05",
+    "skillId": "frac-compare",
+    "difficulty": 3,
+    "stem": "Ali yo'lning [[2/3]] qismini, Vali esa [[5/8]] qismini bosib o'tdi. Kim ko'proq yo'l yurdi?",
+    "choices": [
+      { "id": "a", "text": "Vali", "misconceptionId": "bigger-den-bigger" },
+      { "id": "b", "text": "Ikkalasi teng" },
+      { "id": "c", "text": "Ali" },
+      { "id": "d", "text": "Aniqlab bo'lmaydi" }
+    ],
+    "correct": "c",
+    "explanation": "Umumiy maxraj 24: [[2/3]] = [[16/24]], [[5/8]] = [[15/24]]. 16 > 15, demak Ali ko'proq yurdi.",
+    "hint": "Ikkala kasrni maxraji 24 bo'lgan kasrga keltir.",
+    "source": "bank"
+  }
+]

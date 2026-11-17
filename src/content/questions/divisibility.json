@@ -1,0 +1,151 @@
+[
+  {
+    "id": "divisibility-01",
+    "skillId": "divisibility",
+    "difficulty": 1,
+    "stem": "Qaysi son 5 ga qoldiqsiz bo'linadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "351",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "b",
+        "text": "513",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "c",
+        "text": "135"
+      },
+      {
+        "id": "d",
+        "text": "153",
+        "misconceptionId": "divisibility-rule"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Oxirgi raqami 0 yoki 5 bo'lgan son 5 ga bo'linadi. Faqat 135 ning oxirgi raqami 5: 135 : 5 = 27.",
+    "hint": "5 ga bo'linishni bilish uchun sonning oxirgi raqamiga qara.",
+    "source": "bank"
+  },
+  {
+    "id": "divisibility-02",
+    "skillId": "divisibility",
+    "difficulty": 2,
+    "stem": "Qaysi son 3 ga qoldiqsiz bo'linadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "413"
+      },
+      {
+        "id": "b",
+        "text": "143",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "c",
+        "text": "522"
+      },
+      {
+        "id": "d",
+        "text": "233",
+        "misconceptionId": "divisibility-rule"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Raqamlari yig'indisi 3 ga bo'linsa, son ham 3 ga bo'linadi. 5 + 2 + 2 = 9, 9 esa 3 ga bo'linadi: 522 : 3 = 174. Qolgan sonlarda raqamlar yig'indisi 8 ga teng.",
+    "hint": "Oxirgi raqamga emas, raqamlar yig'indisiga qara.",
+    "source": "bank"
+  },
+  {
+    "id": "divisibility-03",
+    "skillId": "divisibility",
+    "difficulty": 2,
+    "stem": "Qaysi son 9 ga qoldiqsiz bo'linadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "819"
+      },
+      {
+        "id": "b",
+        "text": "399",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "c",
+        "text": "609",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "d",
+        "text": "519",
+        "misconceptionId": "divisibility-rule"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Raqamlari yig'indisi 9 ga bo'linsa, son 9 ga bo'linadi. 8 + 1 + 9 = 18, demak 819 : 9 = 91. Boshqalarida yig'indi 21, 15 va 15, ular 9 ga bo'linmaydi.",
+    "hint": "Har bir sonning raqamlarini qo'shib chiq.",
+    "source": "bank"
+  },
+  {
+    "id": "divisibility-04",
+    "skillId": "divisibility",
+    "difficulty": 3,
+    "stem": "Qaysi son ham 2 ga, ham 3 ga qoldiqsiz bo'linadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "213",
+        "misconceptionId": "divisibility-rule"
+      },
+      {
+        "id": "b",
+        "text": "314"
+      },
+      {
+        "id": "c",
+        "text": "236"
+      },
+      {
+        "id": "d",
+        "text": "312"
+      }
+    ],
+    "correct": "d",
+    "explanation": "2 ga bo'linishi uchun oxirgi raqam juft bo'lishi kerak: 314, 236 va 312. 3 ga bo'linishi uchun raqamlar yig'indisi 3 ga bo'linishi kerak: 3 + 1 + 2 = 6. Faqat 312 ikkala shartga mos keladi.",
+    "hint": "Avval juft sonlarni ajrat, keyin ularning raqamlar yig'indisini tekshir.",
+    "source": "bank"
+  },
+  {
+    "id": "divisibility-05",
+    "skillId": "divisibility",
+    "difficulty": 3,
+    "stem": "60 sonini tub ko'paytuvchilarga ajrat.",
+    "choices": [
+      {
+        "id": "a",
+        "text": "2 · 3 · 10"
+      },
+      {
+        "id": "b",
+        "text": "2 · 2 · 3 · 5"
+      },
+      {
+        "id": "c",
+        "text": "2 · 2 · 15"
+      },
+      {
+        "id": "d",
+        "text": "4 · 3 · 5"
+      }
+    ],
+    "correct": "b",
+    "explanation": "60 = 2 · 30 = 2 · 2 · 15 = 2 · 2 · 3 · 5. Hamma ko'paytuvchilar tub. 10, 4 va 15 esa tub son emas.",
+    "hint": "60 ni eng kichik tub son 2 ga bo'lishdan boshla va bo'linmaguncha davom et.",
+    "source": "bank"
+  }
+]
