@@ -105,7 +105,7 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 ### C6. Student detail `/teacher/student/[id]` — target T+19h
 **Needs:** A6 (`KnowledgeMap`), C5.
 
-- [ ] Static `KnowledgeMap` with trace highlighted, root-cause sentence,
+- [x] Static `KnowledgeMap` with trace highlighted, root-cause sentence,
   path progress list, misconceptions seen, last attempts. Back to class. Commit, push.
 
 ### C7. Group worksheet — target T+22h
