@@ -1,7 +1,6 @@
-import { betaZodOutputFormat } from "@anthropic-ai/sdk/helpers/beta/zod";
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { MODEL, aiEnabled, getAnthropic } from "@/lib/ai/client";
+import { aiEnabled, generateJson } from "@/lib/ai/client";
 import { WORKSHEET_SYSTEM, WorksheetTextSchema, type WorksheetText, worksheetUserPrompt } from "@/lib/ai/prompts/worksheet";
 import { misconceptionsById, skillsById } from "@/lib/content";
 import { getRepo } from "@/lib/db";
@@ -61,46 +60,30 @@ export async function POST(req: Request) {
 
   if (aiEnabled()) {
     const seeds = wordProblemSeeds(skillIds, seed, 2);
-    try {
-      const response = await getAnthropic().beta.messages.parse(
-        {
-          model: MODEL,
-          max_tokens: 8000,
-          betas: ["server-side-fallback-2026-07-01"],
-          fallbacks: "default",
-          output_config: { effort: "medium", format: betaZodOutputFormat(WorksheetTextSchema) },
-          system: WORKSHEET_SYSTEM,
-          messages: [
-            {
-              role: "user",
-              content: worksheetUserPrompt({
-                rootSkill: root,
-                otherSkills: others,
-                misconceptions: mis,
-                className,
-                computations: seeds.map((s) => ({ expr: s.expr!, answer: s.answer })),
-              }),
-            },
-          ],
-        },
-        { timeout: AI_TIMEOUT_MS },
-      );
-      if (response.stop_reason !== "refusal" && response.parsed_output) {
-        const out = response.parsed_output;
-        text = {
-          title: out.title.trim() || template.title,
-          intro: out.intro.trim() || template.intro,
-          teacherNotes: out.teacherNotes.trim() || template.teacherNotes,
-          wordProblems: [],
-        };
-        aiStories = out.wordProblems
-          .slice(0, seeds.length)
-          .map((wp, i) => ({ stem: wp.stem.trim(), answer: seeds[i].answer, skillId: seeds[i].skillId, expr: seeds[i].expr! }))
-          .filter((wp) => wp.stem && usesNumbers(wp.stem, wp.expr))
-          .map(({ stem, answer, skillId }) => ({ stem, answer, skillId }));
-      }
-    } catch (err) {
-      console.error("[ai] worksheet failed, using template:", err instanceof Error ? err.message : err);
+    const out = await generateJson(WorksheetTextSchema, {
+      system: WORKSHEET_SYSTEM,
+      user: worksheetUserPrompt({
+        rootSkill: root,
+        otherSkills: others,
+        misconceptions: mis,
+        className,
+        computations: seeds.map((s) => ({ expr: s.expr!, answer: s.answer })),
+      }),
+      maxTokens: 4000,
+      timeoutMs: AI_TIMEOUT_MS,
+    });
+    if (out) {
+      text = {
+        title: out.title.trim() || template.title,
+        intro: out.intro.trim() || template.intro,
+        teacherNotes: out.teacherNotes.trim() || template.teacherNotes,
+        wordProblems: [],
+      };
+      aiStories = out.wordProblems
+        .slice(0, seeds.length)
+        .map((wp, i) => ({ stem: wp.stem.trim(), answer: seeds[i].answer, skillId: seeds[i].skillId, expr: seeds[i].expr! }))
+        .filter((wp) => wp.stem && usesNumbers(wp.stem, wp.expr))
+        .map(({ stem, answer, skillId }) => ({ stem, answer, skillId }));
     }
   }
 

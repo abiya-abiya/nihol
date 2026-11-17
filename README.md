@@ -24,7 +24,7 @@ jonli ko'rsatadi.
    ```
 2. Claude'ga yozing: **"Men B rolidaman, ishni boshla"** (o'z rolingizni yozing).
    Claude `CLAUDE.md` va `docs/plan/` ni o'qib, birinchi vazifadan ishni boshlaydi.
-3. Kalitlar (`ANTHROPIC_API_KEY`, `DATABASE_URL`) jamoa chatida beriladi,
+3. Kalitlar (`GEMINI_API_KEYS`, `DATABASE_URL`) jamoa chatida beriladi,
    `.env.local` fayliga yoziladi. Git'ga hech qachon qo'shilmaydi.
 
 ## Reja

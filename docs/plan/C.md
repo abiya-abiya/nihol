@@ -15,7 +15,7 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
   contrast), must still work at 1024 px. Teacher addressed as "Siz".
 - Landing: must look stunning on a projector and on a phone (it is the first thing judges see).
 - Never compute mastery yourself: read `StudentSnapshot` (A's engine output).
-- No secrets in git. Vercel env holds `ANTHROPIC_API_KEY`, `DATABASE_URL`.
+- No secrets in git. Vercel env holds `GEMINI_API_KEYS`, `DATABASE_URL`.
 
 **Review focus**
 1. A student with `snapshot: null` (joined, not finished) → shows "Diagnostika jarayonida", never crashes the heatmap.
@@ -34,8 +34,8 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
   app access to `si-tyutor` (Abdulloh clicks "Import"). Fallback without
   owner access: `npx vercel link` then `npx vercel --prod` from a local clone.
 - [ ] Storage → create a Neon Postgres (free) → it sets `DATABASE_URL`.
-  Add env vars from `.env.example` (`ANTHROPIC_API_KEY` from the team chat,
-  `ANTHROPIC_MODEL=claude-opus-5-5`, `AI_MODE=live`, `DEMO_CLASS_ID=6a`,
+  Add env vars from `.env.example` (`GEMINI_API_KEYS` from the team chat,
+  `GEMINI_MODELS`, `AI_MODE=live`, `DEMO_CLASS_ID=6a`,
   `NEXT_PUBLIC_APP_URL=https://<project>.vercel.app`).
 - [ ] After A1/A4 land: deploy, run `npm run db:push` with the Neon
   `DATABASE_URL`, check the URL works. Post the URL in the team chat and

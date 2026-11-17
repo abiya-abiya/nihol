@@ -79,7 +79,7 @@ Next.js (App Router, TypeScript) on Vercel
 │    diagnostic selection, BKT updates, root-cause traces, path
 ├─ server routes
 │    /api/students, /api/students/[id], /api/students/[id]/progress  (A)
-│    /api/tutor/explain, /api/tutor/chat   → Claude API, streamed     (A)
+│    /api/tutor/explain, /api/tutor/chat   → Gemini API, streamed     (A)
 │    /api/teacher/report, /api/teacher/worksheet, /api/teacher/reset (C)
 ├─ storage: Repo interface (src/lib/types.ts)
 │    Postgres (Neon, via Drizzle) when DATABASE_URL is set,
@@ -99,32 +99,33 @@ Next.js (App Router, TypeScript) on Vercel
 - `motion` (import from `motion/react`), `canvas-confetti`, `@number-flow/react`
 - `@xyflow/react` + `@dagrejs/dagre` for the knowledge map
 - `swr` for polling, `zod` for validation, `qrcode.react` for QR codes
-- `@anthropic-ai/sdk` (server only), `drizzle-orm` + `@neondatabase/serverless`, `drizzle-kit`
+- `drizzle-orm` + `@neondatabase/serverless`, `drizzle-kit`
 - Dev: `vitest`, `tsx`
 - npm (not pnpm/yarn). Node 20+.
 
-### Claude API usage (A owns `src/lib/ai/`)
+### Gemini API usage (A owns `src/lib/ai/`)
 
-- Model: `process.env.ANTHROPIC_MODEL ?? "claude-opus-5-5"`.
-- Explanations and chat: `client.beta.messages.stream(...)` with
-  `output_config: { effort: "low" }` (fast), streamed to the browser as
-  `text/plain`. Server-side refusal fallback on:
-  `betas: ["server-side-fallback-2026-07-01"], fallbacks: "default"`.
-- Worksheet JSON: `client.messages.parse(...)` with
-  `output_config: { format: zodOutputFormat(Schema), effort: "medium" }`
-  (`zodOutputFormat` from `@anthropic-ai/sdk/helpers/zod`).
-- Do not send `temperature`, `top_p`, `top_k`, `thinking: {type:"disabled"}`
-  or `budget_tokens` (all return 400 on this model). Check `stop_reason`
-  before reading content.
-- `AI_MODE=fallback` (or no `ANTHROPIC_API_KEY`) → every AI route returns
-  prepared text built from B's content (`explanation`, `remedy`, glossary).
-- Key lives only in `.env.local` / Vercel env. Never in git, never in the client.
+- Plain REST from `src/lib/ai/client.ts` (no SDK), so we control failover.
+- Keys: `GEMINI_API_KEYS="key1,key2"`. Models: `GEMINI_MODELS`, default
+  `gemini-flash-latest,gemini-3.5-flash-lite,gemini-flash-lite-latest`.
+  Failover: 429 or other 5xx -> same model, next key; 401/403 -> that key
+  is dropped; 503 (overloaded), 400, timeout or network error -> next
+  model. Untried pairs get a last go while the time budget lasts
+  (tutor 20 s, 6 s per attempt; worksheet 25 s, 10 s per attempt).
+- Explanations and chat: `streamGenerateContent?alt=sse`,
+  `thinkingLevel: "low"`, streamed to the browser as `text/plain`.
+- Worksheet JSON: `generateContent` with `responseJsonSchema` from
+  `z.toJSONSchema(Schema)`, validated with zod again on our side.
+- Whole chain failed, empty answer, or `AI_MODE=fallback` (or no
+  `GEMINI_API_KEYS`) → every AI route returns prepared text built from B's
+  content (`explanation`, `remedy`, glossary).
+- Keys live only in `.env.local` / host env. Never in git, never in the client.
 
 ### Environment variables (`.env.example`, created in A1)
 
 ```
-ANTHROPIC_API_KEY=
-ANTHROPIC_MODEL=claude-opus-5-5
+GEMINI_API_KEYS=        # comma-separated, tried in order
+GEMINI_MODELS=gemini-flash-latest,gemini-3.5-flash-lite,gemini-flash-lite-latest
 AI_MODE=live            # live | fallback
 DATABASE_URL=           # empty = in-memory store
 NEXT_PUBLIC_APP_URL=http://localhost:3000

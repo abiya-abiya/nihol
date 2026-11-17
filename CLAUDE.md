@@ -84,7 +84,7 @@ node scripts/sync.mjs A  # sync with main as role A (works before A1 too)
 
 ## Secrets
 
-`ANTHROPIC_API_KEY` and `DATABASE_URL` go in `.env.local` (git-ignored)
+`GEMINI_API_KEYS` and `DATABASE_URL` go in `.env.local` (git-ignored)
 and in Vercel env settings. Get them from the team chat, not from git.
 
 ## MCP servers on Windows
