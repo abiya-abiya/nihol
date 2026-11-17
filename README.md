@@ -19,6 +19,7 @@ jonli ko'rsatadi.
    ```
    git clone https://github.com/abiya-abiya/si-tyutor.git
    cd si-tyutor
+   npm install
    claude
    ```
 2. Claude'ga yozing: **"Men B rolidaman, ishni boshla"** (o'z rolingizni yozing).

@@ -29,27 +29,27 @@ ownership), `PRODUCT.md`, `DESIGN.md`, `src/lib/types.ts`.
 ### A1. Scaffold, dependencies, tooling — target T+1.5h
 **Needs:** nothing. **Unblocks:** everyone's code.
 
-- [ ] Scaffold in a temp dir (the repo root is not empty), then move in:
+- [x] Scaffold in a temp dir (the repo root is not empty), then move in:
   `npx create-next-app@latest .tmp-next --ts --tailwind --eslint --app --src-dir --turbopack --import-alias "@/*" --use-npm --yes`,
   move everything except `.git` and `README.md` into the root, delete `.tmp-next`.
   Keep existing `src/lib/types.ts`, `CLAUDE.md`, `docs/`, `.claude/`, `.mcp.json`, `scripts/`.
-- [ ] `npx shadcn@latest init` (base colour neutral, CSS variables). Add:
+- [x] `npx shadcn@latest init` (base colour neutral, CSS variables). Add:
   `button card badge progress dialog sheet drawer tabs tooltip avatar table sonner skeleton separator scroll-area input label toggle-group dropdown-menu chart hover-card`.
-- [ ] `npm i motion canvas-confetti @number-flow/react @xyflow/react @dagrejs/dagre swr zod qrcode.react @anthropic-ai/sdk drizzle-orm @neondatabase/serverless`
+- [x] `npm i motion canvas-confetti @number-flow/react @xyflow/react @dagrejs/dagre swr zod qrcode.react @anthropic-ai/sdk drizzle-orm @neondatabase/serverless`
   and `npm i -D vitest tsx drizzle-kit @types/canvas-confetti`.
-- [ ] `vitest.config.ts` with the `@` alias → `src`. `package.json` scripts:
+- [x] `vitest.config.mts` with the `@` alias → `src`. `package.json` scripts:
   `"test": "vitest run"`, `"typecheck": "tsc --noEmit"`,
   `"validate:content": "tsx scripts/validate-content.ts"`,
   `"check": "npm run typecheck && npm run validate:content && npm run test"`,
   `"db:push": "drizzle-kit push"`.
   If `scripts/validate-content.ts` does not exist yet, create a stub that prints
   `content validator not written yet` and exits 0 (B owns and replaces it).
-- [ ] `.env.example` exactly as overview §3; `.gitignore` ignores `.env*` but not `.env.example`, and `.tmp-next/`.
-- [ ] `src/lib/uz.ts`: `normalizeUz(s: string): string` — `o'`/`g'`/`O'`/`G'`
+- [x] `.env.example` exactly as overview §3; `.gitignore` ignores `.env*` but not `.env.example`, and `.tmp-next/`.
+- [x] `src/lib/uz.ts`: `normalizeUz(s: string): string` — `o'`/`g'`/`O'`/`G'`
   (with `'`, `‘`, `’`, `` ` ``) → `oʻ gʻ Oʻ Gʻ` (U+02BB); any other
   apostrophe between letters → `ʼ` (U+02BC). Leave `[[...]]` markup intact.
-- [ ] Placeholder `src/app/page.tsx` saying "Ildiz" (C replaces it in C8).
-- [ ] `npm run check` and `npm run build` pass. Commit `chore: scaffold next app` and push. Tell the user: "A1 tayyor — B va C kod yozishni boshlashi mumkin."
+- [x] Placeholder `src/app/page.tsx` saying "Ildiz" (C replaces it in C8).
+- [x] `npm run check` and `npm run build` pass. Commit `chore: scaffold next app` and push. Tell the user: "A1 tayyor — B va C kod yozishni boshlashi mumkin."
 
 ### A2. Design system and brand components — target T+4h
 **Needs:** A1. **Unblocks:** C's visual work (C can start before with shadcn defaults).

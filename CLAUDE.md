@@ -94,3 +94,13 @@ start on Windows, add local copies wrapped in `cmd /c`:
 `claude mcp add --scope local playwright -- cmd /c npx -y @playwright/mcp@latest`
 and the same for `shadcn` (`cmd /c npx -y shadcn@latest mcp`). Playwright
 may need `npx playwright install chromium` once.
+
+## Next.js 16 notes
+
+This is Next.js 16 (React 19, Tailwind v4, shadcn `radix-nova`, `cn` from
+the `cn` package). APIs differ from older versions: read `AGENTS.md` and
+the bundled docs in `node_modules/next/dist/docs/` before using a Next API
+you are unsure about. `cacheComponents` is OFF in `next.config.ts`, so
+route handlers run per request and `export const dynamic = "force-dynamic"`
+works. Route `params` are Promises (`const { id } = await ctx.params`).
+Client components that call `useSearchParams()` must sit inside `<Suspense>`.
