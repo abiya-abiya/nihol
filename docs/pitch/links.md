@@ -7,7 +7,7 @@
 | Oʻqituvchi paneli | `<prod>/teacher` |
 | Mashq varaqasi (EKUK guruhi) | `<prod>/teacher/worksheet?skills=lcm,frac-common-denom&group=lcm&class=6a` |
 | Repo | https://github.com/abiya-abiya/si-tyutor |
-| Slaydlar | _C9: qoʻshiladi_ |
+| Slaydlar (Claude Slides, PPTX/PDF yuklab olinadi) | https://claude.ai/artifact/Kx2LZVPqzsiurrgB9mh9Da — egasi Share menyusidan jamoaga ochishi kerak |
 | Zaxira demo video | _C9: deploydan keyin yoziladi_ |
 | Tadqiqot va manbalar | [research.md](research.md) |
 

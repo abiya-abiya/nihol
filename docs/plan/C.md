@@ -137,13 +137,13 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 ### C9. Pitch package — target T+32h
 **Files:** `docs/pitch/{script,qa,deck-outline,links}.md`, deck file (any tool), backup video
 
-- [ ] Deck (6–8 slides): problem with cited numbers → insight (root cause,
+- [x] Deck (6–8 slides): problem with cited numbers → insight (root cause,
   not wrong answer) → live demo → how it works (graph + BKT + LLM only
   explains) → teacher value → scale (new topic = graph + bank; B's second
   topic if done) → roadmap/pilot ask → team.
-- [ ] `script.md`: minute-by-minute 3-minute script matching overview §2,
+- [x] `script.md`: minute-by-minute 3-minute script matching overview §2,
   with B's `demo-answers.md` for "Jasur" and who clicks what.
-- [ ] `qa.md`: 10 likely judge questions with crisp answers (data privacy
+- [x] `qa.md`: 10 likely judge questions with crisp answers (data privacy
   of children, accuracy of diagnosis, cost per student, curriculum fit,
   offline, teacher adoption, scaling to other subjects/languages,
   business model, why not just ChatGPT, team).
