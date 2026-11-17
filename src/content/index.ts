@@ -11,6 +11,7 @@ import type {
 import graphJson from "./graph.json";
 import misconceptionsJson from "./misconceptions.json";
 import glossaryJson from "./glossary.json";
+import tutorExamplesJson from "./tutor-examples.json";
 import qNatMul from "./questions/nat-mul.json";
 import qNatDiv from "./questions/nat-div.json";
 import qDivisibility from "./questions/divisibility.json";
@@ -62,4 +63,4 @@ export const questionsBySkill: Record<SkillId, Question[]> = Object.fromEntries(
 );
 
 export const glossary = glossaryJson as GlossaryEntry[];
-export const tutorExamples: TutorExample[] = [];
+export const tutorExamples = tutorExamplesJson as TutorExample[];

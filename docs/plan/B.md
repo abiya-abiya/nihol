@@ -125,7 +125,7 @@ results ≤ 3 wholes).
 
 **Files:** `src/content/tutor-examples.json`, issues for A.
 
-- [ ] Write 5 `TutorExample`s (one per key misconception: `add-num-den`,
+- [x] Write 5 `TutorExample`s (one per key misconception: `add-num-den`,
   `lcm-gcd-swap`, `mixed-convert`, `div-no-flip`, `part-of-rest`) with ideal ≤ 90-word explanations.
 - [ ] Run ~20 `/api/tutor/explain` requests across skills and misconceptions
   (curl or the UI). Score each: math right? Uzbek natural? names the wrong

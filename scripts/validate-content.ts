@@ -38,6 +38,7 @@ const Question = z.object({
   source: z.enum(["bank", "generated", "ai"]),
 });
 const Glossary = z.object({ term: text, definition: text });
+const TutorExample = z.object({ misconceptionId: id, stem: text, correctText: text, chosenText: text, idealExplanation: text });
 
 function load<T>(file: string, schema: z.ZodType<T>): T | null {
   let raw: unknown;
@@ -134,6 +135,16 @@ const glossary = load("glossary.json", z.array(Glossary));
 if (glossary) {
   unique("glossary.json", glossary.map((g) => g.term), "term");
   for (const g of glossary) checkMarkup(`glossary.json ${g.term}`, g.definition);
+}
+
+// ---------- tutor examples ----------
+const examples = load("tutor-examples.json", z.array(TutorExample));
+for (const t of examples ?? []) {
+  const w = `tutor-examples.json ${t.misconceptionId}`;
+  if (!miscIds.has(t.misconceptionId)) err(w, `unknown misconceptionId`);
+  const words = t.idealExplanation.split(/\s+/).filter((x) => /[\p{L}\d]/u.test(x)).length;
+  if (words > 90) err(w, `idealExplanation has ${words} words (max 90)`);
+  for (const f of [t.stem, t.correctText, t.chosenText, t.idealExplanation]) checkMarkup(w, f);
 }
 
 // ---------- questions ----------
