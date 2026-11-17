@@ -49,8 +49,8 @@ export function Analyzing({ text = "Bilim xaritang chizilmoqda…" }: { text?: s
             stroke="var(--ink-soft)"
             strokeWidth="3"
             strokeLinecap="round"
-            initial={{ pathLength: reduce ? 1 : 0 }}
-            animate={{ pathLength: 1 }}
+            initial={reduce ? false : { pathLength: 0, opacity: 0 }}
+            animate={{ pathLength: 1, opacity: 1 }}
             transition={{ delay: 0.2 + i * 0.18, duration: 0.7, ease: "easeOut" }}
           />
         ))}
