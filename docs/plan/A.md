@@ -125,8 +125,8 @@ If everything is mastered, `path` = entry skills with reason `target`.
 - Tables: `classes(id, name, teacher_name, grade)`, `students(id, name, class_id, created_at)`, `snapshots(student_id pk, data jsonb, updated_at)`, `attempts(id, student_id, question_id, skill_id, choice_id, correct, misconception_id, mode, ts)`.
 - Client `student-store.ts`: `getLocalStudent(): Student | null`, `saveLocalStudent(s: Student)`, `loadDiagnostic()/saveDiagnostic(state)`, `loadSnapshot()/saveSnapshot(s)`, `queueProgress(studentId, attempts, snapshot): void` (POSTs, keeps unsent items in localStorage, retries on `online` event and every 10 s).
 
-- [ ] Implement, validate request bodies with zod, return 400 on bad input.
-- [ ] Manual check: `curl` create student, post progress, get student — both with and without `DATABASE_URL`. Commit, push.
+- [x] Implement, validate request bodies with zod, return 400 on bad input.
+- [x] Manual check: `curl` create student, post progress, get student — both with and without `DATABASE_URL`. Commit, push.
 
 ### A5. Start and diagnostic screens — target T+11h
 **Needs:** A2, A3, A4, B1 (at least 3 skills of content; use whatever exists).

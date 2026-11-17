@@ -174,7 +174,8 @@ export interface StudentRecord {
 /** Storage interface. A implements it (memory + Postgres); C's teacher code only reads through it. */
 export interface Repo {
   getClass(id: string): Promise<ClassRoom | null>;
-  createStudent(input: { name: string; classId: string }): Promise<Student>;
+  /** id/createdAt are given when a student created offline syncs later */
+  createStudent(input: { name: string; classId: string; id?: string; createdAt?: string }): Promise<Student>;
   getStudent(id: string): Promise<StudentRecord | null>;
   saveProgress(studentId: string, attempts: Attempt[], snapshot: StudentSnapshot): Promise<void>;
   listClassStudents(classId: string): Promise<StudentRecord[]>;
@@ -214,7 +215,12 @@ export interface Worksheet {
 export interface CreateStudentRequest { name: string; classId: string }
 export interface CreateStudentResponse { student: Student }
 
-export interface SaveProgressRequest { attempts: Attempt[]; snapshot: StudentSnapshot }
+export interface SaveProgressRequest {
+  attempts: Attempt[];
+  snapshot: StudentSnapshot;
+  /** sent so the server can create a student that was made offline */
+  student?: Student;
+}
 export interface SaveProgressResponse { ok: true }
 
 /** POST /api/tutor/explain -> streamed text/plain (Uzbek, may contain math markup) */
