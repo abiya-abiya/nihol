@@ -198,6 +198,13 @@ If everything is mastered, `path` = entry skills with reason `target`.
 - [ ] `AI_MODE=fallback` full run, airplane-mode run, demo reset via C's `/api/teacher/reset`, two phones at once.
 - [ ] Support C's rehearsals; fix anything that took > 1 s to feel responsive.
 
+### A13. Page backgrounds (parked by the user, do last)
+**State:** work in progress on branch `a/backgrounds-wip` (not on main). Main keeps the katak grid.
+**Decision so far (user):** D "doska" (green chalkboard with chalk fraction pieces and formulas) on hero screens `/start` and `/result`, also suggested for C's landing; B "kasr boʻlaklari" (pastel fraction manipulatives on paper) on reading screens `/diagnostic`, `/path`, `/learn`. Options: https://claude.ai/artifact/G65pd6vwAz9rgLoW5LGWaQ
+
+- [ ] Rebase `a/backgrounds-wip` on main, review screenshots of all five student screens at 390 and 1440 (chalk text contrast, yellow primary buttons, logo on the board).
+- [ ] Fix what the screenshots show, merge into main, delete the branch, add a "Backgrounds" section to DESIGN.md.
+
 ---
 
 ## If blocked or done (A's own backlog, in priority order)
