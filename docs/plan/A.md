@@ -168,10 +168,10 @@ If everything is mastered, `path` = entry skills with reason `target`.
 - `streamText(res: AsyncIterable<string>): Response` helper → `text/plain; charset=utf-8` stream.
 - `fallbackExplanation(q: Question, choiceId: ChoiceId): string` (question explanation + misconception remedy).
 
-- [ ] System prompt (Uzbek): friendly tutor for 11–12-year-olds, "sen", Latin script, uses only our markup (`[[a/b]]`, `**bold**`), no LaTeX/headers, terminology from `glossary.json`, few-shot examples from `src/content/tutor-examples.json` if present. Keep the system prompt byte-stable (cache-friendly), put the per-request facts in the user message.
-- [ ] `explain`: facts = skill title, stem, correct choice text, chosen choice text, misconception (title/example/remedy) if any. Output ≤ 90 words: name the wrong thinking kindly → correct steps with these numbers → one short check question. `client.beta.messages.stream({ model: MODEL, max_tokens: 1024, output_config: { effort: "low" }, betas: ["server-side-fallback-2026-07-01"], fallbacks: "default", system, messages })`; forward `text_delta`s. On error/timeout (8 s to first token) or `stop_reason === "refusal"` → stream the fallback text.
-- [ ] `chat`: Socratic, ≤ 70 words per reply, never states the final answer to the current question, steers back to the topic.
-- [ ] Manual check with 3 misconceptions, with and without key. Commit, push. Tell B: "A8 tayyor — B4 ni boshlash mumkin."
+- [x] System prompt (Uzbek): friendly tutor for 11–12-year-olds, "sen", Latin script, uses only our markup (`[[a/b]]`, `**bold**`), no LaTeX/headers, terminology from `glossary.json`, few-shot examples from `src/content/tutor-examples.json` if present. Keep the system prompt byte-stable (cache-friendly), put the per-request facts in the user message.
+- [x] `explain`: facts = skill title, stem, correct choice text, chosen choice text, misconception (title/example/remedy) if any. Output ≤ 90 words: name the wrong thinking kindly → correct steps with these numbers → one short check question. `client.beta.messages.stream({ model: MODEL, max_tokens: 1024, output_config: { effort: "low" }, betas: ["server-side-fallback-2026-07-01"], fallbacks: "default", system, messages })`; forward `text_delta`s. On error/timeout (8 s to first token) or `stop_reason === "refusal"` → stream the fallback text.
+- [x] `chat`: Socratic, ≤ 70 words per reply, never states the final answer to the current question, steers back to the topic.
+- [x] Manual check with 3 misconceptions, with and without key. Commit, push. Tell B: "A8 tayyor — B4 ni boshlash mumkin."
 
 ### A9. Learn screen: lesson, practice, tutor — target T+25h
 **Needs:** A7, A8, B3 (generators; until then bank questions only).
