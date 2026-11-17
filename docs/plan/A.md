@@ -107,13 +107,13 @@ Rules are in overview §6. Question choice in the diagnostic is deterministic:
 first unasked question of difficulty 2, then 1, then 3, in file order.
 If everything is mastered, `path` = entry skills with reason `target`.
 
-- [ ] Write `engine.test.ts` on a 4-skill inline fixture graph (a ← b ← c, a ← d):
+- [x] Write `engine.test.ts` on a 4-skill inline fixture graph (a ← b ← c, a ← d):
   1. `updateP(0.5, true, DIAGNOSTIC_PARAMS)` ≈ 0.818 and `updateP(0.5, false, …)` ≈ 0.111 (±0.005).
   2. wrong answer on entry `a` puts `b` and `d` at the queue front; correct on `b` marks `c` inferred with p ≥ 0.85.
   3. with `a`,`b`,`c` weak and `d` mastered: `rootGaps` = `["c"]`, trace chain = `["a","b","c"]`.
   4. `path` is topological: `c` before `b` before `a`; first step `current`.
   5. `answerPractice` marks the step `done` after p ≥ 0.9 with ≥ 3 attempts and makes the next one `current`.
-- [ ] Implement until `npm test` passes. Commit, push.
+- [x] Implement until `npm test` passes. Commit, push.
 
 ### A4. Storage and student API — target T+7.5h
 **Needs:** A1. **Unblocks:** C4, live dashboard.

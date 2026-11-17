@@ -105,6 +105,8 @@ export interface SkillState {
   correct: number;
   /** true when p came from graph inference, not from the student's own answers */
   inferred: boolean;
+  /** practice answers only (attempts counts diagnostic + practice) */
+  practiceAttempts?: number;
   /** how many times each misconception was observed on this skill */
   misconceptions: Partial<Record<MisconceptionId, number>>;
 }
