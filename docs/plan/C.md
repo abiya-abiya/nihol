@@ -88,18 +88,18 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 
 **Files:** `src/app/teacher/page.tsx`, `src/app/teacher/layout.tsx`, `src/components/teacher/{kpi-tiles,heatmap,root-gaps,misconceptions,activity-feed,live-badge}.tsx`
 
-- [ ] SWR polling every 3 s. Header: class, teacher, live badge (pulsing dot; "aloqa yo'q" when stale).
-- [ ] KPI tiles with `@number-flow/react`: students, diagnostics done, average mastery, #1 root gap.
-- [ ] Heatmap: rows = students (grouped by root gap), columns = skills
+- [x] SWR polling every 3 s. Header: class, teacher, live badge (pulsing dot; "aloqa yo'q" when stale).
+- [x] KPI tiles with `@number-flow/react`: students, diagnostics done, average mastery, #1 root gap.
+- [x] Heatmap: rows = students (grouped by root gap), columns = skills
   (topological, roots on the left), cell colour = level (`levelColor`);
   hover shows p and attempts; click row → student detail. New or changed
   cells flash briefly (motion).
-- [ ] "Sinfning ildiz muammolari": bars per root gap with avatar stacks and
+- [x] "Sinfning ildiz muammolari": bars per root gap with avatar stacks and
   a "Mashq varaqasi yaratish" button (→ C7). Misconceptions panel with
   example via `MathText`.
-- [ ] Live activity feed: newest attempts slide in ("Jasur — EKUK — ✗ EKUB bilan adashtirdi").
-- [ ] "Demo holatini tiklash" in a small menu → `/api/teacher/reset` (confirm in an in-app dialog, not `window.confirm`).
-- [ ] Use impeccable (`craft`, then `polish`) and the dataviz habits in
+- [x] Live activity feed: newest attempts slide in ("Jasur — EKUK — ✗ EKUB bilan adashtirdi").
+- [x] "Demo holatini tiklash" in a small menu → `/api/teacher/reset` (confirm in an in-app dialog, not `window.confirm`).
+- [x] Use impeccable (`craft`, then `polish`) and the dataviz habits in
   DESIGN.md. Screenshots at 1440 and 1280×720. Commit, push.
 
 ### C6. Student detail `/teacher/student/[id]` — target T+19h
