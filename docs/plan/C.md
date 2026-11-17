@@ -113,16 +113,16 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 
 **Files:** `src/lib/ai/prompts/worksheet.ts`, `src/app/api/teacher/worksheet/route.ts`, `src/app/teacher/worksheet/page.tsx`, `src/components/teacher/worksheet-sheet.tsx`
 
-- [ ] API: items from `generateWorksheetItems(skillIds, count ?? 8, seed)`
+- [x] API: items from `generateWorksheetItems(skillIds, count ?? 8, seed)`
   (correct math). If `aiEnabled()`: `client.messages.parse` with a zod
   schema for `{ title, intro, teacherNotes, wordProblems: {stem, answer}[2] }`
   (`output_config: { format: zodOutputFormat(schema), effort: "medium" }`),
   word problems marked `source: "ai"`. Without AI: template title/intro
   and B's `word-problems.json` if it exists.
-- [ ] Page `/teacher/worksheet?skills=lcm,frac-common-denom&group=<root>`:
+- [x] Page `/teacher/worksheet?skills=lcm,frac-common-denom&group=<root>`:
   preview + "Chop etish" (`window.print()`), print CSS: A4, school header,
   name/date lines, tasks on page 1, answer key on page 2.
-- [ ] Print to PDF and check. Commit, push.
+- [x] Print to PDF and check. Commit, push.
 
 ### C8. Landing `/` — target T+25h
 **Files:** `src/app/page.tsx`, `src/components/pitch/{hero,qr-card,how-it-works}.tsx`
