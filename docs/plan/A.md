@@ -202,8 +202,8 @@ If everything is mastered, `path` = entry skills with reason `target`.
 **State:** work in progress on branch `a/backgrounds-wip` (not on main). Main keeps the katak grid.
 **Decision so far (user):** D "doska" (green chalkboard with chalk fraction pieces and formulas) on hero screens `/start` and `/result`, also suggested for C's landing; B "kasr boʻlaklari" (pastel fraction manipulatives on paper) on reading screens `/diagnostic`, `/path`, `/learn`. Options: https://claude.ai/artifact/G65pd6vwAz9rgLoW5LGWaQ
 
-- [ ] Rebase `a/backgrounds-wip` on main, review screenshots of all five student screens at 390 and 1440 (chalk text contrast, yellow primary buttons, logo on the board).
-- [ ] Fix what the screenshots show, merge into main, delete the branch, add a "Backgrounds" section to DESIGN.md.
+- [x] Rebase `a/backgrounds-wip` on main, review screenshots of all five student screens at 390 and 1440 (chalk text contrast, yellow primary buttons, logo on the board).
+- [x] Fix what the screenshots show, merge into main, delete the branch, add a "Backgrounds" section to DESIGN.md.
 
 ---
 

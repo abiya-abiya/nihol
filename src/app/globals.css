@@ -201,3 +201,67 @@
     transition-duration: 0.01ms !important;
   }
 }
+
+/* ---- Page backgrounds (see DESIGN.md "Backgrounds") ---- */
+:root {
+  --board: #1d3f36;
+  --chalk: #f6f3ea;
+}
+
+/* D. Doska: green chalkboard with chalk fraction pieces. Hero screens (start, result, landing). */
+.bg-doska {
+  background:
+    url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22420%22%20height%3D%22420%22%20viewBox%3D%220%200%20420%20420%22%20fill%3D%22none%22%3E%20%3Cfilter%20id%3D%22n%22%3E%3CfeTurbulence%20type%3D%22fractalNoise%22%20baseFrequency%3D%22.85%22%20numOctaves%3D%222%22%20stitchTiles%3D%22stitch%22%2F%3E%3CfeColorMatrix%20values%3D%220%200%200%200%201%200%200%200%200%201%200%200%200%200%201%200%200%200%20.55%200%22%2F%3E%3C%2Ffilter%3E%20%3Crect%20width%3D%22420%22%20height%3D%22420%22%20filter%3D%22url(%23n)%22%20opacity%3D%22.07%22%2F%3E%20%3Cg%20stroke%3D%22%23f6f3ea%22%20stroke-opacity%3D%22.14%22%20stroke-width%3D%222%22%20stroke-linecap%3D%22round%22%3E%20%3Ccircle%20cx%3D%2270%22%20cy%3D%2280%22%20r%3D%2234%22%2F%3E%3Cpath%20d%3D%22M70%2046v68M36%2080h68%22%2F%3E%20%3Crect%20x%3D%22250%22%20y%3D%2250%22%20width%3D%22120%22%20height%3D%2224%22%20rx%3D%224%22%2F%3E%3Cpath%20d%3D%22M290%2050v24M330%2050v24%22%2F%3E%20%3Ccircle%20cx%3D%22330%22%20cy%3D%22250%22%20r%3D%2228%22%2F%3E%3Cpath%20d%3D%22M330%20250v-28M330%20250l24%2014M330%20250l-24%2014%22%2F%3E%20%3Crect%20x%3D%2240%22%20y%3D%22300%22%20width%3D%22128%22%20height%3D%2222%22%20rx%3D%224%22%2F%3E%3Cpath%20d%3D%22M72%20300v22M104%20300v22M136%20300v22%22%2F%3E%20%3Ccircle%20cx%3D%22190%22%20cy%3D%22190%22%20r%3D%2216%22%2F%3E%3Cpath%20d%3D%22M190%20174v32%22%2F%3E%20%3C%2Fg%3E%20%3Cg%20fill%3D%22%23f6f3ea%22%20fill-opacity%3D%22.09%22%3E%3Cpath%20d%3D%22M70%2080V46a34%2034%200%200%201%2034%2034Z%22%2F%3E%3Crect%20x%3D%22250%22%20y%3D%2250%22%20width%3D%2240%22%20height%3D%2224%22%20rx%3D%224%22%2F%3E%3Cpath%20d%3D%22M330%20250v-28a28%2028%200%200%201%2024%2042Z%22%2F%3E%3Crect%20x%3D%2240%22%20y%3D%22300%22%20width%3D%2264%22%20height%3D%2222%22%20rx%3D%224%22%2F%3E%3Cpath%20d%3D%22M190%20174a16%2016%200%200%201%200%2032Z%22%2F%3E%3C%2Fg%3E%20%3C%2Fsvg%3E") 0 0 / 420px 420px,
+    radial-gradient(120% 90% at 50% 30%, #2c5a4d 0%, #1d3f36 70%, #16322b 100%);
+}
+
+/* B. Kasr bolaklari: pastel fraction manipulatives on paper. Reading screens (diagnostic, path, learn). */
+.bg-bolak {
+  background: var(--paper);
+}
+/* Pieces stay vivid at the edges and fade behind the reading column. */
+.bg-bolak::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22380%22%20height%3D%22380%22%20viewBox%3D%220%200%20380%20380%22%20fill%3D%22none%22%3E%20%3Cg%20stroke%3D%22%231d2b64%22%20stroke-opacity%3D%22.16%22%20stroke-width%3D%221.6%22%3E%20%3Ccircle%20cx%3D%2270%22%20cy%3D%2278%22%20r%3D%2236%22%2F%3E%3Cpath%20d%3D%22M70%2042v72M34%2078h72%22%2F%3E%20%3Crect%20x%3D%22198%22%20y%3D%2240%22%20width%3D%22120%22%20height%3D%2226%22%20rx%3D%226%22%2F%3E%3Cpath%20d%3D%22M238%2040v26M278%2040v26%22%2F%3E%20%3Ccircle%20cx%3D%22308%22%20cy%3D%22190%22%20r%3D%2230%22%2F%3E%3Cpath%20d%3D%22M308%20190V160M308%20190l26%2015M308%20190l-26%2015%22%2F%3E%20%3Crect%20x%3D%2236%22%20y%3D%22236%22%20width%3D%22132%22%20height%3D%2222%22%20rx%3D%226%22%2F%3E%3Cpath%20d%3D%22M69%20236v22M102%20236v22M135%20236v22%22%2F%3E%20%3Ccircle%20cx%3D%22196%22%20cy%3D%22318%22%20r%3D%2224%22%2F%3E%3Cpath%20d%3D%22M196%20294v48%22%2F%3E%20%3Ccircle%20cx%3D%22150%22%20cy%3D%22160%22%20r%3D%2218%22%2F%3E%3Cpath%20d%3D%22M150%20142v36M132%20160h36M137%20147l26%2026M163%20147l-26%2026%22%2F%3E%20%3C%2Fg%3E%20%3Cpath%20d%3D%22M70%2078V42a36%2036%200%200%201%2036%2036Z%22%20fill%3D%22%237fd1a4%22%20fill-opacity%3D%22.42%22%2F%3E%20%3Crect%20x%3D%22198%22%20y%3D%2240%22%20width%3D%2240%22%20height%3D%2226%22%20rx%3D%226%22%20fill%3D%22%23ffd84d%22%20fill-opacity%3D%22.48%22%2F%3E%20%3Cpath%20d%3D%22M308%20190V160a30%2030%200%200%201%2026%2045Z%22%20fill%3D%22%23ff8a7a%22%20fill-opacity%3D%22.42%22%2F%3E%20%3Crect%20x%3D%2236%22%20y%3D%22236%22%20width%3D%2266%22%20height%3D%2222%22%20rx%3D%226%22%20fill%3D%22%238fb7ff%22%20fill-opacity%3D%22.42%22%2F%3E%20%3Cpath%20d%3D%22M196%20294a24%2024%200%200%201%200%2048Z%22%20fill%3D%22%23b9a6ff%22%20fill-opacity%3D%22.38%22%2F%3E%20%3Cpath%20d%3D%22M150%20160V142a18%2018%200%200%201%2012.7%205.3Z%22%20fill%3D%22%237fd1a4%22%20fill-opacity%3D%22.48%22%2F%3E%20%3C%2Fsvg%3E") 0 0 / 380px 380px;
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, #000 9%, rgb(0 0 0 / 0.12) 27%, rgb(0 0 0 / 0.12) 73%, #000 91%, #000 100%);
+  mask-image: linear-gradient(90deg, #000 0%, #000 9%, rgb(0 0 0 / 0.12) 27%, rgb(0 0 0 / 0.12) 73%, #000 91%, #000 100%);
+}
+
+/* Text sitting directly on the chalkboard turns to chalk; sheets and inputs keep ink. */
+.theme-doska {
+  color: var(--chalk);
+  --muted-foreground: rgb(246 243 234 / 0.74);
+  --primary: var(--highlight);
+  --primary-foreground: var(--ink);
+  --ring: rgb(255 228 92 / 0.6);
+}
+.theme-doska .sheet,
+.theme-doska input,
+.theme-doska [role="dialog"] {
+  color: var(--ink);
+  --muted-foreground: var(--ink-soft);
+}
+
+/* Logo follows the surface: ink on paper, chalk on the board. */
+.logo-mark,
+.logo-word {
+  color: var(--ink);
+}
+.theme-doska .logo-mark,
+.theme-doska .logo-word {
+  color: var(--chalk);
+}
+.theme-doska .sheet .logo-mark,
+.theme-doska .sheet .logo-word {
+  color: var(--ink);
+}
+
+/* A disabled primary button on the board reads as a chalk outline, not muddy yellow. */
+.theme-doska [data-slot="button"]:disabled:not([data-variant="outline"]):not([data-variant="ghost"]):not([data-variant="secondary"]) {
+  opacity: 1;
+  background: transparent;
+  color: rgb(246 243 234 / 0.72);
+  box-shadow: inset 0 0 0 2px rgb(246 243 234 / 0.35);
+}

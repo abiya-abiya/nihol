@@ -37,9 +37,9 @@ export function ChoiceButton({
         "disabled:cursor-default",
         state === "idle" && "border-input hover:border-ink hover:bg-ink-wash/40",
         state === "selected" && "border-ink bg-ink text-white",
-        state === "correct" && "border-mastered bg-mastered/10",
-        state === "wrong" && "border-red-pen/60 bg-red-pen/5",
-        state === "dimmed" && "border-input opacity-55",
+        state === "correct" && "border-mastered bg-[color-mix(in_oklab,var(--mastered)_11%,white)]",
+        state === "wrong" && "border-red-pen/60 bg-[color-mix(in_oklab,var(--red-pen)_6%,white)]",
+        state === "dimmed" && "border-input text-ink/45",
       )}
     >
       <span

@@ -68,6 +68,16 @@ Same world, denser: white data cards on paper; heatmap cells 22–28 px
 rounded 4 px, level colours; numbers in Unbounded; generous whitespace
 between panels; everything readable from 4 m on a projector.
 
+## Backgrounds
+
+Two page backgrounds, chosen by the team, alternate so the app never feels flat:
+
+- **Doska** (`.bg-doska`, class `theme-doska` on the route layout): a green chalkboard with chalk-drawn fraction pieces and a few chalk formulas. Hero screens: `/start`, `/result` (also suggested for the landing page). Text sitting directly on the board turns to chalk (`--chalk`), primary buttons turn highlighter-yellow with ink text, a disabled primary button becomes a chalk outline; sheets, inputs and dialogs keep ink on white. The logo follows the surface.
+- **Kasr boʻlaklari** (`.bg-bolak`): pastel fraction manipulatives (½, ⅓, ¼ circles and bars) on paper. Reading screens: `/diagnostic`, `/path`, `/learn`. The pieces are vivid at the screen edges and fade to about 12% behind the reading column. Answer states use opaque tints, never translucent fills, so nothing shows through.
+- The katak grid (`.bg-katak`) stays on the body everywhere else (teacher screens, 404, /dev/kit).
+
+Both are applied by `<Backdrop variant="doska" | "bolak" />` (`src/components/brand/backdrop.tsx`) from each route layout.
+
 ## Don't
 
 Purple/blue gradients, glassmorphism, blob backgrounds, Inter/Roboto
