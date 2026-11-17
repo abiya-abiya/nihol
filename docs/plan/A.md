@@ -64,15 +64,15 @@ ownership), `PRODUCT.md`, `DESIGN.md`, `src/lib/types.ts`.
 - `FadeIn`, `Stagger`, `PageTransition` motion wrappers; `celebrate(kind: "small"|"big"): void` (confetti, respects reduced motion)
 - `Logo({ size }: { size?: number })` — sprout with roots, inline SVG
 
-- [ ] Run impeccable `shape` then `craft` against `DESIGN.md`; put tokens in
+- [x] Run impeccable `shape` then `craft` against `DESIGN.md`; put tokens in
   `globals.css` (`@theme`): paper, grid, ink, red-pen, mastered, shaky, gap,
   unknown, plus shadcn variable mapping. Squared-paper background utility `.bg-katak`.
-- [ ] Fonts via `next/font/google` as named in DESIGN.md, subsets `latin`, `latin-ext`.
+- [x] Fonts via `next/font/google` as named in DESIGN.md, subsets `latin`, `latin-ext`.
   Verify on screen that `oʻ gʻ ʼ` render in every font (screenshot); switch font if not.
-- [ ] Build the components above. `MathText` parses `[[n/d]]`, `[[w n/d]]`,
+- [x] Build the components above. `MathText` parses `[[n/d]]`, `[[w n/d]]`,
   `**bold**`, newlines; runs `normalizeUz`.
-- [ ] `/dev/kit` page showing every component and colour (B and C use it as a reference).
-- [ ] Screenshot `/dev/kit` at 390 and 1440 via playwright MCP, fix, commit, push.
+- [x] `/dev/kit` page showing every component and colour (B and C use it as a reference).
+- [x] Screenshot `/dev/kit` at 390 and 1440 via playwright MCP, fix, commit, push.
 
 ### A3. Learner engine — target T+6h
 **Needs:** A1. **Unblocks:** A5–A9, C3.

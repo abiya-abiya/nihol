@@ -1,15 +1,24 @@
-import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import type { Metadata, Viewport } from "next";
+import { Caveat, Onest, Unbounded } from "next/font/google";
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const unbounded = Unbounded({
+  variable: "--font-unbounded",
+  subsets: ["latin", "latin-ext"],
+  weight: ["500", "600", "700", "800"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+const onest = Onest({
+  variable: "--font-onest",
+  subsets: ["latin", "latin-ext"],
+});
+
+const caveat = Caveat({
+  variable: "--font-caveat",
+  subsets: ["latin", "latin-ext"],
+  weight: ["600", "700"],
 });
 
 export const metadata: Metadata = {
@@ -17,13 +26,19 @@ export const metadata: Metadata = {
   description: "5–6-sinf kasrlar: bilimdagi boʻshliqning ildizini topadi va shaxsiy yoʻl tuzadi.",
 };
 
+export const viewport: Viewport = {
+  themeColor: "#fbfaf5",
+  width: "device-width",
+  initialScale: 1,
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="uz"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="uz" className={`${unbounded.variable} ${onest.variable} ${caveat.variable} h-full antialiased`}>
+      <body className="bg-katak flex min-h-full flex-col">
+        <TooltipProvider>{children}</TooltipProvider>
+        <Toaster position="top-center" />
+      </body>
     </html>
   );
 }

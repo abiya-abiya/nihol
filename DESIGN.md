@@ -34,7 +34,7 @@ Light theme only (dark mode is a non-goal). Contrast AA for all text.
 - Display: **Unbounded** (600–800) — titles, big numbers, landing headline.
 - Body/UI: **Onest** (400–700).
 - Hand: **Caveat** (600) — only for teacher-pen annotations ("ildiz shu yerda!", ticks, short margin notes).
-- Verify `oʻ gʻ ʼ` render in each font (A2). If a font lacks them, swap
+- Verified 2026-11-17: `oʻ gʻ ʼ` render correctly in Unbounded, Onest and Caveat. If a new font lacks them, swap
   for one that has them (e.g. Manrope / Golos Text) and update this file.
 - Fractions: stacked numerals via `<Frac>`, tabular figures.
 
