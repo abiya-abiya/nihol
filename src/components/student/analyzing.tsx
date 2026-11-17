@@ -21,8 +21,8 @@ export function Analyzing({ text = "Bilim xaritang chizilmoqda…" }: { text?: s
           stroke="var(--ink)"
           strokeWidth="4"
           strokeLinecap="round"
-          initial={{ pathLength: reduce ? 1 : 0 }}
-          animate={{ pathLength: 1 }}
+          initial={reduce ? false : { pathLength: 0, opacity: 0 }}
+          animate={{ pathLength: 1, opacity: 1 }}
           transition={{ duration: 0.5 }}
         />
         <motion.path
