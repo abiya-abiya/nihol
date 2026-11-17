@@ -117,8 +117,8 @@ shuffled with the seeded rng, distinct values, an `explanation` with the
 real numbers, a `hint`. Keep numbers child-friendly (denominators ≤ 12,
 results ≤ 3 wholes).
 
-- [ ] `check.ts`: for each generator, seeds 1..300 → no duplicate choice values, exactly one choice equals the recomputed answer, markup valid. Called from `validate-content.ts`.
-- [ ] Validator green, commit, push. Tell A and C: "B3 tayyor — `generateQuestion` va `generateWorksheetItems` ishlatsa bo'ladi."
+- [x] `check.ts`: for each generator, seeds 1..300 → no duplicate choice values, exactly one choice equals the recomputed answer, markup valid. Called from `validate-content.ts`.
+- [x] Validator green, commit, push. Tell A and C: "B3 tayyor — `generateQuestion` va `generateWorksheetItems` ishlatsa bo'ladi."
 
 ### B4. AI tutor quality — target T+14h
 **Needs:** A8.

@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import * as content from "../src/content/index";
+import { checkGenerators } from "../src/engine/generators/check";
 
 const ROOT = join(process.cwd(), "src", "content"); // npm runs scripts from the repo root
 const errors: string[] = [];
@@ -178,6 +179,9 @@ for (const sid of skillIds) {
   else if (!qs.some((q) => q.difficulty === 2)) warnings.push(`${sid}: no difficulty-2 question`);
 }
 
+// ---------- generators: seeds 1..300 per skill, re-solved from the stem ----------
+for (const e of checkGenerators(miscIds)) errors.push(e);
+
 // ---------- loader (src/content/index.ts) imports every file ----------
 if (content.questions.length !== allQuestions.length)
   err("src/content/index.ts", `exports ${content.questions.length} questions, files on disk have ${allQuestions.length} (missing import?)`);
@@ -191,5 +195,5 @@ if (errors.length) {
 }
 console.log(
   `content ok: ${skillIds.size} skills, ${miscIds.size} misconceptions, ${allQuestions.length} questions, ` +
-    `${glossary?.length ?? 0} glossary terms (${warnings.length} warning(s))`,
+    `${glossary?.length ?? 0} glossary terms, generators ok (${warnings.length} warning(s))`,
 );
