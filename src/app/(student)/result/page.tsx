@@ -15,6 +15,7 @@ import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
 import { graph, misconceptionsById, skillsById } from "@/lib/content";
 import { getLocalStudent, loadSnapshot } from "@/lib/student-store";
+import { levelOf } from "@/engine";
 import type { Misconception, Student, StudentSnapshot } from "@/lib/types";
 import { normalizeUz } from "@/lib/uz";
 
@@ -38,6 +39,7 @@ export default function ResultPage() {
   const [student, setStudent] = useState<Student | null>(null);
   const [snap, setSnap] = useState<StudentSnapshot | null>(null);
   const [revealed, setRevealed] = useState(false);
+  const [picked, setPicked] = useState<string | null>(null);
 
   useEffect(() => {
     const s = getLocalStudent();
@@ -82,7 +84,7 @@ export default function ResultPage() {
 
       <div className="space-y-3">
       <div className="sheet relative overflow-hidden px-1 pt-2 pb-1 lg:px-4 lg:pt-4">
-        <KnowledgeMap graph={graph} snapshot={snap} mode="reveal" onRevealDone={onRevealDone} className="lg:mx-auto lg:h-[min(74dvh,820px)] lg:w-auto lg:max-w-full" />
+        <KnowledgeMap graph={graph} snapshot={snap} mode="reveal" onRevealDone={onRevealDone} onSkillClick={(id) => setPicked((p) => (p === id ? null : id))} selectedSkillId={picked} className="lg:mx-auto lg:h-[min(74dvh,820px)] lg:w-auto lg:max-w-full" />
       </div>
 
       <ul className="flex flex-wrap gap-x-4 gap-y-1.5 px-1 text-xs" aria-label="Belgilar">
@@ -93,6 +95,7 @@ export default function ResultPage() {
           </li>
         ))}
       </ul>
+      {picked && <SkillDetail skillId={picked} snap={snap} onClose={() => setPicked(null)} />}
       </div>
 
       <div className="lg:sticky lg:top-6">
@@ -114,7 +117,7 @@ export default function ResultPage() {
               <>
                 <h2 className="text-[1.45rem] leading-snug font-bold">
                   Muammo {title(trace.targetSkillId).toLowerCase()}da emas — ildizi{" "}
-                  <span className="text-red-pen">{title(trace.rootSkillId)}</span>da.
+                  <span className="text-red-pen">{short(trace.rootSkillId)}</span>da.
                 </h2>
                 <ol className="flex flex-wrap items-center gap-1.5 text-sm" aria-label="Xatoning izi">
                   {trace.chain.map((id, i) => (
@@ -140,7 +143,7 @@ export default function ResultPage() {
                   </div>
                 )}
                 <p className="text-muted-foreground">
-                  Yoʻlingni aynan shu yerdan — <span className="marker text-ink font-semibold">{title(trace.rootSkillId)}</span>
+                  Yoʻlingni aynan shu yerdan — <span className="marker text-ink font-semibold">{short(trace.rootSkillId)}</span>
                   dan boshlaymiz. Har bir qadam keyingisini osonlashtiradi.
                 </p>
               </>
@@ -173,5 +176,47 @@ export default function ResultPage() {
       </AnimatePresence>
       </div>
     </div>
+  );
+}
+
+/** Tapping a node on the map explains that skill. */
+function SkillDetail({ skillId, snap, onClose }: { skillId: string; snap: StudentSnapshot; onClose: () => void }) {
+  const skill = skillsById[skillId];
+  const s = snap.skills[skillId];
+  const level = levelOf(s);
+  const mId = Object.entries(s?.misconceptions ?? {}).sort((a, b) => (b[1] ?? 0) - (a[1] ?? 0))[0]?.[0];
+  const m = mId ? misconceptionsById[mId] : null;
+  if (!skill) return null;
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 10 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.3, ease: EASE_OUT_EXPO }}
+      className="sheet space-y-2 p-4"
+      role="region"
+      aria-label={normalizeUz(skill.title)}
+    >
+      <div className="flex items-start justify-between gap-3">
+        <div className="min-w-0">
+          <p className="font-display text-lg leading-tight font-bold">{normalizeUz(skill.title)}</p>
+          <p className="mt-1 flex items-center gap-2 text-sm">
+            <span className="size-2.5 rounded-full" style={{ background: levelColor(level) }} />
+            {levelLabel(level)}
+            {s && (s.attempts > 0 || s.inferred) && <span className="text-muted-foreground tabular">{Math.round(s.p * 100)}%</span>}
+            {s?.inferred && <span className="text-muted-foreground">(yuqoridagi javoblardan xulosa)</span>}
+          </p>
+        </div>
+        <button type="button" onClick={onClose} className="text-muted-foreground hover:text-ink text-sm underline-offset-4 hover:underline">
+          Yopish
+        </button>
+      </div>
+      <p className="text-muted-foreground">{normalizeUz(skill.description)}</p>
+      {m && (
+        <p className="text-sm">
+          <span className="font-semibold">Koʻrilgan xato: </span>
+          {normalizeUz(m.title)}
+        </p>
+      )}
+    </motion.div>
   );
 }

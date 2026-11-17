@@ -190,7 +190,7 @@ If everything is mastered, `path` = entry skills with reason `target`.
 - [ ] Real phone test (Android + iPhone if available) on mobile data. File issues for C/B problems, fix your own. Commit, push.
 
 ### A11. Polish pass — after M3 freeze, target T+34h
-- [ ] impeccable `audit` then `polish` on `/start`, `/diagnostic`, `/result`, `/path`, `/learn`. Fix contrast, spacing rhythm, empty/loading/error states (skeletons, friendly Uzbek errors).
+- [x] impeccable `audit` then `polish` on `/start`, `/diagnostic`, `/result`, `/path`, `/learn`. Fix contrast, spacing rhythm, empty/loading/error states (skeletons, friendly Uzbek errors).
 - [x] Performance: first load on 4G < 3 s; lazy-load the map; no layout shift.
 - [x] Accessibility basics: focus states, buttons have labels, reduced motion respected.
 
