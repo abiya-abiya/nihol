@@ -44,15 +44,15 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 ### C2. Pitch research — target T+3h (parallel with C1)
 **Files:** `docs/pitch/research.md`
 
-- [ ] With sources (links): Uzbekistan school numbers (schools, pupils,
+- [x] With sources (links): Uzbekistan school numbers (schools, pupils,
   teachers; pupils per class), international assessment results that
   include Uzbekistan (PISA/TIMSS/PIRLS — check which ones and the math
   results), the state of private tutoring (repetitor) costs, relevant
   government programmes on AI/digital education. Only numbers you can cite.
-- [ ] Competitor scan: Khan Academy / Khanmigo, Duolingo Math, local
+- [x] Competitor scan: Khan Academy / Khanmigo, Duolingo Math, local
   Uzbek ed-tech; one line each on why Ildiz is different (root cause +
   Uzbek + teacher loop + offline).
-- [ ] Guess the judging criteria (innovation, impact, feasibility, demo,
+- [x] Guess the judging criteria (innovation, impact, feasibility, demo,
   AI use) and note what in our demo proves each. Commit, push.
 
 ### C3. Demo class seed — target T+7h
