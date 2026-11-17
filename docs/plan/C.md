@@ -127,12 +127,12 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 ### C8. Landing `/` — target T+25h
 **Files:** `src/app/page.tsx`, `src/components/pitch/{hero,qr-card,how-it-works}.tsx`
 
-- [ ] Persuade mode (impeccable `shape` → `craft`): product name + one-line
+- [x] Persuade mode (impeccable `shape` → `craft`): product name + one-line
   promise, two QR cards (`qrcode.react`): "O'quvchi sifatida kirish"
   (`${NEXT_PUBLIC_APP_URL}/start?class=6a`) and "O'qituvchi paneli" (`/teacher`),
   a 3-step animated "Qanday ishlaydi" (Diagnostika → Ildizni topish →
   Shaxsiy yo'l), team strip. Looks great at 1920×1080 projector and 390 px.
-- [ ] Screenshots, commit, push.
+- [x] Screenshots, commit, push.
 
 ### C9. Pitch package — target T+32h
 **Files:** `docs/pitch/{script,qa,deck-outline,links}.md`, deck file (any tool), backup video
