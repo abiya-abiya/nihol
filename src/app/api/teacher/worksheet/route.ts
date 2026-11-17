@@ -5,7 +5,7 @@ import { MODEL, aiEnabled, getAnthropic } from "@/lib/ai/client";
 import { WORKSHEET_SYSTEM, WorksheetTextSchema, type WorksheetText, worksheetUserPrompt } from "@/lib/ai/prompts/worksheet";
 import { misconceptionsById, skillsById } from "@/lib/content";
 import { getRepo } from "@/lib/db";
-import { generateWorksheetTasks, wordProblemSeeds } from "@/lib/teacher/worksheet-items";
+import { buildWorksheetTasks, generateWorksheetTasks, wordProblemSeeds } from "@/lib/teacher/worksheet-items";
 import type { Worksheet } from "@/lib/types";
 import { normalizeUz } from "@/lib/uz";
 
@@ -36,7 +36,7 @@ export async function POST(req: Request) {
   const count = parsed.data.count ?? 8;
   const seed = Number(new URL(req.url).searchParams.get("seed")) || 1;
 
-  const tasks = generateWorksheetTasks(skillIds, count, seed);
+  const tasks = buildWorksheetTasks(skillIds, count, seed);
   const root = skillsById[skillIds[0]];
   const others = skillIds.slice(1).map((id) => skillsById[id]);
   const mis = misconceptionIds.map((id) => misconceptionsById[id]).filter(Boolean);

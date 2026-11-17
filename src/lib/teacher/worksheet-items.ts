@@ -1,6 +1,8 @@
-// Owner: C. TEMPORARY worksheet generator until B's `generateWorksheetItems`
-// (src/engine/generators, task B3) lands; then switch worksheet route to B's.
+// Owner: C. Worksheet tasks: B's generators (B3) where they fit print, plus
+// our own for skills B has none for or whose stems need the four choices.
 // Every answer is computed here, never by the AI. Deterministic per seed.
+import { generators as bGenerators } from "@/engine/generators";
+import { generateWorksheetItems } from "@/engine/generators/worksheet";
 import type { SkillId } from "@/lib/types";
 
 export interface WorksheetTask {
@@ -333,4 +335,33 @@ export function wordProblemSeeds(skillIds: SkillId[], seed: number, n = 2): Work
     if (t.expr && !out.some((o) => o.expr === t.expr)) out.push({ ...t, skillId });
   }
   return out;
+}
+
+// ---------- B's generators (B3) where they fit a printed worksheet ----------
+
+/** B's stems that only make sense next to the four choices, or answers not in simplest form. */
+const B_NOT_FOR_PRINT = new Set<SkillId>(["frac-compare", "frac-mul"]);
+
+/**
+ * Worksheet drills: B's generator where it fits print, ours otherwise.
+ * Same split as generateWorksheetTasks: the root (first skill) gets ~60%.
+ */
+export function buildWorksheetTasks(skillIds: SkillId[], count = 8, seed = 1): WorksheetTask[] {
+  const skills = skillIds.filter((id) => (bGenerators[id] && !B_NOT_FOR_PRINT.has(id)) || supportedSkill(id));
+  if (!skills.length) return [];
+  const share = skills.length === 1 ? [count] : [Math.ceil(count * 0.6)];
+  for (let i = 1; i < skills.length; i++) {
+    const left = count - share.reduce((a, b) => a + b, 0);
+    share.push(i === skills.length - 1 ? left : Math.max(1, Math.round(left / (skills.length - i))));
+  }
+  return skills.flatMap((id, i) => {
+    if (bGenerators[id] && !B_NOT_FOR_PRINT.has(id)) {
+      const seen = new Set<string>();
+      return generateWorksheetItems([id], share[i] * 2, seed + i * 31)
+        .filter((it) => !seen.has(it.stem) && seen.add(it.stem))
+        .slice(0, share[i])
+        .map((it) => ({ stem: it.stem, answer: it.answer, skillId: id }));
+    }
+    return generateWorksheetTasks([id], share[i], seed + i * 31);
+  });
 }
