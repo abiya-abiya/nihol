@@ -133,10 +133,10 @@ If everything is mastered, `path` = entry skills with reason `target`.
 
 **Files:** `src/app/(student)/layout.tsx`, `src/app/(student)/start/page.tsx`, `src/app/(student)/diagnostic/page.tsx`, `src/components/student/{question-card,choice-button,diagnostic-progress,analyzing}.tsx`
 
-- [ ] `/start?class=6a`: name input, class chip, "Boshlash" → `POST /api/students` (offline: local id + queue) → `/diagnostic`.
-- [ ] `/diagnostic`: one question per screen, 4 big choice buttons (letters a–d), no right/wrong shown (it is a test), auto-advance 400 ms after tap with a page transition; progress "Savol N" + soft bar; rotating encouragement microcopy; resumes after reload. After the last question: 1.5 s "Bilim xaritang chizilmoqda…" interstitial → `/result`.
-- [ ] Every answer: `answerDiagnostic` → `buildSnapshot` → save locally → `queueProgress`.
-- [ ] Screenshots at 390 and 1440; fix; commit, push.
+- [x] `/start?class=6a`: name input, class chip, "Boshlash" → `POST /api/students` (offline: local id + queue) → `/diagnostic`.
+- [x] `/diagnostic`: one question per screen, 4 big choice buttons (letters a–d), no right/wrong shown (it is a test), auto-advance 400 ms after tap with a page transition; progress "Savol N" + soft bar; rotating encouragement microcopy; resumes after reload. After the last question: 1.5 s "Bilim xaritang chizilmoqda…" interstitial → `/result`.
+- [x] Every answer: `answerDiagnostic` → `buildSnapshot` → save locally → `queueProgress`.
+- [x] Screenshots at 390 and 1440; fix; commit, push.
 
 ### A6. Result screen with the knowledge map reveal (the hero) — target T+15h
 **Needs:** A5.
