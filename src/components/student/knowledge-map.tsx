@@ -282,7 +282,7 @@ export function KnowledgeMap({
               textAnchor="middle"
               fontSize={LABEL_SIZE}
               fontWeight={isRoot ? 700 : 600}
-              fill={isRoot ? "var(--red-pen)" : "var(--ink)"}
+              fill={isRoot ? "var(--red-pen-strong)" : "var(--ink)"}
             >
               {n.lines.map((l, i) => (
                 <tspan key={i} x={n.x} dy={i === 0 ? 0 : LABEL_SIZE + 2}>

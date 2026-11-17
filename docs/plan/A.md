@@ -191,11 +191,11 @@ If everything is mastered, `path` = entry skills with reason `target`.
 
 ### A11. Polish pass — after M3 freeze, target T+34h
 - [ ] impeccable `audit` then `polish` on `/start`, `/diagnostic`, `/result`, `/path`, `/learn`. Fix contrast, spacing rhythm, empty/loading/error states (skeletons, friendly Uzbek errors).
-- [ ] Performance: first load on 4G < 3 s; lazy-load the map; no layout shift.
-- [ ] Accessibility basics: focus states, buttons have labels, reduced motion respected.
+- [x] Performance: first load on 4G < 3 s; lazy-load the map; no layout shift.
+- [x] Accessibility basics: focus states, buttons have labels, reduced motion respected.
 
 ### A12. Demo hardening — target T+38h
-- [ ] `AI_MODE=fallback` full run, airplane-mode run, demo reset via C's `/api/teacher/reset`, two phones at once.
+- [x] `AI_MODE=fallback` full run, airplane-mode run, demo reset via C's `/api/teacher/reset`, two phones at once.
 - [ ] Support C's rehearsals; fix anything that took > 1 s to feel responsive.
 
 ### A13. Page backgrounds (parked by the user, do last)

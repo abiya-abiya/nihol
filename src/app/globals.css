@@ -14,6 +14,7 @@
   --color-ink: var(--ink);
   --color-ink-soft: var(--ink-soft);
   --color-red-pen: var(--red-pen);
+  --color-red-pen-strong: var(--red-pen-strong);
   --color-mastered: var(--mastered);
   --color-shaky: var(--shaky);
   --color-gap: var(--gap);
@@ -81,6 +82,7 @@
   --ink-soft: #4a5785;
   --ink-wash: #eaeef8;
   --red-pen: #e5484d;
+  --red-pen-strong: #c2333a; /* filled chips with white text (AA) */
   --mastered: #2f9e5b;
   --shaky: #f0a30a;
   --gap: #e5484d;

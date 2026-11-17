@@ -112,7 +112,7 @@ export function PathStem({
               )}
             >
               {step.reason === "root-gap" && (
-                <span className="bg-red-pen inline-block rounded-full px-2 py-0.5 text-[11px] font-bold text-white">Ildiz</span>
+                <span className="bg-red-pen-strong inline-block rounded-full px-2 py-0.5 text-[11px] font-bold text-white">Ildiz</span>
               )}
               {step.reason === "target" && (
                 <span className="bg-ink-wash text-ink inline-block rounded-full px-2 py-0.5 text-[11px] font-bold">Maqsad</span>

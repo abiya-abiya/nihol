@@ -6,19 +6,19 @@ import "./globals.css";
 
 const unbounded = Unbounded({
   variable: "--font-unbounded",
-  subsets: ["latin", "latin-ext"],
-  weight: ["500", "600", "700", "800"],
+  subsets: ["latin"],
+  weight: ["600", "700", "800"],
 });
 
 const onest = Onest({
   variable: "--font-onest",
-  subsets: ["latin", "latin-ext"],
+  subsets: ["latin"],
 });
 
 const caveat = Caveat({
   variable: "--font-caveat",
-  subsets: ["latin", "latin-ext"],
-  weight: ["600", "700"],
+  subsets: ["latin"],
+  weight: ["700"],
 });
 
 export const metadata: Metadata = {

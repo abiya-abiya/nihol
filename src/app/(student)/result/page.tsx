@@ -122,7 +122,7 @@ export default function ResultPage() {
                       <span
                         className={
                           i === trace.chain.length - 1
-                            ? "bg-red-pen rounded-full px-2.5 py-1 font-semibold text-white"
+                            ? "bg-red-pen-strong rounded-full px-2.5 py-1 font-semibold text-white"
                             : "bg-ink-wash rounded-full px-2.5 py-1 font-medium"
                         }
                       >
