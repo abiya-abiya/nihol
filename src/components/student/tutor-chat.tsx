@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { MathText } from "@/components/brand/math-text";
 import { Button } from "@/components/ui/button";
 import { Drawer, DrawerContent, DrawerDescription, DrawerHeader, DrawerTitle } from "@/components/ui/drawer";
+import { fallbackChat } from "@/lib/ai/fallback";
 import type { Question, SkillId } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { safePartial } from "./tutor-panel";
@@ -42,10 +43,19 @@ export function TutorChat({
     setMsgs(history);
     setInput("");
     const apiMessages = history.slice(-10);
-    void stream.start("/api/tutor/chat", { skillId, question, messages: apiMessages }, (full) => {
-      setMsgs((m) => [...m, { role: "assistant", content: full }]);
-      stream.setText("");
-    });
+    void stream
+      .start("/api/tutor/chat", { skillId, question, messages: apiMessages }, (full) => {
+        setMsgs((m) => [...m, { role: "assistant", content: full }]);
+        stream.setText("");
+      })
+      .then(() => {
+        // Network failure: answer locally instead of leaving the student without a reply.
+        setMsgs((m) =>
+          m[m.length - 1]?.role === "user"
+            ? [...m, { role: "assistant", content: fallbackChat(skillId, question) }]
+            : m,
+        );
+      });
   }
 
   return (

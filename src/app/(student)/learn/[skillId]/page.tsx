@@ -15,6 +15,7 @@ import { QuestionCard } from "@/components/student/question-card";
 import { SkillComplete } from "@/components/student/skill-complete";
 import { TutorChat } from "@/components/student/tutor-chat";
 import { TutorPanel } from "@/components/student/tutor-panel";
+import { fallbackExplanation } from "@/lib/ai/fallback";
 import { useTextStream } from "@/components/student/use-text-stream";
 import { Button } from "@/components/ui/button";
 import { Skeleton } from "@/components/ui/skeleton";
@@ -182,7 +183,11 @@ export default function LearnPage() {
             )}
 
             {picked && picked !== q.correct && (
-              <TutorPanel text={explain.text} loading={explain.loading} onAsk={() => setChatOpen(true)} />
+              <TutorPanel
+                text={explain.error && !explain.text ? fallbackExplanation(q, picked) : explain.text}
+                loading={explain.loading}
+                onAsk={() => setChatOpen(true)}
+              />
             )}
 
             {picked && picked === q.correct && (
