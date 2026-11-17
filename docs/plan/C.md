@@ -62,7 +62,7 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 
 **Interfaces (produces):** `buildDemoSeed(now?: Date): SeedData` — deterministic.
 
-- [ ] Class `6a` "6-A sinf", teacher "Dilnoza Karimova" (fictional).
+- [x] Class `6a` "6-A sinf", teacher "Dilnoza Karimova" (fictional).
   24 students with common Uzbek first names + surname initial. Patterns:
   7 with root gap `lcm` (trace through `frac-common-denom`, `frac-add-diff`),
   5 with root `frac-concept`, 4 with `mixed-convert` misconception on
