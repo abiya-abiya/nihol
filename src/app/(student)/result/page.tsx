@@ -69,8 +69,8 @@ export default function ResultPage() {
   }
 
   return (
-    <div className="flex flex-1 flex-col gap-4">
-      <header className="flex items-center gap-3 pt-1">
+    <div className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-4 lg:grid lg:max-w-none lg:grid-cols-[minmax(0,1.3fr)_minmax(0,1fr)] lg:content-start lg:items-start lg:gap-x-8">
+      <header className="flex items-center gap-3 pt-1 lg:col-span-2">
         <LogoMark size={30} />
         <div className="min-w-0">
           <h1 className="text-xl leading-tight font-bold">{student.name}ning bilim xaritasi</h1>
@@ -78,8 +78,9 @@ export default function ResultPage() {
         </div>
       </header>
 
-      <div className="sheet relative overflow-hidden px-1 pt-2 pb-1">
-        <KnowledgeMap graph={graph} snapshot={snap} mode="reveal" onRevealDone={onRevealDone} />
+      <div className="space-y-3">
+      <div className="sheet relative overflow-hidden px-1 pt-2 pb-1 lg:px-4 lg:pt-4">
+        <KnowledgeMap graph={graph} snapshot={snap} mode="reveal" onRevealDone={onRevealDone} className="lg:mx-auto lg:h-[min(74dvh,820px)] lg:w-auto lg:max-w-full" />
       </div>
 
       <ul className="flex flex-wrap gap-x-4 gap-y-1.5 px-1 text-xs" aria-label="Belgilar">
@@ -90,7 +91,14 @@ export default function ResultPage() {
           </li>
         ))}
       </ul>
+      </div>
 
+      <div className="lg:sticky lg:top-6">
+      {!revealed && (
+        <div className="text-muted-foreground hidden h-64 place-items-center rounded-3xl border-2 border-dashed border-grid text-center lg:grid">
+          Xarita chizilmoqda…
+        </div>
+      )}
       <AnimatePresence>
         {revealed && (
           <motion.section
@@ -161,6 +169,7 @@ export default function ResultPage() {
           </motion.section>
         )}
       </AnimatePresence>
+      </div>
     </div>
   );
 }

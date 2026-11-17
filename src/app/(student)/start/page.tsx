@@ -37,7 +37,7 @@ function StartForm() {
   }
 
   return (
-    <div className="flex flex-1 flex-col justify-center gap-8 py-8">
+    <div className="mx-auto flex w-full max-w-xl flex-1 flex-col justify-center gap-8 py-8">
       <FadeIn className="space-y-5">
         <LogoMark size={56} />
         <h1 className="text-[2.1rem] leading-[1.12] font-bold sm:text-5xl">Bilimingning ildizini topamiz</h1>

@@ -71,7 +71,7 @@ export default function PathPage() {
   }
 
   return (
-    <div className="flex flex-1 flex-col gap-5">
+    <div className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-5">
       <header className="flex items-center gap-3 pt-1">
         <LogoMark size={30} />
         <div className="min-w-0 flex-1">

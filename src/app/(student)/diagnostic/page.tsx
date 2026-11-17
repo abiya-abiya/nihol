@@ -124,7 +124,7 @@ export default function DiagnosticPage() {
   const progress = Math.min(0.96, state.count / Math.min(MAX_DIAGNOSTIC_QUESTIONS, state.count + remaining + 1));
 
   return (
-    <div className="flex flex-1 flex-col gap-6">
+    <div className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-6">
       <header className="flex items-center gap-3 pt-1">
         <LogoMark size={30} />
         <div className="flex-1 space-y-1.5">

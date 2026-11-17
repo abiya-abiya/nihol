@@ -103,6 +103,19 @@ export default function LearnPage() {
     if (nowDone && !wasDone) window.setTimeout(() => setComplete(true), correct ? 900 : 2500);
   }
 
+  // Keyboard: 1-4 / a-d answer, Enter goes to the next question.
+  useEffect(() => {
+    if (phase !== "practice") return;
+    const onKey = (e: KeyboardEvent) => {
+      if ((e.target as HTMLElement)?.closest("input, textarea, [role=dialog]")) return;
+      const map: Record<string, ChoiceId> = { "1": "a", "2": "b", "3": "c", "4": "d", a: "a", b: "b", c: "c", d: "d" };
+      if (!picked && map[e.key.toLowerCase()]) answer(map[e.key.toLowerCase()]);
+      else if (picked && e.key === "Enter" && !complete) nextQuestion();
+    };
+    window.addEventListener("keydown", onKey);
+    return () => window.removeEventListener("keydown", onKey);
+  });
+
   if (!snap || !student || !skill) {
     return (
       <div className="space-y-4 pt-10">
@@ -123,7 +136,7 @@ export default function LearnPage() {
   const nextStep = snap.path.find((s) => s.status === "current");
 
   return (
-    <div className="flex flex-1 flex-col gap-5">
+    <div className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-5">
       <header className="flex items-center gap-2 pt-1">
         <Button asChild variant="ghost" size="icon" className="size-10 rounded-xl" aria-label="Yoʻlga qaytish">
           <Link href="/path">
