@@ -1,0 +1,82 @@
+[
+  {
+    "id": "lcm-01",
+    "skillId": "lcm",
+    "difficulty": 1,
+    "stem": "Qaysi son 4 ga ham, 6 ga ham qoldiqsiz bo'linadi?",
+    "choices": [
+      { "id": "a", "text": "16" },
+      { "id": "b", "text": "2", "misconceptionId": "lcm-gcd-swap" },
+      { "id": "c", "text": "12" },
+      { "id": "d", "text": "18" }
+    ],
+    "correct": "c",
+    "explanation": "12 : 4 = 3 va 12 : 6 = 2, demak 12 ikkala songa ham bo'linadi. 16 soni 6 ga, 18 soni 4 ga bo'linmaydi. 2 esa 4 va 6 ning bo'luvchisi, karralisi emas.",
+    "hint": "Har bir sonni 4 ga va 6 ga bo'lib ko'r: qoldiq chiqmasligi kerak.",
+    "source": "bank"
+  },
+  {
+    "id": "lcm-02",
+    "skillId": "lcm",
+    "difficulty": 2,
+    "stem": "6 va 8 sonlarining EKUKini top.",
+    "choices": [
+      { "id": "a", "text": "2", "misconceptionId": "lcm-gcd-swap" },
+      { "id": "b", "text": "24" },
+      { "id": "c", "text": "48", "misconceptionId": "lcm-is-product" },
+      { "id": "d", "text": "14" }
+    ],
+    "correct": "b",
+    "explanation": "6 ning karralilari: 6, 12, 18, **24**, 30… 8 ning karralilari: 8, 16, **24**, 32… Ikkalasida birinchi uchraydigan son 24. Demak, EKUK(6; 8) = 24.",
+    "hint": "8 ning karralilarini ketma-ket yoz va ulardan qaysi biri 6 ga bo'linishini tekshir.",
+    "source": "bank"
+  },
+  {
+    "id": "lcm-03",
+    "skillId": "lcm",
+    "difficulty": 2,
+    "stem": "EKUK(4; 10) nechaga teng?",
+    "choices": [
+      { "id": "a", "text": "40", "misconceptionId": "lcm-is-product" },
+      { "id": "b", "text": "10" },
+      { "id": "c", "text": "2", "misconceptionId": "lcm-gcd-swap" },
+      { "id": "d", "text": "20" }
+    ],
+    "correct": "d",
+    "explanation": "10 ning karralilari: 10, **20**, 30… 10 soni 4 ga bo'linmaydi, 20 esa bo'linadi: 20 : 4 = 5. Demak, EKUK(4; 10) = 20.",
+    "hint": "Kattaroq son 10 dan boshla: uning karralilaridan qaysi biri birinchi bo'lib 4 ga bo'linadi?",
+    "source": "bank"
+  },
+  {
+    "id": "lcm-04",
+    "skillId": "lcm",
+    "difficulty": 3,
+    "stem": "EKUK(12; 18) ni top.",
+    "choices": [
+      { "id": "a", "text": "36" },
+      { "id": "b", "text": "6", "misconceptionId": "lcm-gcd-swap" },
+      { "id": "c", "text": "72" },
+      { "id": "d", "text": "216", "misconceptionId": "lcm-is-product" }
+    ],
+    "correct": "a",
+    "explanation": "18 ning karralilari: 18, **36**, 54… 18 soni 12 ga bo'linmaydi, 36 esa bo'linadi: 36 : 12 = 3. Demak, EKUK(12; 18) = 36. 72 ham umumiy karrali, lekin eng kichigi emas.",
+    "hint": "18 ning karralilarini ketma-ket tekshir: qaysi biri birinchi bo'lib 12 ga bo'linadi?",
+    "source": "bank"
+  },
+  {
+    "id": "lcm-05",
+    "skillId": "lcm",
+    "difficulty": 3,
+    "stem": "Bekatdan bir avtobus har 6 daqiqada, ikkinchisi har 9 daqiqada jo'naydi. Soat 8:00 da ular birga jo'nadi. Keyingi safar ular soat nechada birga jo'naydi?",
+    "choices": [
+      { "id": "a", "text": "8:03", "misconceptionId": "lcm-gcd-swap" },
+      { "id": "b", "text": "8:15" },
+      { "id": "c", "text": "8:18" },
+      { "id": "d", "text": "8:54", "misconceptionId": "lcm-is-product" }
+    ],
+    "correct": "c",
+    "explanation": "Avtobuslar 6 ga ham, 9 ga ham bo'linadigan daqiqada birga jo'naydi. 9 ning karralilari: 9, **18**… 18 : 6 = 3. Demak, EKUK(6; 9) = 18 va ular 8:18 da birga jo'naydi.",
+    "hint": "Bu daqiqalar soni 6 ga ham, 9 ga ham bo'linishi kerak. Eng kichigi qaysi?",
+    "source": "bank"
+  }
+]

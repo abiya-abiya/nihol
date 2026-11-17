@@ -1,0 +1,82 @@
+[
+  {
+    "id": "frac-add-diff-01",
+    "skillId": "frac-add-diff",
+    "difficulty": 1,
+    "stem": "Hisobla: [[1/2]] + [[1/4]]",
+    "choices": [
+      { "id": "a", "text": "[[2/6]]", "misconceptionId": "add-num-den" },
+      { "id": "b", "text": "[[3/4]]" },
+      { "id": "c", "text": "[[2/4]]", "misconceptionId": "common-denom-keep-num" },
+      { "id": "d", "text": "[[2/8]]" }
+    ],
+    "correct": "b",
+    "explanation": "Umumiy maxraj 4. [[1/2]] = [[2/4]], chunki surat va maxrajni 2 ga ko'paytiramiz. Endi suratlarni qo'shamiz: [[2/4]] + [[1/4]] = [[3/4]].",
+    "hint": "Avval [[1/2]] ni maxraji 4 bo'lgan kasrga aylantir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-add-diff-02",
+    "skillId": "frac-add-diff",
+    "difficulty": 2,
+    "stem": "Hisobla: [[1/4]] + [[1/6]]",
+    "choices": [
+      { "id": "a", "text": "[[2/12]]", "misconceptionId": "common-denom-keep-num" },
+      { "id": "b", "text": "[[5/24]]" },
+      { "id": "c", "text": "[[2/10]]", "misconceptionId": "add-num-den" },
+      { "id": "d", "text": "[[5/12]]" }
+    ],
+    "correct": "d",
+    "explanation": "EKUK(4; 6) = 12. [[1/4]] = [[3/12]] (surat va maxraj 3 ga ko'paytirildi), [[1/6]] = [[2/12]] (2 ga ko'paytirildi). Suratlarni qo'shamiz: [[3/12]] + [[2/12]] = [[5/12]].",
+    "hint": "Maxrajlarni qo'shib bo'lmaydi. Avval ikkala kasrni bir xil maxrajga keltir.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-add-diff-03",
+    "skillId": "frac-add-diff",
+    "difficulty": 2,
+    "stem": "Hisobla: [[3/4]] + [[1/6]]",
+    "choices": [
+      { "id": "a", "text": "[[11/12]]" },
+      { "id": "b", "text": "[[4/10]]", "misconceptionId": "add-num-den" },
+      { "id": "c", "text": "[[11/24]]" },
+      { "id": "d", "text": "[[4/12]]", "misconceptionId": "common-denom-keep-num" }
+    ],
+    "correct": "a",
+    "explanation": "EKUK(4; 6) = 12. [[3/4]] = [[9/12]], chunki 3 · 3 = 9. [[1/6]] = [[2/12]], chunki 1 · 2 = 2. Suratlarni qo'shamiz: [[9/12]] + [[2/12]] = [[11/12]].",
+    "hint": "4 ga ham, 6 ga ham bo'linadigan eng kichik sonni maxraj qilib ol.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-add-diff-04",
+    "skillId": "frac-add-diff",
+    "difficulty": 3,
+    "stem": "Hisobla: [[7/12]] + [[3/8]]",
+    "choices": [
+      { "id": "a", "text": "[[10/24]]", "misconceptionId": "common-denom-keep-num" },
+      { "id": "b", "text": "[[23/24]]" },
+      { "id": "c", "text": "[[23/48]]" },
+      { "id": "d", "text": "[[10/20]]", "misconceptionId": "add-num-den" }
+    ],
+    "correct": "b",
+    "explanation": "EKUK(12; 8) = 24. [[7/12]] = [[14/24]], chunki 7 · 2 = 14. [[3/8]] = [[9/24]], chunki 3 · 3 = 9. Suratlarni qo'shamiz: [[14/24]] + [[9/24]] = [[23/24]].",
+    "hint": "12 ning karralilaridan 8 ga bo'linadiganini top. Shu son umumiy maxraj bo'ladi.",
+    "source": "bank"
+  },
+  {
+    "id": "frac-add-diff-05",
+    "skillId": "frac-add-diff",
+    "difficulty": 3,
+    "stem": "Hisobla: [[5/6]] − [[3/8]]",
+    "choices": [
+      { "id": "a", "text": "[[11/48]]" },
+      { "id": "b", "text": "[[29/24]]" },
+      { "id": "c", "text": "[[11/24]]" },
+      { "id": "d", "text": "[[2/24]]", "misconceptionId": "common-denom-keep-num" }
+    ],
+    "correct": "c",
+    "explanation": "EKUK(6; 8) = 24. [[5/6]] = [[20/24]], chunki 5 · 4 = 20. [[3/8]] = [[9/24]], chunki 3 · 3 = 9. Suratlarni ayiramiz: [[20/24]] − [[9/24]] = [[11/24]].",
+    "hint": "Ayirishda ham avval umumiy maxraj kerak. 6 va 8 ning EKUKini top.",
+    "source": "bank"
+  }
+]

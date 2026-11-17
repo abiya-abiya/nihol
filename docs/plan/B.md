@@ -54,21 +54,21 @@ export const tutorExamples: TutorExample[]   // [] until B4
 ```
 Import each JSON file statically (one import per questions file) and cast to the types.
 
-- [ ] `graph.json`: all 17 skills from the overview table with real Uzbek
+- [x] `graph.json`: all 17 skills from the overview table with real Uzbek
   `title`, `short` (≤ 18 chars), `grade`, `prerequisites` exactly as listed, `description`; `entrySkills` as listed.
-- [ ] `misconceptions.json`: all ids from the overview with `skillIds`, `title`, `example`, `remedy`.
-- [ ] `glossary.json`: ~25 terms used in 5–6 grade fractions (check terminology against the current
+- [x] `misconceptions.json`: all ids from the overview with `skillIds`, `title`, `example`, `remedy`.
+- [x] `glossary.json`: ~25 terms used in 5–6 grade fractions (check terminology against the current
   Uzbek school textbooks; search the web: "6-sinf matematika darslik kasrlar", uzedu.uz / eduportal materials).
-- [ ] Questions for the demo chain skills `lcm`, `frac-common-denom`,
+- [x] Questions for the demo chain skills `lcm`, `frac-common-denom`,
   `frac-add-diff` (5 each: difficulty 1, 2, 2, 3, 3), `source: "bank"`.
-- [ ] `scripts/validate-content.ts` (run with `tsx`): zod-validate every
+- [x] `scripts/validate-content.ts` (run with `tsx`): zod-validate every
   file against the types; exit 1 with a readable list of problems. Checks:
   unique ids; question id prefix = skillId; exactly 4 choices with ids
   a–d; `correct` exists; choice texts unique; every `skillId`,
   prerequisite, `entrySkills` item and `misconceptionId` exists; graph is
   acyclic; `short` ≤ 18 chars; markup balanced (`[[` / `]]`, `**`);
   warn (not fail) when a skill has < 4 questions or no difficulty-2 question.
-- [ ] `npm run validate:content` passes. Commit `content: skeleton + validator`, push.
+- [ ] `npm run validate:content` passes. (Content validated with `npx tsx scripts/validate-content.ts`; tick after A1 adds the npm script.) Commit `content: skeleton + validator`, push.
   Tell the user: "B1 tayyor — A diagnostikani haqiqiy kontent bilan qura oladi."
 
 ### B2. Full question bank — target T+6h
