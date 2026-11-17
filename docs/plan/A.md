@@ -155,8 +155,8 @@ If everything is mastered, `path` = entry skills with reason `target`.
 
 **Files:** `src/app/(student)/path/page.tsx`, `src/components/student/path-stem.tsx`
 
-- [ ] Vertical stem that grows from the root (bottom) to the target (top); steps on a gentle S-curve; done = green leaf, current = glowing large button "Davom etish", locked = muted; tap current → `/learn/[skillId]`. Header: name, overall mastery `MasteryRing`, link "Xaritam" (static map in a sheet).
-- [ ] Screenshots, commit, push.
+- [x] Vertical stem that grows from the root (bottom) to the target (top); steps on a gentle S-curve; done = green leaf, current = glowing large button "Davom etish", locked = muted; tap current → `/learn/[skillId]`. Header: name, overall mastery `MasteryRing`, link "Xaritam" (static map in a sheet).
+- [x] Screenshots, commit, push.
 
 ### A8. AI tutor layer — target T+20h
 **Needs:** A1, B1 (glossary + misconceptions), ideally B4's examples file.
