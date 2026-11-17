@@ -145,10 +145,10 @@ If everything is mastered, `path` = entry skills with reason `target`.
 
 **Interfaces (produces):** `KnowledgeMap({ graph, snapshot, mode, highlightTrace, onSkillClick, className }: { graph: KnowledgeGraph; snapshot: StudentSnapshot; mode: "reveal" | "static"; highlightTrace?: boolean; onSkillClick?: (id: SkillId) => void; className?: string })` — C reuses it.
 
-- [ ] React Flow + dagre, `rankdir: "BT"` (roots at the bottom), custom skill node (short title + mastery ring, colour by level), fitView, gentle pan, no zoom buttons.
-- [ ] Reveal sequence (mode "reveal"): nodes rise in by rank bottom→top (stagger) → colours fill → trace edges draw from the failed entry skill down to the root (stroke-dashoffset, ~400 ms per edge) → root node pulses with a "Ildiz shu yerda" callout → bottom card slides up.
-- [ ] Bottom card: "Muammo *{target}*da emas — ildizi *{root}*da." plus the top misconception (title + example via `MathText`) + CTA "Shaxsiy yo'limni ko'rish" → `/path`. All-mastered case: celebration + "Murakkabroq mashqlar" CTA.
-- [ ] Use impeccable `animate` and motion-framer patterns. Record a short GIF/video of the reveal (playwright or screen capture) and check timing feels ~6–8 s total. Commit, push.
+- [x] React Flow + dagre, `rankdir: "BT"` (roots at the bottom), custom skill node (short title + mastery ring, colour by level), fitView, gentle pan, no zoom buttons.
+- [x] Reveal sequence (mode "reveal"): nodes rise in by rank bottom→top (stagger) → colours fill → trace edges draw from the failed entry skill down to the root (stroke-dashoffset, ~400 ms per edge) → root node pulses with a "Ildiz shu yerda" callout → bottom card slides up.
+- [x] Bottom card: "Muammo *{target}*da emas — ildizi *{root}*da." plus the top misconception (title + example via `MathText`) + CTA "Shaxsiy yo'limni ko'rish" → `/path`. All-mastered case: celebration + "Murakkabroq mashqlar" CTA.
+- [x] Use impeccable `animate` and motion-framer patterns. Record a short GIF/video of the reveal (playwright or screen capture) and check timing feels ~6–8 s total. Commit, push.
 
 ### A7. Personal path screen — target T+17h
 **Needs:** A6.

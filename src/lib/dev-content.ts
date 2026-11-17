@@ -41,9 +41,9 @@ export const graph: KnowledgeGraph = {
     S("frac-add-same", "Bir xil maxrajli kasrlarni qo'shish va ayirish", "Bir xil maxraj", 5, ["frac-concept"], "Maxraji bir xil kasrlarni qo'shadi va ayiradi."),
     S("frac-add-diff", "Har xil maxrajli kasrlarni qo'shish va ayirish", "Har xil maxraj", 6, ["frac-add-same", "frac-common-denom"], "Avval umumiy maxrajga keltirib, so'ng qo'shadi va ayiradi."),
     S("mixed-numbers", "Aralash sonlar", "Aralash son", 5, ["frac-concept", "nat-div"], "Aralash sonni noto'g'ri kasrga va aksincha aylantiradi."),
-    S("mixed-add", "Aralash sonlarni qo'shish va ayirish", "Aralash ±", 6, ["mixed-numbers", "frac-add-diff"], "Aralash sonlarni qo'shadi va ayiradi."),
-    S("frac-mul", "Kasrlarni ko'paytirish", "Ko'paytirish ·", 6, ["frac-simplify", "nat-mul"], "Kasrlarni ko'paytiradi va natijani qisqartiradi."),
-    S("frac-div", "Kasrlarni bo'lish", "Bo'lish :", 6, ["frac-mul"], "Bo'luvchining teskarisiga ko'paytirib kasrlarni bo'ladi."),
+    S("mixed-add", "Aralash sonlarni qo'shish va ayirish", "Aralash qo'shish", 6, ["mixed-numbers", "frac-add-diff"], "Aralash sonlarni qo'shadi va ayiradi."),
+    S("frac-mul", "Kasrlarni ko'paytirish", "Kasr ko'paytirish", 6, ["frac-simplify", "nat-mul"], "Kasrlarni ko'paytiradi va natijani qisqartiradi."),
+    S("frac-div", "Kasrlarni bo'lish", "Kasr bo'lish", 6, ["frac-mul"], "Bo'luvchining teskarisiga ko'paytirib kasrlarni bo'ladi."),
     S("frac-word", "Kasrlarga doir matnli masalalar", "Matnli masala", 6, ["frac-add-diff", "frac-mul"], "Hayotiy masalada kasrdan foydalanib javob topadi."),
   ],
 };
