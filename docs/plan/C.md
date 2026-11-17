@@ -77,11 +77,11 @@ the demo seed data, and the pitch (deck, script, Q&A, backup video).
 
 **Interfaces (produces):** `buildClassReport(repo: Repo, classId: string, now?: Date): Promise<ClassReport>`
 
-- [ ] `skillStats` per skill in topological order; `topRootGaps` sorted by
+- [x] `skillStats` per skill in topological order; `topRootGaps` sorted by
   student count; `topMisconceptions` from attempts; `recentAttempts` last
   20 with student names; `masteryAvg` = mean p over all skills.
-- [ ] `GET /api/teacher/report?classId=6a` (no caching: `dynamic = "force-dynamic"`), `POST /api/teacher/reset` → `repo.seedClass(buildDemoSeed())`.
-- [ ] curl check, commit, push.
+- [x] `GET /api/teacher/report?classId=6a` (no caching: `dynamic = "force-dynamic"`), `POST /api/teacher/reset` → `repo.seedClass(buildDemoSeed())`.
+- [x] curl check, commit, push.
 
 ### C5. Teacher dashboard `/teacher` — target T+16h
 **Needs:** C4; A2 for tokens/brand (start with shadcn defaults, restyle when A2 lands).

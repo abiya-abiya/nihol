@@ -70,7 +70,7 @@ const PROFILES: Profile[] = [
   { name: "Sanjar Po'latov", weak: [], hoursAgo: 0.6 },
 
   // 2 pupils: joined, diagnostic not finished.
-  { name: "Muslima Hamidova", weak: [], hoursAgo: 0.3, noSnapshot: true },
+  { name: "Muslima Hamidova", weak: ["frac-word"], hoursAgo: 0.3, noSnapshot: true },
   { name: "Javohir Usmonov", weak: [], hoursAgo: 0.15, noSnapshot: true },
 ];
 
@@ -98,14 +98,13 @@ export function buildDemoSeed(now: Date = new Date()): SeedData {
     const id = `seed-${classId}-${pad(i + 1)}`;
     const start = now.getTime() - p.hoursAgo * 3_600_000;
     const student = { id, name: p.name, classId, createdAt: new Date(start).toISOString() };
-    if (p.noSnapshot) {
-      students.push({ student, snapshot: null });
-      return;
-    }
-
     let n = 0;
     // 25–55 s per answer, deterministic per pupil.
-    const tsOf = (k: number) => new Date(start + 20_000 + k * (25_000 + ((i * 7 + k * 13) % 30) * 1000)).toISOString();
+    const tsOf = (k: number) => {
+      let t = start + 20_000;
+      for (let j = 1; j <= k; j++) t += 25_000 + ((i * 7 + j * 13) % 30) * 1000;
+      return new Date(t).toISOString();
+    };
     const record = (q: Question, choiceId: ChoiceId, mode: Attempt["mode"]) => {
       const choice = q.choices.find((c) => c.id === choiceId);
       attempts.push({
@@ -127,7 +126,11 @@ export function buildDemoSeed(now: Date = new Date()): SeedData {
       const choiceId = chooseAnswer(q, p, i + n);
       record(q, choiceId, "diagnostic");
       state = answerDiagnostic(state, graph, q, choiceId);
-      if (state.done) break;
+      if (state.done || (p.noSnapshot && n >= 3 - (i % 2))) break;
+    }
+    if (p.noSnapshot) {
+      students.push({ student, snapshot: null });
+      return;
     }
     let snapshot: StudentSnapshot = buildSnapshot(id, graph, state.skills, true, new Date(tsOf(n - 1)));
 
