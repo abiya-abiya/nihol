@@ -124,3 +124,10 @@ export const glossary: GlossaryEntry[] = [
   { term: "EKUB", definition: "eng katta umumiy bo'luvchi" },
 ];
 export const tutorExamples: TutorExample[] = [];
+
+/** B's deterministic generators replace this (src/engine/generators). */
+export function generateQuestion(skillId: SkillId, seed: number): Question | null {
+  void skillId;
+  void seed;
+  return null;
+}

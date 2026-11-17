@@ -54,14 +54,15 @@ export function ChoiceButton({
       </span>
       <MathText as="span" text={text} className="min-w-0 flex-1 leading-snug break-words" />
       {state === "wrong" && (
-        <svg className="pointer-events-none absolute inset-0 h-full w-full" viewBox="0 0 100 40" preserveAspectRatio="none" aria-hidden>
-          <motion.path
-            d="M4 27 C 30 21, 62 25, 96 14"
-            fill="none"
+        <svg className="pointer-events-none absolute inset-0 h-full w-full" aria-hidden>
+          <motion.line
+            x1="4%"
+            y1="66%"
+            x2="96%"
+            y2="38%"
             stroke="var(--red-pen)"
-            strokeWidth="2.2"
+            strokeWidth={2.4}
             strokeLinecap="round"
-            vectorEffect="non-scaling-stroke"
             initial={{ pathLength: reduce ? 1 : 0 }}
             animate={{ pathLength: 1 }}
             transition={{ duration: 0.32, ease: "easeOut" }}

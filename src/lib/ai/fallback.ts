@@ -6,7 +6,7 @@ export function fallbackExplanation(q: Question, choiceId: ChoiceId): string {
   const mId = q.choices.find((c) => c.id === choiceId)?.misconceptionId;
   const m = mId ? misconceptionsById[mId] : undefined;
   const parts = [];
-  if (choiceId !== q.correct && m) parts.push(`Ehtimol, xato shu yerda: **${m.title.toLowerCase()}**. ${m.remedy}`);
+  if (choiceId !== q.correct && m) parts.push(`Ehtimol, xato shu yerda: **${m.title}**. ${m.remedy}`);
   parts.push(q.explanation);
   if (choiceId !== q.correct) parts.push(`Maslahat: ${q.hint}`);
   return parts.join("\n");

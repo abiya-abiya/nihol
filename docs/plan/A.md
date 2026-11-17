@@ -178,10 +178,10 @@ If everything is mastered, `path` = entry skills with reason `target`.
 
 **Files:** `src/app/(student)/learn/[skillId]/page.tsx`, `src/components/student/{lesson-card,practice-card,tutor-panel,tutor-chat,skill-complete}.tsx`
 
-- [ ] Lesson card: skill title, why it matters (`description`), "Sen shunday o'ylagan bo'lishing mumkin" card from the observed misconception (example + remedy), one worked example (a bank question with its explanation). CTA "Mashq qilish".
-- [ ] Practice loop with `pickPracticeQuestion` / `answerPractice`: correct → green state, small confetti, ring animates (NumberFlow); wrong → red-pen strike on the chosen answer + shake, then the tutor panel streams `/api/tutor/explain` with a typewriter feel. "Nega?" opens the chat drawer (`/api/tutor/chat`). Optional hint button shows `hint`.
-- [ ] Completion: full-screen "{skill} o'zlashtirildi!" + big confetti + mini map with the node turning green → "Keyingi qadam".
-- [ ] Every answer saved locally + `queueProgress`. Screenshots, commit, push.
+- [x] Lesson card: skill title, why it matters (`description`), "Sen shunday o'ylagan bo'lishing mumkin" card from the observed misconception (example + remedy), one worked example (a bank question with its explanation). CTA "Mashq qilish".
+- [x] Practice loop with `pickPracticeQuestion` / `answerPractice`: correct → green state, small confetti, ring animates (NumberFlow); wrong → red-pen strike on the chosen answer + shake, then the tutor panel streams `/api/tutor/explain` with a typewriter feel. "Nega?" opens the chat drawer (`/api/tutor/chat`). Optional hint button shows `hint`.
+- [x] Completion: full-screen "{skill} o'zlashtirildi!" + big confetti + mini map with the node turning green → "Keyingi qadam".
+- [x] Every answer saved locally + `queueProgress`. Screenshots, commit, push.
 
 ### A10. Integration on the deployed URL — milestone M2, target T+26h
 **Needs:** C1 deploy, C5 dashboard.
