@@ -24,7 +24,9 @@ function StartForm() {
   useEffect(() => {
     const student = getLocalStudent();
     if (student) setExisting({ student, done: !!loadSnapshot()?.diagnosticDone });
-  }, []);
+    // Warm the whole student flow while we are surely online.
+    for (const r of ["/diagnostic", "/result", "/path"]) router.prefetch(r);
+  }, [router]);
 
   async function start(e: React.FormEvent) {
     e.preventDefault();

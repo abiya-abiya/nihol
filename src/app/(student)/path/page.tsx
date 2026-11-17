@@ -32,6 +32,7 @@ export default function PathPage() {
     }
     setStudent(s);
     setSnap(sn);
+    for (const step of sn.path) router.prefetch(`/learn/${step.skillId}`);
   }, [router]);
 
   useEffect(() => {

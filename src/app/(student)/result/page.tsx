@@ -48,6 +48,8 @@ export default function ResultPage() {
     }
     setStudent(s);
     setSnap(sn);
+    router.prefetch("/path");
+    for (const step of sn.path) router.prefetch(`/learn/${step.skillId}`);
   }, [router]);
 
   const trace = snap?.traces[0] ?? null;

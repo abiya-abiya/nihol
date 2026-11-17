@@ -52,6 +52,9 @@ export default function DiagnosticPage() {
     }
     setStudent(s);
     setState(loadDiagnostic() ?? startDiagnostic(graph));
+    // Warm the next screens so the flow survives losing the network mid-test.
+    router.prefetch("/result");
+    router.prefetch("/path");
   }, [router]);
 
   const question = useMemo(() => (state ? nextDiagnosticQuestion(state, questionsBySkill) : null), [state]);
