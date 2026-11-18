@@ -128,12 +128,12 @@ export async function resolveClassId(id: string | undefined): Promise<string | u
   const all = await listClasses();
   return all.find((c) => c.id === id)?.id ?? all[0]?.id;
 }
-export async function addClass(input: { name: string; grade?: number }): Promise<ClassGroup> {
+export async function addClass(input: { name: string; grade?: number; teacherId?: string }): Promise<ClassGroup> {
   const all = await listClasses();
   const base = classSlug(input.name);
   let id = base;
   for (let i = 2; all.some((c) => c.id === id); i++) id = `${base}-${i}`;
-  const c: ClassGroup = { id, name: input.name, grade: input.grade, createdAt: new Date().toISOString() };
+  const c: ClassGroup = { id, name: input.name, grade: input.grade, createdAt: new Date().toISOString(), teacherId: input.teacherId };
   await setDoc(K.classes, [...all, c]);
   return c;
 }

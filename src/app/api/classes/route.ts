@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
 import { guard, isResponse } from "@/lib/api/guard";
+import { teacherOfClass } from "@/lib/auth-demo";
 import { addClass, classStats, getUsers, listAssignments, listClasses, resolveClassId } from "@/lib/store";
 
 export const dynamic = "force-dynamic";
@@ -17,7 +18,7 @@ export async function GET() {
   ]);
   return NextResponse.json({
     activeId,
-    classes: classes.map((c) => ({ ...c, ...classStats(c.id, users, assignments) })),
+    classes: classes.filter((c) => (teacherOfClass(c) ?? s.id) === s.id).map((c) => ({ ...c, ...classStats(c.id, users, assignments) })),
   });
 }
 
@@ -35,6 +36,6 @@ export async function POST(req: Request) {
   if ((await listClasses()).some((c) => c.name.toLowerCase() === name.toLowerCase())) {
     return NextResponse.json({ error: "Bu nomli sinf allaqaçon bor" }, { status: 409 });
   }
-  const created = await addClass({ name, grade: grade ?? undefined });
+  const created = await addClass({ name, grade: grade ?? undefined, teacherId: s.id });
   return NextResponse.json({ class: { ...created, students: 0, parents: 0, tests: 0 } });
 }

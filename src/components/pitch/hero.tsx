@@ -54,7 +54,7 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
             </Button>
           </div>
           <p className="text-ink-soft mt-4 text-sm">
-            5 ta fan · 3 ta rol: öqituvçi, öquvçi, ota‑ona · internet uzilsa ham işlaydi
+            5 ta fan · 4 ta rol: maktab, öqituvçi, öquvçi, ota‑ona · internet uzilsa ham işlaydi
           </p>
         </div>
 
@@ -72,8 +72,8 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
             />
             <QrCard
               url={studentUrl}
-              title="Sinab köriş"
-              caption="Telefoningiz kamerasi bilan skanerlang"
+              title="Telefonda oçiş"
+              caption="Kamerangiz bilan skanerlang"
               size={256}
               className="w-[268px] 2xl:w-[330px]"
               qrClassName="w-[196px] 2xl:w-[256px]"

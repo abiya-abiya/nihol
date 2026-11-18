@@ -26,7 +26,9 @@ export function PeriodStats({
   students,
   submissions,
   history,
+  labels = { entity: "Öquvçi", active: "Faol öquvçilar", table: "Öquvçilar statistikasi" },
 }: {
+  labels?: { entity: string; active: string; table: string };
   subject: SubjectMeta;
   students: Array<{ id: string; name: string }>;
   submissions: Submission[];
@@ -83,7 +85,7 @@ export function PeriodStats({
             </span>
           )}
         </Stat>
-        <Stat label="Faol öquvçilar">
+        <Stat label={labels.active}>
           <span className="font-display tabular text-[1.6rem] leading-none font-bold">
             {s.active}
             <span className="text-ink-soft text-base">/{students.length}</span>
@@ -114,10 +116,10 @@ export function PeriodStats({
 
       <div className="max-h-[360px] overflow-y-auto">
         <table className="w-full text-sm">
-          <caption className="sr-only">Öquvçilar statistikasi</caption>
+          <caption className="sr-only">{labels.table}</caption>
           <thead className="text-ink-soft sticky top-0 bg-white text-left text-[0.8rem]">
             <tr>
-              <th className="py-1.5 pr-2 font-semibold">Öquvçi</th>
+              <th className="py-1.5 pr-2 font-semibold">{labels.entity}</th>
               <th className="px-2 text-right font-semibold">Testlar</th>
               <th className="px-2 text-right font-semibold">Ball</th>
               <th className="pl-2 text-right font-semibold">Ösiş</th>

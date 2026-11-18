@@ -230,13 +230,6 @@ export function TeacherBand({ teacherUrl }: { teacherUrl: string }) {
               ))}
             </div>
           </div>
-          <QrCard
-            url={teacherUrl}
-            title="Öqituvçi paneli"
-            caption="Proyektorda yoki noutbukda oçing"
-            size={132}
-            className="hidden w-[200px] shrink-0 lg:flex"
-          />
         </div>
       </div>
     </section>

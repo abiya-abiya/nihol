@@ -5,6 +5,7 @@ const AREAS: Array<[string, string]> = [
   ["/teacher", "teacher"],
   ["/student", "student"],
   ["/parent", "parent"],
+  ["/org", "org"],
 ];
 
 function roleOf(token: string | undefined): string | null {
@@ -28,4 +29,4 @@ export function proxy(req: NextRequest) {
   return NextResponse.redirect(url);
 }
 
-export const config = { matcher: ["/teacher/:path*", "/student/:path*", "/parent/:path*"] };
+export const config = { matcher: ["/teacher/:path*", "/student/:path*", "/parent/:path*", "/org/:path*", "/org"] };

@@ -1,6 +1,6 @@
 "use client";
 
-import { ArrowRight, GraduationCap, HeartHandshake, Loader2, School } from "lucide-react";
+import { ArrowRight, Building2, GraduationCap, HeartHandshake, Loader2, School } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useRouter, useSearchParams } from "next/navigation";
 import { Suspense, useState } from "react";
@@ -13,6 +13,7 @@ const DEMO = [
   { login: "ustoz", password: "ustoz123", role: "Öqituvçi", who: "Dilnoza Karimova", icon: School, tint: "#ffe45c" },
   { login: "jasur", password: "jasur123", role: "Öquvçi", who: "Jasur Toşmatov, 6-A", icon: GraduationCap, tint: "#7fd1a4" },
   { login: "ona", password: "ona123", role: "Ota-ona", who: "Jasurning onasi", icon: HeartHandshake, tint: "#ff8a7a" },
+  { login: "maktab", password: "maktab123", role: "Taşkilot", who: "45-maktab maʼmuriyati", icon: Building2, tint: "#8fb7ff" },
 ] as const;
 
 function LoginForm() {
@@ -23,16 +24,19 @@ function LoginForm() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState<string | null>(null);
   const [welcome, setWelcome] = useState<string | null>(null);
+  const [mode, setMode] = useState<"login" | "register">("login");
+  const [fullName, setFullName] = useState("");
 
   async function submit(l = login, p = password) {
     if (busy) return;
     setBusy(true);
     setError(null);
     try {
-      const res = await fetch("/api/auth/login", {
+      const reg = mode === "register" && l === login;
+      const res = await fetch(reg ? "/api/auth/register" : "/api/auth/login", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ login: l, password: p }),
+        body: JSON.stringify(reg ? { name: fullName, login: l, password: p } : { login: l, password: p }),
       });
       const data = await res.json();
       if (!res.ok) throw new Error(data.error ?? "Kiriş amalga oşmadi");
@@ -108,6 +112,17 @@ function LoginForm() {
                 }}
                 className="sheet space-y-3 p-5"
               >
+                {mode === "register" && (
+                  <label className="block space-y-1.5">
+                    <span className="text-sm font-semibold">Ism va familiya</span>
+                    <input
+                      value={fullName}
+                      onChange={(e) => setFullName(e.target.value)}
+                      autoComplete="name"
+                      className="border-input focus-visible:border-ink h-12 w-full rounded-xl border-2 bg-card px-3 text-lg outline-none"
+                    />
+                  </label>
+                )}
                 <label className="block space-y-1.5">
                   <span className="text-sm font-semibold">Login</span>
                   <input
@@ -132,9 +147,19 @@ function LoginForm() {
                     {error}
                   </p>
                 )}
-                <Button type="submit" disabled={busy || !login || !password} className="h-12 w-full rounded-xl text-base font-semibold">
-                  {busy ? <Loader2 className="size-5 animate-spin" /> : "Kiriş"}
+                <Button type="submit" disabled={busy || !login || !password || (mode === "register" && fullName.trim().length < 3)} className="h-12 w-full rounded-xl text-base font-semibold">
+                  {busy ? <Loader2 className="size-5 animate-spin" /> : mode === "register" ? "Röyxatdan ötiş" : "Kiriş"}
                 </Button>
+                <button
+                  type="button"
+                  onClick={() => {
+                    setMode((m) => (m === "login" ? "register" : "login"));
+                    setError(null);
+                  }}
+                  className="text-ink-soft hover:text-ink w-full text-center text-sm font-semibold underline-offset-4 hover:underline"
+                >
+                  {mode === "login" ? "Öqituvçi sifatida röyxatdan ötiş (taşkilotsiz)" : "Hisobim bor — kiriş"}
+                </button>
               </form>
             </FadeIn>
           </motion.div>

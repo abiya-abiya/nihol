@@ -250,7 +250,13 @@ export interface WorksheetRequest {
 // v2: multi-subject teacher tool (see docs/plan/00-overview.md §4)
 // =====================================================================
 
-export type Role = "teacher" | "student" | "parent";
+export type Role = "teacher" | "student" | "parent" | "org";
+
+/** A school (tashkilot) that owns teacher accounts. Teachers may also have no organization. */
+export interface Organization {
+  id: string;
+  name: string;
+}
 
 /** Demo-grade account. Plain demo passwords are allowed for the hackathon only. */
 export interface User {
@@ -260,6 +266,8 @@ export interface User {
   role: Role;
   name: string;
   classId?: string;
+  /** teachers and org admins: the organization; empty = independent teacher */
+  orgId?: string;
   /** parent accounts: the child's student id */
   childId?: string;
 }
@@ -271,6 +279,7 @@ export interface SessionUser {
   name: string;
   classId?: string;
   childId?: string;
+  orgId?: string;
 }
 
 export interface SubjectMeta {
@@ -309,6 +318,8 @@ export interface ClassGroup {
   name: string; // "6-A sinf"
   grade?: number;
   createdAt: string;
+  /** the class teacher; missing = demo default (see teacherOfClass) */
+  teacherId?: string;
 }
 
 export interface Assignment {

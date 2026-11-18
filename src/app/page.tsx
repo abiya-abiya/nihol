@@ -28,7 +28,7 @@ export default async function Home() {
   return (
     <main className="theme-doska flex flex-col overflow-x-clip">
       <Backdrop variant="doska" formulas={false} />
-      <Hero studentUrl={`${origin}/start?class=${classId}`} />
+      <Hero studentUrl={`${origin}/`} />
       <Subjects subjects={subjects.map((s) => s.meta)} />
       <HowItWorks />
       <Roles />

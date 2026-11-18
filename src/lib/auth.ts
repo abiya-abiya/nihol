@@ -14,7 +14,7 @@ const sign = (payload: string) => createHmac("sha256", SECRET).update(payload).d
 export const SESSION_COOKIE_OPTIONS = { httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 24 * 7 } as const;
 
 export function encodeSession(u: SessionUser | User): string {
-  const payload = b64(JSON.stringify({ id: u.id, role: u.role, name: u.name, classId: u.classId, childId: u.childId }));
+  const payload = b64(JSON.stringify({ id: u.id, role: u.role, name: u.name, classId: u.classId, childId: u.childId, orgId: u.orgId }));
   return `${payload}.${sign(payload)}`;
 }
 
@@ -42,4 +42,4 @@ export async function requireRole(role: Role): Promise<SessionUser> {
   return s;
 }
 
-export const HOME: Record<Role, string> = { teacher: "/teacher", student: "/student", parent: "/parent" };
+export const HOME: Record<Role, string> = { teacher: "/teacher", student: "/student", parent: "/parent", org: "/org" };
