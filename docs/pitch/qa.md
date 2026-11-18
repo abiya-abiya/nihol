@@ -24,7 +24,8 @@ tarifda. Manba: [Gemini API pricing](https://ai.google.dev/gemini-api/docs/prici
 **4. Davlat dasturiga mosmi?**
 Matematika — 5–6‑sinf «Kasrlar» (EKUK, EKUB, qisqartiriş, umumiy maxraj, aralaş sonlar,
 amallar, matnli masalalar), atamalar darslikdagidek. Ona tili, Ingliz tili, Biologiya va Kimyo
-6‑sinf böyiça 7 tadan dars bilan tayyor (jami 5 fan). Öqituvçi öz fani va darsini qöşa oladi.
+6‑sinf böyiça 7 tadan dars bilan tayyor (jami 5 fan). Platforma fanga bog‘liq emas: öqituvçi
+istalgan yangi fan (tarix, fizika, geografiya) oçib, dars va material qöşa oladi.
 
 **5. Dars materialidan test — bu haqiqiy SI-mi?**
 Demoda test tayyorlaş animatsiyasi körsatiladi, savollar esa tayyor savollar bankidan
@@ -46,7 +47,7 @@ test natijalarini. Bu ota‑onaga «baho nega şunday» degan savolga javob bera
 
 **9. Biznes model?**
 Birinçi oy bepul sinov: barça fanlar, çeksiz sinf, öquvçi va test, karta talab qilinmaydi.
-Ikkinçi oydan maktab obunasi: obunani maktab oladi, öqituvçi öz çöntagidan tölamaydi,
+Ikkinçi oydan maktab obunasi: maktab panelidan öqituvçilarga hisob beradi, obunani maktab oladi, öqituvçi öz çöntagidan tölamaydi,
 narx sinflar va öqituvçilar soniga qarab kelişiladi; sinov davridagi maʼlumotlar saqlanadi.
 Keyingi bosqich — tuman taʼlim bölimi yoki davlat dasturi doirasida. PQ‑358 (SI strategiyasi 2030)
 maktablarga SI joriy etişni közda tutadi.
@@ -63,9 +64,22 @@ Uç kişi: platforma va SI (A), kontent — fanlar, savollar, yangi alifbo (B), 
 **12. Bir öqituvçi bir neça sinfni yuritadimi?**
 Ha. Öqituvçi sinflarni özi yaratadi, nomini özgartiradi va yuqoridagi almaştirgiç bilan
 sinfdan sinfga ötadi; har bir sinf uçun hisoblarni (öquvçi + ota‑ona) bir bosişda yaratadi.
-Demoda 4 ta sinf bor: 6‑A, 6‑B, 5‑A, 7‑A.
+Demoda 4 ta sinf va 3 öqituvçi bor: Dilnoza (6‑A, 6‑B), Nodira (5‑A), Bobur (7‑A).
+Har öqituvçi faqat öz sinflarini köradi.
 
 **13. Nega yangi alifbo?**
 2026‑yil 21‑oktabrda imzolangan qonun böyiça Oʻ, Gʻ, Sh, Ch örniga Ö, Ğ, Ş, Ç keladi
 (2027‑yil apreldan kuçga kiradi, darsliklar 2031‑yilgaça ötadi). Nihol bugundan yangi
 alifboda — maktablar ötişga tayyor.
+
+**14. Maktab öqituvçilarni qanday baholaydi? Bu adolatlimi?**
+Maktab paneli (`maktab / maktab123`) har bir öqituvçini uning öquvçilari natijasi orqali
+körsatadi: barça fanlar böyiça örtaça özlaştiriş (Bayes modeli), testlarning örtaça bali va
+yuborilgan testlar soni; hafta, oy va çorak böyiça ösiş. Bu jazo uçun emas, yordam uçun:
+qaysi sinfga qöşimça qöllab-quvvatlaş kerakligini köradi. Raqamlar baho emas, öquvçilarning
+haqiqiy javoblaridan hisoblanadi; keyingi qadamda sinfning boşlanğiç darajasini hisobga olamiz.
+
+**15. Maktabsiz, yakka öqituvçi işlata oladimi?**
+Ha. Kiriş sahifasida «Öqituvçi sifatida röyxatdan ötiş» bor: ism, login va parol — darhol öz
+sinfi oçiladi va barça imkoniyatlar işlaydi.
+Maktab esa öz öqituvçilari uçun login va parolni panelidan bir bosişda yaratadi.

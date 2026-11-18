@@ -59,7 +59,23 @@ Done after A7 (all on `main`):
 - Local address: `http://nihol.localhost:3000` (QR codes follow the host;
   `allowedDevOrigins` set for dev).
 
+Done later on 2026-11-18 (all on `main`):
+- Organizations: role `org` (`/org`, demo `maktab / maktab123`, 45-maktab) with per-teacher
+  effectiveness from their students (mastery ring, test score, tests sent, ranking) and the
+  reused `PeriodStats` block with teachers as rows. The org creates teacher logins
+  (`POST /api/org/teachers`). `[contract]` `Role` + "org", `User.orgId`, `ClassGroup.teacherId`,
+  `SessionUser.orgId`. Demo teachers: Dilnoza (6a, 6b), Nodira (5a, `nodira/nodira123`),
+  Bobur (7a, `bobur/bobur123`); mapping in `src/lib/auth-demo.ts` (`teacherOfClass`, `orgOfUser`).
+- Independent teacher sign-up on `/login` (`POST /api/auth/register`), gets one empty class.
+  Teachers see only their own classes.
+- Landing: QR opens the landing page itself; hero root trace cycles Biologiya / Kimyo /
+  Ingliz tili; "Istalgan fan uçun bitta platforma"; four roles incl. Maktab.
+- Doska background is a chalk knowledge map of all subjects (`src/components/brand/backdrop.tsx`).
+
 Open:
+- [ ] Redeploy Netlify after the 2026-11-18 evening commits.
+- [ ] Paper (`bolak`) background still shows fraction pieces only; option A (mixed subject
+  doodles) was approved as the next step.
 - [x] Netlify deploy is live at https://niholsi.netlify.app (2026-11-18): pages 200, protected areas redirect to /login, 4 subjects, demo history; end-to-end check teacher → student → parent consistent across 13 reads (data persists).
 - [ ] Vercel production is still `si-tyutor.vercel.app`, deployed manually by C
   (`npx vercel --prod`).
@@ -67,4 +83,4 @@ Open:
 
 Setup on a new device: clone, `npm install`, put the team's `.env.local`
 (not in git), `node scripts/sync.mjs A`, `npm run dev` → `http://nihol.localhost:3000`.
-Demo logins: ustoz/ustoz123, jasur/jasur123, ona/ona123.
+Demo logins: ustoz/ustoz123, jasur/jasur123, ona/ona123, maktab/maktab123, nodira/nodira123, bobur/bobur123.

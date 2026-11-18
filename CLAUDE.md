@@ -13,6 +13,8 @@
 >   `npm run build` only before the freeze (T+2:30); never refactor working v1 code.
 > - Edit only your paths (overview §5); otherwise mock, keep going, open an issue.
 > - Demo passwords may be hardcoded; API keys only in `.env.local` / Vercel env.
+> - Current state and open items: `docs/plan/HANDOFF.md`. Roles in the app: org (maktab, `/org`),
+>   teacher, student, parent; teachers see only their own classes (`teacherOfClass` in `src/lib/auth-demo.ts`).
 
 
 Hackathon project: an Uzbek AI tutor that finds the *root* of a student's

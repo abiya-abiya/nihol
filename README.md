@@ -1,41 +1,53 @@
-# Nihol — maktab uchun eng yaxshi SI-yordamchi
+# Nihol — istalgan fan uçun bitta platforma
 
-O'qituvchi, o'quvchi va ota-ona uchun eng yaxshi sun'iy intellekt asosidagi ta'lim
-vositasi: dars materialidan bir zumda test tuzadi, har bir xatoning ildizini topadi
-va bilimni niholdek o'stiradi.
+Maktab, öqituvçi, öquvçi va ota‑ona uçun sunʼiy intellekt asosidagi taʼlim vositasi:
+dars materialidan test tayyorlaydi, har bir xatoning ildizini topadi va bilimni niholdek östiradi.
 
-Lokal manzil: http://nihol.localhost:3000 (`npm run dev` yoki `npm run start`).
+- Sayt: https://niholsi.netlify.app
+- Lokal: http://localhost:3000 (`npm run dev` yoki `npx next build && npx next start`)
 
-Umummilliy AI Xakaton 2026 (Toshkent, 17–19 noyabr), Ta'lim yo'nalishi, 3-muammo.
-O'zbek tilida ishlaydi, 5–6-sinf "Kasrlar" mavzusida o'quvchining bilimidagi
-bo'shliqni ildizigacha topadi, shaxsiy o'quv yo'lini tuzadi, o'qituvchiga sinfni
-jonli ko'rsatadi.
+Umummilliy AI Xakaton 2026 (Toşkent, 17–19 noyabr), Taʼlim yönalişi, 3‑muammo.
+
+## Nima qiladi
+
+| Rol | Imkoniyatlar |
+|---|---|
+| Maktab | Öqituvçilarga login va parol beradi; har bir öqituvçining samaradorligini öquvçilari natijasi orqali köradi (özlaştiriş, test bali, hafta / oy / çorak). |
+| Öqituvçi | Sinflar va hisoblar yaratadi, fan va dars qöşadi, material yuklaydi va test yuboradi, sinf xaritasi va statistikasini köradi. Maktabsiz ham röyxatdan ötadi. |
+| Öquvçi | Testni telefonda yeçadi, öz bilim xaritasini köradi; matematikada SI‑tyutor xatoning ildizini tuşuntiradi. |
+| Ota‑ona | Bolasining har bir fan böyiça xaritasi, ösiş grafigi va oxirgi natijalari. |
+
+Tayyor fanlar: Matematika (5–6‑sinf «Kasrlar», 17 könikma), Ona tili, Ingliz tili,
+Biologiya, Kimyo (har birida 7 dars). Interfeys yangi özbek alifbosida (Ö Ğ Ş Ç, tutuq ʼ).
+
+## Demo hisoblar
+
+`maktab / maktab123` · `ustoz / ustoz123` · `nodira / nodira123` · `bobur / bobur123` ·
+`jasur / jasur123` · `ona / ona123`
 
 ## Jamoa va rollar
 
-| Rol | Ulush | Kim | Nima qiladi |
-|---|---|---|---|
-| A | 60% | _ism_ | ilova, diagnostika dvigateli, AI tyutor, ma'lumotlar bazasi, dizayn tizimi |
-| B | 20% | _ism_ | kontent: bilim grafi, savollar, xato turlari, generatorlar, matematik va til sifati |
-| C | 20% | _ism_ | deploy, o'qituvchi paneli, landing sahifa, pitch va demo |
+| Rol | Kim | Nima qildi |
+|---|---|---|
+| A | _ism_ | platforma, rollar, maktab paneli, öquvçi / ota‑ona / öqituvçi sahifalari, SI‑tyutor |
+| B | _ism_ | kontent: 5 fan, bilim grafi, savollar, yangi alifbo, statistika |
+| C | _ism_ | deploy, demo maʼlumotlar, öqituvçi paneli, landing, pitch |
 
-## Qanday boshlash (har bir a'zo)
+## Qanday boşlaş
 
-1. GitHub taklifini qabul qiling, keyin:
-   ```
-   git clone https://github.com/abiya-abiya/si-tyutor.git
-   cd si-tyutor
-   npm install
-   claude
-   ```
-2. Claude'ga yozing: **"Men B rolidaman, ishni boshla"** (o'z rolingizni yozing).
-   Claude `CLAUDE.md` va `docs/plan/` ni o'qib, birinchi vazifadan ishni boshlaydi.
-3. Kalitlar (`GEMINI_API_KEYS`, `DATABASE_URL`) jamoa chatida beriladi,
-   `.env.local` fayliga yoziladi. Git'ga hech qachon qo'shilmaydi.
+```
+git clone https://github.com/abiya-abiya/si-tyutor.git
+cd si-tyutor
+npm install
+# .env.local (gitga qöşilmaydi): GEMINI_API_KEYS=..., AUTH_SECRET=..., ixtiyoriy DATABASE_URL=...
+npm run dev
+npm run check   # typecheck + kontent + testlar
+```
 
-## Reja
+## Hujjatlar
 
-- `docs/plan/00-overview.md` — umumiy spetsifikatsiya, arxitektura, kontraktlar, vaqt jadvali
-- `docs/plan/A.md`, `B.md`, `C.md` — har bir rolning vazifalari
-- `PRODUCT.md`, `DESIGN.md` — mahsulot va dizayn yo'nalishi
-- `src/lib/types.ts` — hamma uchun umumiy kontraktlar
+- `docs/plan/HANDOFF.md` — hozirgi holat va oçiq işlar
+- `docs/plan/00-overview.md`, `A.md`, `B.md`, `C.md` — reja va rollar
+- `docs/pitch/` — demo ssenariysi, slaydlar rejasi, hakamlar savollari, havolalar, tadqiqot
+- `PRODUCT.md`, `DESIGN.md` — mahsulot va dizayn yönalişi
+- `src/lib/types.ts` — umumiy kontraktlar

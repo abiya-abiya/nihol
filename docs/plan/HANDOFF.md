@@ -1,23 +1,38 @@
-# Handoff — continue on another device (2026-11-18)
+# Handoff — continue on another device (updated 2026-11-18 evening)
 
-## State of main (`git log -1` should be at or after this file's commit)
+## State of main
 
-Done by A (all pushed):
-- v2 contracts (`src/lib/types.ts`), kv store (`src/lib/db/kv.ts`, table `kv`), app store (`src/lib/store.ts`).
-- Login with roles: `/login`, `/api/auth/*`, `src/proxy.ts`. Demo accounts: `ustoz / ustoz123`, `jasur / jasur123`, `ona / ona123`.
-- Student: `/student`, `/student/subject/[id]`, `/student/test/[id]`; Matematika card opens the v1 diagnostic flow.
-- Teacher: `/teacher/subjects`, `/teacher/subjects/[id]`, `/teacher/lessons/[subjectId]/[lessonId]` (material upload → staged "AI" analysis → editable prepared questions → send).
-- Parent: `/parent` (subject cards, lesson map, trend chart, recent results).
-- New Uzbek alphabet (Ö Ğ Ş Ç, tutuq ʼ) in all A-owned UI.
+Everything below is on `main` and live after the next Netlify deploy
+(https://niholsi.netlify.app). Details per role: `docs/plan/A.md`, `B.md`, `C.md`.
 
-Not done yet (owner in brackets):
-- **Deploy** on Vercel + Neon (C1). After deploy run `npm run db:push` with the Neon `DATABASE_URL` (creates the `kv` table).
-- **3 new subjects** Ona tili, Ingliz tili, Biologiya, 7 lessons × 5 questions, `src/content/subjects/**` (B1); then switch `src/lib/subjects.ts` to `export * from "@/content/subjects";` (A).
-- Math content to the new alphabet (B2).
-- `/teacher` overview: subject tabs + nav to Fanlar/Hisoblar (C3). Quick fix if C is late: wrap the page in `TeacherShell` from `src/components/lesson/teacher-shell.tsx`.
-- Demo history for the parent chart: `buildDemoV2()` in `src/lib/seed/demo-v2.ts` (C2; currently a stub with only the 3 demo users).
-- `/teacher/accounts` page (A7, P1). API `GET/POST /api/users` already exists.
-- Landing + pitch updated to v2 (C4).
+- **Roles:** maktab (taşkilot), öqituvçi, öquvçi, ota‑ona. Login `/login`, role guard `src/proxy.ts`.
+- **Demo accounts:**
+  | Role | Login / password | Notes |
+  |---|---|---|
+  | Organization | `maktab / maktab123` | 45-maktab, `/org` teacher effectiveness |
+  | Teacher | `ustoz / ustoz123` | Dilnoza, classes 6-A and 6-B |
+  | Teacher | `nodira / nodira123`, `bobur / bobur123` | 5-A, 7-A |
+  | Student | `jasur / jasur123` | 6-A |
+  | Parent | `ona / ona123` | Jasur's mother |
+- **Subjects:** Matematika (v1 diagnostic, 17 skills, root-cause trace, SI tutor) plus Ona tili,
+  Ingliz tili, Biologiya, Kimyo (7 lessons × 5 questions each). Teachers add subjects and lessons.
+- **Teacher:** classes CRUD and switcher (own classes only), accounts, material upload with staged
+  "AI" analysis → editable prepared questions → send, period stats (Hafta / Oy / Çorak), Ildiz tahlili (maths).
+- **Organization:** creates teacher logins; sees each teacher's average student mastery, test score,
+  tests sent and a period chart with teachers as rows.
+- **Independent teacher:** signs up on `/login` («Öqituvçi sifatida röyxatdan ötiş»).
+- **Landing:** QR opens the landing page; hero example cycles three subjects; chalk knowledge-map background.
+- **Data:** kv document store on Postgres (`DATABASE_URL`) or memory. New demo accounts are added to
+  existing data automatically on first request; «Demo holatini tiklaş» resets everything.
+- **Alphabet:** all UI in the new Uzbek alphabet (Ö Ğ Ş Ç, tutuq ʼ).
+
+## Open
+
+- Redeploy Netlify after the latest commits; then check `/org`, `maktab` login and the landing QR.
+- Paper background (`bolak`) still shows fraction pieces only; mixed-subject doodles approved next.
+- Team names in `docs/pitch/links.md` and `src/components/pitch/sections.tsx` (TEAM).
+- Rehearse `docs/pitch/script.md` once end to end on a phone.
+- After the hackathon: rotate Gemini keys and GitHub tokens.
 
 ## Set up the new device
 
@@ -29,6 +44,9 @@ npm install
 npm run dev     # http://localhost:3000/login
 npm run check   # typecheck + content + tests
 ```
+
+Note: if the dev server keeps reloading the page in a loop, use a production build
+(`npx next build && npx next start`) for checks.
 
 Claude Code skills: project skills are in `.claude/skills/` (frontend-design,
 impeccable, motion-framer, ui-toolkit, ui-revamp, coordinator) and load
