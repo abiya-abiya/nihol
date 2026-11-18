@@ -60,9 +60,7 @@ Done after A7 (all on `main`):
   `allowedDevOrigins` set for dev).
 
 Open:
-- [ ] Netlify deploy as `nihol.netlify.app` — decide the account and whether
-  to set `DATABASE_URL` / `GEMINI_API_KEYS` / `AUTH_SECRET` there; then set
-  `NEXT_PUBLIC_APP_URL=https://nihol.netlify.app` so QR codes point to it.
+- [x] Netlify deploy is live at https://niholsi.netlify.app (2026-11-18): pages 200, protected areas redirect to /login, 4 subjects, demo history; end-to-end check teacher → student → parent consistent across 13 reads (data persists).
 - [ ] Vercel production is still `si-tyutor.vercel.app`, deployed manually by C
   (`npx vercel --prod`).
 - [ ] GitHub repo rename/description needs the owner (our account has WRITE only).
