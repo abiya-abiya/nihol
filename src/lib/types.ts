@@ -357,6 +357,8 @@ export interface ProgressPoint {
 }
 
 export interface DemoV2 {
+  /** seeded classes (the demo class first) */
+  classes?: ClassGroup[];
   users: User[];
   assignments: Assignment[];
   submissions: Submission[];
