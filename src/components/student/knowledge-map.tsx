@@ -2,7 +2,7 @@
 
 import dagre from "@dagrejs/dagre";
 import { motion, useReducedMotion } from "motion/react";
-import { useEffect, useMemo } from "react";
+import { useEffect, useId, useMemo } from "react";
 import { levelLabel } from "@/components/brand/levels";
 import { levelOf } from "@/engine/bkt";
 import type { KnowledgeGraph, MasteryLevel, SkillId, StudentSnapshot } from "@/lib/types";
@@ -90,18 +90,91 @@ const LEVEL_STYLE: Record<MasteryLevel, { stroke: string; fill: string; dash?: s
   unknown: { stroke: "var(--unknown)", fill: "white", dash: "3 3" },
 };
 
-function LevelGlyph({ level, x, y }: { level: MasteryLevel; x: number; y: number }) {
-  const common = { fill: "none", strokeWidth: 2.4, strokeLinecap: "round" as const, strokeLinejoin: "round" as const };
-  if (level === "mastered") return <path d={`M ${x - 6} ${y} l 4 4 l 8 -9`} stroke="var(--mastered)" {...common} />;
-  if (level === "gap")
+/** Liquid colour per level: the node fills up like a glass. */
+const LIQUID: Record<MasteryLevel, string> = {
+  mastered: "color-mix(in oklab, var(--mastered) 70%, white)",
+  shaky: "color-mix(in oklab, var(--shaky) 66%, white)",
+  gap: "color-mix(in oklab, var(--red-pen) 52%, white)",
+  unknown: "transparent",
+};
+
+/** A face whose mouth follows mastery: frown at 0, flat around 55%, wide smile at 100%. */
+function Face({ x, y, p, level }: { x: number; y: number; p: number; level: MasteryLevel }) {
+  const line = { strokeWidth: 2, strokeLinecap: "round" as const, fill: "none" };
+  if (level === "unknown") {
+    // not tested yet: a sleeping face
     return (
-      <g stroke="var(--red-pen)" {...common}>
-        <path d={`M ${x} ${y - 7} v 8`} />
-        <circle cx={x} cy={y + 6} r={0.6} />
+      <g stroke="var(--unknown)" {...line}>
+        <path d={`M ${x - 8} ${y - 3} q 2.2 1.8 4.4 0 M ${x + 3.6} ${y - 3} q 2.2 1.8 4.4 0`} />
+        <path d={`M ${x - 3} ${y + 5.5} h 6`} />
       </g>
     );
-  if (level === "shaky") return <path d={`M ${x - 7} ${y} q 3.5 -5 7 0 t 7 0`} stroke="var(--shaky)" {...common} />;
-  return <circle cx={x} cy={y} r={2.2} fill="var(--unknown)" />;
+  }
+  const bend = Math.max(-1, Math.min(1, (p - 0.55) / 0.45)) * 7; // + smile, − frown
+  return (
+    <g>
+      <circle cx={x - 5.5} cy={y - 3.5} r={2} fill="var(--ink)" />
+      <circle cx={x + 5.5} cy={y - 3.5} r={2} fill="var(--ink)" />
+      <path d={`M ${x - 6.5} ${y + 5 - bend * 0.3} Q ${x} ${y + 5 + bend} ${x + 6.5} ${y + 5 - bend * 0.3}`} stroke="var(--ink)" {...line} />
+    </g>
+  );
+}
+
+/** Glass node: liquid rises to the mastery level with a gentle wave, the face sits on top. */
+function FaceNode({
+  x,
+  y,
+  p,
+  level,
+  isRoot,
+  clipId,
+  delay,
+  animateFill,
+  reduce,
+}: {
+  x: number;
+  y: number;
+  p: number;
+  level: MasteryLevel;
+  isRoot: boolean;
+  clipId: string;
+  delay: number;
+  animateFill: boolean;
+  reduce: boolean;
+}) {
+  const st = LEVEL_STYLE[level];
+  const fill = level === "unknown" ? 0 : Math.max(0.08, Math.min(1, p));
+  const top = y + R - 2 * R * fill;
+  const x0 = x - R - 16;
+  const wave = `M ${x0} ${top} ${"q 4 -1.4 8 0 t 8 0 ".repeat(5)}V ${y + R + 2} H ${x0} Z`;
+  return (
+    <g>
+      <defs>
+        <clipPath id={clipId}>
+          <circle cx={x} cy={y} r={R - 1.2} />
+        </clipPath>
+      </defs>
+      <circle cx={x} cy={y} r={R} fill="white" />
+      {fill > 0 && (
+        <g clipPath={`url(#${clipId})`}>
+          <motion.g
+            initial={animateFill ? { y: 2 * R * fill + 3 } : false}
+            animate={{ y: 0 }}
+            transition={{ delay, duration: 1.1, ease: [0.16, 1, 0.3, 1] }}
+          >
+            <motion.path
+              d={wave}
+              fill={LIQUID[level]}
+              animate={reduce ? undefined : { x: [0, 16] }}
+              transition={reduce ? undefined : { duration: 2.6, repeat: Infinity, ease: "linear" }}
+            />
+          </motion.g>
+        </g>
+      )}
+      <circle cx={x} cy={y} r={R} fill="none" stroke={st.stroke} strokeWidth={isRoot ? 3.5 : 2.6} strokeDasharray={st.dash} />
+      <Face x={x} y={y} p={p} level={level} />
+    </g>
+  );
 }
 
 export interface KnowledgeMapProps {
@@ -128,6 +201,7 @@ export function KnowledgeMap({
   className,
 }: KnowledgeMapProps) {
   const reduce = useReducedMotion();
+  const uid = useId().replace(/[^a-zA-Z0-9]/g, "");
   const layout = useMemo(() => computeLayout(graph), [graph]);
   const animate = mode === "reveal" && !reduce;
   const maxRank = Math.max(...Object.values(layout.nodes).map((n) => n.rank));
@@ -230,7 +304,7 @@ export function KnowledgeMap({
       {graph.skills.map((s) => {
         const n = layout.nodes[s.id];
         const level = levelOf(snapshot.skills[s.id]);
-        const st = LEVEL_STYLE[level];
+        const p = snapshot.skills[s.id]?.p ?? 0;
         const isRoot = roots.includes(s.id);
         const selected = selectedSkillId === s.id;
         const labelW = Math.max(...n.lines.map((l) => l.length)) * LABEL_SIZE * 0.56 + 10;
@@ -243,30 +317,24 @@ export function KnowledgeMap({
             transition={{ delay: rise, duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
             role={onSkillClick ? "button" : undefined}
             tabIndex={onSkillClick ? 0 : undefined}
-            aria-label={`${normalizeUz(s.title)}: ${levelLabel(level)}`}
+            aria-label={`${normalizeUz(s.title)}: ${levelLabel(level)}${level === "unknown" ? "" : `, ${Math.round(p * 100)}%`}`}
             onClick={onSkillClick ? () => onSkillClick(s.id) : undefined}
             onKeyDown={onSkillClick ? (e) => (e.key === "Enter" || e.key === " ") && onSkillClick(s.id) : undefined}
             className={cn(onSkillClick && "cursor-pointer outline-none")}
           >
             {selected && <circle cx={n.x} cy={n.cy} r={R + 5} fill="none" stroke="var(--ink)" strokeWidth={2} strokeDasharray="4 3" />}
-            {/* neutral base, then the level colour fades in */}
-            <circle cx={n.x} cy={n.cy} r={R} fill="white" stroke="var(--ink-soft)" strokeOpacity={0.5} strokeWidth={2} />
-            <motion.g
-              initial={animate ? { opacity: 0 } : false}
-              animate={{ opacity: 1 }}
-              transition={{ delay: T_FILL + n.rank * 0.05, duration: 0.45 }}
-            >
-              <circle
-                cx={n.x}
-                cy={n.cy}
-                r={R}
-                fill={st.fill}
-                stroke={st.stroke}
-                strokeWidth={isRoot ? 3.5 : 2.6}
-                strokeDasharray={st.dash}
-              />
-              <LevelGlyph level={level} x={n.x} y={n.cy} />
-            </motion.g>
+            {/* glass face: the liquid rises to the mastery level, the mouth smiles with it */}
+            <FaceNode
+              x={n.x}
+              y={n.cy}
+              p={p}
+              level={level}
+              isRoot={isRoot}
+              clipId={`kmclip-${uid}-${s.id}`}
+              delay={animate ? T_FILL + n.rank * 0.05 : 0.15 + n.rank * 0.06}
+              animateFill={!reduce}
+              reduce={!!reduce}
+            />
             <rect
               x={n.x - labelW / 2}
               y={n.ly - LABEL_SIZE - 1}
