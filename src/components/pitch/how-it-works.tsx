@@ -40,14 +40,14 @@ function Step({
 /** Step 1: one question, a wrong choice struck through, the next question goes one level down. */
 function DiagnosticArt() {
   const reduce = useReducedMotion();
-  const choices = ["2", "24", "12", "10"];
+  const choices = ["Ildizda", "Bargda", "Poyada", "Gulda"];
   return (
     <div className="w-[250px]">
-      <p className="text-ink-soft mb-1 text-xs font-semibold">3 / 5 savol</p>
-      <p className="font-display mb-3 text-[1.15rem] font-bold">EKUK(4, 6) = ?</p>
+      <p className="text-ink-soft mb-1 text-xs font-semibold">Biologiya · 3 / 5 savol</p>
+      <p className="font-display mb-3 text-[1.05rem] leading-snug font-bold">Fotosintez qayerda boradi?</p>
       <ul className="grid grid-cols-2 gap-2">
         {choices.map((c, i) => {
-          const wrong = i === 1;
+          const wrong = i === 0;
           return (
             <li
               key={c}
@@ -184,9 +184,9 @@ function GraphArt() {
 function PathArt() {
   const reduce = useReducedMotion();
   const steps = [
-    { label: "Har xil maxraj", state: "locked" },
-    { label: "Umumiy maxraj", state: "locked" },
-    { label: "EKUK", state: "current" },
+    { label: "Barg va fotosintez", state: "locked" },
+    { label: "Ösimlik töqimalari", state: "locked" },
+    { label: "Hujayra tuzilişi", state: "current" },
   ] as const;
   return (
     <div className="relative flex w-[230px] flex-col gap-3 pl-8">

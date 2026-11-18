@@ -1,4 +1,4 @@
-import { Check, GraduationCap, Heart, LayoutDashboard, School } from "lucide-react";
+import { Building2, Check, GraduationCap, Heart, LayoutDashboard, School } from "lucide-react";
 import Link from "next/link";
 import { SubjectIcon } from "@/components/brand/subject-icon";
 import { Button } from "@/components/ui/button";
@@ -31,12 +31,12 @@ export function Subjects({ subjects }: { subjects: SubjectMeta[] }) {
   return (
     <section aria-labelledby="subjects-title" className="mx-auto w-full max-w-[1500px] px-5 pt-4 pb-6 sm:px-8 lg:px-12">
       <h2 id="subjects-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-        Tayyor 5 ta fan, har birida 7 ta dars
+        Istalgan fan uçun bitta platforma
       </h2>
       <p className="text-ink-soft mt-3 max-w-[40rem] text-[1.1rem] leading-relaxed">
-        Hamma narsa birinçi kundan tayyor: darslar, savollar va sinf natijalari. Öqituvçi öz fani va darsini qöşa oladi.
+        Beş fan birinçi kundan tayyor: har birida 7 ta dars, savollar va bilim xaritasi. Tarix, fizika yoki geografiya kerakmi? Öqituvçi yangi fan oçadi, material yuklaydi, Nihol esa unga ham test va xarita tuzadi.
       </p>
-      <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+      <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {subjects.map((s) => (
           <li key={s.id} className="sheet relative flex items-center gap-4 overflow-hidden p-5">
             <span className="absolute inset-x-0 top-0 h-1.5" style={{ background: s.color }} aria-hidden />
@@ -47,12 +47,26 @@ export function Subjects({ subjects }: { subjects: SubjectMeta[] }) {
             </div>
           </li>
         ))}
+        <li className="border-ink-soft/40 flex items-center gap-4 rounded-[var(--radius-2xl)] border-2 border-dashed bg-white/60 p-5">
+          <span className="bg-ink-wash text-ink grid size-[52px] shrink-0 place-items-center rounded-2xl text-[1.8rem] font-bold" aria-hidden>
+            +
+          </span>
+          <div className="min-w-0">
+            <p className="font-display text-lg font-bold">Sizning faningiz</p>
+            <p className="text-ink-soft text-sm">Tarix, fizika, geografiya… öqituvçi özi qöşadi</p>
+          </div>
+        </li>
       </ul>
     </section>
   );
 }
 
 const ROLES = [
+  {
+    icon: Building2,
+    title: "Maktab",
+    text: "Öqituvçilarga login va parol beradi. Har bir öqituvçining samaradorligini uning öquvçilari natijasi orqali köradi.",
+  },
   {
     icon: School,
     title: "Öqituvçi",
@@ -74,9 +88,9 @@ export function Roles() {
   return (
     <section aria-labelledby="roles-title" className="mx-auto w-full max-w-[1500px] px-5 py-16 sm:px-8 lg:px-12">
       <h2 id="roles-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-        Uç rol, bitta xarita
+        Tört rol, bitta xarita
       </h2>
-      <ul className="mt-8 grid gap-4 md:grid-cols-3">
+      <ul className="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
         {ROLES.map((r) => (
           <li key={r.title} className="sheet flex flex-col gap-3 p-6">
             <span className="bg-ink-wash text-ink grid size-12 place-items-center rounded-2xl">
@@ -149,8 +163,8 @@ export function Problem() {
             Xato köpinça ikki poğona pastda boşlanadi
           </h2>
           <p className="text-ink-soft mt-4 max-w-[34rem] text-[1.1rem] leading-relaxed">
-            Öquvçi kasrlarni qöşişda adaşadi, lekin sabab EKUKni topa olmasliqda. Öqituvçi daftarda belgini köradi,
-            ildizni emas. Nihol aynan şu yaşirin sababni körsatadi.
+            Öquvçi fotosintez savolida adaşadi, lekin sabab hujayra tuzilişini bilmaslikda. Kasrlarda ham, ingliz tili
+            zamonlarida ham şunday: öqituvçi daftarda belgini köradi, ildizni emas. Nihol aynan şu yaşirin sababni körsatadi.
           </p>
         </div>
         <ul className="flex flex-col">

@@ -59,7 +59,7 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
         </div>
 
         <div className="flex flex-col gap-8 lg:flex-row lg:items-end lg:justify-between lg:gap-6">
-          <RootTrace className="lg:self-start" />
+          <RootTrace className="lg:flex-1 lg:self-start" />
           <motion.div
             className="relative hidden shrink-0 lg:block"
             initial={reduce ? false : { opacity: 0, y: 24, rotate: 0 }}
@@ -75,8 +75,8 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
               title="Telefonda oçiş"
               caption="Kamerangiz bilan skanerlang"
               size={256}
-              className="w-[268px] 2xl:w-[330px]"
-              qrClassName="w-[196px] 2xl:w-[256px]"
+              className="w-[228px] 2xl:w-[330px]"
+              qrClassName="w-[164px] 2xl:w-[256px]"
             />
           </motion.div>
         </div>
