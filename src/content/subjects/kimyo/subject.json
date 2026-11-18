@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "kimyo",
+    "name": "Kimyo",
+    "short": "Kimyo",
+    "color": "#c2410c",
+    "icon": "flask-conical",
+    "order": 5,
+    "description": "Moddalar, atomlar, kimyoviy hodisalar, havo va suv."
+  },
+  "graph": {
+    "subject": "Kimyo",
+    "topic": "Kimyo asoslari",
+    "skills": [
+      {
+        "id": "kimyo-01",
+        "title": "Moddalar va ularning xossalari",
+        "short": "Moddalar",
+        "grade": 6,
+        "prerequisites": [],
+        "description": "Jism va moddani farqlaydi. Moddaning fizik xossalari va agregat holatlarini biladi."
+      },
+      {
+        "id": "kimyo-02",
+        "title": "Toza moddalar va aralaşmalar",
+        "short": "Aralaşmalar",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-01"
+        ],
+        "description": "Toza modda va aralaşmani farqlaydi. Aralaşmalarni ajratiş usullarini tanlaydi."
+      },
+      {
+        "id": "kimyo-03",
+        "title": "Atom va kimyoviy element",
+        "short": "Atom va element",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-01"
+        ],
+        "description": "Atomning tuzilişini (yadro, proton, neytron, elektron) va element tuşunçasini biladi."
+      },
+      {
+        "id": "kimyo-04",
+        "title": "Kimyoviy belgilar va formulalar",
+        "short": "Formulalar",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-03"
+        ],
+        "description": "Asosiy elementlarning belgilarini biladi. Formuladan molekuladagi atomlar sonini topadi."
+      },
+      {
+        "id": "kimyo-05",
+        "title": "Fizik va kimyoviy hodisalar",
+        "short": "Hodisalar",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-02"
+        ],
+        "description": "Fizik va kimyoviy hodisalarni farqlaydi, kimyoviy reaksiya belgilarini taniydi."
+      },
+      {
+        "id": "kimyo-06",
+        "title": "Kislorod va havo",
+        "short": "Kislorod va havo",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-04",
+          "kimyo-05"
+        ],
+        "description": "Havoning tarkibini biladi. Kislorodning yoniş va nafas olişdagi örnini tuşuntiradi."
+      },
+      {
+        "id": "kimyo-07",
+        "title": "Suv – eng muhim modda",
+        "short": "Suv",
+        "grade": 6,
+        "prerequisites": [
+          "kimyo-06",
+          "kimyo-02"
+        ],
+        "description": "Suvning tarkibi va xossalarini, tabiatdagi aylanişini va tozalaş usullarini biladi."
+      }
+    ],
+    "entrySkills": [
+      "kimyo-07",
+      "kimyo-06"
+    ]
+  },
+  "materials": [
+    {
+      "lessonId": "kimyo-01",
+      "fileName": "Kimyo_6-sinf_Moddalar.pdf",
+      "pages": 1,
+      "summary": "Jism va modda, moddaning fizik xossalari va uç agregat holati."
+    },
+    {
+      "lessonId": "kimyo-02",
+      "fileName": "Kimyo_6-sinf_Aralaşmalar.pdf",
+      "pages": 2,
+      "summary": "Bir jinsli va bir jinsli bölmagan aralaşmalar, filtrlaş, buğlatiş, magnit bilan ajratiş."
+    },
+    {
+      "lessonId": "kimyo-03",
+      "fileName": "Kimyo_6-sinf_Atom.pdf",
+      "pages": 3,
+      "summary": "Atom tuzilişi: yadro, proton, neytron, elektron; elementning tartib raqami."
+    },
+    {
+      "lessonId": "kimyo-04",
+      "fileName": "Kimyo_6-sinf_Formulalar.pdf",
+      "pages": 2,
+      "summary": "Element belgilari, kimyoviy formula, indeks va koeffitsiyent."
+    },
+    {
+      "lessonId": "kimyo-05",
+      "fileName": "Kimyo_6-sinf_Hodisalar.pdf",
+      "pages": 2,
+      "summary": "Fizik va kimyoviy hodisalar, reaksiya belgilari: rang, gaz, çökma, issiqlik."
+    },
+    {
+      "lessonId": "kimyo-06",
+      "fileName": "Kimyo_6-sinf_Kislorod.pdf",
+      "pages": 3,
+      "summary": "Havo tarkibi, kislorodning xossalari, yoniş va fotosintez."
+    },
+    {
+      "lessonId": "kimyo-07",
+      "fileName": "Kimyo_6-sinf_Suv.pdf",
+      "pages": 3,
+      "summary": "Suv tarkibi, xossalari, tabiatda aylanişi va tozalaş usullari."
+    }
+  ]
+}

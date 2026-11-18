@@ -1,0 +1,982 @@
+[
+  {
+    "id": "kimyo-01-01",
+    "skillId": "kimyo-01",
+    "difficulty": 1,
+    "stem": "Qaysi biri modda?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Stol"
+      },
+      {
+        "id": "b",
+        "text": "Temir"
+      },
+      {
+        "id": "c",
+        "text": "Mix"
+      },
+      {
+        "id": "d",
+        "text": "Qoşiq"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Stol, mix va qoşiq – jismlar. Temir esa ular yasaladigan modda.",
+    "hint": "Jism nimadan yasalgan bölsa, öşa modda.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-01-02",
+    "skillId": "kimyo-01",
+    "difficulty": 2,
+    "stem": "Qaysi biri moddaning fizik xossasi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yoniş"
+      },
+      {
+        "id": "b",
+        "text": "Zanglaş"
+      },
+      {
+        "id": "c",
+        "text": "Qaynaş harorati"
+      },
+      {
+        "id": "d",
+        "text": "Kislota bilan reaksiyaga kirişiş"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Qaynaş harorati moddani özgartirmasdan ölçanadi – bu fizik xossa. Yoniş va zanglaşda yangi modda hosil böladi.",
+    "hint": "Qaysi xossani ölçaganda yangi modda hosil bölmaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-01-03",
+    "skillId": "kimyo-01",
+    "difficulty": 2,
+    "stem": "Toza suv oddiy bosimda neça gradusda qaynaydi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "0 °C"
+      },
+      {
+        "id": "b",
+        "text": "50 °C"
+      },
+      {
+        "id": "c",
+        "text": "200 °C"
+      },
+      {
+        "id": "d",
+        "text": "100 °C"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Toza suv oddiy atmosfera bosimida 100 °C da qaynaydi, 0 °C da esa muzlaydi.",
+    "hint": "Muzlaş harorati 0 °C, qaynaşi undan ança yuqori.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-01-04",
+    "skillId": "kimyo-01",
+    "difficulty": 3,
+    "stem": "Qaysi jismlar bir xil moddadan yasalgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Mis sim va mis tanga"
+      },
+      {
+        "id": "b",
+        "text": "Şişa stakan va temir qoşiq"
+      },
+      {
+        "id": "c",
+        "text": "Yoğoç stol va plastik stul"
+      },
+      {
+        "id": "d",
+        "text": "Qoğoz daftar va şişa idiş"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Mis sim ham, mis tanga ham misdan yasalgan: jismlar har xil, modda bitta.",
+    "hint": "Jismlarning nomidagi modda nomiga eʼtibor ber.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-01-05",
+    "skillId": "kimyo-01",
+    "difficulty": 3,
+    "stem": "Moddaning qaysi holati öz şakli va hajmini saqlaydi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Suyuq"
+      },
+      {
+        "id": "b",
+        "text": "Gaz"
+      },
+      {
+        "id": "c",
+        "text": "Qattiq"
+      },
+      {
+        "id": "d",
+        "text": "Heç biri"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Qattiq modda şaklini ham, hajmini ham saqlaydi. Suyuqlik idiş şaklini oladi, gaz butun idişni töldiradi.",
+    "hint": "Stakandagi suv va stakanning özini taqqosla.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-02-01",
+    "skillId": "kimyo-02",
+    "difficulty": 1,
+    "stem": "Qaysi biri toza modda?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Havo"
+      },
+      {
+        "id": "b",
+        "text": "Distillangan suv"
+      },
+      {
+        "id": "c",
+        "text": "Dengiz suvi"
+      },
+      {
+        "id": "d",
+        "text": "Tuproq"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Distillangan suv faqat suv molekulalaridan iborat. Havo, dengiz suvi va tuproq – aralaşmalar.",
+    "hint": "Qaysi birida faqat bitta modda bor?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-02-02",
+    "skillId": "kimyo-02",
+    "difficulty": 2,
+    "stem": "Qum va suv aralaşmasini qanday ajratiş mumkin?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Magnit bilan"
+      },
+      {
+        "id": "b",
+        "text": "Filtrlaş orqali"
+      },
+      {
+        "id": "c",
+        "text": "Muzlatiş orqali"
+      },
+      {
+        "id": "d",
+        "text": "Aralaştiriş orqali"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Qum filtr qoğozida qoladi, suv esa undan ötib ketadi.",
+    "hint": "Qum suvda erimaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-02-03",
+    "skillId": "kimyo-02",
+    "difficulty": 2,
+    "stem": "Temir qipiği va oltingugurt kukunini qanday ajratiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Magnit bilan"
+      },
+      {
+        "id": "b",
+        "text": "Filtrlaş orqali"
+      },
+      {
+        "id": "c",
+        "text": "Buğlatiş orqali"
+      },
+      {
+        "id": "d",
+        "text": "Qizdiriş orqali"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Temir magnitga tortiladi, oltingugurt esa tortilmaydi.",
+    "hint": "Qaysi modda magnitga tortiladi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-02-04",
+    "skillId": "kimyo-02",
+    "difficulty": 3,
+    "stem": "Oş tuzini suvdagi eritmasidan qanday ajratib olinadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Filtrlaş orqali"
+      },
+      {
+        "id": "b",
+        "text": "Magnit bilan"
+      },
+      {
+        "id": "c",
+        "text": "Buğlatiş orqali"
+      },
+      {
+        "id": "d",
+        "text": "Tindiriş orqali"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Tuz suvda erigan, u filtrdan ötib ketadi. Suv buğlatilsa, idişda tuz kristallari qoladi.",
+    "hint": "Erigan modda filtrda qolmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-02-05",
+    "skillId": "kimyo-02",
+    "difficulty": 3,
+    "stem": "Qaysi biri bir jinsli aralaşma?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qum va suv"
+      },
+      {
+        "id": "b",
+        "text": "Şakarning suvdagi eritmasi"
+      },
+      {
+        "id": "c",
+        "text": "Loyqa suv"
+      },
+      {
+        "id": "d",
+        "text": "Ösimlik moyi va suv"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Şakar suvda butunlay eriydi, eritmaning hamma qismi bir xil. Qolganlarida qismlarni köz bilan köriş mumkin.",
+    "hint": "Qaysi aralaşmada qismlarni ajratib körib bölmaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-03-01",
+    "skillId": "kimyo-03",
+    "difficulty": 1,
+    "stem": "Kimyoviy elementning eng kiçik zarraçasi nima?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Atom"
+      },
+      {
+        "id": "b",
+        "text": "Molekula"
+      },
+      {
+        "id": "c",
+        "text": "Hujayra"
+      },
+      {
+        "id": "d",
+        "text": "Kristall"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Element bir xil atomlardan tuziladi, atom – elementning eng kiçik zarraçasi.",
+    "hint": "Molekula bir neça zarraçadan tuziladi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-03-02",
+    "skillId": "kimyo-03",
+    "difficulty": 2,
+    "stem": "Atom yadrosi qanday zarraçalardan tuzilgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Faqat elektronlardan"
+      },
+      {
+        "id": "b",
+        "text": "Elektron va protonlardan"
+      },
+      {
+        "id": "c",
+        "text": "Proton va neytronlardan"
+      },
+      {
+        "id": "d",
+        "text": "Faqat neytronlardan"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Yadroda protonlar va neytronlar bor, elektronlar esa yadro atrofida harakatlanadi.",
+    "hint": "Elektronlar yadro içida emas.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-03-03",
+    "skillId": "kimyo-03",
+    "difficulty": 2,
+    "stem": "Elektron qanday zaryadga ega?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Musbat"
+      },
+      {
+        "id": "b",
+        "text": "Manfiy"
+      },
+      {
+        "id": "c",
+        "text": "Zaryadsiz"
+      },
+      {
+        "id": "d",
+        "text": "Goh musbat, goh manfiy"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Elektron manfiy, proton musbat zaryadli, neytron zaryadsiz.",
+    "hint": "Proton musbat, elektron esa unga qarama-qarşi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-03-04",
+    "skillId": "kimyo-03",
+    "difficulty": 3,
+    "stem": "Elementning tartib raqami nimani bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Atomdagi neytronlar sonini"
+      },
+      {
+        "id": "b",
+        "text": "Atom massasini"
+      },
+      {
+        "id": "c",
+        "text": "Molekulalar sonini"
+      },
+      {
+        "id": "d",
+        "text": "Atomdagi protonlar sonini"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Tartib raqami yadrodagi protonlar soniga teng. Atom neytral bölgani uçun elektronlar soni ham şunça.",
+    "hint": "Har bir elementning protonlar soni boşqa.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-03-05",
+    "skillId": "kimyo-03",
+    "difficulty": 3,
+    "stem": "Kislorodning tartib raqami 8. Kislorod atomida neçta elektron bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "16"
+      },
+      {
+        "id": "b",
+        "text": "6"
+      },
+      {
+        "id": "c",
+        "text": "8"
+      },
+      {
+        "id": "d",
+        "text": "4"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Atom neytral: elektronlar soni protonlar soniga, yaʼni tartib raqamiga teng – 8 ta.",
+    "hint": "Musbat va manfiy zaryadlar soni teng.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-04-01",
+    "skillId": "kimyo-04",
+    "difficulty": 1,
+    "stem": "Kislorodning kimyoviy belgisi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "K"
+      },
+      {
+        "id": "b",
+        "text": "O"
+      },
+      {
+        "id": "c",
+        "text": "Ki"
+      },
+      {
+        "id": "d",
+        "text": "C"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Kislorod belgisi – O. K – kaliy, C – uglerod.",
+    "hint": "Belgi elementning lotinça nomidan olinadi: Oxygenium.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-04-02",
+    "skillId": "kimyo-04",
+    "difficulty": 2,
+    "stem": "Suvning kimyoviy formulasi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "H₂O"
+      },
+      {
+        "id": "b",
+        "text": "HO₂"
+      },
+      {
+        "id": "c",
+        "text": "H₂O₂"
+      },
+      {
+        "id": "d",
+        "text": "OH"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Suv molekulasida 2 ta vodorod va 1 ta kislorod atomi bor: H₂O.",
+    "hint": "Vodorod atomlari kislorodnikidan köp.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-04-03",
+    "skillId": "kimyo-04",
+    "difficulty": 2,
+    "stem": "«Na» belgisi qaysi elementni bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Azot"
+      },
+      {
+        "id": "b",
+        "text": "Neon"
+      },
+      {
+        "id": "c",
+        "text": "Natriy"
+      },
+      {
+        "id": "d",
+        "text": "Nikel"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Na – natriy. Azot – N, neon – Ne, nikel – Ni.",
+    "hint": "Oş tuzi tarkibidagi metallni esla.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-04-04",
+    "skillId": "kimyo-04",
+    "difficulty": 3,
+    "stem": "CO₂ molekulasida jami neçta atom bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "4"
+      },
+      {
+        "id": "c",
+        "text": "1"
+      },
+      {
+        "id": "d",
+        "text": "3"
+      }
+    ],
+    "correct": "d",
+    "explanation": "1 ta uglerod (C) va 2 ta kislorod (O₂): jami 3 ta atom.",
+    "hint": "Indeks yozilmagan bölsa, u 1 ga teng.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-04-05",
+    "skillId": "kimyo-04",
+    "difficulty": 3,
+    "stem": "«3H₂O» yozuvi nimani bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "3 ta vodorod atomini"
+      },
+      {
+        "id": "b",
+        "text": "3 ta suv molekulasini"
+      },
+      {
+        "id": "c",
+        "text": "6 ta suv molekulasini"
+      },
+      {
+        "id": "d",
+        "text": "3 ta kislorod molekulasini"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Oldidagi 3 – koeffitsiyent, molekulalar sonini bildiradi: 3 ta suv molekulasi.",
+    "hint": "Formula oldidagi son nimani sanaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-05-01",
+    "skillId": "kimyo-05",
+    "difficulty": 1,
+    "stem": "Qaysi hodisa kimyoviy hodisa?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Muzning erişi"
+      },
+      {
+        "id": "b",
+        "text": "Qoğozning yonişi"
+      },
+      {
+        "id": "c",
+        "text": "Şişaning siniği"
+      },
+      {
+        "id": "d",
+        "text": "Suvning buğlanişi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Qoğoz yonganda kul va gazlar – yangi moddalar hosil böladi.",
+    "hint": "Qaysi holatda yangi modda paydo böladi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-05-02",
+    "skillId": "kimyo-05",
+    "difficulty": 2,
+    "stem": "Qaysi hodisa fizik hodisa?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Temirning zanglaşi"
+      },
+      {
+        "id": "b",
+        "text": "Sutning açişi"
+      },
+      {
+        "id": "c",
+        "text": "Suvning muzlaşi"
+      },
+      {
+        "id": "d",
+        "text": "Ötinning yonişi"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Suv muzlaganda faqat holati özgaradi, modda suvligiça qoladi.",
+    "hint": "Qaysi holatda modda öziça qoladi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-05-03",
+    "skillId": "kimyo-05",
+    "difficulty": 2,
+    "stem": "Kimyoviy hodisaning asosiy belgisi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yangi modda hosil bölişi"
+      },
+      {
+        "id": "b",
+        "text": "Şaklning özgarişi"
+      },
+      {
+        "id": "c",
+        "text": "Moddaning maydalanişi"
+      },
+      {
+        "id": "d",
+        "text": "Agregat holatning özgarişi"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Kimyoviy hodisada boşlanğiç moddalardan yangi moddalar hosil böladi.",
+    "hint": "Fizik hodisada modda özgarmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-05-04",
+    "skillId": "kimyo-05",
+    "difficulty": 3,
+    "stem": "Qaysi belgi kimyoviy reaksiya borganini körsatadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Idişga quyiliş"
+      },
+      {
+        "id": "b",
+        "text": "Bölaklarga kesiliş"
+      },
+      {
+        "id": "c",
+        "text": "Qizdirilganda erib ketiş"
+      },
+      {
+        "id": "d",
+        "text": "Rang özgarib, gaz ajralişi"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Rangning özgarişi, gaz ajralişi, çökma tuşişi, issiqlik va yoruğlik – reaksiya belgilari.",
+    "hint": "Qaysi belgi yangi modda hosil bölganini bildiradi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-05-05",
+    "skillId": "kimyo-05",
+    "difficulty": 3,
+    "stem": "Şam yonganda qanday hodisalar boradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Faqat fizik"
+      },
+      {
+        "id": "b",
+        "text": "Faqat kimyoviy"
+      },
+      {
+        "id": "c",
+        "text": "Ham fizik, ham kimyoviy"
+      },
+      {
+        "id": "d",
+        "text": "Heç qanday hodisa bormaydi"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Mum erişi – fizik hodisa, mumning yonişi – kimyoviy hodisa.",
+    "hint": "Şamda mum ham eriydi, ham yonadi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-06-01",
+    "skillId": "kimyo-06",
+    "difficulty": 1,
+    "stem": "Havoning eng katta qismini qaysi gaz taşkil qiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Kislorod"
+      },
+      {
+        "id": "b",
+        "text": "Azot"
+      },
+      {
+        "id": "c",
+        "text": "Karbonat angidrid"
+      },
+      {
+        "id": "d",
+        "text": "Vodorod"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Havoning qariyb 78 % i azot, 21 % i kislorod.",
+    "hint": "Bu gaz kisloroddan deyarli tört barobar köp.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-06-02",
+    "skillId": "kimyo-06",
+    "difficulty": 2,
+    "stem": "Havoda kislorod taxminan qança?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "78 %"
+      },
+      {
+        "id": "b",
+        "text": "1 %"
+      },
+      {
+        "id": "c",
+        "text": "21 %"
+      },
+      {
+        "id": "d",
+        "text": "50 %"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Havoning qariyb beşdan bir qismi – 21 % i kislorod.",
+    "hint": "Havoning beşdan bir qismini hisobla.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-06-03",
+    "skillId": "kimyo-06",
+    "difficulty": 2,
+    "stem": "Yoniş uçun qaysi gaz zarur?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Azot"
+      },
+      {
+        "id": "b",
+        "text": "Geliy"
+      },
+      {
+        "id": "c",
+        "text": "Karbonat angidrid"
+      },
+      {
+        "id": "d",
+        "text": "Kislorod"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Moddalar kislorod bilan birikib yonadi. Kislorod bölmasa, olov öçadi.",
+    "hint": "Olovni yopib qöysak, nega öçadi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-06-04",
+    "skillId": "kimyo-06",
+    "difficulty": 3,
+    "stem": "Ösimliklar havoga kislorodni qaysi jarayonda çiqaradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Fotosintezda"
+      },
+      {
+        "id": "b",
+        "text": "Nafas olişda"
+      },
+      {
+        "id": "c",
+        "text": "Çirişda"
+      },
+      {
+        "id": "d",
+        "text": "Yonişda"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Fotosintezda ösimlik karbonat angidrid va suvdan organik modda hosil qilib, kislorod çiqaradi.",
+    "hint": "Bu jarayon yoruğlikda boradi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-06-05",
+    "skillId": "kimyo-06",
+    "difficulty": 3,
+    "stem": "Çöğlangan çöpni kislorod tölgan idişga tuşirsak nima böladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Darhol öçadi"
+      },
+      {
+        "id": "b",
+        "text": "Alanga olib, yorqin yonadi"
+      },
+      {
+        "id": "c",
+        "text": "Muzlab qoladi"
+      },
+      {
+        "id": "d",
+        "text": "Heç narsa özgarmaydi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Sof kislorodda yoniş havodagidan ança kuçli boradi, çöp qayta alanga oladi.",
+    "hint": "Havoda kislorod atigi 21 %, idişda esa deyarli 100 %.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-07-01",
+    "skillId": "kimyo-07",
+    "difficulty": 1,
+    "stem": "Suv molekulasi qaysi elementlardan tuzilgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Uglerod va kisloroddan"
+      },
+      {
+        "id": "b",
+        "text": "Azot va vodoroddan"
+      },
+      {
+        "id": "c",
+        "text": "Vodorod va kisloroddan"
+      },
+      {
+        "id": "d",
+        "text": "Natriy va xlordan"
+      }
+    ],
+    "correct": "c",
+    "explanation": "H₂O: 2 ta vodorod va 1 ta kislorod atomi.",
+    "hint": "Suvning formulasini esla.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-07-02",
+    "skillId": "kimyo-07",
+    "difficulty": 2,
+    "stem": "Toza suv 0 °C da qanday özgaradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qaynaydi"
+      },
+      {
+        "id": "b",
+        "text": "Muzlaydi"
+      },
+      {
+        "id": "c",
+        "text": "Yonadi"
+      },
+      {
+        "id": "d",
+        "text": "Parçalanadi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "0 °C – suvning muzlaş harorati.",
+    "hint": "Qişda kölmakdagi suv nima böladi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-07-03",
+    "skillId": "kimyo-07",
+    "difficulty": 2,
+    "stem": "Qaysi usul suvda erigan tuzlarni ham yöqotadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Tindiriş"
+      },
+      {
+        "id": "b",
+        "text": "Filtrlaş"
+      },
+      {
+        "id": "c",
+        "text": "Distillaş"
+      },
+      {
+        "id": "d",
+        "text": "Magnit bilan ajratiş"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Distillaşda suv buğlatilib, keyin sovutiladi. Erigan tuzlar idişda qoladi.",
+    "hint": "Erigan tuz filtrdan ham ötib ketadi.",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-07-04",
+    "skillId": "kimyo-07",
+    "difficulty": 3,
+    "stem": "Suv tabiatda qanday aylanadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Faqat daryodan dengizga oqadi"
+      },
+      {
+        "id": "b",
+        "text": "Faqat yerga şimiladi"
+      },
+      {
+        "id": "c",
+        "text": "Heç qayerga harakatlanmaydi"
+      },
+      {
+        "id": "d",
+        "text": "Buğlanadi, bulut hosil qiladi va yağin bölib tuşadi"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Quyoş issiğida suv buğlanadi, bulutlar hosil böladi, yomğir va qor bölib yana yerga qaytadi.",
+    "hint": "Yomğir suvi qayerdan keladi?",
+    "source": "bank"
+  },
+  {
+    "id": "kimyo-07-05",
+    "skillId": "kimyo-07",
+    "difficulty": 3,
+    "stem": "Nega muz suvda çökmaydi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Muzning ziçligi suvnikidan kiçik"
+      },
+      {
+        "id": "b",
+        "text": "Muz suvdan oğir"
+      },
+      {
+        "id": "c",
+        "text": "Muz suvda darhol eriydi"
+      },
+      {
+        "id": "d",
+        "text": "Muz içida havo yöq"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Suv muzlaganda kengayadi, muzning ziçligi suvnikidan kiçik böladi, şuning uçun u suv ustida qalqib turadi.",
+    "hint": "Muzlaganda suv hajmi qanday özgaradi?",
+    "source": "bank"
+  }
+]

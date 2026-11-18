@@ -6,6 +6,8 @@ import inglizTili from "./ingliz-tili/subject.json";
 import inglizTiliQ from "./ingliz-tili/questions.json";
 import biologiya from "./biologiya/subject.json";
 import biologiyaQ from "./biologiya/questions.json";
+import kimyo from "./kimyo/subject.json";
+import kimyoQ from "./kimyo/questions.json";
 
 type SubjectJson = { meta: SubjectMeta; graph: KnowledgeGraph; materials: MaterialSample[] };
 const fromJson = (s: unknown, questions: unknown): SubjectContent => ({
@@ -38,6 +40,7 @@ export const subjects: SubjectContent[] = [
   fromJson(onaTili, onaTiliQ),
   fromJson(inglizTili, inglizTiliQ),
   fromJson(biologiya, biologiyaQ),
+  fromJson(kimyo, kimyoQ),
 ];
 export const subjectsById: Record<string, SubjectContent> = Object.fromEntries(subjects.map((s) => [s.meta.id, s]));
 export function lessonQuestions(subjectId: string, lessonId: string): Question[] {
