@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 
-/** Sprout above the soil line, roots below; one root tip glows red (the gap we find). */
+/** Sprout (nihol) above the soil line, roots below; one root tip glows red (the gap we find). */
 export function LogoMark({ size = 32, className }: { size?: number; className?: string }) {
   return (
     <svg width={size} height={size} viewBox="0 0 40 40" fill="none" aria-hidden className={cn("logo-mark", className)}>
@@ -25,7 +25,7 @@ export function Logo({ size = 32, className }: { size?: number; className?: stri
     <span className={cn("inline-flex items-center gap-2", className)}>
       <LogoMark size={size} />
       <span className="logo-word font-display font-bold tracking-tight" style={{ fontSize: size * 0.68 }}>
-        Ildiz
+        Nihol
       </span>
     </span>
   );

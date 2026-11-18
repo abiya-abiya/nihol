@@ -28,12 +28,12 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
 
       <div className="grid flex-1 items-center gap-x-12 gap-y-12 pt-6 pb-14 lg:grid-cols-[minmax(0,1.08fr)_minmax(0,1fr)] lg:pt-0 lg:pb-16">
         <div className="flex flex-col">
-          <p className="text-ink-soft mb-4 text-sm font-semibold tracking-wide uppercase">Öqituvçi uçun tayyor vosita</p>
+          <p className="text-ink-soft mb-4 text-sm font-semibold tracking-wide uppercase">Maktab uçun eng yaxşi SI‑vosita</p>
           <h1 className="text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.035em] sm:text-[3.6rem] xl:text-[4.6rem] 2xl:text-[5.2rem]">
             Xatoning ildizini topadigan SI‑tyutor
           </h1>
           <p className="text-ink-soft mt-6 max-w-[38rem] text-[1.12rem] leading-relaxed sm:text-[1.25rem] 2xl:text-[1.35rem]">
-            Dars materialini yuklaysiz, Ildiz <span className="text-ink font-semibold">test tayyorlaydi</span>. Öquvçi
+            Dars materialini yuklaysiz, Nihol <span className="text-ink font-semibold">test tayyorlaydi</span>. Öquvçi
             telefonda yeçadi, öqituvçi butun sinfni jonli köradi, ota‑ona esa bolasining{" "}
             <span className="text-ink marker font-semibold">har bir fan böyiça xaritasini</span>. Matematikada SI xatoning
             asl sababini — ildizini — topadi.

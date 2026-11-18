@@ -240,7 +240,7 @@ export function HowItWorks() {
         <Step
           n={1}
           title="Materialdan test"
-          body="Öqituvçi dars materialini (PDF yoki Word) yuklaydi. Ildiz uni öqib çiqadi, asosiy tuşunçalarni topadi va beş savollik test tayyorlaydi. Öqituvçi tahrirlaydi va sinfga yuboradi."
+          body="Öqituvçi dars materialini (PDF yoki Word) yuklaydi. Nihol uni öqib çiqadi, asosiy tuşunçalarni topadi va beş savollik test tayyorlaydi. Öqituvçi tahrirlaydi va sinfga yuboradi."
         >
           <DiagnosticArt />
         </Step>

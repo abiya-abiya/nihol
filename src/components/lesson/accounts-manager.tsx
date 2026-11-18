@@ -13,7 +13,7 @@ const loginUrl = () => (typeof window === "undefined" ? "/login" : `${window.loc
 
 function credText(users: User[]) {
   return [
-    "Ildiz — kiriş",
+    "Nihol — kiriş",
     loginUrl(),
     ...users.map((u) => `${u.role === "parent" ? "Ota-ona" : "Öquvçi"}: ${u.name}\nLogin: ${u.login}\nParol: ${u.password}`),
   ].join("\n\n");

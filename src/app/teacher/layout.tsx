@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { TeacherSurface } from "@/components/lesson/teacher-shell";
 
 export const metadata: Metadata = {
-  title: "Öqituvçi paneli — Ildiz",
+  title: "Öqituvçi paneli — Nihol",
   description: "Sinfning bilim xaritasi, fanlar, testlar va öquvçilar natijalari.",
 };
 

@@ -62,7 +62,7 @@ function LoginForm() {
           <motion.div key="form" exit={{ opacity: 0, y: -16 }} className="flex flex-col gap-7">
             <FadeIn className="space-y-4">
               <LogoMark size={56} />
-              <h1 className="text-[2.2rem] leading-[1.1] font-bold">Ildizga kiriş</h1>
+              <h1 className="text-[2.2rem] leading-[1.1] font-bold">Niholga kiriş</h1>
               <p className="text-muted-foreground text-lg">
                 Öqituvçi, öquvçi va ota-ona bir platformada. {next ? "Davom etiş uçun hisobingizga kiring." : ""}
               </p>

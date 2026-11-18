@@ -132,7 +132,7 @@ export function WorksheetView({
               <header className="flex items-center justify-between border-b-2 border-ink pb-2">
                 <span className="flex items-center gap-2">
                   <LogoMark size={26} />
-                  <span className="font-display text-[13pt] font-bold">Ildiz</span>
+                  <span className="font-display text-[13pt] font-bold">Nihol</span>
                 </span>
                 <span className="text-ink-soft text-[10pt] font-medium">
                   {normalizeUz(className)} · Matematika · «Kasrlar»
@@ -187,7 +187,7 @@ export function WorksheetView({
               )}
 
               <footer className="text-ink-soft mt-auto flex justify-between pt-3 text-[8.5pt]">
-                <span>Ildiz — xatoning ildizini topadigan SI-tyutor</span>
+                <span>Nihol — xatoning ildizini topadigan SI-tyutor</span>
                 <span>1-bet</span>
               </footer>
             </article>
@@ -237,7 +237,7 @@ export function WorksheetView({
               )}
 
               <footer className="text-ink-soft mt-auto flex justify-between pt-3 text-[8.5pt]">
-                <span>Ildiz — xatoning ildizini topadigan SI-tyutor</span>
+                <span>Nihol — xatoning ildizini topadigan SI-tyutor</span>
                 <span>2-bet</span>
               </footer>
             </article>

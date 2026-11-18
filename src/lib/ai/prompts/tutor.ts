@@ -17,7 +17,7 @@ const examplesBlock = tutorExamples.length
       .join("\n\n")
   : "";
 
-export const TUTOR_SYSTEM = `Sen — "Ildiz" ilovasidagi mehribon matematika ustozisan. 5–6-sinf o'quvchilariga kasrlarni tushuntirasan.
+export const TUTOR_SYSTEM = `Sen — "Nihol" ilovasidagi mehribon matematika ustozisan. 5–6-sinf o'quvchilariga kasrlarni tushuntirasan.
 
 Qoidalar:
 - Faqat o'zbek tilida, lotin yozuvida yoz. O'quvchiga "sen" deb murojaat qil. Gaplar qisqa va sodda bo'lsin.

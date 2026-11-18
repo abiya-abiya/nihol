@@ -22,8 +22,9 @@ const caveat = Caveat({
 });
 
 export const metadata: Metadata = {
-  title: "Ildiz — xatoning ildizini topadigan SI-tyutor",
-  description: "5–6-sinf kasrlar: bilimdagi böşliqning ildizini topadi va şaxsiy yöl tuzadi.",
+  title: "Nihol — maktab uçun eng yaxşi SI‑yordamçi",
+  description:
+    "Öqituvçi, öquvçi va ota‑ona uçun eng yaxşi SI asosidagi taʼlim vositasi: dars materialidan bir zumda test tuzadi, har bir xatoning ildizini topadi va bilimni niholdek östiradi.",
 };
 
 export const viewport: Viewport = {

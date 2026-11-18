@@ -7,9 +7,9 @@ import { Problem, Roles, Subjects, TeacherBand, TeamStrip } from "@/components/p
 import { subjects } from "@/content/subjects";
 
 export const metadata: Metadata = {
-  title: "Ildiz — öqituvçi uçun tayyor SI‑vosita",
+  title: "Nihol — öqituvçi, öquvçi va ota‑ona uçun eng yaxşi SI‑vosita",
   description:
-    "Dars materialidan test, sinf xaritasi fanlar böyiça, ota‑onaga bolasining ösişi. Matematikada SI xatoning ildizini topadi.",
+    "Öqituvçi, öquvçi va ota‑ona uçun eng yaxşi SI asosidagi taʼlim vositasi: dars materialidan bir zumda test tuzadi, har bir xatoning ildizini topadi va bilimni niholdek östiradi.",
 };
 
 /** Public origin for QR codes: NEXT_PUBLIC_APP_URL, else the request's own host. */
@@ -18,7 +18,7 @@ async function appOrigin(): Promise<string> {
   if (env && !env.includes("localhost")) return env.replace(/\/$/, "");
   const h = await headers();
   const host = h.get("x-forwarded-host") ?? h.get("host") ?? "localhost:3000";
-  const proto = h.get("x-forwarded-proto") ?? (host.startsWith("localhost") ? "http" : "https");
+  const proto = h.get("x-forwarded-proto") ?? (/(^|\.)localhost(:|$)/.test(host) ? "http" : "https");
   return `${proto}://${host}`;
 }
 

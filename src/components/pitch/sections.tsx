@@ -101,7 +101,7 @@ export function Problem() {
           </h2>
           <p className="text-ink-soft mt-4 max-w-[34rem] text-[1.1rem] leading-relaxed">
             Öquvçi kasrlarni qöşişda adaşadi, lekin sabab EKUKni topa olmasliqda. Öqituvçi daftarda belgini köradi,
-            ildizni emas. Ildiz aynan şu yaşirin sababni körsatadi.
+            ildizni emas. Nihol aynan şu yaşirin sababni körsatadi.
           </p>
         </div>
         <ul className="flex flex-col">

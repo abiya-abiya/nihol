@@ -1,4 +1,10 @@
-# Ildiz — xatoning ildizini topadigan SI-tyutor
+# Nihol — maktab uchun eng yaxshi SI-yordamchi
+
+O'qituvchi, o'quvchi va ota-ona uchun eng yaxshi sun'iy intellekt asosidagi ta'lim
+vositasi: dars materialidan bir zumda test tuzadi, har bir xatoning ildizini topadi
+va bilimni niholdek o'stiradi.
+
+Lokal manzil: http://nihol.localhost:3000 (`npm run dev` yoki `npm run start`).
 
 Umummilliy AI Xakaton 2026 (Toshkent, 17–19 noyabr), Ta'lim yo'nalishi, 3-muammo.
 O'zbek tilida ishlaydi, 5–6-sinf "Kasrlar" mavzusida o'quvchining bilimidagi
