@@ -74,10 +74,10 @@ export function WorksheetView({
             </Link>
           </Button>
           <div className="min-w-0">
-            <h1 className="text-lg leading-tight font-bold">Mashq varaqasi</h1>
+            <h1 className="text-lg leading-tight font-bold">Maşq varaqasi</h1>
             <p className="text-ink-soft text-sm">
               Ildiz: <span className="font-semibold">{skillTitle(root)}</span>
-              {groupSize ? ` · ${groupSize} oʻquvchi uchun` : ""}
+              {groupSize ? ` · ${groupSize} öquvçi uçun` : ""}
               {hasAi ? " · matnli masalalarni AI yozdi" : ""}
             </p>
           </div>
@@ -97,7 +97,7 @@ export function WorksheetView({
               disabled={!ws || loading}
             >
               <Printer aria-hidden />
-              Chop etish
+              Çop etiş
             </Button>
           </div>
         </div>
@@ -106,10 +106,10 @@ export function WorksheetView({
       <div className="ws-stack flex flex-col items-center gap-8 px-4 py-8">
         {error && !ws ? (
           <div className="sheet no-print flex max-w-md flex-col items-center gap-3 p-8 text-center">
-            <p className="font-semibold">Varaqani tayyorlab boʻlmadi.</p>
-            <p className="text-ink-soft text-sm">Aloqani tekshirib, qayta urinib koʻring.</p>
+            <p className="font-semibold">Varaqani tayyorlab bölmadi.</p>
+            <p className="text-ink-soft text-sm">Aloqani tekşirib, qayta urinib köring.</p>
             <Button className="h-10 rounded-[14px] px-4" onClick={() => mutate()}>
-              Qayta urinish
+              Qayta uriniş
             </Button>
           </div>
         ) : !ws ? (
@@ -117,13 +117,13 @@ export function WorksheetView({
             <Loader2 className="text-ink-soft size-8 animate-spin" aria-hidden />
             <p className="font-semibold">Varaqa tayyorlanmoqda…</p>
             <p className="text-ink-soft max-w-xs text-sm">
-              Misollar hisoblanmoqda, AI esa matnli masalalarni yozmoqda. Bu 10–20 soniya olishi mumkin.
+              Misollar hisoblanmoqda, AI esa matnli masalalarni yozmoqda. Bu 10–20 soniya olişi mumkin.
             </p>
           </div>
         ) : (
           <>
             {/* Page 1: tasks */}
-            <article className="ws-page sheet relative" aria-label="1-bet: topshiriqlar">
+            <article className="ws-page sheet relative" aria-label="1-bet: topşiriqlar">
               {loading && (
                 <div className="no-print absolute inset-0 z-10 grid place-items-center rounded-[inherit] bg-white/70">
                   <Loader2 className="text-ink-soft size-8 animate-spin" aria-hidden />
@@ -196,7 +196,7 @@ export function WorksheetView({
             <article className="ws-page sheet" aria-label="2-bet: javoblar kaliti">
               <header className="flex items-center justify-between border-b-2 border-ink pb-2">
                 <span className="font-display text-[13pt] font-bold">Javoblar kaliti</span>
-                <span className="text-ink-soft text-[10pt] font-medium">Oʻqituvchi uchun · {normalizeUz(ws.title)}</span>
+                <span className="text-ink-soft text-[10pt] font-medium">Öqituvçi uçun · {normalizeUz(ws.title)}</span>
               </header>
 
               <ol className="mt-4 grid grid-cols-2 gap-x-8 gap-y-2.5">
@@ -210,7 +210,7 @@ export function WorksheetView({
               </ol>
 
               <section className="ws-task mt-6">
-                <h3 className="text-[12pt] font-bold">Oʻqituvchiga eslatma</h3>
+                <h3 className="text-[12pt] font-bold">Öqituvçiga eslatma</h3>
                 <MathText text={ws.teacherNotes} className="mt-1 text-[10.5pt] leading-relaxed" fracSize="sm" />
               </section>
 

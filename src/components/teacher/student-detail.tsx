@@ -20,7 +20,7 @@ const REFRESH_MS = 5000;
 
 const REASON: Record<PathStep["reason"], string> = {
   "root-gap": "ildiz",
-  "on-the-way": "yoʻlda",
+  "on-the-way": "yölda",
   target: "maqsad",
 };
 
@@ -79,16 +79,16 @@ export function StudentDetail({
         <div className="min-w-0">
           <h1 className="text-[1.6rem] leading-tight font-bold">{name}</h1>
           <p className="text-ink-soft text-sm">
-            {snapshot?.diagnosticDone ? "Diagnostikadan oʻtgan" : "Diagnostika jarayonida"} · faollik:{" "}
+            {snapshot?.diagnosticDone ? "Diagnostikadan ötgan" : "Diagnostika jarayonida"} · faollik:{" "}
             {timeAgo(lastActive, now)}
           </p>
         </div>
         {snapshot && (
           <div className="ml-auto flex items-center gap-3">
             <span className="text-ink-soft text-right text-sm leading-tight font-medium">
-              Oʻrtacha
+              Örtaça
               <br />
-              oʻzlashtirish
+              özlaştiriş
             </span>
             <MasteryRing p={masteryAvg} size={64} />
           </div>
@@ -99,8 +99,8 @@ export function StudentDetail({
         <section className="sheet grid place-items-center gap-2 p-10 text-center">
           <h2 className="text-xl font-bold">Diagnostika hali tugamagan</h2>
           <p className="text-ink-soft max-w-md">
-            {name} hozir savollarga javob bermoqda. Diagnostika tugashi bilan bilim xaritasi va ildiz sababi shu yerda
-            paydo boʻladi.
+            {name} hozir savollarga javob bermoqda. Diagnostika tugaşi bilan bilim xaritasi va ildiz sababi şu yerda
+            paydo böladi.
           </p>
           {attempts.length > 0 && <AttemptList attempts={attempts} now={now} className="mt-4 w-full max-w-xl text-left" />}
         </section>
@@ -109,7 +109,7 @@ export function StudentDetail({
           <section aria-label="Bilim xaritasi" className="sheet flex flex-col self-start p-4 lg:sticky lg:top-5">
             <div className="flex items-baseline justify-between gap-4 px-1">
               <h2 className="text-lg font-bold">Bilim xaritasi</h2>
-              <p className="text-ink-soft text-sm">pastda — asos · koʻnikmani bosing</p>
+              <p className="text-ink-soft text-sm">pastda — asos · könikmani bosing</p>
             </div>
             <KnowledgeMap
               graph={graph}
@@ -127,7 +127,7 @@ export function StudentDetail({
                   <p className="font-semibold">{skillTitle(selected)}</p>
                   <p className="text-ink-soft text-sm">
                     {levelLabel(levelOf(sel))} ·{" "}
-                    {sel.inferred ? "taxmin qilingan (soʻralmagan)" : `${sel.correct} / ${sel.attempts} toʻgʻri`}
+                    {sel.inferred ? "taxmin qilingan (söralmagan)" : `${sel.correct} / ${sel.attempts} töğri`}
                   </p>
                 </div>
                 <span className="font-display tabular text-lg font-bold">{pct(sel.p)}%</span>
@@ -146,7 +146,7 @@ export function StudentDetail({
                     <span className="font-semibold">{skillTitle(trace.targetSkillId)}</span>dagi xatoning ildizi —{" "}
                     <span className="marker font-bold">{skillTitle(trace.rootSkillId)}</span>.
                   </p>
-                  <ol className="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2" aria-label="Iz: maqsaddan ildizgacha">
+                  <ol className="mt-3 flex flex-wrap items-center gap-x-1.5 gap-y-2" aria-label="Iz: maqsaddan ildizgaça">
                     {trace.chain.map((id, i) => {
                       const isRoot = id === trace.rootSkillId;
                       return (
@@ -166,7 +166,7 @@ export function StudentDetail({
                   </ol>
                   {rootIds.length > 1 && (
                     <p className="text-ink-soft mt-3 text-sm">
-                      Boshqa ildizlar: {rootIds.filter((r) => r !== trace.rootSkillId).map(skillTitle).join(", ")}
+                      Boşqa ildizlar: {rootIds.filter((r) => r !== trace.rootSkillId).map(skillTitle).join(", ")}
                     </p>
                   )}
                   <Button asChild className="mt-4 h-10 rounded-[14px] px-4 text-sm font-semibold">
@@ -176,22 +176,22 @@ export function StudentDetail({
                       }&group=${trace.rootSkillId}&class=${student.classId}`}
                     >
                       <FileText aria-hidden />
-                      Shu ildiz boʻyicha mashq varaqasi
+                      Şu ildiz böyiça maşq varaqasi
                     </Link>
                   </Button>
                 </>
               ) : (
                 <p className="text-ink-soft mt-2 text-[1.05rem]">
                   {rootIds.length
-                    ? `Ildiz boʻshliq: ${rootIds.map(skillTitle).join(", ")}.`
-                    : "Ildiz muammo topilmadi: asosiy koʻnikmalar oʻzlashtirilgan. Murakkabroq masalalar bilan davom etish mumkin."}
+                    ? `Ildiz böşliq: ${rootIds.map(skillTitle).join(", ")}.`
+                    : "Ildiz muammo topilmadi: asosiy könikmalar özlaştirilgan. Murakkabroq masalalar bilan davom etiş mumkin."}
                 </p>
               )}
             </section>
 
             <section aria-labelledby="path-title" className="sheet p-5">
               <h2 id="path-title" className="text-lg font-bold">
-                Shaxsiy yoʻl
+                Şaxsiy yöl
               </h2>
               <ol className="mt-2 flex flex-col">
                 {snapshot.path.map((step) => {
@@ -273,7 +273,7 @@ export function StudentDetail({
 }
 
 function AttemptList({ attempts, now, className }: { attempts: Attempt[]; now: string; className?: string }) {
-  if (!attempts.length) return <p className={cn("text-ink-soft", className)}>Hali javoblar yoʻq.</p>;
+  if (!attempts.length) return <p className={cn("text-ink-soft", className)}>Hali javoblar yöq.</p>;
   return (
     <ol className={cn("flex flex-col", className)}>
       {attempts.map((a) => {
@@ -287,7 +287,7 @@ function AttemptList({ attempts, now, className }: { attempts: Attempt[]; now: s
               )}
             >
               {a.correct ? (
-                <Check className="size-3.5" strokeWidth={3} aria-label="toʻgʻri" />
+                <Check className="size-3.5" strokeWidth={3} aria-label="töğri" />
               ) : (
                 <X className="size-3.5" strokeWidth={3} aria-label="xato" />
               )}

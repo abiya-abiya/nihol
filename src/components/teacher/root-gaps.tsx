@@ -21,11 +21,11 @@ export function RootGaps({ report }: { report: ClassReport }) {
       <h2 id="root-gaps-title" className="text-lg font-bold">
         Sinfning ildiz muammolari
       </h2>
-      <p className="text-ink-soft text-sm">Bir xil ildizli oʻquvchilar — bitta mashq varaqasi</p>
+      <p className="text-ink-soft text-sm">Bir xil ildizli öquvçilar — bitta maşq varaqasi</p>
 
       {gaps.length === 0 ? (
         <p className="text-ink-soft py-6 text-center text-[0.95rem]">
-          Hozircha ildiz muammo topilmadi. Oʻquvchilar diagnostikadan oʻtgach, shu yerda paydo boʻladi.
+          Hozirça ildiz muammo topilmadi. Öquvçilar diagnostikadan ötgaç, şu yerda paydo böladi.
         </p>
       ) : (
         <ol className="mt-2 flex flex-col">
@@ -42,7 +42,7 @@ export function RootGaps({ report }: { report: ClassReport }) {
                       {skillTitle(g.skillId)}
                     </span>
                     <span className="tabular shrink-0 text-sm font-bold">
-                      <span className="font-display text-base">{g.studentIds.length}</span> oʻquvchi
+                      <span className="font-display text-base">{g.studentIds.length}</span> öquvçi
                     </span>
                   </div>
                   <span className="bg-ink-wash relative mt-1.5 block h-2 overflow-hidden rounded-full">
@@ -80,7 +80,7 @@ export function RootGaps({ report }: { report: ClassReport }) {
                   asChild
                   variant={i === 0 ? "default" : "outline"}
                   className="h-10 rounded-[14px] px-3.5 text-sm font-semibold"
-                  aria-label={`${skillTitle(g.skillId)}: mashq varaqasi yaratish`}
+                  aria-label={`${skillTitle(g.skillId)}: maşq varaqasi yaratiş`}
                 >
                   <Link href={worksheetHref(report, g.skillId, g.studentIds)}>
                     <FileText aria-hidden />

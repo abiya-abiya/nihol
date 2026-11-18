@@ -124,7 +124,7 @@ export function TeacherDashboard({ initial, backHref }: { initial: ClassReport; 
       setResetOpen(false);
       toast.success("Demo holati tiklandi");
     } catch {
-      toast.error("Tiklab boʻlmadi. Aloqani tekshirib, qayta urinib koʻring.");
+      toast.error("Tiklab bölmadi. Aloqani tekşirib, qayta urinib köring.");
     } finally {
       setResetting(false);
     }
@@ -160,18 +160,18 @@ export function TeacherDashboard({ initial, backHref }: { initial: ClassReport; 
             onClick={() => setJoinOpen(true)}
           >
             <QrCode aria-hidden />
-            Oʻquvchini ulash
+            Öquvçini ulaş
           </Button>
           <DropdownMenu>
             <DropdownMenuTrigger asChild>
-              <Button variant="ghost" size="icon-lg" className="size-10 rounded-[14px]" aria-label="Qoʻshimcha amallar">
+              <Button variant="ghost" size="icon-lg" className="size-10 rounded-[14px]" aria-label="Qöşimça amallar">
                 <MoreHorizontal />
               </Button>
             </DropdownMenuTrigger>
             <DropdownMenuContent align="end" className="min-w-56">
               <DropdownMenuItem onSelect={() => setResetOpen(true)}>
                 <RotateCcw aria-hidden />
-                Demo holatini tiklash
+                Demo holatini tiklaş
               </DropdownMenuItem>
             </DropdownMenuContent>
           </DropdownMenu>
@@ -215,7 +215,7 @@ export function TeacherDashboard({ initial, backHref }: { initial: ClassReport; 
           <DialogHeader>
             <DialogTitle className="text-xl">Telefoningiz bilan skanerlang</DialogTitle>
             <DialogDescription>
-              Oʻquvchi ismini yozadi va diagnostikani boshlaydi. Natijasi shu panelda darhol paydo boʻladi.
+              Öquvçi ismini yozadi va diagnostikani boşlaydi. Natijasi şu panelda darhol paydo böladi.
             </DialogDescription>
           </DialogHeader>
           <div className="grid place-items-center py-2">
@@ -234,19 +234,19 @@ export function TeacherDashboard({ initial, backHref }: { initial: ClassReport; 
           <DialogHeader>
             <DialogTitle className="text-xl">Demo holatini tiklaysizmi?</DialogTitle>
             <DialogDescription>
-              Sinf 24 ta namunaviy oʻquvchiga qaytariladi. Demo paytida qoʻshilgan oʻquvchilar va ularning javoblari
-              oʻchiriladi.
+              Sinf 24 ta namunaviy öquvçiga qaytariladi. Demo paytida qöşilgan öquvçilar va ularning javoblari
+              öçiriladi.
             </DialogDescription>
           </DialogHeader>
           <DialogFooter>
             <DialogClose asChild>
               <Button variant="outline" className="h-10 rounded-[14px] px-4" disabled={resetting}>
-                Bekor qilish
+                Bekor qiliş
               </Button>
             </DialogClose>
             <Button className="h-10 rounded-[14px] px-4" onClick={resetDemo} disabled={resetting}>
               {resetting ? <Loader2 className="animate-spin" aria-hidden /> : <RotateCcw aria-hidden />}
-              {resetting ? "Tiklanmoqda…" : "Ha, tiklash"}
+              {resetting ? "Tiklanmoqda…" : "Ha, tiklaş"}
             </Button>
           </DialogFooter>
         </DialogContent>
@@ -259,10 +259,10 @@ function EmptyClass({ url }: { url: string }) {
   return (
     <section className="sheet grid place-items-center p-8 text-center">
       <div className="flex max-w-md flex-col items-center gap-4">
-        <h2 className="text-2xl font-bold">Sinf hali boʻsh</h2>
+        <h2 className="text-2xl font-bold">Sinf hali böş</h2>
         <p className="text-ink-soft text-[1.05rem]">
-          Oʻquvchilar QR kodni skanerlab, ismini yozib, diagnostikani boshlashsin. Har bir javob shu yerda jonli
-          koʻrinadi.
+          Öquvçilar QR kodni skanerlab, ismini yozib, diagnostikani boşlaşsin. Har bir javob şu yerda jonli
+          körinadi.
         </p>
         <div className="rounded-2xl border-2 border-ink bg-white p-4">
           <QRCodeSVG value={url} size={200} fgColor="#1d2b64" level="M" />

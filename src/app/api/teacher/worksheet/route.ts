@@ -47,11 +47,11 @@ export async function POST(req: Request) {
 
   // Template text (always available, used when AI is off or fails).
   const template: WorksheetText = {
-    title: `Mashq varaqasi: ${root.title}`,
-    intro: `Bugun «${root.title}» mavzusini mustahkamlaymiz. Har bir misolni shoshilmay yech va javobni chiziqqa yoz.`,
+    title: `Maşq varaqasi: ${root.title}`,
+    intro: `Bugun «${root.title}» mavzusini mustahkamlaymiz. Har bir misolni şoşilmay yeç va javobni çiziqqa yoz.`,
     teacherNotes: mis.length
-      ? `Bu guruhda koʻp uchragan xato: ${mis[0].title.toLowerCase()} (${mis[0].example}). ${mis[0].remedy}`
-      : `Bu guruhning ildiz boʻshligʻi — ${root.title}. Avval birinchi misollarni birga yechib koʻring.`,
+      ? `Bu guruhda köp uçragan xato: ${mis[0].title.toLowerCase()} (${mis[0].example}). ${mis[0].remedy}`
+      : `Bu guruhning ildiz böşliği — ${root.title}. Avval birinçi misollarni birga yeçib köring.`,
     wordProblems: [],
   };
 

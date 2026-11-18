@@ -54,7 +54,7 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
             </Button>
           </div>
           <p className="text-ink-soft mt-4 text-sm">
-            4 ta fan · 3 ta rol: öqituvçi, öquvçi, ota‑ona · internet uzilsa ham ishlaydi
+            4 ta fan · 3 ta rol: öqituvçi, öquvçi, ota‑ona · internet uzilsa ham işlaydi
           </p>
         </div>
 

@@ -111,7 +111,7 @@ export function RootTrace({ className }: { className?: string }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={at(T.note)}
                   >
-                    ildiz shu yerda!
+                    ildiz şu yerda!
                   </motion.span>
                 ) : null}
               </motion.li>

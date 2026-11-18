@@ -23,15 +23,15 @@ export function KpiTiles({ report }: { report: ClassReport }) {
 
   return (
     <section
-      aria-label="Sinf koʻrsatkichlari"
+      aria-label="Sinf körsatkiçlari"
       className="sheet divide-border grid grid-cols-[1fr_1fr_1fr_1.6fr] divide-x overflow-hidden"
     >
-      <Tile label="Oʻquvchilar">
+      <Tile label="Öquvçilar">
         <span className="font-display tabular text-[1.75rem] leading-none font-bold">
           <NumberFlow value={total} />
         </span>
       </Tile>
-      <Tile label="Diagnostikadan oʻtdi">
+      <Tile label="Diagnostikadan ötdi">
         <span className="flex items-baseline gap-1.5">
           <span className="font-display tabular text-[1.75rem] leading-none font-bold">
             <NumberFlow value={done} />
@@ -39,19 +39,19 @@ export function KpiTiles({ report }: { report: ClassReport }) {
           <span className="text-ink-soft tabular text-lg font-semibold">/ {total}</span>
         </span>
       </Tile>
-      <Tile label="Oʻrtacha oʻzlashtirish">
+      <Tile label="Örtaça özlaştiriş">
         <span className="font-display tabular text-[1.75rem] leading-none font-bold">
           <NumberFlow value={Math.round(avg * 100)} suffix="%" />
         </span>
       </Tile>
-      <Tile label="Eng koʻp uchragan ildiz muammo" className="bg-red-pen/[0.04]">
+      <Tile label="Eng köp uçragan ildiz muammo" className="bg-red-pen/[0.04]">
         {top ? (
           <span className="flex min-w-0 items-baseline gap-3">
             <span className="font-display marker truncate text-[1.5rem] leading-tight font-bold">
               {skillShort(top.skillId)}
             </span>
             <span className="text-red-pen tabular shrink-0 text-lg font-bold">
-              <NumberFlow value={top.studentIds.length} /> oʻquvchi
+              <NumberFlow value={top.studentIds.length} /> öquvçi
             </span>
           </span>
         ) : (

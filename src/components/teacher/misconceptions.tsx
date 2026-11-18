@@ -30,7 +30,7 @@ export function Misconceptions({ report }: { report: ClassReport }) {
             </div>
             <div className="text-right">
               <span className="font-display tabular block text-xl leading-tight font-bold">{m.studentIds.length}</span>
-              <span className="text-ink-soft text-xs font-medium">oʻquvchi</span>
+              <span className="text-ink-soft text-xs font-medium">öquvçi</span>
             </div>
           </li>
         );

@@ -11,7 +11,7 @@ export function ActivityFeed({ report }: { report: ClassReport }) {
   const items = report.recentAttempts.slice(0, 14);
   if (!items.length) {
     return (
-      <p className="text-ink-soft py-6 text-center">Hali javoblar yoʻq. Oʻquvchilar boshlashi bilan shu yerda koʻrinadi.</p>
+      <p className="text-ink-soft py-6 text-center">Hali javoblar yöq. Öquvçilar boşlaşi bilan şu yerda körinadi.</p>
     );
   }
   return (
@@ -33,7 +33,7 @@ export function ActivityFeed({ report }: { report: ClassReport }) {
               )}
             >
               {a.correct ? (
-                <Check className="size-3.5" strokeWidth={3} aria-label="toʻgʻri" />
+                <Check className="size-3.5" strokeWidth={3} aria-label="töğri" />
               ) : (
                 <X className="size-3.5" strokeWidth={3} aria-label="xato" />
               )}

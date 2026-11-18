@@ -74,13 +74,13 @@ export function Heatmap({
       <header className="flex flex-wrap items-center justify-between gap-x-6 gap-y-1.5 px-5 pt-3.5 pb-1">
         <div className="flex items-baseline gap-3">
           <h2 className="text-lg font-bold">Sinf xaritasi</h2>
-          <p className="text-ink-soft hidden text-sm xl:block">chapda — asos, oʻngda — murakkab</p>
+          <p className="text-ink-soft hidden text-sm xl:block">çapda — asos, öngda — murakkab</p>
         </div>
         <Legend />
       </header>
 
       <div className="min-h-0 flex-1 overflow-auto px-3" onMouseLeave={() => setHover(null)}>
-        <div role="table" aria-label="Oʻquvchilar va koʻnikmalar" className="min-w-[640px] pr-12">
+        <div role="table" aria-label="Öquvçilar va könikmalar" className="min-w-[640px] pr-12">
           {/* column labels */}
           <div
             role="row"
@@ -88,10 +88,10 @@ export function Heatmap({
             style={{ gridTemplateColumns: template }}
           >
             <span role="columnheader" className="text-ink-soft self-end px-2 text-[0.8rem] font-semibold">
-              Oʻquvchi
+              Öquvçi
             </span>
             <span role="columnheader" className="text-ink-soft self-end text-right text-[0.8rem] font-semibold">
-              Oʻrt.
+              Ört.
             </span>
             {skills.map((id) => (
               <span key={id} role="columnheader" title={skillTitle(id)} className="relative h-[84px]">
@@ -110,7 +110,7 @@ export function Heatmap({
                     <span className="font-hand text-red-pen text-[1.35rem] leading-none font-bold">
                       ildiz: {g.label}
                     </span>
-                    <span className="text-ink-soft text-sm font-medium">· {g.students.length} oʻquvchi</span>
+                    <span className="text-ink-soft text-sm font-medium">· {g.students.length} öquvçi</span>
                   </>
                 ) : (
                   <span className="text-ink-soft text-sm font-semibold">
@@ -157,7 +157,7 @@ export function Heatmap({
                             <span
                               key={id}
                               role="cell"
-                              aria-label={`${skillTitle(id)}: ${tested ? levelLabel(levelOf(st)) : "tekshirilmagan"}`}
+                              aria-label={`${skillTitle(id)}: ${tested ? levelLabel(levelOf(st)) : "tekşirilmagan"}`}
                               className="relative h-[26px]"
                               onMouseEnter={(e) => {
                                 const r = e.currentTarget.getBoundingClientRect();
@@ -200,7 +200,7 @@ export function Heatmap({
             style={{ gridTemplateColumns: template }}
           >
             <span role="rowheader" className="px-2 text-sm font-bold">
-              Sinf oʻrtachasi
+              Sinf örtaçasi
             </span>
             <span />
             {report.skillStats.map((st) => {
@@ -236,7 +236,7 @@ function CellCard({ hover }: { hover: Hover }) {
       <p className="text-ink-soft">{skillTitle(hover.skillId)}</p>
       <div className="mt-2 flex items-center gap-2">
         <span className="size-3 rounded-[3px]" style={cellStyle(st)} aria-hidden />
-        <span className="font-semibold">{st && (st.attempts > 0 || st.inferred) ? levelLabel(level) : "Tekshirilmagan"}</span>
+        <span className="font-semibold">{st && (st.attempts > 0 || st.inferred) ? levelLabel(level) : "Tekşirilmagan"}</span>
         {st && (st.attempts > 0 || st.inferred) && (
           <span className="tabular text-ink-soft ml-auto font-semibold">p = {pct(st.p)}%</span>
         )}
@@ -244,11 +244,11 @@ function CellCard({ hover }: { hover: Hover }) {
       {st && (
         <p className="text-ink-soft mt-1">
           {st.inferred
-            ? "Soʻralmagan: yuqoriroq koʻnikma toʻgʻri yechilgani uchun taxmin qilindi"
-            : `${st.correct} / ${st.attempts} toʻgʻri javob`}
+            ? "Söralmagan: yuqoriroq könikma töğri yeçilgani uçun taxmin qilindi"
+            : `${st.correct} / ${st.attempts} töğri javob`}
         </p>
       )}
-      {isRoot && <p className="font-hand text-red-pen mt-1.5 text-lg leading-tight font-bold">ildiz shu yerda!</p>}
+      {isRoot && <p className="font-hand text-red-pen mt-1.5 text-lg leading-tight font-bold">ildiz şu yerda!</p>}
       {mis.length > 0 && (
         <ul className="border-border mt-2 space-y-0.5 border-t pt-2">
           {mis.map(([id, n]) => (

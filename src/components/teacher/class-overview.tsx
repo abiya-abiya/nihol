@@ -173,7 +173,7 @@ export function ClassOverview({
         <Tile label="Sinf özlaştiriş darajasi">
           <NumberFlow value={pct(view.classAvg)} suffix="%" className="font-display tabular text-[1.75rem] leading-none font-bold" />
         </Tile>
-        <Tile label="Yuborilğan testlar">
+        <Tile label="Yuborilgan testlar">
           <NumberFlow value={view.tests.length} className="font-display tabular text-[1.75rem] leading-none font-bold" />
         </Tile>
         <Tile label="Testlarning örtaça balli">
@@ -190,7 +190,7 @@ export function ClassOverview({
               <span className="text-red-pen tabular shrink-0 text-base font-bold">{pct(view.weakest.avg as number)}%</span>
             </span>
           ) : (
-            <span className="text-ink-soft text-lg font-semibold">Hali aniqlanmağan</span>
+            <span className="text-ink-soft text-lg font-semibold">Hali aniqlanmagan</span>
           )}
         </Tile>
       </section>
@@ -249,7 +249,7 @@ export function ClassOverview({
                       <span
                         key={l.id}
                         role="cell"
-                        title={`${l.short}: ${tested ? `${levelLabel(levelOf(st))} · ${pct(st.p)}%` : "tekşirilmağan"}`}
+                        title={`${l.short}: ${tested ? `${levelLabel(levelOf(st))} · ${pct(st.p)}%` : "tekşirilmagan"}`}
                         className="relative h-[26px]"
                       >
                         {tested ? (
@@ -302,7 +302,7 @@ export function ClassOverview({
           </div>
           {view.tests.length === 0 ? (
             <p className="text-muted-foreground text-sm">
-              Bu fan böyiça hali test yuborilmağan. Darsga material yuklab, testni sinfga yuboring.
+              Bu fan böyiça hali test yuborilmagan. Darsga material yuklab, testni sinfga yuboring.
             </p>
           ) : (
             <ul className="flex max-h-[520px] flex-col gap-2 overflow-y-auto">

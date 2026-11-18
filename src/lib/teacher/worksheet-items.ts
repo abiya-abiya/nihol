@@ -112,7 +112,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     const b = r.int(3, 9);
     const q = r.int(6, 14);
     const rem = r.int(1, b - 1);
-    return { stem: `${b * q + rem} ni ${b} ga qoldiqli boʻl.`, answer: `${q}, qoldiq ${rem}` };
+    return { stem: `${b * q + rem} ni ${b} ga qoldiqli böl.`, answer: `${q}, qoldiq ${rem}` };
   },
   divisibility: (r) => {
     const d = r.pick([2, 3, 5, 9] as const);
@@ -126,7 +126,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     }
     const all = [...yes, ...no].sort(() => r.next() - 0.5);
     return {
-      stem: `Qaysi sonlar ${d} ga qoldiqsiz boʻlinadi? ${all.join("; ")}`,
+      stem: `Qaysi sonlar ${d} ga qoldiqsiz bölinadi? ${all.join("; ")}`,
       answer: all.filter((x) => x % d === 0).join("; "),
     };
   },
@@ -144,12 +144,12 @@ const GENERATORS: Record<SkillId, Gen> = {
     const k = r.int(1, n - 1);
     if (r.next() < 0.5) {
       return {
-        stem: `Tort ${n} ta teng boʻlakka boʻlindi. ${k} ta boʻlagi yeyildi. Tortning qanday qismi yeyildi?`,
+        stem: `Tort ${n} ta teng bölakka bölindi. ${k} ta bölagi yeyildi. Tortning qanday qismi yeyildi?`,
         answer: fmtEq(k, n),
       };
     }
     return {
-      stem: `Tasma ${n} ta teng boʻlakka boʻlindi. ${k} ta boʻlagi ishlatildi. Tasmaning qanday qismi qoldi?`,
+      stem: `Tasma ${n} ta teng bölakka bölindi. ${k} ta bölagi işlatildi. Tasmaning qanday qismi qoldi?`,
       answer: fmtEq(n - k, n),
     };
   },
@@ -158,7 +158,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     const a = properOver(r, b);
     const k = r.int(2, 5);
     return {
-      stem: `[[${a}/${b}]] kasrni maxraji ${b * k} boʻlgan kasrga keltir.`,
+      stem: `[[${a}/${b}]] kasrni maxraji ${b * k} bölgan kasrga keltir.`,
       answer: `[[${a * k}/${b * k}]]`,
     };
   },
@@ -174,7 +174,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     const c = properOver(r, d);
     const L = lcm(b, d);
     return {
-      stem: `[[${a}/${b}]] va [[${c}/${d}]] kasrlarni eng kichik umumiy maxrajga keltir.`,
+      stem: `[[${a}/${b}]] va [[${c}/${d}]] kasrlarni eng kiçik umumiy maxrajga keltir.`,
       answer: `[[${a * (L / b)}/${L}]] va [[${c * (L / d)}/${L}]]`,
     };
   },
@@ -220,7 +220,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     const w = r.int(1, 5);
     const d = r.int(2, 9);
     const n = properOver(r, d);
-    return { stem: `[[${w} ${n}/${d}]] ni notoʻgʻri kasrga aylantir.`, answer: `[[${w * d + n}/${d}]]` };
+    return { stem: `[[${w} ${n}/${d}]] ni notöğri kasrga aylantir.`, answer: `[[${w * d + n}/${d}]]` };
   },
   "mixed-add": (r) => {
     for (;;) {
@@ -263,7 +263,7 @@ const GENERATORS: Record<SkillId, Gen> = {
       const a = properOver(r, b);
       const N = b * r.int(4, Math.floor(36 / b));
       return {
-        stem: `Sinfda ${N} oʻquvchi bor. Ularning [[${a}/${b}]] qismi qizlar. Sinfda nechta oʻgʻil bola bor?`,
+        stem: `Sinfda ${N} öquvçi bor. Ularning [[${a}/${b}]] qismi qizlar. Sinfda neçta öğil bola bor?`,
         answer: String(N - (N / b) * a),
       };
     }
@@ -276,7 +276,7 @@ const GENERATORS: Record<SkillId, Gen> = {
         const s = a * (L / b) + c * (L / d);
         if (s >= L) continue;
         return {
-          stem: `Kitobning [[${a}/${b}]] qismi birinchi kuni, [[${c}/${d}]] qismi ikkinchi kuni oʻqildi. Ikki kunda kitobning qanday qismi oʻqildi?`,
+          stem: `Kitobning [[${a}/${b}]] qismi birinçi kuni, [[${c}/${d}]] qismi ikkinçi kuni öqildi. Ikki kunda kitobning qanday qismi öqildi?`,
           answer: fmt(s, L),
         };
       }
@@ -285,7 +285,7 @@ const GENERATORS: Record<SkillId, Gen> = {
     const a = properOver(r, b);
     const len = b * r.int(2, 6);
     return {
-      stem: `Arqonning uzunligi ${len} m. Uning [[${a}/${b}]] qismi kesib olindi. Necha metr arqon qoldi?`,
+      stem: `Arqonning uzunligi ${len} m. Uning [[${a}/${b}]] qismi kesib olindi. Neça metr arqon qoldi?`,
       answer: `${len - (len / b) * a} m`,
     };
   },
