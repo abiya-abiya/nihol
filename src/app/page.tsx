@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import { headers } from "next/headers";
 import { Hero } from "@/components/pitch/hero";
 import { HowItWorks } from "@/components/pitch/how-it-works";
-import { Problem, TeacherBand, TeamStrip } from "@/components/pitch/sections";
+import { Problem, Roles, Subjects, TeacherBand, TeamStrip } from "@/components/pitch/sections";
+import { subjects } from "@/content/subjects";
 
 export const metadata: Metadata = {
-  title: "Ildiz — xatoning ildizini topadigan SI-tyutor",
+  title: "Ildiz — öqituvçi uçun tayyor SI‑vosita",
   description:
-    "5–6-sinf kasrlar: 10 ta savolda oʻquvchi bilimidagi boʻshliqning ildizini topadi, shaxsiy yoʻl tuzadi va oʻqituvchiga sinfni jonli koʻrsatadi.",
+    "Dars materialidan test, sinf xaritasi fanlar böyiça, ota‑onaga bolasining ösişi. Matematikada SI xatoning ildizini topadi.",
 };
 
 /** Public origin for QR codes: NEXT_PUBLIC_APP_URL, else the request's own host. */
@@ -26,7 +27,9 @@ export default async function Home() {
   return (
     <main className="flex flex-col">
       <Hero studentUrl={`${origin}/start?class=${classId}`} />
+      <Subjects subjects={subjects.map((s) => s.meta)} />
       <HowItWorks />
+      <Roles />
       <Problem />
       <TeacherBand teacherUrl={`${origin}/teacher`} />
       <TeamStrip />

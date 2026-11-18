@@ -43,7 +43,7 @@ function DiagnosticArt() {
   const choices = ["2", "24", "12", "10"];
   return (
     <div className="w-[250px]">
-      <p className="text-ink-soft mb-1 text-xs font-semibold">3 / 10 savol</p>
+      <p className="text-ink-soft mb-1 text-xs font-semibold">3 / 5 savol</p>
       <p className="font-display mb-3 text-[1.15rem] font-bold">EKUK(4, 6) = ?</p>
       <ul className="grid grid-cols-2 gap-2">
         {choices.map((c, i) => {
@@ -85,7 +85,7 @@ function DiagnosticArt() {
         viewport={VIEW}
         transition={{ duration: 0.4, delay: 1.0, ease: EASE }}
       >
-        keyingi savol — bir pogʻona pastda
+        öqituvçi tahrirlab, sinfga yuboradi
       </motion.p>
     </div>
   );
@@ -225,7 +225,7 @@ function PathArt() {
           </span>
         </motion.div>
       ))}
-      <span className="font-hand text-mastered mt-1 text-[1.3rem] leading-none font-bold">shu yerdan boshlaymiz</span>
+      <span className="font-hand text-mastered mt-1 text-[1.3rem] leading-none font-bold">şu yerdan boşlaymiz</span>
     </div>
   );
 }
@@ -234,27 +234,27 @@ export function HowItWorks() {
   return (
     <section aria-labelledby="how-title" className="mx-auto w-full max-w-[1500px] px-5 py-20 sm:px-8 lg:px-12">
       <h2 id="how-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-        Qanday ishlaydi
+        Qanday işlaydi
       </h2>
       <ol className="mt-10 grid gap-x-10 gap-y-14 md:grid-cols-3">
         <Step
           n={1}
-          title="Diagnostika"
-          body="8–10 ta savol. Har bir javob keyingisini tanlaydi: xato boʻlsa, bilim grafida bir pogʻona pastga tushamiz."
+          title="Materialdan test"
+          body="Öqituvçi dars materialini (PDF yoki Word) yuklaydi. Ildiz uni öqib çiqadi, asosiy tuşunçalarni topadi va beş savollik test tayyorlaydi. Öqituvçi tahrirlaydi va sinfga yuboradi."
         >
           <DiagnosticArt />
         </Step>
         <Step
           n={2}
-          title="Ildizni topish"
-          body="Bilim grafi va Bayes modeli xatoni pastga qarab kuzatadi va asl boʻshliqni topadi. Har bir xulosa oʻquvchining javoblariga asoslangan."
+          title="Ildizni topiş"
+          body="Öquvçi testni telefonda yeçadi. Bilim grafi va Bayes modeli xatoni pastga qarab kuzatadi va asl böşliqni topadi. Har bir xulosa öquvçining javoblariga asoslangan."
         >
           <GraphArt />
         </Step>
         <Step
           n={3}
-          title="Shaxsiy yoʻl"
-          body="Yoʻl ildizdan boshlanadi. SI-tyutor aynan oʻsha notoʻgʻri fikrni oʻzbek tilida tushuntiradi, oʻqituvchi esa guruhga mashq varaqasi beradi."
+          title="Hamma öz xaritasini köradi"
+          body="Öquvçi şaxsiy yöl va SI‑tyutorni oladi, ota‑ona bolasining har bir fan böyiça xaritasi va ösişini köradi, öqituvçi esa butun sinfni jonli köradi."
         >
           <PathArt />
         </Step>
