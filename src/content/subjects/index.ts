@@ -26,7 +26,7 @@ const matematika: SubjectContent = {
   graph: mathGraph,
   questions: mathQuestions,
   materials: [
-    { lessonId: "lcm", fileName: "Matematika_6-sinf_EKUK.pdf", pages: 3, summary: "Eng kiçik umumiy karrali va uni topiş usullari." },
+    { lessonId: "lcm", fileName: "Matematika_6-sinf_EKUK.pdf", pages: 1, summary: "Eng kiçik umumiy karrali va uni topiş usullari." },
     { lessonId: "frac-simplify", fileName: "Matematika_6-sinf_Kasrlarni_qisqartiriş.pdf", pages: 2, summary: "Kasrning surat va maxrajini EKUBga bölib qisqartiriş." },
     { lessonId: "frac-add-diff", fileName: "Matematika_6-sinf_Kasrlarni_qöşiş.pdf", pages: 4, summary: "Har xil maxrajli kasrlarni umumiy maxrajga keltirib qöşiş va ayiriş." },
     { lessonId: "frac-word", fileName: "Matematika_6-sinf_Kasrli_masalalar.pdf", pages: 3, summary: "Kasrlar qatnaşgan matnli masalalarni bosqiçma-bosqiç yeçiş." },
