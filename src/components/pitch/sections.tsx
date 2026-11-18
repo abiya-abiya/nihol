@@ -96,7 +96,7 @@ const PLANS = [
     badge: "1-oy",
     title: "Bepul sinov",
     note: "Röyxatdan ötgan kundan boşlab bir oy",
-    points: ["Barça 5 fan va yangi fanlar qöşiş", "Cheksiz sinf, öquvçi va test", "Ota-ona kabineti va statistika", "Karta yoki tölov talab qilinmaydi"],
+    points: ["Barça 5 fan va yangi fanlar qöşiş", "Çeksiz sinf, öquvçi va test", "Ota-ona kabineti va statistika", "Karta yoki tölov talab qilinmaydi"],
   },
   {
     badge: "2-oydan",
@@ -198,7 +198,7 @@ export function TeacherBand({ teacherUrl }: { teacherUrl: string }) {
       <div className="grid items-center gap-12 lg:grid-cols-[minmax(0,1fr)_minmax(0,1.15fr)]">
         <div>
           <h2 id="teacher-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-            Öqituvçi butun sinfni bir qarashda köradi
+            Öqituvçi butun sinfni bir qaraşda köradi
           </h2>
           <p className="text-ink-soft mt-4 max-w-[34rem] text-[1.1rem] leading-relaxed">
             Fanlar böyiça sinf xaritasi jonli yangilanadi: kim qaysi darsda qolib ketganini va har bir test qançalik

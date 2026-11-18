@@ -123,7 +123,7 @@ export default function PathPage() {
       {current && (
         <div className="sticky bottom-4 z-10">
           <Button asChild className="h-14 w-full rounded-2xl text-lg font-semibold shadow-[var(--shadow-lift)]">
-            <Link href={`/learn/${current.skillId}`}>Davom etish: {normalizeUz(skillsById[current.skillId]?.short ?? "")}</Link>
+            <Link href={`/learn/${current.skillId}`}>Davom etiş: {normalizeUz(skillsById[current.skillId]?.short ?? "")}</Link>
           </Button>
         </div>
       )}
