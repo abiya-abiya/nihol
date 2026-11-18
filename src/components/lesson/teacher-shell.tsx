@@ -4,8 +4,20 @@ import { BookOpen, LayoutDashboard, LogOut, Users } from "lucide-react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import type { ReactNode } from "react";
+import { Backdrop } from "@/components/brand/backdrop";
 import { Logo } from "@/components/brand/logo";
 import { cn } from "@/lib/utils";
+
+/** Chalkboard surface for every teacher page except the printable worksheet, which stays on paper. */
+export function TeacherSurface({ children }: { children: ReactNode }) {
+  const board = !usePathname().startsWith("/teacher/worksheet");
+  return (
+    <main className={cn("flex min-h-full flex-1 flex-col", board && "theme-doska")}>
+      {board && <Backdrop variant="doska" formulas={false} />}
+      {children}
+    </main>
+  );
+}
 
 const NAV = [
   { href: "/teacher", label: "Sinf", icon: LayoutDashboard },

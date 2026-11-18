@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { TeacherSurface } from "@/components/lesson/teacher-shell";
 
 export const metadata: Metadata = {
   title: "Öqituvçi paneli — Ildiz",
@@ -6,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function TeacherLayout({ children }: LayoutProps<"/teacher">) {
-  return <main className="flex min-h-full flex-1 flex-col">{children}</main>;
+  return <TeacherSurface>{children}</TeacherSurface>;
 }

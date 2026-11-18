@@ -232,7 +232,7 @@
 /* Text sitting directly on the chalkboard turns to chalk; sheets and inputs keep ink. */
 .theme-doska {
   color: var(--chalk);
-  --muted-foreground: rgb(246 243 234 / 0.74);
+  --muted-foreground: rgb(246 243 234 / 0.9);
   --primary: var(--highlight);
   --primary-foreground: var(--ink);
   --ring: rgb(255 228 92 / 0.6);
@@ -242,6 +242,77 @@
 .theme-doska [role="dialog"] {
   color: var(--ink);
   --muted-foreground: var(--ink-soft);
+}
+
+/* Board pages that were built on paper (landing, teacher): ink utilities sitting straight on the
+   board turn to chalk; light surfaces (cards, chips, white buttons, inputs, dialogs) keep ink. */
+.theme-doska :is(.bg-white, .bg-card, .bg-paper, .bg-white\/70, textarea) {
+  color: var(--ink);
+  --muted-foreground: var(--ink-soft);
+}
+.theme-doska .text-ink {
+  color: var(--chalk);
+}
+.theme-doska .text-ink-soft {
+  color: var(--chalk);
+}
+.theme-doska .border-ink {
+  border-color: rgb(246 243 234 / 0.7);
+}
+.theme-doska :is(.sheet, .bg-white, .bg-card, .bg-paper, .bg-white\/70, [role="dialog"]) .text-ink,
+.theme-doska .text-ink:is(.sheet, .bg-white, .bg-card, .bg-paper) {
+  color: var(--ink);
+}
+/* Half-height highlighter strokes don't read on the board: chalk-yellow text instead. */
+.theme-doska .marker {
+  color: var(--highlight);
+  background-image: none;
+}
+.theme-doska :is(.sheet, .bg-white, .bg-card, [role="dialog"]) .marker {
+  color: var(--ink);
+  background-image: linear-gradient(
+    transparent 52%,
+    color-mix(in oklab, var(--highlight) 85%, transparent) 52%,
+    color-mix(in oklab, var(--highlight) 85%, transparent) 92%,
+    transparent 92%
+  );
+}
+.theme-doska :is(.sheet, .bg-white, .bg-card, .bg-paper, .bg-white\/70, [role="dialog"]) .text-ink-soft,
+.theme-doska .text-ink-soft:is(.sheet, .bg-white, .bg-card, .bg-paper) {
+  color: var(--ink-soft);
+}
+.theme-doska :is(.sheet, .bg-white, .bg-card, .bg-paper, .bg-white\/70, [role="dialog"]) .border-ink,
+.theme-doska .border-ink:is(.sheet, .bg-white, .bg-card, .bg-paper) {
+  border-color: var(--ink);
+}
+.theme-doska .bg-white\/70 {
+  background-color: rgb(255 255 255 / 0.95);
+}
+/* A translucent white band would read as grey on the board: make it a darker strip of board. */
+.theme-doska section.bg-white\/75 {
+  background: rgb(0 0 0 / 0.16);
+  border-color: rgb(246 243 234 / 0.12);
+}
+/* Teacher nav on the board: chalk pill for the active item, faint chalk hover. */
+.theme-doska nav .bg-ink {
+  background: var(--chalk);
+  color: var(--ink);
+}
+.theme-doska nav .hover\:bg-ink-wash:hover {
+  background: rgb(246 243 234 / 0.12);
+}
+/* Live badge on the board: chalk pill so the green/amber text stays readable. */
+.theme-doska [role="status"]:is(.bg-mastered\/10, .bg-shaky\/10) {
+  background: var(--chalk);
+}
+/* Outline buttons straight on the board: chalk outline in light and dark OS mode alike. */
+.theme-doska [data-slot="button"][data-variant="outline"]:not(:is(.sheet, [role="dialog"]) *) {
+  background: transparent;
+  color: var(--chalk);
+  border-color: rgb(246 243 234 / 0.7);
+}
+.theme-doska [data-slot="button"][data-variant="outline"]:not(:is(.sheet, [role="dialog"]) *):hover {
+  background: rgb(246 243 234 / 0.12);
 }
 
 /* Logo follows the surface: ink on paper, chalk on the board. */

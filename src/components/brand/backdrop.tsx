@@ -11,10 +11,14 @@ const CHALK: Array<{ text: string; className: string }> = [
  * Fixed full-screen page background. "doska" = chalkboard (hero screens),
  * "bolak" = pastel fraction pieces on paper (reading screens). Decorative only.
  */
-export function Backdrop({ variant }: { variant: "doska" | "bolak" }) {
+export function Backdrop({ variant, formulas = true }: { variant: "doska" | "bolak"; formulas?: boolean }) {
   return (
-    <div aria-hidden className={cn("pointer-events-none fixed inset-0 -z-10", variant === "doska" ? "bg-doska" : "bg-bolak")}>
+    <div
+      aria-hidden
+      className={cn("pointer-events-none fixed inset-0 -z-10 print:hidden", variant === "doska" ? "bg-doska" : "bg-bolak")}
+    >
       {variant === "doska" &&
+        formulas &&
         CHALK.map((c) => (
           <span key={c.text} className={cn("font-hand absolute text-3xl whitespace-nowrap text-[rgb(246_243_234/0.2)]", c.className)}>
             {c.text}
