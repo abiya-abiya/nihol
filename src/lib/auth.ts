@@ -11,7 +11,9 @@ const SECRET = process.env.AUTH_SECRET || "ildiz-hackathon-demo-secret-2026";
 const b64 = (s: string) => Buffer.from(s, "utf8").toString("base64url");
 const sign = (payload: string) => createHmac("sha256", SECRET).update(payload).digest("base64url");
 
-export function encodeSession(u: User): string {
+export const SESSION_COOKIE_OPTIONS = { httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 24 * 7 } as const;
+
+export function encodeSession(u: SessionUser | User): string {
   const payload = b64(JSON.stringify({ id: u.id, role: u.role, name: u.name, classId: u.classId, childId: u.childId }));
   return `${payload}.${sign(payload)}`;
 }

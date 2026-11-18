@@ -3,7 +3,7 @@ import { TeacherDashboard } from "@/components/teacher/dashboard";
 import { TeacherShell } from "@/components/lesson/teacher-shell";
 import { requireRole } from "@/lib/auth";
 import { DEMO_CLASS_ID, ensureDemoClass, getRepo } from "@/lib/db";
-import { getUsers, listAssignments, listProgress, listSubjects, listSubmissions } from "@/lib/store";
+import { getClassGroup, getUsers, listAssignments, listProgress, listSubjects, listSubmissions } from "@/lib/store";
 import { buildClassReport } from "@/lib/teacher/report";
 
 export const dynamic = "force-dynamic";
@@ -21,7 +21,12 @@ export default async function TeacherPage({ searchParams }: PageProps<"/teacher"
     return <TeacherDashboard initial={report} backHref="/teacher" />;
   }
 
-  const [subjects, users, assignments] = await Promise.all([listSubjects(), getUsers(), listAssignments({ classId })]);
+  const [subjects, users, assignments, cls] = await Promise.all([
+    listSubjects(),
+    getUsers(),
+    listAssignments({ classId }),
+    getClassGroup(classId),
+  ]);
   const students = users
     .filter((u) => u.role === "student" && u.classId === classId)
     .map((u) => ({ id: u.id, name: u.name }))
@@ -42,8 +47,9 @@ export default async function TeacherPage({ searchParams }: PageProps<"/teacher"
   return (
     <TeacherShell name={session.name} wide>
       <ClassOverview
+        key={classId}
         classId={classId}
-        className="6-A sinf"
+        className={cls?.name ?? classId}
         subjects={subjects.map((s) => ({ meta: s.meta, graph: s.graph }))}
         students={students}
         initial={{ progress, submissions, assignments: light }}

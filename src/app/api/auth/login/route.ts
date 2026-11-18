@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { z } from "zod";
-import { HOME, SESSION_COOKIE, encodeSession } from "@/lib/auth";
-import { findUser } from "@/lib/store";
+import { HOME, SESSION_COOKIE, SESSION_COOKIE_OPTIONS, encodeSession } from "@/lib/auth";
+import { findUser, resolveClassId } from "@/lib/store";
 
 const Body = z.object({ login: z.string().trim().min(1).max(60), password: z.string().min(1).max(100) });
 
@@ -13,6 +13,8 @@ export async function POST(req: Request) {
     return NextResponse.json({ error: "Login yoki parol notöğri" }, { status: 401 });
   }
   const res = NextResponse.json({ user: { id: user.id, role: user.role, name: user.name }, home: HOME[user.role] });
-  res.cookies.set(SESSION_COOKIE, encodeSession(user), { httpOnly: true, sameSite: "lax", path: "/", maxAge: 60 * 60 * 24 * 7 });
+  // A teacher always lands in an existing class (their last chosen one, or the first if it was deleted).
+  const classId = user.role === "teacher" ? await resolveClassId(user.classId) : user.classId;
+  res.cookies.set(SESSION_COOKIE, encodeSession({ ...user, classId }), SESSION_COOKIE_OPTIONS);
   return res;
 }

@@ -88,7 +88,7 @@ function Person({ user, tone }: { user: User; tone: "ink" | "wash" }) {
 }
 
 /** /teacher/accounts — list class accounts and create a student (+ parent) with generated login/password. */
-export function AccountsManager({ initial }: { initial: User[] }) {
+export function AccountsManager({ initial, classLabel }: { initial: User[]; classLabel: string }) {
   const [users, setUsers] = useState(initial);
   const [name, setName] = useState("");
   const [withParent, setWithParent] = useState(true);
@@ -130,7 +130,7 @@ export function AccountsManager({ initial }: { initial: User[] }) {
         <div>
           <h1 className="text-3xl font-bold">Hisoblar</h1>
           <p className="text-muted-foreground">
-            6-A sinf öquvçilari va ota-onalari. Yangi hisob oçing, login va parolni nusxalab bering.
+            {classLabel}: öquvçilar va ota-onalar. Yangi hisob oçing, login va parolni nusxalab bering.
           </p>
         </div>
         <p className="text-ink-soft flex items-center gap-2 text-sm font-semibold">

@@ -330,7 +330,7 @@
 }
 
 /* A disabled primary button on the board reads as a chalk outline, not muddy yellow. */
-.theme-doska [data-slot="button"]:disabled:not([data-variant="outline"]):not([data-variant="ghost"]):not([data-variant="secondary"]) {
+.theme-doska [data-slot="button"]:disabled:not([data-variant="outline"]):not([data-variant="ghost"]):not([data-variant="secondary"]):not(:is(.sheet, [role="dialog"]) *) {
   opacity: 1;
   background: transparent;
   color: rgb(246 243 234 / 0.72);

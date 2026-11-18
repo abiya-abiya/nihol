@@ -6,6 +6,7 @@ import { buildDemoV2 } from "@/lib/seed/demo-v2";
 import { subjects as defaultSubjects } from "@/lib/subjects";
 import type {
   Assignment,
+  ClassGroup,
   ProgressPoint,
   Question,
   Skill,
@@ -25,6 +26,7 @@ const K = {
   submissions: "submissions",
   progress: "progress",
   history: "history",
+  classes: "classes",
 } as const;
 
 interface CustomSubject {
@@ -82,6 +84,111 @@ export async function getUser(id: string): Promise<User | null> {
 export async function addUsers(users: User[]): Promise<void> {
   const all = await getUsers();
   await setDoc(K.users, [...all, ...users]);
+}
+
+export async function setUserClass(userId: string, classId: string | undefined): Promise<void> {
+  const all = await getUsers();
+  await setDoc(
+    K.users,
+    all.map((u) => (u.id === userId ? { ...u, classId } : u)),
+  );
+}
+
+// ---------- classes ----------
+/** The demo class every seed user belongs to. It can be renamed but not deleted. */
+export const DEFAULT_CLASS: ClassGroup = { id: "6a", name: "6-A sinf", grade: 6, createdAt: "2026-11-01T00:00:00.000Z" };
+
+const classSlug = (name: string) =>
+  name
+    .toLowerCase()
+    .replace(/ö/g, "o")
+    .replace(/ğ/g, "g")
+    .replace(/ş/g, "sh")
+    .replace(/ç/g, "ch")
+    .replace(/[ʼʻ'’]/g, "")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-|-$/g, "")
+    .slice(0, 24) || "sinf";
+
+/** All classes; created lazily with the demo class so older databases keep working. */
+export async function listClasses(): Promise<ClassGroup[]> {
+  await ensureSeeded();
+  const c = await getDoc<ClassGroup[]>(K.classes);
+  if (c) return c;
+  await setDoc(K.classes, [DEFAULT_CLASS]);
+  return [DEFAULT_CLASS];
+}
+export async function getClassGroup(id: string | undefined): Promise<ClassGroup | null> {
+  if (!id) return null;
+  return (await listClasses()).find((c) => c.id === id) ?? null;
+}
+/** The given class id if it still exists, else the first class. */
+export async function resolveClassId(id: string | undefined): Promise<string | undefined> {
+  const all = await listClasses();
+  return all.find((c) => c.id === id)?.id ?? all[0]?.id;
+}
+export async function addClass(input: { name: string; grade?: number }): Promise<ClassGroup> {
+  const all = await listClasses();
+  const base = classSlug(input.name);
+  let id = base;
+  for (let i = 2; all.some((c) => c.id === id); i++) id = `${base}-${i}`;
+  const c: ClassGroup = { id, name: input.name, grade: input.grade, createdAt: new Date().toISOString() };
+  await setDoc(K.classes, [...all, c]);
+  return c;
+}
+export async function updateClass(id: string, patch: { name?: string; grade?: number | null }): Promise<ClassGroup | null> {
+  const all = await listClasses();
+  const cur = all.find((c) => c.id === id);
+  if (!cur) return null;
+  const next: ClassGroup = {
+    ...cur,
+    ...(patch.name !== undefined && { name: patch.name }),
+    ...(patch.grade !== undefined && { grade: patch.grade ?? undefined }),
+  };
+  await setDoc(
+    K.classes,
+    all.map((c) => (c.id === id ? next : c)),
+  );
+  return next;
+}
+export interface ClassStats {
+  students: number;
+  parents: number;
+  tests: number;
+}
+export function classStats(classId: string, users: User[], assignments: Assignment[]): ClassStats {
+  return {
+    students: users.filter((u) => u.role === "student" && u.classId === classId).length,
+    parents: users.filter((u) => u.role === "parent" && u.classId === classId).length,
+    tests: assignments.filter((a) => a.classId === classId).length,
+  };
+}
+/** Delete a class with its student and parent accounts, tests and the students' results. */
+export async function deleteClass(id: string): Promise<ClassStats | null> {
+  const all = await listClasses();
+  if (!all.some((c) => c.id === id)) return null;
+  const users = await getUsers();
+  const assignments = await list<Assignment>(K.assignments);
+  const stats = classStats(id, users, assignments);
+  const studentIds = new Set(users.filter((u) => u.role === "student" && u.classId === id).map((u) => u.id));
+  const gone = (u: User) => u.role !== "teacher" && (u.classId === id || (!!u.childId && studentIds.has(u.childId)));
+  const keep = <T extends { studentId: string }>(xs: T[]) => xs.filter((x) => !studentIds.has(x.studentId));
+  await setDoc(
+    K.classes,
+    all.filter((c) => c.id !== id),
+  );
+  await setDoc(
+    K.users,
+    users.filter((u) => !gone(u)),
+  );
+  await setDoc(
+    K.assignments,
+    assignments.filter((a) => a.classId !== id),
+  );
+  await setDoc(K.submissions, keep(await list<Submission>(K.submissions)));
+  await setDoc(K.progress, keep(await list<SubjectProgress>(K.progress)));
+  await setDoc(K.history, keep(await list<ProgressPoint>(K.history)));
+  return stats;
 }
 
 // ---------- subjects ----------

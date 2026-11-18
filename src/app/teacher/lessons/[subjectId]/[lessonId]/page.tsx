@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { TeacherShell } from "@/components/lesson/teacher-shell";
 import { UploadWizard } from "@/components/lesson/upload-wizard";
 import { requireRole } from "@/lib/auth";
-import { getSubject } from "@/lib/store";
+import { getClassGroup, getSubject } from "@/lib/store";
 
 export const dynamic = "force-dynamic";
 
@@ -16,13 +16,14 @@ export default async function LessonUpload({ params }: PageProps<"/teacher/lesso
   if (!subject || !lesson) notFound();
   const bank = subject.questions.filter((q) => q.skillId === lessonId);
   const material = subject.materials.find((m) => m.lessonId === lessonId);
+  const cls = await getClassGroup(s.classId);
   return (
     <TeacherShell name={s.name}>
       <div className="space-y-4 pt-2">
         <Link href={`/teacher/subjects/${subjectId}`} className="text-muted-foreground hover:text-ink inline-flex items-center gap-1 text-sm">
           <ChevronLeft className="size-4" /> {subject.meta.name}
         </Link>
-        <UploadWizard subject={subject.meta} lesson={lesson} bank={bank} material={material} />
+        <UploadWizard subject={subject.meta} lesson={lesson} bank={bank} material={material} classLabel={cls?.name} />
       </div>
     </TeacherShell>
   );

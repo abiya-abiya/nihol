@@ -59,11 +59,14 @@ export function UploadWizard({
   lesson,
   bank,
   material,
+  classLabel,
 }: {
   subject: SubjectMeta;
   lesson: Skill;
   bank: Question[];
   material?: MaterialSample;
+  /** Active class name for the success screen, e.g. "6-A sinf". */
+  classLabel?: string;
 }) {
   const reduce = useReducedMotion();
   const [step, setStep] = useState<Step>("drop");
@@ -345,7 +348,7 @@ export function UploadWizard({
             <span className="bg-mastered grid size-16 place-items-center rounded-full text-white">
               <Check className="size-9" strokeWidth={3} />
             </span>
-            <h2 className="text-2xl font-bold">Test 6-A sinfga yuborildi</h2>
+            <h2 className="text-2xl font-bold">Test {classLabel ? `${classLabel}ga` : "sinfga"} yuborildi</h2>
             <p className="text-muted-foreground">Öquvçilar uni hozir öz sahifasida köradi. Natijalar sinf panelida jonli çiqadi.</p>
             <div className="flex flex-wrap justify-center gap-2">
               <Button asChild className="h-11 rounded-xl">
