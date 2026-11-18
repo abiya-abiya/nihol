@@ -13,7 +13,7 @@ the whole team: start it before anything else.
   `GEMINI_API_KEYS` (from the team chat), `AI_MODE=live`,
   `DEMO_CLASS_ID=6a`, `NEXT_PUBLIC_APP_URL=https://<project>.vercel.app`,
   `AUTH_SECRET=<any long string>`. Then `DATABASE_URL=... npm run db:push`.
-- [ ] Put the URL in `docs/pitch/links.md` and the team chat. Redeploy and
+- [x] Put the URL in `docs/pitch/links.md` and the team chat. Redeploy and
   smoke-test after each milestone (T+1:00, T+1:45, T+2:15, freeze).
 
 ### C2. Demo data v2 — target T+1:15 (P0)
