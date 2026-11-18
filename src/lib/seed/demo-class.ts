@@ -41,25 +41,25 @@ const MIXED_CHAIN = ["mixed-numbers", "mixed-add"];
 const PROFILES: Profile[] = [
   // 7 pupils: root gap EKUK (lcm), traced through common denominator and adding.
   { name: "Aziza Karimova", weak: LCM_CHAIN, prefers: ["lcm-is-product", "add-num-den"], practice: [false, true], hoursAgo: 46 },
-  { name: "Bekzod Toshmatov", weak: LCM_CHAIN, prefers: ["lcm-gcd-swap", "add-num-den"], hoursAgo: 44 },
-  { name: "Dilshod Rahimov", weak: LCM_CHAIN, prefers: ["lcm-is-product", "common-denom-keep-num"], practice: [true, false, true], hoursAgo: 40 },
+  { name: "Bekzod Toşmatov", weak: LCM_CHAIN, prefers: ["lcm-gcd-swap", "add-num-den"], hoursAgo: 44 },
+  { name: "Dilşod Rahimov", weak: LCM_CHAIN, prefers: ["lcm-is-product", "common-denom-keep-num"], practice: [true, false, true], hoursAgo: 40 },
   { name: "Gulnoza Saidova", weak: LCM_CHAIN, prefers: ["lcm-gcd-swap", "bigger-den-bigger"], hoursAgo: 27 },
   { name: "Laziz Bakirov", weak: [...LCM_CHAIN, "frac-div"], prefers: ["lcm-is-product", "div-no-flip"], hoursAgo: 22 },
   { name: "Rayhona Davletova", weak: LCM_CHAIN, prefers: ["lcm-is-product", "add-num-den"], practice: [false], hoursAgo: 5 },
-  { name: "Temur G'aniyev", weak: LCM_CHAIN, prefers: ["lcm-gcd-swap", "common-denom-keep-num"], hoursAgo: 1.2 },
+  { name: "Temur Ğaniyev", weak: LCM_CHAIN, prefers: ["lcm-gcd-swap", "common-denom-keep-num"], hoursAgo: 1.2 },
 
   // 5 pupils: root gap "Kasr tushunchasi" (everything above it is shaky too).
   { name: "Husan Mirzayev", weak: CONCEPT_CHAIN, prefers: ["part-of-rest", "add-num-den"], hoursAgo: 45 },
   { name: "Iroda Nazarova", weak: CONCEPT_CHAIN, prefers: ["add-num-den", "equiv-one-side"], practice: [false, false, true], hoursAgo: 30 },
-  { name: "Nodir Ergashev", weak: CONCEPT_CHAIN, prefers: ["add-num-den", "mul-common-denom"], hoursAgo: 26 },
+  { name: "Nodir Ergaşev", weak: CONCEPT_CHAIN, prefers: ["add-num-den", "mul-common-denom"], hoursAgo: 26 },
   { name: "Umida Fayzullayeva", weak: CONCEPT_CHAIN, prefers: ["equiv-one-side", "add-num-den"], hoursAgo: 8 },
   { name: "Zafar Valiyev", weak: CONCEPT_CHAIN, prefers: ["add-num-den", "part-of-rest"], hoursAgo: 3 },
 
   // 4 pupils: mixed numbers, misconception "mixed-convert".
   { name: "Kamola Yusupova", weak: MIXED_CHAIN, prefers: ["mixed-convert", "add-num-den"], practice: [false, true], hoursAgo: 43 },
   { name: "Otabek Jurayev", weak: MIXED_CHAIN, prefers: ["mixed-convert", "common-denom-keep-num"], hoursAgo: 29 },
-  { name: "Shahzoda Olimova", weak: MIXED_CHAIN, prefers: ["mixed-convert"], hoursAgo: 20 },
-  { name: "Xurshid Latipov", weak: MIXED_CHAIN, prefers: ["mixed-convert", "add-num-den"], hoursAgo: 2.4 },
+  { name: "Şahzoda Olimova", weak: MIXED_CHAIN, prefers: ["mixed-convert"], hoursAgo: 20 },
+  { name: "Xurşid Latipov", weak: MIXED_CHAIN, prefers: ["mixed-convert", "add-num-den"], hoursAgo: 2.4 },
 
   // 6 pupils: mostly mastered (two with a single local slip).
   { name: "Feruza Abdullayeva", weak: [], hoursAgo: 47 },
@@ -67,7 +67,7 @@ const PROFILES: Profile[] = [
   { name: "Oydin Qodirova", weak: ["frac-div"], prefers: ["div-no-flip"], practice: [true, true, true], hoursAgo: 25 },
   { name: "Sardor Ismoilov", weak: [], hoursAgo: 23 },
   { name: "Yulduz Zokirova", weak: ["frac-compare"], prefers: ["bigger-den-bigger"], hoursAgo: 6 },
-  { name: "Sanjar Po'latov", weak: [], hoursAgo: 0.6 },
+  { name: "Sanjar Pölatov", weak: [], hoursAgo: 0.6 },
 
   // 2 pupils: joined, diagnostic not finished.
   { name: "Muslima Hamidova", weak: ["frac-word"], hoursAgo: 0.3, noSnapshot: true },
@@ -88,6 +88,9 @@ function chooseAnswer(q: Question, p: Profile, salt: number): ChoiceId {
 }
 
 const pad = (n: number) => String(n).padStart(2, "0");
+
+/** Profile names in order (ids seed-<class>-01…), reused by the v2 seed. */
+export const DEMO_STUDENT_NAMES = PROFILES.map((p) => p.name);
 
 export function buildDemoSeed(now: Date = new Date()): SeedData {
   const classId = process.env.DEMO_CLASS_ID || "6a";

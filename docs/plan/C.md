@@ -17,7 +17,7 @@ the whole team: start it before anything else.
   smoke-test after each milestone (T+1:00, T+1:45, T+2:15, freeze).
 
 ### C2. Demo data v2 — target T+1:15 (P0)
-- [ ] `src/lib/seed/demo-v2.ts`: `buildDemoV2(now?: Date): DemoV2` (users, assignments, submissions,
+- [x] `src/lib/seed/demo-v2.ts`: `buildDemoV2(now?: Date): DemoV2` (users, assignments, submissions,
   progress, history — see `src/lib/types.ts`) for class `6a`: the 24 v1 students (ids from the v1
   seed) **plus `s-jasur` (Jasur Toşmatov)** with a student `User` each
   (login = first name lowercase + number, password `parol123`); 4 subjects
