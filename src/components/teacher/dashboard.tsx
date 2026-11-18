@@ -1,6 +1,7 @@
 "use client";
 
-import { Loader2, MoreHorizontal, QrCode, RotateCcw } from "lucide-react";
+import { ArrowLeft, Loader2, MoreHorizontal, QrCode, RotateCcw } from "lucide-react";
+import Link from "next/link";
 import { QRCodeSVG } from "qrcode.react";
 import { useEffect, useMemo, useRef, useState } from "react";
 import { toast } from "sonner";
@@ -66,7 +67,7 @@ function diffReports(prev: ClassReport, next: ClassReport): Set<string> {
   return out;
 }
 
-export function TeacherDashboard({ initial }: { initial: ClassReport }) {
+export function TeacherDashboard({ initial, backHref }: { initial: ClassReport; backHref?: string }) {
   const classId = initial.classRoom.id;
   const lastOk = useRef(0);
   const { data, mutate } = useSWR<ClassReport>(
@@ -134,7 +135,16 @@ export function TeacherDashboard({ initial }: { initial: ClassReport }) {
   return (
     <div className="mx-auto flex w-full max-w-[1680px] flex-col gap-4 px-5 py-4 lg:h-dvh lg:px-8">
       <header className="flex flex-wrap items-center gap-x-5 gap-y-3">
-        <Logo size={34} />
+        {backHref ? (
+          <Link
+            href={backHref}
+            className="border-ink hover:bg-ink-wash flex h-10 items-center gap-1.5 rounded-[14px] border-2 px-3 text-sm font-semibold"
+          >
+            <ArrowLeft className="size-4" aria-hidden /> Sinf
+          </Link>
+        ) : (
+          <Logo size={34} />
+        )}
         <span className="bg-border hidden h-8 w-px sm:block" aria-hidden />
         <div className="min-w-0">
           <h1 className="text-[1.45rem] leading-tight font-bold">{normalizeUz(report.classRoom.name)}</h1>

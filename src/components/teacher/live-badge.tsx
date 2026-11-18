@@ -18,7 +18,7 @@ export function LiveBadge({ stale, className }: { stale: boolean; className?: st
       {stale ? (
         <>
           <WifiOff className="size-4" aria-hidden />
-          Aloqa yoʻq — oxirgi maʼlumot
+          Aloqa yöq — oxirgi maʼlumot
         </>
       ) : (
         <>

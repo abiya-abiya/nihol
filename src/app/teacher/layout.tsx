@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Oʻqituvchi paneli — Ildiz",
-  description: "Sinfning bilim xaritasi, ildiz muammolari va mashq varaqalari.",
+  title: "Öqituvçi paneli — Ildiz",
+  description: "Sinfning bilim xaritasi, fanlar, testlar va öquvçilar natijalari.",
 };
 
 export default function TeacherLayout({ children }: LayoutProps<"/teacher">) {
