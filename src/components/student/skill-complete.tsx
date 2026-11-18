@@ -43,7 +43,7 @@ export function SkillComplete({
         <MasteryRing p={p} size={112} level="mastered" className="mx-auto" />
         <div className="space-y-2">
           <p className="font-hand text-mastered text-3xl -rotate-2">barakalla!</p>
-          <h2 className="text-2xl leading-tight font-bold">{normalizeUz(title)} oʻzlashtirildi</h2>
+          <h2 className="text-2xl leading-tight font-bold">{normalizeUz(title)} özlaştirildi</h2>
           {nextTitle && <p className="text-muted-foreground">Keyingi qadam: {normalizeUz(nextTitle)}</p>}
         </div>
         <div className="space-y-2">
