@@ -303,6 +303,14 @@ export interface SubjectContent {
   materials: MaterialSample[];
 }
 
+/** v2: a class the teacher manages (6-A, 6-B…). Users and assignments point to it by `classId`. */
+export interface ClassGroup {
+  id: string; // "6a", "6-b-sinf"
+  name: string; // "6-A sinf"
+  grade?: number;
+  createdAt: string;
+}
+
 export interface Assignment {
   id: string;
   subjectId: string;
