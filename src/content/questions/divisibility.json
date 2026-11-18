@@ -3,7 +3,7 @@
     "id": "divisibility-01",
     "skillId": "divisibility",
     "difficulty": 1,
-    "stem": "Qaysi son 5 ga qoldiqsiz bo'linadi?",
+    "stem": "Qaysi son 5 ga qoldiqsiz bölinadi?",
     "choices": [
       {
         "id": "a",
@@ -26,15 +26,15 @@
       }
     ],
     "correct": "c",
-    "explanation": "Oxirgi raqami 0 yoki 5 bo'lgan son 5 ga bo'linadi. Faqat 135 ning oxirgi raqami 5: 135 : 5 = 27.",
-    "hint": "5 ga bo'linishni bilish uchun sonning oxirgi raqamiga qara.",
+    "explanation": "Oxirgi raqami 0 yoki 5 bölgan son 5 ga bölinadi. Faqat 135 ning oxirgi raqami 5: 135 : 5 = 27.",
+    "hint": "5 ga bölinişni biliş uçun sonning oxirgi raqamiga qara.",
     "source": "bank"
   },
   {
     "id": "divisibility-02",
     "skillId": "divisibility",
     "difficulty": 2,
-    "stem": "Qaysi son 3 ga qoldiqsiz bo'linadi?",
+    "stem": "Qaysi son 3 ga qoldiqsiz bölinadi?",
     "choices": [
       {
         "id": "a",
@@ -56,15 +56,15 @@
       }
     ],
     "correct": "c",
-    "explanation": "Raqamlari yig'indisi 3 ga bo'linsa, son ham 3 ga bo'linadi. 5 + 2 + 2 = 9, 9 esa 3 ga bo'linadi: 522 : 3 = 174. Qolgan sonlarda raqamlar yig'indisi 8 ga teng.",
-    "hint": "Oxirgi raqamga emas, raqamlar yig'indisiga qara.",
+    "explanation": "Raqamlari yiğindisi 3 ga bölinsa, son ham 3 ga bölinadi. 5 + 2 + 2 = 9, 9 esa 3 ga bölinadi: 522 : 3 = 174. Qolgan sonlarda raqamlar yiğindisi 8 ga teng.",
+    "hint": "Oxirgi raqamga emas, raqamlar yiğindisiga qara.",
     "source": "bank"
   },
   {
     "id": "divisibility-03",
     "skillId": "divisibility",
     "difficulty": 2,
-    "stem": "Qaysi son 9 ga qoldiqsiz bo'linadi?",
+    "stem": "Qaysi son 9 ga qoldiqsiz bölinadi?",
     "choices": [
       {
         "id": "a",
@@ -87,15 +87,15 @@
       }
     ],
     "correct": "a",
-    "explanation": "Raqamlari yig'indisi 9 ga bo'linsa, son 9 ga bo'linadi. 8 + 1 + 9 = 18, demak 819 : 9 = 91. Boshqalarida yig'indi 21, 15 va 15, ular 9 ga bo'linmaydi.",
-    "hint": "Har bir sonning raqamlarini qo'shib chiq.",
+    "explanation": "Raqamlari yiğindisi 9 ga bölinsa, son 9 ga bölinadi. 8 + 1 + 9 = 18, demak 819 : 9 = 91. Boşqalarida yiğindi 21, 15 va 15, ular 9 ga bölinmaydi.",
+    "hint": "Har bir sonning raqamlarini qöşib çiq.",
     "source": "bank"
   },
   {
     "id": "divisibility-04",
     "skillId": "divisibility",
     "difficulty": 3,
-    "stem": "Qaysi son ham 2 ga, ham 3 ga qoldiqsiz bo'linadi?",
+    "stem": "Qaysi son ham 2 ga, ham 3 ga qoldiqsiz bölinadi?",
     "choices": [
       {
         "id": "a",
@@ -116,15 +116,15 @@
       }
     ],
     "correct": "d",
-    "explanation": "2 ga bo'linishi uchun oxirgi raqam juft bo'lishi kerak: 314, 236 va 312. 3 ga bo'linishi uchun raqamlar yig'indisi 3 ga bo'linishi kerak: 3 + 1 + 2 = 6. Faqat 312 ikkala shartga mos keladi.",
-    "hint": "Avval juft sonlarni ajrat, keyin ularning raqamlar yig'indisini tekshir.",
+    "explanation": "2 ga bölinişi uçun oxirgi raqam juft bölişi kerak: 314, 236 va 312. 3 ga bölinişi uçun raqamlar yiğindisi 3 ga bölinişi kerak: 3 + 1 + 2 = 6. Faqat 312 ikkala şartga mos keladi.",
+    "hint": "Avval juft sonlarni ajrat, keyin ularning raqamlar yiğindisini tekşir.",
     "source": "bank"
   },
   {
     "id": "divisibility-05",
     "skillId": "divisibility",
     "difficulty": 3,
-    "stem": "60 sonini tub ko'paytuvchilarga ajrat.",
+    "stem": "60 sonini tub köpaytuvçilarga ajrat.",
     "choices": [
       {
         "id": "a",
@@ -144,8 +144,8 @@
       }
     ],
     "correct": "b",
-    "explanation": "60 = 2 · 30 = 2 · 2 · 15 = 2 · 2 · 3 · 5. Hamma ko'paytuvchilar tub. 10, 4 va 15 esa tub son emas.",
-    "hint": "60 ni eng kichik tub son 2 ga bo'lishdan boshla va bo'linmaguncha davom et.",
+    "explanation": "60 = 2 · 30 = 2 · 2 · 15 = 2 · 2 · 3 · 5. Hamma köpaytuvçilar tub. 10, 4 va 15 esa tub son emas.",
+    "hint": "60 ni eng kiçik tub son 2 ga bölişdan boşla va bölinmagunça davom et.",
     "source": "bank"
   }
 ]

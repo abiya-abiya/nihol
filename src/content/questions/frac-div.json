@@ -11,8 +11,8 @@
       { "id": "d", "text": "3" }
     ],
     "correct": "c",
-    "explanation": "Teskari sonni topish uchun surat va maxrajning o'rnini almashtiramiz: [[4/3]]. Tekshiruv: [[3/4]] · [[4/3]] = [[12/12]] = 1.",
-    "hint": "O'zaro teskari sonlarning ko'paytmasi 1 ga teng.",
+    "explanation": "Teskari sonni topiş uçun surat va maxrajning örnini almaştiramiz: [[4/3]]. Tekşiruv: [[3/4]] · [[4/3]] = [[12/12]] = 1.",
+    "hint": "Özaro teskari sonlarning köpaytmasi 1 ga teng.",
     "source": "bank"
   },
   {
@@ -27,8 +27,8 @@
       { "id": "d", "text": "[[15/8]]" }
     ],
     "correct": "b",
-    "explanation": "Ikkinchi kasrga teskari kasrga ko'paytiramiz: [[2/3]] · [[5/4]] = [[10/12]]. Qisqartiramiz: [[10/12]] = [[5/6]].",
-    "hint": "Bo'lishni ko'paytirishga almashtir: bo'luvchini ag'dar.",
+    "explanation": "Ikkinçi kasrga teskari kasrga köpaytiramiz: [[2/3]] · [[5/4]] = [[10/12]]. Qisqartiramiz: [[10/12]] = [[5/6]].",
+    "hint": "Bölişni köpaytirişga almaştir: böluvçini ağdar.",
     "source": "bank"
   },
   {
@@ -43,8 +43,8 @@
       { "id": "d", "text": "[[6/8]]" }
     ],
     "correct": "c",
-    "explanation": "[[1/2]] ga teskari son [[2/1]], ya'ni 2. Ko'paytiramiz: [[3/4]] · 2 = [[6/4]] = [[1 1/2]]. Tekshiruv: [[1 1/2]] · [[1/2]] = [[3/4]].",
-    "hint": "[[3/4]] ichida nechta [[1/2]] bor? Javob 1 dan kattami yoki kichikmi?",
+    "explanation": "[[1/2]] ga teskari son [[2/1]], yaʼni 2. Köpaytiramiz: [[3/4]] · 2 = [[6/4]] = [[1 1/2]]. Tekşiruv: [[1 1/2]] · [[1/2]] = [[3/4]].",
+    "hint": "[[3/4]] içida neçta [[1/2]] bor? Javob 1 dan kattami yoki kiçikmi?",
     "source": "bank"
   },
   {
@@ -59,15 +59,15 @@
       { "id": "d", "text": "8" }
     ],
     "correct": "d",
-    "explanation": "[[3/4]] ga teskari son [[4/3]]. Ko'paytiramiz: 6 · [[4/3]] = [[24/3]] = 8. Tekshiruv: 8 · [[3/4]] = 6.",
-    "hint": "1 dan kichik songa bo'lsang, natija bo'linuvchidan katta chiqadi.",
+    "explanation": "[[3/4]] ga teskari son [[4/3]]. Köpaytiramiz: 6 · [[4/3]] = [[24/3]] = 8. Tekşiruv: 8 · [[3/4]] = 6.",
+    "hint": "1 dan kiçik songa bölsang, natija bölinuvçidan katta çiqadi.",
     "source": "bank"
   },
   {
     "id": "frac-div-05",
     "skillId": "frac-div",
     "difficulty": 3,
-    "stem": "[[3/4]] kg shirinlik [[1/8]] kg dan qilib qadoqlandi. Nechta qadoq chiqdi?",
+    "stem": "[[3/4]] kg şirinlik [[1/8]] kg dan qilib qadoqlandi. Neçta qadoq çiqdi?",
     "choices": [
       { "id": "a", "text": "24" },
       { "id": "b", "text": "[[3/32]]", "misconceptionId": "div-no-flip" },
@@ -75,8 +75,8 @@
       { "id": "d", "text": "[[1/6]]", "misconceptionId": "div-flip-first" }
     ],
     "correct": "c",
-    "explanation": "[[3/4]] ni [[1/8]] ga bo'lamiz: [[3/4]] · [[8/1]] = [[24/4]] = 6. Tekshiruv: 6 ta qadoq · [[1/8]] kg = [[6/8]] kg = [[3/4]] kg.",
-    "hint": "[[3/4]] kg ichida nechta [[1/8]] kg bor? Avval [[3/4]] ni sakkizdan birlarga aylantir.",
+    "explanation": "[[3/4]] ni [[1/8]] ga bölamiz: [[3/4]] · [[8/1]] = [[24/4]] = 6. Tekşiruv: 6 ta qadoq · [[1/8]] kg = [[6/8]] kg = [[3/4]] kg.",
+    "hint": "[[3/4]] kg içida neçta [[1/8]] kg bor? Avval [[3/4]] ni sakkizdan birlarga aylantir.",
     "source": "bank"
   }
 ]

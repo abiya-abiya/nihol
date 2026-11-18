@@ -3,7 +3,7 @@
     "id": "frac-word-01",
     "skillId": "frac-word",
     "difficulty": 1,
-    "stem": "Kitob 60 sahifadan iborat. Madina kitobning [[2/3]] qismini o'qidi. U necha sahifa o'qidi?",
+    "stem": "Kitob 60 sahifadan iborat. Madina kitobning [[2/3]] qismini öqidi. U neça sahifa öqidi?",
     "choices": [
       { "id": "a", "text": "20" },
       { "id": "b", "text": "90" },
@@ -11,7 +11,7 @@
       { "id": "d", "text": "30" }
     ],
     "correct": "c",
-    "explanation": "60 ning [[2/3]] qismini topamiz: 60 : 3 = 20, bu bitta uchdan bir. 20 · 2 = 40. Madina 40 sahifa o'qidi.",
+    "explanation": "60 ning [[2/3]] qismini topamiz: 60 : 3 = 20, bu bitta uçdan bir. 20 · 2 = 40. Madina 40 sahifa öqidi.",
     "hint": "Avval 60 ning [[1/3]] qismini top.",
     "source": "bank"
   },
@@ -19,7 +19,7 @@
     "id": "frac-word-02",
     "skillId": "frac-word",
     "difficulty": 2,
-    "stem": "Dehqon birinchi kuni dalaning [[1/4]] qismidan, ikkinchi kuni [[1/6]] qismidan paxta terdi. Ikki kunda dalaning qancha qismidan paxta terildi?",
+    "stem": "Dehqon birinçi kuni dalaning [[1/4]] qismidan, ikkinçi kuni [[1/6]] qismidan paxta terdi. Ikki kunda dalaning qança qismidan paxta terildi?",
     "choices": [
       { "id": "a", "text": "[[2/10]]", "misconceptionId": "add-num-den" },
       { "id": "b", "text": "[[5/12]]" },
@@ -27,15 +27,15 @@
       { "id": "d", "text": "[[7/12]]" }
     ],
     "correct": "b",
-    "explanation": "Ikki kunni qo'shamiz: [[1/4]] + [[1/6]]. EKUK(4; 6) = 12: [[1/4]] = [[3/12]], [[1/6]] = [[2/12]]. [[3/12]] + [[2/12]] = [[5/12]].",
-    "hint": "Ikki qismni qo'shish kerak. Maxrajlar har xil, avval nima qilinadi?",
+    "explanation": "Ikki kunni qöşamiz: [[1/4]] + [[1/6]]. EKUK(4; 6) = 12: [[1/4]] = [[3/12]], [[1/6]] = [[2/12]]. [[3/12]] + [[2/12]] = [[5/12]].",
+    "hint": "Ikki qismni qöşiş kerak. Maxrajlar har xil, avval nima qilinadi?",
     "source": "bank"
   },
   {
     "id": "frac-word-03",
     "skillId": "frac-word",
     "difficulty": 2,
-    "stem": "Kitob 60 sahifadan iborat. Ali birinchi kuni kitobning [[1/3]] qismini o'qidi. Ikkinchi kuni qolgan sahifalarning [[1/2]] qismini o'qidi. Ali ikkinchi kuni necha sahifa o'qidi?",
+    "stem": "Kitob 60 sahifadan iborat. Ali birinçi kuni kitobning [[1/3]] qismini öqidi. Ikkinçi kuni qolgan sahifalarning [[1/2]] qismini öqidi. Ali ikkinçi kuni neça sahifa öqidi?",
     "choices": [
       { "id": "a", "text": "30", "misconceptionId": "part-of-rest" },
       { "id": "b", "text": "40" },
@@ -43,15 +43,15 @@
       { "id": "d", "text": "20" }
     ],
     "correct": "d",
-    "explanation": "Birinchi kuni: 60 : 3 = 20 sahifa. Qolgani: 60 − 20 = 40 sahifa. Ikkinchi kuni qolganining yarmi: 40 : 2 = 20 sahifa.",
-    "hint": "\"Qolgan sahifalarning\" degan so'zga e'tibor ber: avval nechta sahifa qolganini top.",
+    "explanation": "Birinçi kuni: 60 : 3 = 20 sahifa. Qolgani: 60 − 20 = 40 sahifa. Ikkinçi kuni qolganining yarmi: 40 : 2 = 20 sahifa.",
+    "hint": "\"Qolgan sahifalarning\" degan sözga eʼtibor ber: avval neçta sahifa qolganini top.",
     "source": "bank"
   },
   {
     "id": "frac-word-04",
     "skillId": "frac-word",
     "difficulty": 3,
-    "stem": "Novvoyxonada 120 ta non yopildi. Ertalab nonlarning [[1/4]] qismi sotildi. Tushda qolgan nonlarning [[2/3]] qismi sotildi. Nechta non sotilmay qoldi?",
+    "stem": "Novvoyxonada 120 ta non yopildi. Ertalab nonlarning [[1/4]] qismi sotildi. Tuşda qolgan nonlarning [[2/3]] qismi sotildi. Neçta non sotilmay qoldi?",
     "choices": [
       { "id": "a", "text": "60" },
       { "id": "b", "text": "30" },
@@ -59,15 +59,15 @@
       { "id": "d", "text": "90" }
     ],
     "correct": "b",
-    "explanation": "Ertalab: 120 : 4 = 30 ta non sotildi, 120 − 30 = 90 ta qoldi. Tushda qolganining [[2/3]] qismi: 90 : 3 · 2 = 60 ta. Sotilmay qoldi: 90 − 60 = 30 ta non.",
-    "hint": "Tushdagi [[2/3]] butun 120 tadan emas, ertalabdan qolgan nonlardan olinadi.",
+    "explanation": "Ertalab: 120 : 4 = 30 ta non sotildi, 120 − 30 = 90 ta qoldi. Tuşda qolganining [[2/3]] qismi: 90 : 3 · 2 = 60 ta. Sotilmay qoldi: 90 − 60 = 30 ta non.",
+    "hint": "Tuşdagi [[2/3]] butun 120 tadan emas, ertalabdan qolgan nonlardan olinadi.",
     "source": "bank"
   },
   {
     "id": "frac-word-05",
     "skillId": "frac-word",
     "difficulty": 3,
-    "stem": "Yo'lning uzunligi 36 km. Sayyohlar birinchi kuni yo'lning [[1/3]] qismini, ikkinchi kuni [[5/12]] qismini bosib o'tdi. Ular yana necha km yurishi kerak?",
+    "stem": "Yölning uzunligi 36 km. Sayyohlar birinçi kuni yölning [[1/3]] qismini, ikkinçi kuni [[5/12]] qismini bosib ötdi. Ular yana neça km yurişi kerak?",
     "choices": [
       { "id": "a", "text": "27" },
       { "id": "b", "text": "24" },
@@ -75,8 +75,8 @@
       { "id": "d", "text": "9" }
     ],
     "correct": "d",
-    "explanation": "Birinchi kuni: 36 : 3 = 12 km. Ikkinchi kuni: 36 : 12 · 5 = 15 km. Jami: 12 + 15 = 27 km. Qoldi: 36 − 27 = 9 km.",
-    "hint": "Har ikki kunning qismi butun yo'ldan olinadi. Ikki kunda necha km yurilganini top.",
+    "explanation": "Birinçi kuni: 36 : 3 = 12 km. Ikkinçi kuni: 36 : 12 · 5 = 15 km. Jami: 12 + 15 = 27 km. Qoldi: 36 − 27 = 9 km.",
+    "hint": "Har ikki kunning qismi butun yöldan olinadi. Ikki kunda neça km yurilganini top.",
     "source": "bank"
   }
 ]

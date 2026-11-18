@@ -11,15 +11,15 @@
       { "id": "d", "text": "[[2/2]]", "misconceptionId": "equiv-one-side" }
     ],
     "correct": "b",
-    "explanation": "[[1/2]] ning surati va maxrajini 3 ga ko'paytiramiz: 1 · 3 = 3, 2 · 3 = 6. Demak, [[1/2]] = [[3/6]].",
-    "hint": "Surat va maxraj bir xil songa ko'paytirilgan kasrni izla.",
+    "explanation": "[[1/2]] ning surati va maxrajini 3 ga köpaytiramiz: 1 · 3 = 3, 2 · 3 = 6. Demak, [[1/2]] = [[3/6]].",
+    "hint": "Surat va maxraj bir xil songa köpaytirilgan kasrni izla.",
     "source": "bank"
   },
   {
     "id": "frac-equiv-02",
     "skillId": "frac-equiv",
     "difficulty": 2,
-    "stem": "Qaysi tenglik to'g'ri?",
+    "stem": "Qaysi tenglik töğri?",
     "choices": [
       { "id": "a", "text": "[[3/5]] = [[3/15]]", "misconceptionId": "equiv-one-side" },
       { "id": "b", "text": "[[3/5]] = [[5/7]]" },
@@ -27,15 +27,15 @@
       { "id": "d", "text": "[[3/5]] = [[9/5]]", "misconceptionId": "equiv-one-side" }
     ],
     "correct": "c",
-    "explanation": "Kasrning asosiy xossasi: surat va maxrajni bir xil songa ko'paytirsak, kasr o'zgarmaydi. 3 · 3 = 9, 5 · 3 = 15, demak [[3/5]] = [[9/15]].",
-    "hint": "Surat ham, maxraj ham bir xil songa ko'paytirilganmi, tekshir.",
+    "explanation": "Kasrning asosiy xossasi: surat va maxrajni bir xil songa köpaytirsak, kasr özgarmaydi. 3 · 3 = 9, 5 · 3 = 15, demak [[3/5]] = [[9/15]].",
+    "hint": "Surat ham, maxraj ham bir xil songa köpaytirilganmi, tekşir.",
     "source": "bank"
   },
   {
     "id": "frac-equiv-03",
     "skillId": "frac-equiv",
     "difficulty": 2,
-    "stem": "[[2/3]] ga teng, maxraji 12 bo'lgan kasrni top.",
+    "stem": "[[2/3]] ga teng, maxraji 12 bölgan kasrni top.",
     "choices": [
       { "id": "a", "text": "[[11/12]]" },
       { "id": "b", "text": "[[2/12]]", "misconceptionId": "equiv-one-side" },
@@ -43,8 +43,8 @@
       { "id": "d", "text": "[[8/12]]" }
     ],
     "correct": "d",
-    "explanation": "12 : 3 = 4, demak maxraj 4 marta oshdi. Suratni ham 4 ga ko'paytiramiz: 2 · 4 = 8. Javob: [[8/12]].",
-    "hint": "Maxraj necha marta oshganini top, suratni ham shuncha marta oshir.",
+    "explanation": "12 : 3 = 4, demak maxraj 4 marta oşdi. Suratni ham 4 ga köpaytiramiz: 2 · 4 = 8. Javob: [[8/12]].",
+    "hint": "Maxraj neça marta oşganini top, suratni ham şunça marta oşir.",
     "source": "bank"
   },
   {
@@ -59,15 +59,15 @@
       { "id": "d", "text": "[[12/18]]", "misconceptionId": "simplify-subtract" }
     ],
     "correct": "b",
-    "explanation": "18 va 24 ni 6 ga bo'lamiz: 18 : 6 = 3, 24 : 6 = 4. Demak, [[18/24]] = [[3/4]]. Surat va maxrajdan bir xil sonni ayirsak, kasr o'zgarib ketadi.",
-    "hint": "18 ni ham, 24 ni ham bo'ladigan sonni top.",
+    "explanation": "18 va 24 ni 6 ga bölamiz: 18 : 6 = 3, 24 : 6 = 4. Demak, [[18/24]] = [[3/4]]. Surat va maxrajdan bir xil sonni ayirsak, kasr özgarib ketadi.",
+    "hint": "18 ni ham, 24 ni ham böladigan sonni top.",
     "source": "bank"
   },
   {
     "id": "frac-equiv-05",
     "skillId": "frac-equiv",
     "difficulty": 3,
-    "stem": "[[4/9]] ga teng va maxraji 36 bo'lgan kasrning surati nechaga teng?",
+    "stem": "[[4/9]] ga teng va maxraji 36 bölgan kasrning surati neçaga teng?",
     "choices": [
       { "id": "a", "text": "4", "misconceptionId": "equiv-one-side" },
       { "id": "b", "text": "31" },
@@ -75,8 +75,8 @@
       { "id": "d", "text": "144" }
     ],
     "correct": "c",
-    "explanation": "36 : 9 = 4, demak maxraj 4 marta oshdi. Suratni ham 4 ga ko'paytiramiz: 4 · 4 = 16. Javob: [[4/9]] = [[16/36]].",
-    "hint": "Avval 36 ni 9 ga bo'l.",
+    "explanation": "36 : 9 = 4, demak maxraj 4 marta oşdi. Suratni ham 4 ga köpaytiramiz: 4 · 4 = 16. Javob: [[4/9]] = [[16/36]].",
+    "hint": "Avval 36 ni 9 ga böl.",
     "source": "bank"
   }
 ]

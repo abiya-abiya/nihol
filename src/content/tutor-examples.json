@@ -4,34 +4,34 @@
     "stem": "Hisobla: [[1/4]] + [[1/6]]",
     "correctText": "[[5/12]]",
     "chosenText": "[[2/10]]",
-    "idealExplanation": "Sen suratlarni alohida, maxrajlarni alohida qo'shding: 1 + 1 = 2 va 4 + 6 = 10. Lekin maxraj bo'lak o'lchamini bildiradi, uni qo'shib bo'lmaydi. Choraklar va oltidan birlar har xil kattalikdagi bo'laklar. Avval ularni bir xil bo'laklarga keltiramiz. EKUK(4; 6) = 12, shuning uchun [[1/4]] = [[3/12]] va [[1/6]] = [[2/12]]. Endi faqat suratlarni qo'shamiz: [[3/12]] + [[2/12]] = [[5/12]]. Tekshir: [[2/10]] = [[1/5]], bu esa [[1/4]] ning o'zidan ham kichik."
+    "idealExplanation": "Sen suratlarni alohida, maxrajlarni alohida qöşding: 1 + 1 = 2 va 4 + 6 = 10. Lekin maxraj bölak ölçamini bildiradi, uni qöşib bölmaydi. Çoraklar va oltidan birlar har xil kattalikdagi bölaklar. Avval ularni bir xil bölaklarga keltiramiz. EKUK(4; 6) = 12, şuning uçun [[1/4]] = [[3/12]] va [[1/6]] = [[2/12]]. Endi faqat suratlarni qöşamiz: [[3/12]] + [[2/12]] = [[5/12]]. Tekşir: [[2/10]] = [[1/5]], bu esa [[1/4]] ning özidan ham kiçik."
   },
   {
     "misconceptionId": "lcm-gcd-swap",
     "stem": "6 va 8 sonlarining EKUKini top.",
     "correctText": "24",
     "chosenText": "2",
-    "idealExplanation": "Sen 2 ni tanlading. 2 soni 6 ni ham, 8 ni ham bo'ladi, demak bu EKUB, ya'ni eng katta umumiy **bo'luvchi**. EKUK esa eng kichik umumiy **karrali**: u 6 ga ham, 8 ga ham bo'linishi kerak. Shuning uchun EKUK bu sonlardan kichik bo'lolmaydi. 8 ning karralilarini yozamiz: 8, 16, 24. Ulardan birinchi bo'lib 6 ga bo'linadigani 24. Demak, EKUK(6; 8) = 24."
+    "idealExplanation": "Sen 2 ni tanlading. 2 soni 6 ni ham, 8 ni ham böladi, demak bu EKUB, yaʼni eng katta umumiy **böluvçi**. EKUK esa eng kiçik umumiy **karrali**: u 6 ga ham, 8 ga ham bölinişi kerak. Şuning uçun EKUK bu sonlardan kiçik bölolmaydi. 8 ning karralilarini yozamiz: 8, 16, 24. Ulardan birinçi bölib 6 ga bölinadigani 24. Demak, EKUK(6; 8) = 24."
   },
   {
     "misconceptionId": "mixed-convert",
-    "stem": "[[2 1/3]] ni noto'g'ri kasrga aylantir.",
+    "stem": "[[2 1/3]] ni notöğri kasrga aylantir.",
     "correctText": "[[7/3]]",
     "chosenText": "[[3/3]]",
-    "idealExplanation": "Sen butun qismni suratga to'g'ridan-to'g'ri qo'shding: 2 + 1 = 3. Lekin 2 butun bu 2 ta bo'lak emas. Har bir butunda 3 ta uchdan bir bor, demak 2 butunda 2 · 3 = 6 ta uchdan bir bor. Unga yana 1 tasini qo'shamiz: 6 + 1 = 7. Javob: [[2 1/3]] = [[7/3]]. Tekshir: [[3/3]] bu atigi 1 butun, [[2 1/3]] esa 2 dan katta."
+    "idealExplanation": "Sen butun qismni suratga töğridan-töğri qöşding: 2 + 1 = 3. Lekin 2 butun bu 2 ta bölak emas. Har bir butunda 3 ta uçdan bir bor, demak 2 butunda 2 · 3 = 6 ta uçdan bir bor. Unga yana 1 tasini qöşamiz: 6 + 1 = 7. Javob: [[2 1/3]] = [[7/3]]. Tekşir: [[3/3]] bu atigi 1 butun, [[2 1/3]] esa 2 dan katta."
   },
   {
     "misconceptionId": "div-no-flip",
     "stem": "Hisobla: [[3/4]] : [[1/2]]",
     "correctText": "[[1 1/2]]",
     "chosenText": "[[3/8]]",
-    "idealExplanation": "Sen kasrlarni bo'lish o'rniga ko'paytirding: [[3/4]] · [[1/2]] = [[3/8]]. Kasrga bo'lish uning teskarisiga ko'paytirish demak. [[1/2]] ga teskari son [[2/1]], ya'ni 2. Shuning uchun [[3/4]] : [[1/2]] = [[3/4]] · 2 = [[6/4]] = [[1 1/2]]. Mantiqan tekshir: [[3/4]] ichida bir yarim marta [[1/2]] bor. 1 dan kichik songa bo'lsang, javob kattalashadi, kichraymaydi."
+    "idealExplanation": "Sen kasrlarni böliş örniga köpaytirding: [[3/4]] · [[1/2]] = [[3/8]]. Kasrga böliş uning teskarisiga köpaytiriş demak. [[1/2]] ga teskari son [[2/1]], yaʼni 2. Şuning uçun [[3/4]] : [[1/2]] = [[3/4]] · 2 = [[6/4]] = [[1 1/2]]. Mantiqan tekşir: [[3/4]] içida bir yarim marta [[1/2]] bor. 1 dan kiçik songa bölsang, javob kattalaşadi, kiçraymaydi."
   },
   {
     "misconceptionId": "part-of-rest",
-    "stem": "Kitob 60 sahifadan iborat. Ali birinchi kuni kitobning [[1/3]] qismini o'qidi. Ikkinchi kuni qolgan sahifalarning [[1/2]] qismini o'qidi. Ali ikkinchi kuni necha sahifa o'qidi?",
+    "stem": "Kitob 60 sahifadan iborat. Ali birinçi kuni kitobning [[1/3]] qismini öqidi. Ikkinçi kuni qolgan sahifalarning [[1/2]] qismini öqidi. Ali ikkinçi kuni neça sahifa öqidi?",
     "correctText": "20",
     "chosenText": "30",
-    "idealExplanation": "Sen butun kitobning yarmini olding: 60 : 2 = 30. Lekin masalada \"qolgan sahifalarning\" deyilgan. Avval qolgan qismni topamiz. Birinchi kuni Ali 60 : 3 = 20 sahifa o'qidi. Demak, 60 − 20 = 40 sahifa qoldi. Ikkinchi kuni shu qolganining yarmini o'qidi: 40 : 2 = 20 sahifa. \"Qolganining\" so'zini ko'rsang, kasrni butunga emas, qolgan songa qo'lla."
+    "idealExplanation": "Sen butun kitobning yarmini olding: 60 : 2 = 30. Lekin masalada \"qolgan sahifalarning\" deyilgan. Avval qolgan qismni topamiz. Birinçi kuni Ali 60 : 3 = 20 sahifa öqidi. Demak, 60 − 20 = 40 sahifa qoldi. Ikkinçi kuni şu qolganining yarmini öqidi: 40 : 2 = 20 sahifa. \"Qolganining\" sözini körsang, kasrni butunga emas, qolgan songa qölla."
   }
 ]

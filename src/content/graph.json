@@ -4,51 +4,51 @@
   "skills": [
     {
       "id": "nat-mul",
-      "title": "Natural sonlarni ko'paytirish",
-      "short": "Ko'paytirish",
+      "title": "Natural sonlarni köpaytiriş",
+      "short": "Köpaytiriş",
       "grade": 5,
       "prerequisites": [],
-      "description": "Ko'paytirish jadvalini yoddan biladi. Ko'p xonali sonni bir xonali songa xatosiz ko'paytiradi."
+      "description": "Köpaytiriş jadvalini yoddan biladi. Köp xonali sonni bir xonali songa xatosiz köpaytiradi."
     },
     {
       "id": "nat-div",
-      "title": "Qoldiqli bo'lish",
-      "short": "Qoldiqli bo'lish",
+      "title": "Qoldiqli böliş",
+      "short": "Qoldiqli böliş",
       "grade": 5,
       "prerequisites": ["nat-mul"],
-      "description": "Sonni songa bo'lib, bo'linma va qoldiqni topadi. Qoldiq bo'luvchidan kichik bo'lishini biladi."
+      "description": "Sonni songa bölib, bölinma va qoldiqni topadi. Qoldiq böluvçidan kiçik bölişini biladi."
     },
     {
       "id": "divisibility",
-      "title": "Bo'linish belgilari",
-      "short": "Bo'linish belgisi",
+      "title": "Böliniş belgilari",
+      "short": "Böliniş belgisi",
       "grade": 6,
       "prerequisites": ["nat-div"],
-      "description": "Sonning 2, 3, 5, 9 va 10 ga bo'linishini bo'lmasdan aniqlaydi. Sonni tub ko'paytuvchilarga ajratadi."
+      "description": "Sonning 2, 3, 5, 9 va 10 ga bölinişini bölmasdan aniqlaydi. Sonni tub köpaytuvçilarga ajratadi."
     },
     {
       "id": "gcd",
-      "title": "Eng katta umumiy bo'luvchi (EKUB)",
+      "title": "Eng katta umumiy böluvçi (EKUB)",
       "short": "EKUB",
       "grade": 6,
       "prerequisites": ["divisibility"],
-      "description": "Ikki sonning eng katta umumiy bo'luvchisini topadi. Undan kasrlarni qisqartirishda foydalanadi."
+      "description": "Ikki sonning eng katta umumiy böluvçisini topadi. Undan kasrlarni qisqartirişda foydalanadi."
     },
     {
       "id": "lcm",
-      "title": "Eng kichik umumiy karrali (EKUK)",
+      "title": "Eng kiçik umumiy karrali (EKUK)",
       "short": "EKUK",
       "grade": 6,
       "prerequisites": ["divisibility"],
-      "description": "Ikki sonning eng kichik umumiy karralisini topadi. Undan kasrlarni umumiy maxrajga keltirishda foydalanadi."
+      "description": "Ikki sonning eng kiçik umumiy karralisini topadi. Undan kasrlarni umumiy maxrajga keltirişda foydalanadi."
     },
     {
       "id": "frac-concept",
-      "title": "Kasr tushunchasi",
-      "short": "Kasr tushunchasi",
+      "title": "Kasr tuşunçasi",
+      "short": "Kasr tuşunçasi",
       "grade": 5,
       "prerequisites": ["nat-div"],
-      "description": "Kasrning surati va maxraji nimani bildirishini tushunadi. Butunning qismini kasr bilan yozadi."
+      "description": "Kasrning surati va maxraji nimani bildirişini tuşunadi. Butunning qismini kasr bilan yozadi."
     },
     {
       "id": "frac-equiv",
@@ -56,79 +56,79 @@
       "short": "Asosiy xossa",
       "grade": 5,
       "prerequisites": ["frac-concept", "nat-mul"],
-      "description": "Surat va maxrajni bir xil songa ko'paytirsa yoki bo'lsa, kasr o'zgarmasligini biladi. Teng kasrlarni topadi."
+      "description": "Surat va maxrajni bir xil songa köpaytirsa yoki bölsa, kasr özgarmasligini biladi. Teng kasrlarni topadi."
     },
     {
       "id": "frac-simplify",
-      "title": "Kasrlarni qisqartirish",
-      "short": "Qisqartirish",
+      "title": "Kasrlarni qisqartiriş",
+      "short": "Qisqartiriş",
       "grade": 6,
       "prerequisites": ["frac-equiv", "gcd"],
-      "description": "Surat va maxrajni ularning umumiy bo'luvchisiga bo'ladi. Kasrni qisqarmas ko'rinishga keltiradi."
+      "description": "Surat va maxrajni ularning umumiy böluvçisiga böladi. Kasrni qisqarmas körinişga keltiradi."
     },
     {
       "id": "frac-common-denom",
-      "title": "Kasrlarni umumiy maxrajga keltirish",
+      "title": "Kasrlarni umumiy maxrajga keltiriş",
       "short": "Umumiy maxraj",
       "grade": 6,
       "prerequisites": ["frac-equiv", "lcm"],
-      "description": "Maxrajlarning EKUKini topadi va har bir kasrni qo'shimcha ko'paytuvchiga ko'paytiradi."
+      "description": "Maxrajlarning EKUKini topadi va har bir kasrni qöşimça köpaytuvçiga köpaytiradi."
     },
     {
       "id": "frac-compare",
-      "title": "Kasrlarni taqqoslash",
-      "short": "Taqqoslash",
+      "title": "Kasrlarni taqqoslaş",
+      "short": "Taqqoslaş",
       "grade": 6,
       "prerequisites": ["frac-common-denom"],
       "description": "Kasrlarni umumiy maxrajga keltirib taqqoslaydi. Qaysi kasr katta ekanini asoslab beradi."
     },
     {
       "id": "frac-add-same",
-      "title": "Bir xil maxrajli kasrlarni qo'shish va ayirish",
+      "title": "Bir xil maxrajli kasrlarni qöşiş va ayiriş",
       "short": "Bir xil maxraj",
       "grade": 5,
       "prerequisites": ["frac-concept"],
-      "description": "Maxrajlari bir xil kasrlarni qo'shadi va ayiradi: suratlar bilan amal bajaradi, maxrajni o'zgartirmaydi."
+      "description": "Maxrajlari bir xil kasrlarni qöşadi va ayiradi: suratlar bilan amal bajaradi, maxrajni özgartirmaydi."
     },
     {
       "id": "frac-add-diff",
-      "title": "Har xil maxrajli kasrlarni qo'shish va ayirish",
+      "title": "Har xil maxrajli kasrlarni qöşiş va ayiriş",
       "short": "Har xil maxraj",
       "grade": 6,
       "prerequisites": ["frac-add-same", "frac-common-denom"],
-      "description": "Kasrlarni avval umumiy maxrajga keltiradi, keyin qo'shadi yoki ayiradi. Javobni qisqartiradi."
+      "description": "Kasrlarni avval umumiy maxrajga keltiradi, keyin qöşadi yoki ayiradi. Javobni qisqartiradi."
     },
     {
       "id": "mixed-numbers",
-      "title": "Aralash sonlar",
-      "short": "Aralash sonlar",
+      "title": "Aralaş sonlar",
+      "short": "Aralaş sonlar",
       "grade": 5,
       "prerequisites": ["frac-concept", "nat-div"],
-      "description": "Aralash sonni noto'g'ri kasrga va noto'g'ri kasrni aralash songa aylantiradi."
+      "description": "Aralaş sonni notöğri kasrga va notöğri kasrni aralaş songa aylantiradi."
     },
     {
       "id": "mixed-add",
-      "title": "Aralash sonlarni qo'shish va ayirish",
-      "short": "Aralash qo'shish",
+      "title": "Aralaş sonlarni qöşiş va ayiriş",
+      "short": "Aralaş qöşiş",
       "grade": 6,
       "prerequisites": ["mixed-numbers", "frac-add-diff"],
-      "description": "Aralash sonlarni qo'shadi va ayiradi. Kerak bo'lsa, butun qismdan bir butun oladi."
+      "description": "Aralaş sonlarni qöşadi va ayiradi. Kerak bölsa, butun qismdan bir butun oladi."
     },
     {
       "id": "frac-mul",
-      "title": "Kasrlarni ko'paytirish",
-      "short": "Kasr ko'paytirish",
+      "title": "Kasrlarni köpaytiriş",
+      "short": "Kasr köpaytiriş",
       "grade": 6,
       "prerequisites": ["frac-simplify", "nat-mul"],
-      "description": "Suratni suratga, maxrajni maxrajga ko'paytiradi. Kasrni natural songa ko'paytira oladi."
+      "description": "Suratni suratga, maxrajni maxrajga köpaytiradi. Kasrni natural songa köpaytira oladi."
     },
     {
       "id": "frac-div",
-      "title": "Kasrlarni bo'lish",
-      "short": "Kasr bo'lish",
+      "title": "Kasrlarni böliş",
+      "short": "Kasr böliş",
       "grade": 6,
       "prerequisites": ["frac-mul"],
-      "description": "Birinchi kasrni ikkinchi kasrga teskari kasrga ko'paytirib bo'ladi."
+      "description": "Birinçi kasrni ikkinçi kasrga teskari kasrga köpaytirib böladi."
     },
     {
       "id": "frac-word",
@@ -136,7 +136,7 @@
       "short": "Matnli masalalar",
       "grade": 6,
       "prerequisites": ["frac-add-diff", "frac-mul"],
-      "description": "Masala shartini kasrlar bilan ifodalaydi va yechadi. Sonning qismini va qolgan qismini topadi."
+      "description": "Masala şartini kasrlar bilan ifodalaydi va yeçadi. Sonning qismini va qolgan qismini topadi."
     }
   ],
   "entrySkills": ["frac-word", "mixed-add", "frac-div", "frac-compare"]

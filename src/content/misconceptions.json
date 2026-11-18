@@ -7,9 +7,9 @@
       "mixed-add",
       "frac-word"
     ],
-    "title": "Suratlarni va maxrajlarni alohida qo'shadi",
+    "title": "Suratlarni va maxrajlarni alohida qöşadi",
     "example": "[[1/2]] + [[1/3]] = [[2/5]]",
-    "remedy": "Maxraj bo'laklar o'lchamini bildiradi, ularni qo'shib bo'lmaydi. Avval kasrlarni umumiy maxrajga keltir, keyin faqat suratlarni qo'sh."
+    "remedy": "Maxraj bölaklar ölçamini bildiradi, ularni qöşib bölmaydi. Avval kasrlarni umumiy maxrajga keltir, keyin faqat suratlarni qöş."
   },
   {
     "id": "bigger-den-bigger",
@@ -17,9 +17,9 @@
       "frac-compare",
       "frac-concept"
     ],
-    "title": "Maxraji katta kasrni katta deb o'ylaydi",
+    "title": "Maxraji katta kasrni katta deb öylaydi",
     "example": "[[1/8]] > [[1/4]]",
-    "remedy": "Maxraj katta bo'lsa, butun ko'proq bo'lakka bo'linadi va har bir bo'lak kichrayadi. Kasrlarni umumiy maxrajga keltirib taqqosla."
+    "remedy": "Maxraj katta bölsa, butun köproq bölakka bölinadi va har bir bölak kiçrayadi. Kasrlarni umumiy maxrajga keltirib taqqosla."
   },
   {
     "id": "simplify-subtract",
@@ -27,9 +27,9 @@
       "frac-simplify",
       "frac-equiv"
     ],
-    "title": "Qisqartirishda surat va maxrajdan bir xil sonni ayiradi",
+    "title": "Qisqartirişda surat va maxrajdan bir xil sonni ayiradi",
     "example": "[[6/8]] = [[4/6]] = [[2/4]]",
-    "remedy": "Kasrni qisqartirganda surat va maxraj bir xil songa **bo'linadi**, ayirilmaydi. Ularning EKUBini top va ikkalasini unga bo'l."
+    "remedy": "Kasrni qisqartirganda surat va maxraj bir xil songa **bölinadi**, ayirilmaydi. Ularning EKUBini top va ikkalasini unga böl."
   },
   {
     "id": "equiv-one-side",
@@ -37,9 +37,9 @@
       "frac-equiv",
       "frac-common-denom"
     ],
-    "title": "Faqat suratni yoki faqat maxrajni ko'paytiradi",
+    "title": "Faqat suratni yoki faqat maxrajni köpaytiradi",
     "example": "[[2/3]] = [[2/6]]",
-    "remedy": "Kasr o'zgarmasligi uchun surat va maxraj **bir xil** songa ko'paytiriladi. Bittasini o'zgartirsang, kasrning qiymati ham o'zgaradi."
+    "remedy": "Kasr özgarmasligi uçun surat va maxraj **bir xil** songa köpaytiriladi. Bittasini özgartirsang, kasrning qiymati ham özgaradi."
   },
   {
     "id": "lcm-is-product",
@@ -48,9 +48,9 @@
       "frac-add-diff",
       "lcm"
     ],
-    "title": "Umumiy maxraj sifatida doim maxrajlar ko'paytmasini oladi",
+    "title": "Umumiy maxraj sifatida doim maxrajlar köpaytmasini oladi",
     "example": "[[1/4]] + [[1/6]] = [[6/24]] + [[4/24]] = [[10/24]]",
-    "remedy": "Maxrajlar ko'paytmasi ham umumiy maxraj, lekin ko'pincha eng kichigi emas. Maxrajlarning EKUKini ol, shunda sonlar kichik bo'ladi va javobni qisqartirish oson."
+    "remedy": "Maxrajlar köpaytmasi ham umumiy maxraj, lekin köpinça eng kiçigi emas. Maxrajlarning EKUKini ol, şunda sonlar kiçik böladi va javobni qisqartiriş oson."
   },
   {
     "id": "lcm-gcd-swap",
@@ -60,9 +60,9 @@
       "frac-common-denom",
       "frac-simplify"
     ],
-    "title": "EKUK bilan EKUBni adashtiradi",
+    "title": "EKUK bilan EKUBni adaştiradi",
     "example": "EKUK(4; 6) = 2",
-    "remedy": "EKUK ikkala songa ham **bo'linadigan** eng kichik son, u sonlardan kichik bo'lmaydi. EKUB esa ikkala sonni ham **bo'ladigan** eng katta son."
+    "remedy": "EKUK ikkala songa ham **bölinadigan** eng kiçik son, u sonlardan kiçik bölmaydi. EKUB esa ikkala sonni ham **böladigan** eng katta son."
   },
   {
     "id": "common-denom-keep-num",
@@ -71,9 +71,9 @@
       "frac-add-diff",
       "frac-compare"
     ],
-    "title": "Maxrajni o'zgartiradi, suratni esa o'zgartirmaydi",
+    "title": "Maxrajni özgartiradi, suratni esa özgartirmaydi",
     "example": "[[1/4]] = [[1/12]]",
-    "remedy": "Maxrajni necha marta oshirsang, suratni ham shuncha marta oshir. Qo'shimcha ko'paytuvchini top va suratni ham unga ko'paytir."
+    "remedy": "Maxrajni neça marta oşirsang, suratni ham şunça marta oşir. Qöşimça köpaytuvçini top va suratni ham unga köpaytir."
   },
   {
     "id": "mixed-convert",
@@ -81,27 +81,27 @@
       "mixed-numbers",
       "mixed-add"
     ],
-    "title": "Aralash sonni noto'g'ri kasrga aylantirishda butunni maxrajga ko'paytirmaydi",
+    "title": "Aralaş sonni notöğri kasrga aylantirişda butunni maxrajga köpaytirmaydi",
     "example": "[[2 1/3]] = [[3/3]]",
-    "remedy": "Butun qismni maxrajga ko'paytir va suratni qo'sh: [[2 1/3]] = [[7/3]], chunki 2 · 3 + 1 = 7. Maxraj o'zgarmaydi."
+    "remedy": "Butun qismni maxrajga köpaytir va suratni qöş: [[2 1/3]] = [[7/3]], çunki 2 · 3 + 1 = 7. Maxraj özgarmaydi."
   },
   {
     "id": "mixed-borrow",
     "skillIds": [
       "mixed-add"
     ],
-    "title": "Aralash sonlarni ayirishda butun qismdan bir butun olmaydi",
+    "title": "Aralaş sonlarni ayirişda butun qismdan bir butun olmaydi",
     "example": "[[3 1/4]] − [[1 3/4]] = [[2 2/4]]",
-    "remedy": "Kasr qismdan kattasini ayirib bo'lmasa, butun qismdan bitta butunni kasrga aylantir: [[3 1/4]] = [[2 5/4]]. Keyin ayir."
+    "remedy": "Kasr qismdan kattasini ayirib bölmasa, butun qismdan bitta butunni kasrga aylantir: [[3 1/4]] = [[2 5/4]]. Keyin ayir."
   },
   {
     "id": "mul-common-denom",
     "skillIds": [
       "frac-mul"
     ],
-    "title": "Ko'paytirishda maxrajni o'zgartirmaydi",
+    "title": "Köpaytirişda maxrajni özgartirmaydi",
     "example": "[[2/5]] · [[3/5]] = [[6/5]]",
-    "remedy": "Ko'paytirishda umumiy maxraj kerak emas. Suratni suratga, maxrajni maxrajga ko'paytir: [[2/5]] · [[3/5]] = [[6/25]]."
+    "remedy": "Köpaytirişda umumiy maxraj kerak emas. Suratni suratga, maxrajni maxrajga köpaytir: [[2/5]] · [[3/5]] = [[6/25]]."
   },
   {
     "id": "whole-times-both",
@@ -109,27 +109,27 @@
       "frac-mul",
       "frac-word"
     ],
-    "title": "Natural sonni ham suratga, ham maxrajga ko'paytiradi",
+    "title": "Natural sonni ham suratga, ham maxrajga köpaytiradi",
     "example": "3 · [[2/5]] = [[6/15]]",
-    "remedy": "Natural songa ko'paytirganda faqat surat ko'paytiriladi: 3 · [[2/5]] = [[6/5]]. Ikkalasini ko'paytirsang, kasr o'zgarmay qoladi."
+    "remedy": "Natural songa köpaytirganda faqat surat köpaytiriladi: 3 · [[2/5]] = [[6/5]]. Ikkalasini köpaytirsang, kasr özgarmay qoladi."
   },
   {
     "id": "div-no-flip",
     "skillIds": [
       "frac-div"
     ],
-    "title": "Kasrlarni bo'lishda teskari kasrga ko'paytirmaydi",
+    "title": "Kasrlarni bölişda teskari kasrga köpaytirmaydi",
     "example": "[[3/4]] : [[1/2]] = [[3/8]]",
-    "remedy": "Kasrga bo'lish uning teskarisiga ko'paytirish demak. Ikkinchi kasrni ag'dar va ko'paytir: [[3/4]] : [[1/2]] = [[3/4]] · [[2/1]]."
+    "remedy": "Kasrga böliş uning teskarisiga köpaytiriş demak. Ikkinçi kasrni ağdar va köpaytir: [[3/4]] : [[1/2]] = [[3/4]] · [[2/1]]."
   },
   {
     "id": "div-flip-first",
     "skillIds": [
       "frac-div"
     ],
-    "title": "Birinchi kasrni teskarisiga almashtiradi",
+    "title": "Birinçi kasrni teskarisiga almaştiradi",
     "example": "[[3/4]] : [[1/2]] = [[4/3]] · [[1/2]]",
-    "remedy": "Bo'linuvchi o'zgarmaydi. Faqat bo'luvchini, ya'ni ikkinchi kasrni teskarisiga almashtir."
+    "remedy": "Bölinuvçi özgarmaydi. Faqat böluvçini, yaʼni ikkinçi kasrni teskarisiga almaştir."
   },
   {
     "id": "remainder-error",
@@ -137,9 +137,9 @@
       "nat-div",
       "mixed-numbers"
     ],
-    "title": "Qoldiqli bo'lishda bo'linma yoki qoldiqni xato topadi",
+    "title": "Qoldiqli bölişda bölinma yoki qoldiqni xato topadi",
     "example": "29 : 4 = 6 (qoldiq 5)",
-    "remedy": "Qoldiq doim bo'luvchidan kichik bo'ladi. Tekshir: bo'linma · bo'luvchi + qoldiq = bo'linuvchi."
+    "remedy": "Qoldiq doim böluvçidan kiçik böladi. Tekşir: bölinma · böluvçi + qoldiq = bölinuvçi."
   },
   {
     "id": "times-table",
@@ -150,18 +150,18 @@
       "gcd",
       "frac-mul"
     ],
-    "title": "Ko'paytirish jadvalida adashadi",
+    "title": "Köpaytiriş jadvalida adaşadi",
     "example": "7 · 8 = 54",
-    "remedy": "Javobni boshqa yo'l bilan tekshir: 7 · 8 = 7 · 4 · 2 = 28 · 2 = 56. Qiyin juftliklarni har kuni takrorla."
+    "remedy": "Javobni boşqa yöl bilan tekşir: 7 · 8 = 7 · 4 · 2 = 28 · 2 = 56. Qiyin juftliklarni har kuni takrorla."
   },
   {
     "id": "part-of-rest",
     "skillIds": [
       "frac-word"
     ],
-    "title": "Qolgan qismning ulushini butunning ulushi deb hisoblaydi",
-    "example": "60 sahifaning [[1/3]] qismi o'qildi, qolganining [[1/2]] qismi: 60 · [[1/2]] = 30",
-    "remedy": "Masalada \"qolganining\" degan so'z bo'lsa, avval qolgan qismni top. Keyin kasrni shu qolgan songa qo'lla."
+    "title": "Qolgan qismning uluşini butunning uluşi deb hisoblaydi",
+    "example": "60 sahifaning [[1/3]] qismi öqildi, qolganining [[1/2]] qismi: 60 · [[1/2]] = 30",
+    "remedy": "Masalada \"qolganining\" degan söz bölsa, avval qolgan qismni top. Keyin kasrni şu qolgan songa qölla."
   },
   {
     "id": "divisibility-rule",
@@ -170,17 +170,17 @@
       "gcd",
       "lcm"
     ],
-    "title": "Bo'linish belgisini noto'g'ri qo'llaydi",
-    "example": "123 soni 3 ga bo'linmaydi, chunki oxirgi raqami 3 emas",
-    "remedy": "3 va 9 ga bo'linishda raqamlar yig'indisiga qara. 2, 5 va 10 ga bo'linishda esa oxirgi raqamga qara."
+    "title": "Böliniş belgisini notöğri qöllaydi",
+    "example": "123 soni 3 ga bölinmaydi, çunki oxirgi raqami 3 emas",
+    "remedy": "3 va 9 ga bölinişda raqamlar yiğindisiga qara. 2, 5 va 10 ga bölinişda esa oxirgi raqamga qara."
   },
   {
     "id": "carry-forgot",
     "skillIds": [
       "nat-mul"
     ],
-    "title": "Ko'paytirishda o'nlikni keyingi xonaga o'tkazishni unutadi",
+    "title": "Köpaytirişda önlikni keyingi xonaga ötkazişni unutadi",
     "example": "24 · 3 = 62",
-    "remedy": "Birliklarni ko'paytirganda 10 yoki undan ko'p chiqsa, o'nlikni yodda tut va keyingi xona natijasiga qo'sh: 4 · 3 = 12, 2 ni yoz, 1 ni o'tkaz; 2 · 3 + 1 = 7. Javob: 72."
+    "remedy": "Birliklarni köpaytirganda 10 yoki undan köp çiqsa, önlikni yodda tut va keyingi xona natijasiga qöş: 4 · 3 = 12, 2 ni yoz, 1 ni ötkaz; 2 · 3 + 1 = 7. Javob: 72."
   }
 ]

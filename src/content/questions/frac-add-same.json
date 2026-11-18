@@ -11,8 +11,8 @@
       { "id": "d", "text": "[[1/7]]" }
     ],
     "correct": "c",
-    "explanation": "Maxrajlar bir xil, shuning uchun suratlarni qo'shamiz: 2 + 3 = 5. Maxraj o'zgarmaydi: [[5/7]].",
-    "hint": "Yettidan ikki bo'lakka yana yettidan uch bo'lak qo'shilsa, bo'lak o'lchami o'zgaradimi?",
+    "explanation": "Maxrajlar bir xil, şuning uçun suratlarni qöşamiz: 2 + 3 = 5. Maxraj özgarmaydi: [[5/7]].",
+    "hint": "Yettidan ikki bölakka yana yettidan uç bölak qöşilsa, bölak ölçami özgaradimi?",
     "source": "bank"
   },
   {
@@ -27,8 +27,8 @@
       { "id": "d", "text": "[[1/10]]" }
     ],
     "correct": "a",
-    "explanation": "Maxrajlar bir xil: 10. Suratlarni qo'shamiz: 3 + 4 = 7. Maxraj o'sha qoladi: [[7/10]].",
-    "hint": "Maxrajlar teng bo'lsa, faqat suratlar bilan amal bajariladi.",
+    "explanation": "Maxrajlar bir xil: 10. Suratlarni qöşamiz: 3 + 4 = 7. Maxraj öşa qoladi: [[7/10]].",
+    "hint": "Maxrajlar teng bölsa, faqat suratlar bilan amal bajariladi.",
     "source": "bank"
   },
   {
@@ -43,8 +43,8 @@
       { "id": "d", "text": "[[5/11]]" }
     ],
     "correct": "d",
-    "explanation": "Maxrajlar bir xil, shuning uchun suratlarni ayiramiz: 8 − 3 = 5. Maxraj o'zgarmaydi: [[5/11]].",
-    "hint": "Ayirishda ham maxraj o'zgarmaydi.",
+    "explanation": "Maxrajlar bir xil, şuning uçun suratlarni ayiramiz: 8 − 3 = 5. Maxraj özgarmaydi: [[5/11]].",
+    "hint": "Ayirişda ham maxraj özgarmaydi.",
     "source": "bank"
   },
   {
@@ -59,8 +59,8 @@
       { "id": "d", "text": "[[15/12]]" }
     ],
     "correct": "b",
-    "explanation": "Suratlarni qo'shamiz: 5 + 11 = 16, maxraj 12 qoladi: [[16/12]]. Bu noto'g'ri kasr, uni [[1 1/3]] ko'rinishida ham yozish mumkin.",
-    "hint": "Suratlar yig'indisi maxrajdan katta chiqishi mumkin, bu xato emas.",
+    "explanation": "Suratlarni qöşamiz: 5 + 11 = 16, maxraj 12 qoladi: [[16/12]]. Bu notöğri kasr, uni [[1 1/3]] körinişida ham yoziş mumkin.",
+    "hint": "Suratlar yiğindisi maxrajdan katta çiqişi mumkin, bu xato emas.",
     "source": "bank"
   },
   {
@@ -76,7 +76,7 @@
     ],
     "correct": "c",
     "explanation": "Maxrajlar bir xil: 15. Suratlar bilan amal bajaramiz: 7 + 4 − 2 = 9. Javob: [[9/15]], qisqartirsak [[3/5]].",
-    "hint": "Amallarni chapdan o'ngga, faqat suratlar bilan bajar.",
+    "hint": "Amallarni çapdan öngga, faqat suratlar bilan bajar.",
     "source": "bank"
   }
 ]

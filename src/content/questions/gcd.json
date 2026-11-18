@@ -3,7 +3,7 @@
     "id": "gcd-01",
     "skillId": "gcd",
     "difficulty": 1,
-    "stem": "12 sonining barcha bo'luvchilari qaysi qatorda yozilgan?",
+    "stem": "12 sonining barça böluvçilari qaysi qatorda yozilgan?",
     "choices": [
       {
         "id": "a",
@@ -24,8 +24,8 @@
       }
     ],
     "correct": "c",
-    "explanation": "12 ni qoldiqsiz bo'ladigan sonlar: 1, 2, 3, 4, 6 va 12 ning o'zi. 8 esa 12 ni bo'lmaydi. 12, 24, 36, 48 bu 12 ning karralilari.",
-    "hint": "1 va sonning o'zi ham doim bo'luvchi bo'ladi.",
+    "explanation": "12 ni qoldiqsiz böladigan sonlar: 1, 2, 3, 4, 6 va 12 ning özi. 8 esa 12 ni bölmaydi. 12, 24, 36, 48 bu 12 ning karralilari.",
+    "hint": "1 va sonning özi ham doim böluvçi böladi.",
     "source": "bank"
   },
   {
@@ -53,15 +53,15 @@
       }
     ],
     "correct": "d",
-    "explanation": "12 ning bo'luvchilari: 1, 2, 3, 4, **6**, 12. 18 ning bo'luvchilari: 1, 2, 3, **6**, 9, 18. Umumiylarining eng kattasi 6. Demak, EKUB(12; 18) = 6.",
-    "hint": "Ikkala sonning bo'luvchilarini yoz va umumiylarining eng kattasini tanla.",
+    "explanation": "12 ning böluvçilari: 1, 2, 3, 4, **6**, 12. 18 ning böluvçilari: 1, 2, 3, **6**, 9, 18. Umumiylarining eng kattasi 6. Demak, EKUB(12; 18) = 6.",
+    "hint": "Ikkala sonning böluvçilarini yoz va umumiylarining eng kattasini tanla.",
     "source": "bank"
   },
   {
     "id": "gcd-03",
     "skillId": "gcd",
     "difficulty": 2,
-    "stem": "EKUB(16; 24) nechaga teng?",
+    "stem": "EKUB(16; 24) neçaga teng?",
     "choices": [
       {
         "id": "a",
@@ -82,8 +82,8 @@
       }
     ],
     "correct": "b",
-    "explanation": "16 ning bo'luvchilari: 1, 2, 4, **8**, 16. 24 ning bo'luvchilari: 1, 2, 3, 4, 6, **8**, 12, 24. Umumiylarining eng kattasi 8. 16 esa 24 ni bo'lmaydi.",
-    "hint": "EKUB ikkala sondan ham katta bo'lolmaydi. Ikkala sonni bo'ladigan eng katta sonni izla.",
+    "explanation": "16 ning böluvçilari: 1, 2, 4, **8**, 16. 24 ning böluvçilari: 1, 2, 3, 4, 6, **8**, 12, 24. Umumiylarining eng kattasi 8. 16 esa 24 ni bölmaydi.",
+    "hint": "EKUB ikkala sondan ham katta bölolmaydi. Ikkala sonni böladigan eng katta sonni izla.",
     "source": "bank"
   },
   {
@@ -111,15 +111,15 @@
       }
     ],
     "correct": "a",
-    "explanation": "36 = 2 · 2 · 3 · 3, 48 = 2 · 2 · 2 · 2 · 3. Umumiy ko'paytuvchilar: 2 · 2 · 3 = 12. Tekshiruv: 36 : 12 = 3, 48 : 12 = 4. 24 esa 36 ni bo'lmaydi.",
-    "hint": "Ikkala sonni tub ko'paytuvchilarga ajrat va umumiylarini ko'paytir.",
+    "explanation": "36 = 2 · 2 · 3 · 3, 48 = 2 · 2 · 2 · 2 · 3. Umumiy köpaytuvçilar: 2 · 2 · 3 = 12. Tekşiruv: 36 : 12 = 3, 48 : 12 = 4. 24 esa 36 ni bölmaydi.",
+    "hint": "Ikkala sonni tub köpaytuvçilarga ajrat va umumiylarini köpaytir.",
     "source": "bank"
   },
   {
     "id": "gcd-05",
     "skillId": "gcd",
     "difficulty": 3,
-    "stem": "24 ta olma va 36 ta nokni bolalarga teng bo'lishmoqchi. Har bir bola bir xil sonda olma va bir xil sonda nok olsin, hech narsa ortib qolmasin. Ko'pi bilan nechta bolaga bo'lish mumkin?",
+    "stem": "24 ta olma va 36 ta nokni bolalarga teng bölişmoqçi. Har bir bola bir xil sonda olma va bir xil sonda nok olsin, heç narsa ortib qolmasin. Köpi bilan neçta bolaga böliş mumkin?",
     "choices": [
       {
         "id": "a",
@@ -140,8 +140,8 @@
       }
     ],
     "correct": "c",
-    "explanation": "Bolalar soni 24 ni ham, 36 ni ham qoldiqsiz bo'lishi kerak. Eng ko'pi EKUB(24; 36) = 12. Har bir bola 24 : 12 = 2 ta olma va 36 : 12 = 3 ta nok oladi.",
-    "hint": "Bolalar soni 24 ning ham, 36 ning ham bo'luvchisi bo'lishi kerak.",
+    "explanation": "Bolalar soni 24 ni ham, 36 ni ham qoldiqsiz bölişi kerak. Eng köpi EKUB(24; 36) = 12. Har bir bola 24 : 12 = 2 ta olma va 36 : 12 = 3 ta nok oladi.",
+    "hint": "Bolalar soni 24 ning ham, 36 ning ham böluvçisi bölişi kerak.",
     "source": "bank"
   }
 ]

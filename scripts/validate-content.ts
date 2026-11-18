@@ -243,6 +243,14 @@ for (const sid of subjectDirs) {
     for (const t of texts) if (OLD_ALPHABET.test(t)) err(w, `old alphabet in "${t}"`);
   }
 }
+for (const t of [
+  ...content.graph.skills.flatMap((s) => [s.title, s.short, s.description]),
+  ...content.misconceptions.flatMap((m) => [m.title, m.example, m.remedy]),
+  ...content.glossary.flatMap((g) => [g.term, g.definition]),
+  ...content.tutorExamples.flatMap((e) => [e.stem, e.correctText, e.chosenText, e.idealExplanation]),
+  ...content.questions.flatMap((q) => [q.stem, q.explanation, q.hint, ...q.choices.map((c) => c.text)]),
+])
+  if (OLD_ALPHABET.test(t)) err("v1 math content", `old alphabet in "${t}"`);
 {
   const ids = subjects.map((s) => s.meta.id);
   if (ids[0] !== "matematika") err("subjects/index.ts", `Matematika must be first (got ${ids[0]})`);
