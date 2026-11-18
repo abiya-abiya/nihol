@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "ona-tili",
+    "name": "Ona tili",
+    "short": "Ona tili",
+    "color": "#be185d",
+    "icon": "book-open",
+    "order": 2,
+    "description": "Tovuşlar, söz tarkibi, söz turkumlari va gap bölaklari."
+  },
+  "graph": {
+    "subject": "Ona tili",
+    "topic": "Fonetika, morfologiya va sintaksis",
+    "skills": [
+      {
+        "id": "ona-tili-01",
+        "title": "Unli va undoş tovuşlar",
+        "short": "Tovuşlar",
+        "grade": 5,
+        "prerequisites": [],
+        "description": "Unli va undoş tovuşlarni ajratadi. Sözni böğinlarga töğri böladi."
+      },
+      {
+        "id": "ona-tili-02",
+        "title": "Söz tarkibi: özak va qöşimça",
+        "short": "Söz tarkibi",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-01"
+        ],
+        "description": "Sözning özagi va qöşimçalarini ajratadi. Qöşimça turlarini taniydi."
+      },
+      {
+        "id": "ona-tili-03",
+        "title": "Söz yasaliş usullari",
+        "short": "Söz yasaliş",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-02"
+        ],
+        "description": "Qöşimça qöşiş va söz qöşiş usulida yasalgan sözlarni taniydi. Qöşma va juft sözlarni farqlaydi."
+      },
+      {
+        "id": "ona-tili-04",
+        "title": "Ot söz turkumi",
+        "short": "Ot",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-02"
+        ],
+        "description": "Otni söroği va maʼnosiga köra taniydi. Turdoş va atoqli otlarni, egalik va kelişik qöşimçalarini farqlaydi."
+      },
+      {
+        "id": "ona-tili-05",
+        "title": "Sifat va uning darajalari",
+        "short": "Sifat",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-04"
+        ],
+        "description": "Sifatni söroğiga köra taniydi. Oddiy, qiyosiy va orttirma darajalarni farqlaydi."
+      },
+      {
+        "id": "ona-tili-06",
+        "title": "Feʼl va uning zamonlari",
+        "short": "Feʼl",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-03"
+        ],
+        "description": "Feʼlni iş-harakat maʼnosiga köra taniydi. Ötgan, hozirgi va kelasi zamonni, bölişli va bölişsiz şaklni farqlaydi."
+      },
+      {
+        "id": "ona-tili-07",
+        "title": "Gap bölaklari",
+        "short": "Gap bölaklari",
+        "grade": 6,
+        "prerequisites": [
+          "ona-tili-04",
+          "ona-tili-05",
+          "ona-tili-06"
+        ],
+        "description": "Gapda ega, kesim, töldiruvçi, aniqlovçi va holni topadi."
+      }
+    ],
+    "entrySkills": [
+      "ona-tili-07",
+      "ona-tili-06"
+    ]
+  },
+  "materials": [
+    {
+      "lessonId": "ona-tili-01",
+      "fileName": "Ona_tili_6-sinf_Tovuşlar.docx",
+      "pages": 3,
+      "summary": "Unli va undoş tovuşlar, jarangli va jarangsiz juftliklar, böğin."
+    },
+    {
+      "lessonId": "ona-tili-02",
+      "fileName": "Ona_tili_6-sinf_Söz_tarkibi.docx",
+      "pages": 4,
+      "summary": "Özak, söz yasovçi va şakl yasovçi qöşimçalar, ularning ketma-ketligi."
+    },
+    {
+      "lessonId": "ona-tili-03",
+      "fileName": "Ona_tili_6-sinf_Söz_yasaliş.docx",
+      "pages": 3,
+      "summary": "Qöşimça qöşiş, söz qöşiş va juftlaş orqali yangi söz yasaliş."
+    },
+    {
+      "lessonId": "ona-tili-04",
+      "fileName": "Ona_tili_6-sinf_Ot.docx",
+      "pages": 4,
+      "summary": "Otning maʼnosi, turdoş va atoqli otlar, köplik, egalik va kelişik qöşimçalari."
+    },
+    {
+      "lessonId": "ona-tili-05",
+      "fileName": "Ona_tili_6-sinf_Sifat.docx",
+      "pages": 3,
+      "summary": "Sifatning maʼnosi, yasaliş qöşimçalari va sifat darajalari."
+    },
+    {
+      "lessonId": "ona-tili-06",
+      "fileName": "Ona_tili_6-sinf_Feʼl.docx",
+      "pages": 4,
+      "summary": "Feʼlning maʼnosi, zamonlari, bölişli va bölişsiz şakllari."
+    },
+    {
+      "lessonId": "ona-tili-07",
+      "fileName": "Ona_tili_6-sinf_Gap_bölaklari.docx",
+      "pages": 5,
+      "summary": "Boş bölaklar (ega, kesim) va ikkinçi darajali bölaklar."
+    }
+  ]
+}

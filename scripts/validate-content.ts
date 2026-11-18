@@ -4,6 +4,7 @@ import { readFileSync, readdirSync } from "node:fs";
 import { join } from "node:path";
 import { z } from "zod";
 import * as content from "../src/content/index";
+import { subjects } from "../src/content/subjects/index";
 import { checkGenerators } from "../src/engine/generators/check";
 
 const ROOT = join(process.cwd(), "src", "content"); // npm runs scripts from the repo root
@@ -196,6 +197,57 @@ for (const e of checkGenerators(miscIds)) errors.push(e);
 // ---------- loader (src/content/index.ts) imports every file ----------
 if (content.questions.length !== allQuestions.length)
   err("src/content/index.ts", `exports ${content.questions.length} questions, files on disk have ${allQuestions.length} (missing import?)`);
+
+// ---------- v2 subjects: src/content/subjects/<id>/{subject,questions}.json ----------
+const Subject = z.object({
+  meta: z.object({ id, name: text, short: text, color: z.string().regex(/^#[0-9a-f]{6}$/i), icon: text, order: z.number(), description: text }),
+  graph: Graph,
+  materials: z.array(z.object({ lessonId: id, fileName: text, pages: z.number().int().positive(), summary: text })),
+});
+// old alphabet left in Uzbek text (English subject keeps sh/ch and apostrophes)
+const OLD_ALPHABET = /[oOgG]['ʻ‘’`]|sh|ch|Sh|Ch|SH|CH|'/;
+const subjectDirs = readdirSync(join(ROOT, "subjects"), { withFileTypes: true }).filter((d) => d.isDirectory()).map((d) => d.name);
+for (const sid of subjectDirs) {
+  const s = load(`subjects/${sid}/subject.json`, Subject);
+  const qs = load(`subjects/${sid}/questions.json`, z.array(Question));
+  if (!s || !qs) continue;
+  const w = `subjects/${sid}`;
+  if (s.meta.id !== sid) err(w, `meta.id "${s.meta.id}" does not match folder`);
+  const lessons = new Set(s.graph.skills.map((l) => l.id));
+  unique(w, [...lessons], "lesson id");
+  for (const l of s.graph.skills) {
+    if (!new RegExp(`^${sid}-0[1-9]$`).test(l.id)) err(w, `lesson id "${l.id}" must be "${sid}-NN"`);
+    if (l.short.length > 18) err(w, `${l.id} short "${l.short}" is ${l.short.length} chars (max 18)`);
+    for (const p of l.prerequisites) if (!lessons.has(p)) err(w, `${l.id}: unknown prerequisite "${p}"`);
+    // lessons are listed in order, so a prerequisite must come earlier (no cycles)
+    for (const p of l.prerequisites) if (p >= l.id) err(w, `${l.id}: prerequisite "${p}" is not an earlier lesson`);
+  }
+  for (const e of s.graph.entrySkills) if (!lessons.has(e)) err(w, `entrySkills: unknown lesson "${e}"`);
+  for (const m of s.materials) if (!lessons.has(m.lessonId)) err(w, `materials: unknown lesson "${m.lessonId}"`);
+  unique(w, qs.map((q) => q.id), "question id");
+  for (const lid of lessons) {
+    const n = qs.filter((q) => q.skillId === lid).length;
+    if (n !== 5) err(w, `${lid} has ${n} questions (need 5)`);
+  }
+  for (const q of qs) {
+    const qw = `${w} ${q.id}`;
+    if (!lessons.has(q.skillId)) err(qw, `unknown lesson "${q.skillId}"`);
+    if (!new RegExp(`^${q.skillId}-\\d{2}$`).test(q.id)) err(qw, `id must be "${q.skillId}-NN"`);
+    if (q.choices.map((c) => c.id).join("") !== "abcd") err(qw, `choice ids must be a, b, c, d`);
+    if (!q.choices.some((c) => c.id === q.correct)) err(qw, `correct "${q.correct}" is not a choice`);
+    unique(qw, q.choices.map((c) => c.text.trim()), "choice text");
+  }
+  if (sid !== "ingliz-tili") {
+    const texts = [s.meta.name, s.meta.description, s.graph.topic, ...s.graph.skills.flatMap((l) => [l.title, l.short, l.description]),
+      ...s.materials.flatMap((m) => [m.fileName, m.summary]), ...qs.flatMap((q) => [q.stem, q.explanation, q.hint, ...q.choices.map((c) => c.text)])];
+    for (const t of texts) if (OLD_ALPHABET.test(t)) err(w, `old alphabet in "${t}"`);
+  }
+}
+{
+  const ids = subjects.map((s) => s.meta.id);
+  if (ids[0] !== "matematika") err("subjects/index.ts", `Matematika must be first (got ${ids[0]})`);
+  for (const sid of subjectDirs) if (!ids.includes(sid)) err("subjects/index.ts", `subject "${sid}" is not exported`);
+}
 
 // ---------- report ----------
 for (const w of warnings) console.warn(`warn  ${w}`);

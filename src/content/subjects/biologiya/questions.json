@@ -1,0 +1,982 @@
+[
+  {
+    "id": "biologiya-01-01",
+    "skillId": "biologiya-01",
+    "difficulty": 1,
+    "stem": "Tirik organizmlarning eng kiçik tuzilma birligi nima?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Töqima"
+      },
+      {
+        "id": "b",
+        "text": "Hujayra"
+      },
+      {
+        "id": "c",
+        "text": "Organ"
+      },
+      {
+        "id": "d",
+        "text": "Molekula"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Barça tirik organizmlar hujayralardan tuzilgan, hujayra – hayotning eng kiçik birligi.",
+    "hint": "Töqima va organlar nimalardan tuzilgan?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-01-02",
+    "skillId": "biologiya-01",
+    "difficulty": 2,
+    "stem": "Hujayraning irsiy maʼlumotni saqlovçi qismi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Vakuola"
+      },
+      {
+        "id": "b",
+        "text": "Hujayra qobiği"
+      },
+      {
+        "id": "c",
+        "text": "Sitoplazma"
+      },
+      {
+        "id": "d",
+        "text": "Yadro"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Yadroda irsiy maʼlumot saqlanadi, u hujayra hayotini boşqaradi.",
+    "hint": "Hujayraning «boşqaruv markazi» qaysi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-01-03",
+    "skillId": "biologiya-01",
+    "difficulty": 2,
+    "stem": "Ösimlik hujayrasiga yaşil rang beruvçi plastidalar qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Xloroplastlar"
+      },
+      {
+        "id": "b",
+        "text": "Xromoplastlar"
+      },
+      {
+        "id": "c",
+        "text": "Leykoplastlar"
+      },
+      {
+        "id": "d",
+        "text": "Vakuolalar"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Xloroplastlarda yaşil pigment – xlorofill bor.",
+    "hint": "Qaysi plastidada xlorofill bor?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-01-04",
+    "skillId": "biologiya-01",
+    "difficulty": 3,
+    "stem": "Ösimlik hujayrasini hayvon hujayrasidan farqlovçi belgi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yadrosi bor"
+      },
+      {
+        "id": "b",
+        "text": "Sitoplazmasi bor"
+      },
+      {
+        "id": "c",
+        "text": "Selluloza qobiği bor"
+      },
+      {
+        "id": "d",
+        "text": "Hujayra membranasi bor"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Ösimlik hujayrasida qattiq selluloza qobiq bor, hayvon hujayrasida yöq. Yadro, sitoplazma va membrana ikkalasida ham bor.",
+    "hint": "Qaysi belgi faqat ösimlik hujayrasida uçraydi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-01-05",
+    "skillId": "biologiya-01",
+    "difficulty": 3,
+    "stem": "Hujayra şirasi qaysi organoidda töplanadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yadroda"
+      },
+      {
+        "id": "b",
+        "text": "Xloroplastda"
+      },
+      {
+        "id": "c",
+        "text": "Ribosomada"
+      },
+      {
+        "id": "d",
+        "text": "Vakuolada"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Vakuola hujayra şirasi bilan tölgan böşliq: unda suv, şakar va tuzlar töplanadi.",
+    "hint": "Katta hujayralarda bu organoid hujayraning köp qismini egallaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-02-01",
+    "skillId": "biologiya-02",
+    "difficulty": 1,
+    "stem": "Tuzilişi va vazifasi öxşaş hujayralar guruhi nima deyiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Organ"
+      },
+      {
+        "id": "b",
+        "text": "Töqima"
+      },
+      {
+        "id": "c",
+        "text": "Organizm"
+      },
+      {
+        "id": "d",
+        "text": "Hujayra"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Töqima – tuzilişi va vazifasi öxşaş hujayralar guruhi.",
+    "hint": "Organlar nimalardan tuzilgan?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-02-02",
+    "skillId": "biologiya-02",
+    "difficulty": 2,
+    "stem": "Ösimlikning böyiga ösişini taʼminlovçi töqima qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qoplovçi töqima"
+      },
+      {
+        "id": "b",
+        "text": "Mexanik töqima"
+      },
+      {
+        "id": "c",
+        "text": "Hosil qiluvçi töqima"
+      },
+      {
+        "id": "d",
+        "text": "Ötkazuvçi töqima"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Hosil qiluvçi töqima hujayralari tinmay bölinadi va ösimlik ösadi.",
+    "hint": "Qaysi töqima hujayralari tez-tez bölinadi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-02-03",
+    "skillId": "biologiya-02",
+    "difficulty": 2,
+    "stem": "Barg sirtini qoplab, uni himoya qiluvçi töqima qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qoplovçi töqima"
+      },
+      {
+        "id": "b",
+        "text": "Ötkazuvçi töqima"
+      },
+      {
+        "id": "c",
+        "text": "Asosiy töqima"
+      },
+      {
+        "id": "d",
+        "text": "Hosil qiluvçi töqima"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Qoplovçi töqima (epidermis) bargni qurib qolişdan va şikastlanişdan himoya qiladi.",
+    "hint": "Töqima nomi uning vazifasini aytib turibdi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-02-04",
+    "skillId": "biologiya-02",
+    "difficulty": 3,
+    "stem": "Suv va mineral moddalar ildizdan bargga qaysi elementlar orqali ötadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Lubdagi elaksimon naylar"
+      },
+      {
+        "id": "b",
+        "text": "Epidermis hujayralari"
+      },
+      {
+        "id": "c",
+        "text": "Hosil qiluvçi töqima"
+      },
+      {
+        "id": "d",
+        "text": "Yoğoçlikdagi naylar"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Suv va mineral tuzlar yuqoriga yoğoçlik naylari orqali, organik moddalar esa pastga lub orqali harakatlanadi.",
+    "hint": "Suv yuqoriga harakatlanadi. Qaysi naylar yuqoriga ötkazadi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-02-05",
+    "skillId": "biologiya-02",
+    "difficulty": 3,
+    "stem": "Poya va barglarga mustahkamlik beruvçi töqima qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qoplovçi töqima"
+      },
+      {
+        "id": "b",
+        "text": "Mexanik töqima"
+      },
+      {
+        "id": "c",
+        "text": "Hosil qiluvçi töqima"
+      },
+      {
+        "id": "d",
+        "text": "Ğamlovçi töqima"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Mexanik töqima hujayralarining qobiği qalin, u ösimlikka mustahkamlik beradi.",
+    "hint": "Qaysi töqima «skelet» vazifasini bajaradi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-03-01",
+    "skillId": "biologiya-03",
+    "difficulty": 1,
+    "stem": "Ildizning asosiy vazifasi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Fotosintez qiliş"
+      },
+      {
+        "id": "b",
+        "text": "Ösimlikni tuproqqa mahkamlaş va suv şimiş"
+      },
+      {
+        "id": "c",
+        "text": "Gul hosil qiliş"
+      },
+      {
+        "id": "d",
+        "text": "Uruğ tarqatiş"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Ildiz ösimlikni tuproqda tutib turadi va suv bilan mineral moddalarni şimadi.",
+    "hint": "Ildiz tuproq içida nima qiladi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-03-02",
+    "skillId": "biologiya-03",
+    "difficulty": 2,
+    "stem": "Buğdoy qanday ildiz tizimiga ega?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ök ildiz tizimi"
+      },
+      {
+        "id": "b",
+        "text": "Havo ildizlari"
+      },
+      {
+        "id": "c",
+        "text": "Popuk ildiz tizimi"
+      },
+      {
+        "id": "d",
+        "text": "Ildizi yöq"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Buğdoy kabi bir pallali ösimliklarda asosiy ildiz yaxşi rivojlanmaydi, popuk ildiz tizimi hosil böladi.",
+    "hint": "Buğdoy bir pallali ösimlik.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-03-03",
+    "skillId": "biologiya-03",
+    "difficulty": 2,
+    "stem": "Ildizda suvni asosan nima şimadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ildiz tukçalari"
+      },
+      {
+        "id": "b",
+        "text": "Ildiz qinçasi"
+      },
+      {
+        "id": "c",
+        "text": "Ildiz pöstloği"
+      },
+      {
+        "id": "d",
+        "text": "Ildiz böğzi"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Şimiş zonasidagi ildiz tukçalari suvni va unda erigan moddalarni şimadi.",
+    "hint": "Ildizning eng mayda, ingiçka ösimtalari qaysilar?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-03-04",
+    "skillId": "biologiya-03",
+    "difficulty": 3,
+    "stem": "Sabzi va lavlagining ildizi qanday özgargan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Havo ildiziga"
+      },
+      {
+        "id": "b",
+        "text": "Tirgak ildizga"
+      },
+      {
+        "id": "c",
+        "text": "Ildiz tuganakka"
+      },
+      {
+        "id": "d",
+        "text": "Ildizmevaga"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Sabzi va lavlagida asosiy ildiz yoğonlaşib, zaxira moddalar töplaydigan ildizmevaga aylangan.",
+    "hint": "Sabzining biz yeydigan qismi asosiy ildizdir.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-03-05",
+    "skillId": "biologiya-03",
+    "difficulty": 3,
+    "stem": "Ildiz uçini şikastlanişdan nima himoya qiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ildiz tukçalari"
+      },
+      {
+        "id": "b",
+        "text": "Ildiz qinçasi"
+      },
+      {
+        "id": "c",
+        "text": "Ötkazuvçi zona"
+      },
+      {
+        "id": "d",
+        "text": "Yon ildizlar"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Ildiz qinçasi ildiz uçini qalpoq kabi qoplab, tuproqda şikastlanişdan saqlaydi.",
+    "hint": "Ildiz uçida qalpoqqa öxşaş tuzilma bor.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-04-01",
+    "skillId": "biologiya-04",
+    "difficulty": 1,
+    "stem": "Poyaning asosiy vazifasi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Suv şimiş"
+      },
+      {
+        "id": "b",
+        "text": "Çanglaniş"
+      },
+      {
+        "id": "c",
+        "text": "Barg va gullarni tutib turiş, moddalarni ötkaziş"
+      },
+      {
+        "id": "d",
+        "text": "Uruğ hosil qiliş"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Poya barg, gul va mevalarni tutib turadi, ildiz va barglar orasida moddalarni ötkazadi.",
+    "hint": "Poya ildiz va barglarni bir-biriga bağlaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-04-02",
+    "skillId": "biologiya-04",
+    "difficulty": 2,
+    "stem": "Daraxt kesimidagi yillik halqalarga qarab nimani aniqlaş mumkin?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Daraxtning yoşini"
+      },
+      {
+        "id": "b",
+        "text": "Daraxtning böyini"
+      },
+      {
+        "id": "c",
+        "text": "Barglar sonini"
+      },
+      {
+        "id": "d",
+        "text": "Mevalar sonini"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Har yili kambiy bitta halqa hosil qiladi, halqalar soni daraxtning yoşiga teng.",
+    "hint": "Har yili bitta halqa qöşiladi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-04-03",
+    "skillId": "biologiya-04",
+    "difficulty": 2,
+    "stem": "Kartoşka tuganagi qaysi organning özgargan şakli?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ildizning"
+      },
+      {
+        "id": "b",
+        "text": "Bargning"
+      },
+      {
+        "id": "c",
+        "text": "Mevaning"
+      },
+      {
+        "id": "d",
+        "text": "Yer osti poyasining"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Kartoşka tuganagida «köz»lar (kurtaklar) bor, demak u yer osti poyasi.",
+    "hint": "Tuganakdagi «köz»lar nima?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-04-04",
+    "skillId": "biologiya-04",
+    "difficulty": 3,
+    "stem": "Organik moddalar bargdan pastga qaysi qism orqali harakatlanadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yoğoçlikdagi naylar"
+      },
+      {
+        "id": "b",
+        "text": "Lubdagi elaksimon naylar"
+      },
+      {
+        "id": "c",
+        "text": "Özak"
+      },
+      {
+        "id": "d",
+        "text": "Pöstloq tukçalari"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Bargda hosil bölgan organik moddalar lubdagi elaksimon naylar orqali pastga oqadi.",
+    "hint": "Suv yuqoriga yoğoçlik orqali ötadi, organik moddalar esa boşqa yöldan.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-04-05",
+    "skillId": "biologiya-04",
+    "difficulty": 3,
+    "stem": "Poyaning yoğonlaşişini qaysi qatlam taʼminlaydi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Pöstloq"
+      },
+      {
+        "id": "b",
+        "text": "Özak"
+      },
+      {
+        "id": "c",
+        "text": "Kambiy"
+      },
+      {
+        "id": "d",
+        "text": "Lub"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Kambiy hujayralari bölinib, poyani eniga östiradi.",
+    "hint": "Bu qatlam hosil qiluvçi töqimadan iborat.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-05-01",
+    "skillId": "biologiya-05",
+    "difficulty": 1,
+    "stem": "Fotosintez asosan ösimlikning qaysi organida boradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ildizda"
+      },
+      {
+        "id": "b",
+        "text": "Gulda"
+      },
+      {
+        "id": "c",
+        "text": "Uruğda"
+      },
+      {
+        "id": "d",
+        "text": "Bargda"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Barg hujayralarida xloroplastlar köp, fotosintez asosan bargda boradi.",
+    "hint": "Ösimlikning qaysi yaşil organi quyoşga qarab turadi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-05-02",
+    "skillId": "biologiya-05",
+    "difficulty": 2,
+    "stem": "Fotosintez uçun nima kerak?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yoruğlik, karbonat angidrid va suv"
+      },
+      {
+        "id": "b",
+        "text": "Faqat kislorod"
+      },
+      {
+        "id": "c",
+        "text": "Faqat tuproq"
+      },
+      {
+        "id": "d",
+        "text": "Qoronğulik va azot"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Ösimlik yoruğlik energiyasi yordamida karbonat angidrid va suvdan organik modda hosil qiladi.",
+    "hint": "Fotosintez – «yoruğlik yordamida hosil qiliş».",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-05-03",
+    "skillId": "biologiya-05",
+    "difficulty": 2,
+    "stem": "Fotosintez natijasida havoga qaysi gaz ajraladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Karbonat angidrid"
+      },
+      {
+        "id": "b",
+        "text": "Kislorod"
+      },
+      {
+        "id": "c",
+        "text": "Azot"
+      },
+      {
+        "id": "d",
+        "text": "Vodorod"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Fotosintezda organik modda bilan birga kislorod hosil böladi va havoga çiqadi.",
+    "hint": "Biz nafas olayotgan gaz qayerdan keladi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-05-04",
+    "skillId": "biologiya-05",
+    "difficulty": 3,
+    "stem": "Bargdagi gaz almaşinuvi qaysi tuzilma orqali boradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Barg tomirlari"
+      },
+      {
+        "id": "b",
+        "text": "Ildiz tukçalari"
+      },
+      {
+        "id": "c",
+        "text": "Barg oğizçalari"
+      },
+      {
+        "id": "d",
+        "text": "Hujayra yadrosi"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Barg oğizçalari (ustitsalar) orqali karbonat angidrid kiradi, kislorod va suv buği çiqadi.",
+    "hint": "Bu tuzilmalar oçilib-yopiladi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-05-05",
+    "skillId": "biologiya-05",
+    "difficulty": 3,
+    "stem": "Kuzda barglar nega sarğayadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Bargda suv köpayadi"
+      },
+      {
+        "id": "b",
+        "text": "Xlorofill parçalanib, sariq pigmentlar körinib qoladi"
+      },
+      {
+        "id": "c",
+        "text": "Barg kislorod yutadi"
+      },
+      {
+        "id": "d",
+        "text": "Quyoş nuri köpayadi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Kuzda yaşil xlorofill parçalanadi, bargdagi sariq va qizil pigmentlar körinib qoladi.",
+    "hint": "Bargning yaşil rangi qaysi moddadan?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-06-01",
+    "skillId": "biologiya-06",
+    "difficulty": 1,
+    "stem": "Gulning çang hosil qiluvçi qismi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Uruğçi"
+      },
+      {
+        "id": "b",
+        "text": "Gultojibarg"
+      },
+      {
+        "id": "c",
+        "text": "Çangçi"
+      },
+      {
+        "id": "d",
+        "text": "Kosaçabarg"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Çangçining çangdonida çang donaçalari hosil böladi.",
+    "hint": "Qismning nomiga eʼtibor ber.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-06-02",
+    "skillId": "biologiya-06",
+    "difficulty": 2,
+    "stem": "Çanglaniş nima?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Çangning uruğçi tumşuqçasiga tuşişi"
+      },
+      {
+        "id": "b",
+        "text": "Uruğning tuproqqa tuşişi"
+      },
+      {
+        "id": "c",
+        "text": "Bargning tökilişi"
+      },
+      {
+        "id": "d",
+        "text": "Mevaning pişişi"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Çanglaniş – çang donaçalarining çangçidan uruğçi tumşuqçasiga ötişi.",
+    "hint": "Çang qayerdan qayerga ötadi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-06-03",
+    "skillId": "biologiya-06",
+    "difficulty": 2,
+    "stem": "Qaysi ösimlik asosan şamol yordamida çanglanadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Olma"
+      },
+      {
+        "id": "b",
+        "text": "Atirgul"
+      },
+      {
+        "id": "c",
+        "text": "Olça"
+      },
+      {
+        "id": "d",
+        "text": "Makkajöxori"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Makkajöxorining gullari mayda, xira, çangi yengil va köp – şamol uni oson uçiradi.",
+    "hint": "Şamolda çanglanadigan gullar yorqin bölmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-06-04",
+    "skillId": "biologiya-06",
+    "difficulty": 3,
+    "stem": "Haşarotlar yordamida çanglanadigan gullarga nima xos?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Mayda, rangsiz gullar"
+      },
+      {
+        "id": "b",
+        "text": "Yorqin rang, hid va nektar"
+      },
+      {
+        "id": "c",
+        "text": "Yengil va juda köp çang"
+      },
+      {
+        "id": "d",
+        "text": "Gultojibarglarning yöqligi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Yorqin rang, hid va nektar haşarotlarni gulga jalb qiladi.",
+    "hint": "Asalarini gulga nima jalb qiladi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-06-05",
+    "skillId": "biologiya-06",
+    "difficulty": 3,
+    "stem": "Uruğkurtak uruğçining qaysi qismida joylaşgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Tumşuqçada"
+      },
+      {
+        "id": "b",
+        "text": "Ustunçada"
+      },
+      {
+        "id": "c",
+        "text": "Tugunçada"
+      },
+      {
+        "id": "d",
+        "text": "Çangdonda"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Uruğkurtaklar uruğçining pastki kengaygan qismi – tugunçada joylaşadi.",
+    "hint": "Uruğçining pastki, kengaygan qismi qaysi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-07-01",
+    "skillId": "biologiya-07",
+    "difficulty": 1,
+    "stem": "Meva gulning qaysi qismidan hosil böladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Tugunçadan"
+      },
+      {
+        "id": "b",
+        "text": "Çangçidan"
+      },
+      {
+        "id": "c",
+        "text": "Kosaçabargdan"
+      },
+      {
+        "id": "d",
+        "text": "Gultojibargdan"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Uruğlanişdan keyin tugunça mevaga, uruğkurtaklar esa uruğga aylanadi.",
+    "hint": "Uruğkurtaklar qayerda joylaşgan edi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-07-02",
+    "skillId": "biologiya-07",
+    "difficulty": 2,
+    "stem": "Qaysi meva höl meva?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yonğoq"
+      },
+      {
+        "id": "b",
+        "text": "Buğdoy doni"
+      },
+      {
+        "id": "c",
+        "text": "Pomidor"
+      },
+      {
+        "id": "d",
+        "text": "Nöxat dukkagi"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Pomidorning eti şirali – bu höl meva. Yonğoq, don va dukkak quruq mevalar.",
+    "hint": "Qaysi mevaning eti şirali?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-07-03",
+    "skillId": "biologiya-07",
+    "difficulty": 2,
+    "stem": "Uruğ unib çiqişi uçun qaysi şartlar zarur?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Faqat yoruğlik"
+      },
+      {
+        "id": "b",
+        "text": "Faqat tuproq"
+      },
+      {
+        "id": "c",
+        "text": "Sovuq va qoronğulik"
+      },
+      {
+        "id": "d",
+        "text": "Suv, havo va iliqlik"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Uruğ unişi uçun suv, havo (kislorod) va mos harorat kerak.",
+    "hint": "Quruq va sovuq joyda saqlangan uruğ nega unmaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-07-04",
+    "skillId": "biologiya-07",
+    "difficulty": 3,
+    "stem": "Loviya uruğidagi zaxira moddalar qayerda töplanadi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Uruğ pöstida"
+      },
+      {
+        "id": "b",
+        "text": "Uruğpallalarda"
+      },
+      {
+        "id": "c",
+        "text": "Murtak ildizçasida"
+      },
+      {
+        "id": "d",
+        "text": "Endospermda"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Loviya ikki pallali ösimlik, zaxira moddalari ikki uruğpallada töplanadi. Endosperm buğdoyda bor.",
+    "hint": "Loviya ikki pallali ösimlik.",
+    "source": "bank"
+  },
+  {
+    "id": "biologiya-07-05",
+    "skillId": "biologiya-07",
+    "difficulty": 3,
+    "stem": "Qaysi ösimlik mevasi şamol yordamida tarqaladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Olça"
+      },
+      {
+        "id": "b",
+        "text": "Qoqiöt"
+      },
+      {
+        "id": "c",
+        "text": "Tarvuz"
+      },
+      {
+        "id": "d",
+        "text": "Olma"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Qoqiöt mevasida yengil «paraşyutça» bor, şamol uni uzoqqa uçirib ketadi.",
+    "hint": "Qaysi mevada yengil, tukli «paraşyut» bor?",
+    "source": "bank"
+  }
+]

@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "id": "biologiya",
+    "name": "Biologiya",
+    "short": "Biologiya",
+    "color": "#0e7490",
+    "icon": "leaf",
+    "order": 4,
+    "description": "Ösimliklar: hujayradan meva va uruğgaça."
+  },
+  "graph": {
+    "subject": "Biologiya",
+    "topic": "Ösimliklar",
+    "skills": [
+      {
+        "id": "biologiya-01",
+        "title": "Hujayra tuzilişi",
+        "short": "Hujayra",
+        "grade": 6,
+        "prerequisites": [],
+        "description": "Hujayraning asosiy qismlarini biladi. Ösimlik hujayrasini hayvon hujayrasidan farqlaydi."
+      },
+      {
+        "id": "biologiya-02",
+        "title": "Ösimlik töqimalari",
+        "short": "Töqimalar",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-01"
+        ],
+        "description": "Asosiy töqimalarni (hosil qiluvçi, qoplovçi, ötkazuvçi, mexanik) va vazifalarini biladi."
+      },
+      {
+        "id": "biologiya-03",
+        "title": "Ildiz",
+        "short": "Ildiz",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-02"
+        ],
+        "description": "Ildizning vazifalari, ildiz tizimlari va ildiz zonalarini biladi."
+      },
+      {
+        "id": "biologiya-04",
+        "title": "Poya",
+        "short": "Poya",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-02"
+        ],
+        "description": "Poyaning tuzilişi va vazifalarini, özgargan poyalarni biladi."
+      },
+      {
+        "id": "biologiya-05",
+        "title": "Barg va fotosintez",
+        "short": "Barg va fotosintez",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-02"
+        ],
+        "description": "Fotosintez uçun nima kerakligini va natijasida nima hosil bölişini tuşuntiradi."
+      },
+      {
+        "id": "biologiya-06",
+        "title": "Gul va çanglaniş",
+        "short": "Gul va çanglaniş",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-04",
+          "biologiya-05"
+        ],
+        "description": "Gul qismlarini va çanglaniş usullarini biladi."
+      },
+      {
+        "id": "biologiya-07",
+        "title": "Meva va uruğ",
+        "short": "Meva va uruğ",
+        "grade": 6,
+        "prerequisites": [
+          "biologiya-06",
+          "biologiya-03"
+        ],
+        "description": "Mevalar qanday hosil bölişini, uruğ tuzilişi va unib çiqiş şartlarini biladi."
+      }
+    ],
+    "entrySkills": [
+      "biologiya-07",
+      "biologiya-05"
+    ]
+  },
+  "materials": [
+    {
+      "lessonId": "biologiya-01",
+      "fileName": "Biologiya_6-sinf_Hujayra.pdf",
+      "pages": 4,
+      "summary": "Ösimlik hujayrasining qobiği, sitoplazmasi, yadrosi, vakuolasi va plastidalari."
+    },
+    {
+      "lessonId": "biologiya-02",
+      "fileName": "Biologiya_6-sinf_Töqimalar.pdf",
+      "pages": 3,
+      "summary": "Hosil qiluvçi, qoplovçi, ötkazuvçi, mexanik va asosiy töqimalar."
+    },
+    {
+      "lessonId": "biologiya-03",
+      "fileName": "Biologiya_6-sinf_Ildiz.pdf",
+      "pages": 4,
+      "summary": "Ildiz vazifalari, ök va popuk ildiz tizimi, ildiz zonalari va özgargan ildizlar."
+    },
+    {
+      "lessonId": "biologiya-04",
+      "fileName": "Biologiya_6-sinf_Poya.pdf",
+      "pages": 3,
+      "summary": "Poyaning ički tuzilişi, yillik halqalar va yer osti poyalari."
+    },
+    {
+      "lessonId": "biologiya-05",
+      "fileName": "Biologiya_6-sinf_Barg_va_fotosintez.pdf",
+      "pages": 4,
+      "summary": "Barg tuzilişi, oğizçalar, fotosintez şartlari va natijasi."
+    },
+    {
+      "lessonId": "biologiya-06",
+      "fileName": "Biologiya_6-sinf_Gul.pdf",
+      "pages": 3,
+      "summary": "Gul tuzilişi, çangçi va uruğçi, haşarot va şamol yordamida çanglaniş."
+    },
+    {
+      "lessonId": "biologiya-07",
+      "fileName": "Biologiya_6-sinf_Meva_va_uruğ.pdf",
+      "pages": 4,
+      "summary": "Höl va quruq mevalar, uruğ tuzilişi, unib çiqiş şartlari va tarqaliş."
+    }
+  ]
+}

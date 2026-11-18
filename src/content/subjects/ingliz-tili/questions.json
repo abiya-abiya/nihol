@@ -1,0 +1,982 @@
+[
+  {
+    "id": "ingliz-tili-01-01",
+    "skillId": "ingliz-tili-01",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «I ___ a student.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "am"
+      },
+      {
+        "id": "c",
+        "text": "are"
+      },
+      {
+        "id": "d",
+        "text": "be"
+      }
+    ],
+    "correct": "b",
+    "explanation": "I bilan doim am işlatiladi: I am a student.",
+    "hint": "«I» bilan qaysi şakl keladi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-01-02",
+    "skillId": "ingliz-tili-01",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «They ___ my friends.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "am"
+      },
+      {
+        "id": "c",
+        "text": "are"
+      },
+      {
+        "id": "d",
+        "text": "be"
+      }
+    ],
+    "correct": "c",
+    "explanation": "They köplikdagi ega, u bilan are işlatiladi.",
+    "hint": "«They» birlikmi yoki köplik?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-01-03",
+    "skillId": "ingliz-tili-01",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «She ___ at home now.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "are"
+      },
+      {
+        "id": "c",
+        "text": "am"
+      },
+      {
+        "id": "d",
+        "text": "be"
+      }
+    ],
+    "correct": "a",
+    "explanation": "He, she, it bilan is işlatiladi.",
+    "hint": "«She» bitta kişi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-01-04",
+    "skillId": "ingliz-tili-01",
+    "difficulty": 3,
+    "stem": "Qaysi gap töğri?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "He are a doctor."
+      },
+      {
+        "id": "b",
+        "text": "We is happy."
+      },
+      {
+        "id": "c",
+        "text": "I is ten."
+      },
+      {
+        "id": "d",
+        "text": "You are late."
+      }
+    ],
+    "correct": "d",
+    "explanation": "You bilan are işlatiladi. He bilan is, we bilan are, I bilan am bölişi kerak edi.",
+    "hint": "Har bir gapda ega va feʼlni moslab kör.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-01-05",
+    "skillId": "ingliz-tili-01",
+    "difficulty": 3,
+    "stem": "«Are you from Tashkent?» savoliga qisqa ijobiy javob qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Yes, I are."
+      },
+      {
+        "id": "b",
+        "text": "Yes, I'm."
+      },
+      {
+        "id": "c",
+        "text": "Yes, I am."
+      },
+      {
+        "id": "d",
+        "text": "Yes, you are."
+      }
+    ],
+    "correct": "c",
+    "explanation": "Qisqa javobda I bilan am işlatiladi va qisqartirilmaydi: Yes, I am.",
+    "hint": "Qisqa ijobiy javobda am qisqartirilmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-02-01",
+    "skillId": "ingliz-tili-02",
+    "difficulty": 1,
+    "stem": "«Book» sözining köplik şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "bookes"
+      },
+      {
+        "id": "b",
+        "text": "books"
+      },
+      {
+        "id": "c",
+        "text": "bookies"
+      },
+      {
+        "id": "d",
+        "text": "book"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Köp otlarga -s qöşiladi: book – books.",
+    "hint": "Eng oddiy qoidani eslang.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-02-02",
+    "skillId": "ingliz-tili-02",
+    "difficulty": 2,
+    "stem": "«Box» sözining köplik şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "boxes"
+      },
+      {
+        "id": "b",
+        "text": "boxs"
+      },
+      {
+        "id": "c",
+        "text": "boxies"
+      },
+      {
+        "id": "d",
+        "text": "box"
+      }
+    ],
+    "correct": "a",
+    "explanation": "-x, -s, -sh, -ch bilan tugagan sözlarga -es qöşiladi: box – boxes.",
+    "hint": "Söz qaysi harf bilan tugayapti?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-02-03",
+    "skillId": "ingliz-tili-02",
+    "difficulty": 2,
+    "stem": "«Baby» sözining köplik şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "babys"
+      },
+      {
+        "id": "b",
+        "text": "babyes"
+      },
+      {
+        "id": "c",
+        "text": "babis"
+      },
+      {
+        "id": "d",
+        "text": "babies"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Undoş + y bilan tugasa, y → i bölib, -es qöşiladi: baby – babies.",
+    "hint": "y dan oldin unli turibdimi yoki undoş?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-02-04",
+    "skillId": "ingliz-tili-02",
+    "difficulty": 3,
+    "stem": "«Child» sözining köplik şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "childs"
+      },
+      {
+        "id": "b",
+        "text": "childrens"
+      },
+      {
+        "id": "c",
+        "text": "children"
+      },
+      {
+        "id": "d",
+        "text": "childes"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Child – istisno söz, köpligi children.",
+    "hint": "Bu söz qoidaga böysunmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-02-05",
+    "skillId": "ingliz-tili-02",
+    "difficulty": 3,
+    "stem": "Qaysi qatorda hamma sözlar töğri köplik şaklida?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "mans, foots, tooths"
+      },
+      {
+        "id": "b",
+        "text": "men, feet, teeth"
+      },
+      {
+        "id": "c",
+        "text": "men, foots, teeth"
+      },
+      {
+        "id": "d",
+        "text": "mens, feet, teeths"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Man – men, foot – feet, tooth – teeth: hammasi istisno sözlar.",
+    "hint": "Istisno sözlarga -s qöşilmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-03-01",
+    "skillId": "ingliz-tili-03",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «He ___ football every day.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "play"
+      },
+      {
+        "id": "b",
+        "text": "plays"
+      },
+      {
+        "id": "c",
+        "text": "playing"
+      },
+      {
+        "id": "d",
+        "text": "is play"
+      }
+    ],
+    "correct": "b",
+    "explanation": "He, she, it bilan feʼlga -s qöşiladi: he plays.",
+    "hint": "«He» bilan feʼlga nima qöşiladi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-03-02",
+    "skillId": "ingliz-tili-03",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «We ___ to school by bus.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "go"
+      },
+      {
+        "id": "b",
+        "text": "goes"
+      },
+      {
+        "id": "c",
+        "text": "going"
+      },
+      {
+        "id": "d",
+        "text": "is go"
+      }
+    ],
+    "correct": "a",
+    "explanation": "We bilan feʼl özgarmaydi: we go.",
+    "hint": "-s faqat he, she, it bilan qöşiladi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-03-03",
+    "skillId": "ingliz-tili-03",
+    "difficulty": 2,
+    "stem": "Inkor gapni töldiring: «She ___ like milk.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "don't"
+      },
+      {
+        "id": "b",
+        "text": "isn't"
+      },
+      {
+        "id": "c",
+        "text": "not"
+      },
+      {
+        "id": "d",
+        "text": "doesn't"
+      }
+    ],
+    "correct": "d",
+    "explanation": "He, she, it bilan inkorda doesn't işlatiladi: She doesn't like milk.",
+    "hint": "She uçun do yoki does?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-03-04",
+    "skillId": "ingliz-tili-03",
+    "difficulty": 3,
+    "stem": "Söroq gapni töldiring: «___ your father work in a bank?»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Do"
+      },
+      {
+        "id": "b",
+        "text": "Is"
+      },
+      {
+        "id": "c",
+        "text": "Does"
+      },
+      {
+        "id": "d",
+        "text": "Are"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Your father = he, şuning uçun Does işlatiladi.",
+    "hint": "«Your father» qaysi olmoşga teng?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-03-05",
+    "skillId": "ingliz-tili-03",
+    "difficulty": 3,
+    "stem": "Qaysi gap töğri?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "My sister watchs TV."
+      },
+      {
+        "id": "b",
+        "text": "My sister watches TV."
+      },
+      {
+        "id": "c",
+        "text": "My sister watching TV."
+      },
+      {
+        "id": "d",
+        "text": "My sister watch TV."
+      }
+    ],
+    "correct": "b",
+    "explanation": "-ch bilan tugagan feʼlga -es qöşiladi: watch – watches.",
+    "hint": "Watch sözi qaysi harflar bilan tugaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-04-01",
+    "skillId": "ingliz-tili-04",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «Look! The children ___ in the garden.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is playing"
+      },
+      {
+        "id": "b",
+        "text": "play"
+      },
+      {
+        "id": "c",
+        "text": "are playing"
+      },
+      {
+        "id": "d",
+        "text": "plays"
+      }
+    ],
+    "correct": "c",
+    "explanation": "«Look!» hozir bölayotganini bildiradi. Children köplik: are playing.",
+    "hint": "«Look!» qaysi zamonni körsatadi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-04-02",
+    "skillId": "ingliz-tili-04",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «I ___ a book now.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "am reading"
+      },
+      {
+        "id": "b",
+        "text": "is reading"
+      },
+      {
+        "id": "c",
+        "text": "read"
+      },
+      {
+        "id": "d",
+        "text": "reads"
+      }
+    ],
+    "correct": "a",
+    "explanation": "«Now» – hozir. I bilan am + -ing: I am reading.",
+    "hint": "«Now» sözi nimani bildiradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-04-03",
+    "skillId": "ingliz-tili-04",
+    "difficulty": 2,
+    "stem": "«Swim» feʼlining -ing şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "swiming"
+      },
+      {
+        "id": "b",
+        "text": "swimmming"
+      },
+      {
+        "id": "c",
+        "text": "swimeing"
+      },
+      {
+        "id": "d",
+        "text": "swimming"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Qisqa feʼl unli + undoş bilan tugasa, oxirgi undoş ikkilanadi: swim – swimming.",
+    "hint": "Run – running kabi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-04-04",
+    "skillId": "ingliz-tili-04",
+    "difficulty": 3,
+    "stem": "Qaysi gap hozir davom etayotgan iş-harakatni bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "She writes letters."
+      },
+      {
+        "id": "b",
+        "text": "She is writing a letter now."
+      },
+      {
+        "id": "c",
+        "text": "She wrote a letter."
+      },
+      {
+        "id": "d",
+        "text": "She will write a letter."
+      }
+    ],
+    "correct": "b",
+    "explanation": "Present Continuous: is + writing va «now».",
+    "hint": "am/is/are + -ing şaklini qidiring.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-04-05",
+    "skillId": "ingliz-tili-04",
+    "difficulty": 3,
+    "stem": "Böş joyni töldiring: «What ___ you doing?» – «I am cooking.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "do"
+      },
+      {
+        "id": "c",
+        "text": "are"
+      },
+      {
+        "id": "d",
+        "text": "does"
+      }
+    ],
+    "correct": "c",
+    "explanation": "You bilan are işlatiladi: What are you doing?",
+    "hint": "Javobda am + -ing bor, demak savolda ham to be keladi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-05-01",
+    "skillId": "ingliz-tili-05",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «Yesterday I ___ my grandmother.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "visit"
+      },
+      {
+        "id": "b",
+        "text": "visited"
+      },
+      {
+        "id": "c",
+        "text": "visits"
+      },
+      {
+        "id": "d",
+        "text": "visiting"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«Yesterday» – keça, ötgan zamon: visit + -ed = visited.",
+    "hint": "«Yesterday» qaysi zamonni bildiradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-05-02",
+    "skillId": "ingliz-tili-05",
+    "difficulty": 2,
+    "stem": "«Go» feʼlining ötgan zamon şakli qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "went"
+      },
+      {
+        "id": "b",
+        "text": "goed"
+      },
+      {
+        "id": "c",
+        "text": "gone"
+      },
+      {
+        "id": "d",
+        "text": "going"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Go – notöğri feʼl: go – went – gone. Past Simple zamonida went.",
+    "hint": "Notöğri feʼllarga -ed qöşilmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-05-03",
+    "skillId": "ingliz-tili-05",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «We ___ a cake last night.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "maked"
+      },
+      {
+        "id": "b",
+        "text": "making"
+      },
+      {
+        "id": "c",
+        "text": "makes"
+      },
+      {
+        "id": "d",
+        "text": "made"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Make – notöğri feʼl: ötgan zamonda made.",
+    "hint": "«Last night» – ötgan zamon.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-05-04",
+    "skillId": "ingliz-tili-05",
+    "difficulty": 3,
+    "stem": "Inkor gapni töldiring: «He ___ come to school yesterday.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "doesn't"
+      },
+      {
+        "id": "b",
+        "text": "wasn't"
+      },
+      {
+        "id": "c",
+        "text": "didn't"
+      },
+      {
+        "id": "d",
+        "text": "don't"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Past Simple inkorda didn't + feʼlning asosiy şakli: didn't come.",
+    "hint": "«Yesterday» bilan qaysi yordamçi feʼl keladi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-05-05",
+    "skillId": "ingliz-tili-05",
+    "difficulty": 3,
+    "stem": "Qaysi gap töğri?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Did you saw the film?"
+      },
+      {
+        "id": "b",
+        "text": "Did you see the film?"
+      },
+      {
+        "id": "c",
+        "text": "Do you saw the film yesterday?"
+      },
+      {
+        "id": "d",
+        "text": "Did you seeing the film?"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Did bilan feʼl asosiy şaklda keladi: Did you see...?",
+    "hint": "Did dan keyin feʼl özgaradimi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-06-01",
+    "skillId": "ingliz-tili-06",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «The cat is ___ the box.» (muşuk quti içida)",
+    "choices": [
+      {
+        "id": "a",
+        "text": "in"
+      },
+      {
+        "id": "b",
+        "text": "on"
+      },
+      {
+        "id": "c",
+        "text": "at"
+      },
+      {
+        "id": "d",
+        "text": "under"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Biror narsaning içida – in: in the box.",
+    "hint": "«Içida» qaysi predlog?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-06-02",
+    "skillId": "ingliz-tili-06",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «My birthday is ___ May.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "on"
+      },
+      {
+        "id": "b",
+        "text": "at"
+      },
+      {
+        "id": "c",
+        "text": "in"
+      },
+      {
+        "id": "d",
+        "text": "to"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Oylar, yillar va fasllar bilan in işlatiladi: in May.",
+    "hint": "Oy nomlari bilan qaysi predlog keladi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-06-03",
+    "skillId": "ingliz-tili-06",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «The lesson starts ___ 8 o'clock.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "in"
+      },
+      {
+        "id": "b",
+        "text": "at"
+      },
+      {
+        "id": "c",
+        "text": "on"
+      },
+      {
+        "id": "d",
+        "text": "by"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Aniq soat bilan at işlatiladi: at 8 o'clock.",
+    "hint": "Aniq vaqt (soat) bilan qaysi predlog?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-06-04",
+    "skillId": "ingliz-tili-06",
+    "difficulty": 3,
+    "stem": "Böş joyni töldiring: «We have English ___ Monday.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "in"
+      },
+      {
+        "id": "b",
+        "text": "at"
+      },
+      {
+        "id": "c",
+        "text": "by"
+      },
+      {
+        "id": "d",
+        "text": "on"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Hafta kunlari va sanalar bilan on işlatiladi: on Monday.",
+    "hint": "Hafta kunlari bilan qaysi predlog?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-06-05",
+    "skillId": "ingliz-tili-06",
+    "difficulty": 3,
+    "stem": "Qaysi gap töğri?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "I was born on 2014."
+      },
+      {
+        "id": "b",
+        "text": "I was born at 2014."
+      },
+      {
+        "id": "c",
+        "text": "I was born in 2014."
+      },
+      {
+        "id": "d",
+        "text": "I was born in at 2014."
+      }
+    ],
+    "correct": "c",
+    "explanation": "Yillar bilan in işlatiladi: in 2014.",
+    "hint": "Yil – uzun vaqt oraliği.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-07-01",
+    "skillId": "ingliz-tili-07",
+    "difficulty": 1,
+    "stem": "Böş joyni töldiring: «I think it ___ rain tomorrow.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is"
+      },
+      {
+        "id": "b",
+        "text": "did"
+      },
+      {
+        "id": "c",
+        "text": "will"
+      },
+      {
+        "id": "d",
+        "text": "was"
+      }
+    ],
+    "correct": "c",
+    "explanation": "«Tomorrow» – ertaga. Taxmin uçun will işlatiladi: it will rain.",
+    "hint": "«Tomorrow» qaysi zamon?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-07-02",
+    "skillId": "ingliz-tili-07",
+    "difficulty": 2,
+    "stem": "Böş joyni töldiring: «Look at the clouds! It ___ rain.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "is going to"
+      },
+      {
+        "id": "b",
+        "text": "will to"
+      },
+      {
+        "id": "c",
+        "text": "going"
+      },
+      {
+        "id": "d",
+        "text": "goes to"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Körinib turgan belgiga qarab aytilgan taxmin – be going to: It is going to rain.",
+    "hint": "Bulutlar körinib turibdi – belgi bor.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-07-03",
+    "skillId": "ingliz-tili-07",
+    "difficulty": 2,
+    "stem": "Inkor gapni töldiring: «I ___ be late, I promise.»",
+    "choices": [
+      {
+        "id": "a",
+        "text": "willn't"
+      },
+      {
+        "id": "b",
+        "text": "don't"
+      },
+      {
+        "id": "c",
+        "text": "am not will"
+      },
+      {
+        "id": "d",
+        "text": "won't"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Will not qisqa şakli – won't. Vaʼda uçun will işlatiladi.",
+    "hint": "Will not qanday qisqartiriladi?",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-07-04",
+    "skillId": "ingliz-tili-07",
+    "difficulty": 3,
+    "stem": "Böş joyni töldiring: «Next summer we ___ to Samarkand.» (reja)",
+    "choices": [
+      {
+        "id": "a",
+        "text": "travelled"
+      },
+      {
+        "id": "b",
+        "text": "are going to travel"
+      },
+      {
+        "id": "c",
+        "text": "travels"
+      },
+      {
+        "id": "d",
+        "text": "are travel"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Oldindan tuzilgan reja – be going to + feʼl: we are going to travel.",
+    "hint": "«Next summer» – kelasi zamon, gapda reja haqida gap ketyapti.",
+    "source": "bank"
+  },
+  {
+    "id": "ingliz-tili-07-05",
+    "skillId": "ingliz-tili-07",
+    "difficulty": 3,
+    "stem": "Qaysi gap töğri?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "She will goes home."
+      },
+      {
+        "id": "b",
+        "text": "She wills go home."
+      },
+      {
+        "id": "c",
+        "text": "She will go home."
+      },
+      {
+        "id": "d",
+        "text": "She will going home."
+      }
+    ],
+    "correct": "c",
+    "explanation": "Will dan keyin feʼl asosiy şaklda keladi: will go.",
+    "hint": "Will özgarmaydi va undan keyingi feʼl ham özgarmaydi.",
+    "source": "bank"
+  }
+]

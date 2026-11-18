@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "id": "ingliz-tili",
+    "name": "Ingliz tili",
+    "short": "Ingliz tili",
+    "color": "#7c3aed",
+    "icon": "languages",
+    "order": 3,
+    "description": "Asosiy grammatika: to be, köplik, zamonlar va predloglar."
+  },
+  "graph": {
+    "subject": "Ingliz tili",
+    "topic": "Grammatika asoslari",
+    "skills": [
+      {
+        "id": "ingliz-tili-01",
+        "title": "To be feʼli: am, is, are",
+        "short": "To be",
+        "grade": 5,
+        "prerequisites": [],
+        "description": "Ega bilan am, is, are şakllarini töğri işlatadi."
+      },
+      {
+        "id": "ingliz-tili-02",
+        "title": "Otlarning köplik şakli",
+        "short": "Köplik",
+        "grade": 5,
+        "prerequisites": [
+          "ingliz-tili-01"
+        ],
+        "description": "Otlarning köplik şaklini -s, -es, -ies qöşimçalari va istisno sözlar bilan töğri yasaydi."
+      },
+      {
+        "id": "ingliz-tili-03",
+        "title": "Present Simple zamoni",
+        "short": "Present Simple",
+        "grade": 6,
+        "prerequisites": [
+          "ingliz-tili-01"
+        ],
+        "description": "Odatiy iş-harakatlarni Present Simple zamonida aytadi, he/she/it bilan -s qöşimçasini unutmaydi."
+      },
+      {
+        "id": "ingliz-tili-04",
+        "title": "Present Continuous zamoni",
+        "short": "Present Continuous",
+        "grade": 6,
+        "prerequisites": [
+          "ingliz-tili-03"
+        ],
+        "description": "Hozir davom etayotgan iş-harakatni am/is/are + -ing bilan aytadi."
+      },
+      {
+        "id": "ingliz-tili-05",
+        "title": "Past Simple zamoni",
+        "short": "Past Simple",
+        "grade": 6,
+        "prerequisites": [
+          "ingliz-tili-03"
+        ],
+        "description": "Ötgan iş-harakatlarni Past Simple zamonida aytadi: -ed va notöğri feʼllar, did/didn't."
+      },
+      {
+        "id": "ingliz-tili-06",
+        "title": "Predloglar: in, on, at",
+        "short": "Predloglar",
+        "grade": 6,
+        "prerequisites": [
+          "ingliz-tili-02"
+        ],
+        "description": "Joy va vaqtni in, on, at predloglari bilan töğri aytadi."
+      },
+      {
+        "id": "ingliz-tili-07",
+        "title": "Kelasi zamon: will va going to",
+        "short": "Future",
+        "grade": 6,
+        "prerequisites": [
+          "ingliz-tili-04",
+          "ingliz-tili-05"
+        ],
+        "description": "Kelasi iş-harakatlarni will va be going to bilan aytadi va farqlaydi."
+      }
+    ],
+    "entrySkills": [
+      "ingliz-tili-07",
+      "ingliz-tili-06"
+    ]
+  },
+  "materials": [
+    {
+      "lessonId": "ingliz-tili-01",
+      "fileName": "Ingliz_tili_6-sinf_To_be.pdf",
+      "pages": 2,
+      "summary": "To be feʼlining am, is, are şakllari, inkor va söroq gaplar."
+    },
+    {
+      "lessonId": "ingliz-tili-02",
+      "fileName": "Ingliz_tili_6-sinf_Plurals.pdf",
+      "pages": 2,
+      "summary": "-s, -es, -ies qöşimçalari va man, child, foot kabi istisnolar."
+    },
+    {
+      "lessonId": "ingliz-tili-03",
+      "fileName": "Ingliz_tili_6-sinf_Present_Simple.pdf",
+      "pages": 3,
+      "summary": "Present Simple: ijobiy, inkor va söroq gaplar, do/does."
+    },
+    {
+      "lessonId": "ingliz-tili-04",
+      "fileName": "Ingliz_tili_6-sinf_Present_Continuous.pdf",
+      "pages": 3,
+      "summary": "am/is/are + -ing, -ing yozilişi va now, look kabi belgilar."
+    },
+    {
+      "lessonId": "ingliz-tili-05",
+      "fileName": "Ingliz_tili_6-sinf_Past_Simple.pdf",
+      "pages": 3,
+      "summary": "Töğri (-ed) va notöğri feʼllar, did bilan inkor va söroq."
+    },
+    {
+      "lessonId": "ingliz-tili-06",
+      "fileName": "Ingliz_tili_6-sinf_Prepositions.pdf",
+      "pages": 2,
+      "summary": "Joy va vaqt predloglari: in, on, at."
+    },
+    {
+      "lessonId": "ingliz-tili-07",
+      "fileName": "Ingliz_tili_6-sinf_Future.pdf",
+      "pages": 3,
+      "summary": "will va be going to: rejalar, vaʼdalar va taxminlar."
+    }
+  ]
+}

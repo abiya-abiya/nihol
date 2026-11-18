@@ -1,0 +1,982 @@
+[
+  {
+    "id": "ona-tili-01-01",
+    "skillId": "ona-tili-01",
+    "difficulty": 1,
+    "stem": "Özbek tilida neçta unli tovuş bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "5"
+      },
+      {
+        "id": "b",
+        "text": "6"
+      },
+      {
+        "id": "c",
+        "text": "7"
+      },
+      {
+        "id": "d",
+        "text": "8"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Özbek tilida 6 ta unli bor: a, e, i, o, u, ö.",
+    "hint": "Unli harflarni bittalab sanab çiq.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-01-02",
+    "skillId": "ona-tili-01",
+    "difficulty": 2,
+    "stem": "Qaysi qatorda faqat unli harflar berilgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "a, o, b, e"
+      },
+      {
+        "id": "b",
+        "text": "i, u, ö, e"
+      },
+      {
+        "id": "c",
+        "text": "a, n, i, u"
+      },
+      {
+        "id": "d",
+        "text": "ş, o, a, i"
+      }
+    ],
+    "correct": "b",
+    "explanation": "a, e, i, o, u, ö unlilardir. b, n, ş esa undoş harflar.",
+    "hint": "Har bir qatorda undoş harf bor-yöqligini tekşir.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-01-03",
+    "skillId": "ona-tili-01",
+    "difficulty": 2,
+    "stem": "«Kitob» sözida neçta böğin bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "1"
+      },
+      {
+        "id": "b",
+        "text": "3"
+      },
+      {
+        "id": "c",
+        "text": "2"
+      },
+      {
+        "id": "d",
+        "text": "5"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Ki-tob: ikki böğin. Sözdagi böğinlar soni unlilar soniga teng.",
+    "hint": "Sözdagi unli harflarni sana.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-01-04",
+    "skillId": "ona-tili-01",
+    "difficulty": 3,
+    "stem": "Qaysi juftlik jarangli va jarangsiz undoşlar juftligi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "m – n"
+      },
+      {
+        "id": "b",
+        "text": "l – r"
+      },
+      {
+        "id": "c",
+        "text": "a – o"
+      },
+      {
+        "id": "d",
+        "text": "b – p"
+      }
+    ],
+    "correct": "d",
+    "explanation": "b jarangli, p esa uning jarangsiz juftligi. m, n, l, r juftsiz undoşlar, a va o esa unlilar.",
+    "hint": "Tovuşni aytganda ovoz paydalari titraydimi, şunga eʼtibor ber.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-01-05",
+    "skillId": "ona-tili-01",
+    "difficulty": 3,
+    "stem": "«Maktab» sözida neçta undoş tovuş bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "2"
+      },
+      {
+        "id": "b",
+        "text": "4"
+      },
+      {
+        "id": "c",
+        "text": "3"
+      },
+      {
+        "id": "d",
+        "text": "6"
+      }
+    ],
+    "correct": "b",
+    "explanation": "M-a-k-t-a-b: undoşlar m, k, t, b, yaʼni 4 ta. Unlilar esa 2 ta.",
+    "hint": "Avval unlilarni ajratib ol, qolganini sana.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-02-01",
+    "skillId": "ona-tili-02",
+    "difficulty": 1,
+    "stem": "Sözning asosiy maʼnosini bildiruvçi qismi nima deyiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qöşimça"
+      },
+      {
+        "id": "b",
+        "text": "Böğin"
+      },
+      {
+        "id": "c",
+        "text": "Özak"
+      },
+      {
+        "id": "d",
+        "text": "Urğu"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Özak sözning asosiy maʼnosini bildiradi, qöşimçalar unga qöşiladi.",
+    "hint": "Qaysi qism olib taşlansa, söz maʼnosini yöqotadi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-02-02",
+    "skillId": "ona-tili-02",
+    "difficulty": 2,
+    "stem": "«Kitoblarimiz» sözining özagi qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "kitob"
+      },
+      {
+        "id": "b",
+        "text": "kitoblar"
+      },
+      {
+        "id": "c",
+        "text": "kito"
+      },
+      {
+        "id": "d",
+        "text": "lar"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Kitob-lar-imiz: «kitob» özak, «-lar» köplik, «-imiz» egalik qöşimçasi.",
+    "hint": "Qöşimçalarni oxiridan bittalab ajrat.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-02-03",
+    "skillId": "ona-tili-02",
+    "difficulty": 2,
+    "stem": "«Maktabdan» sözidagi «-dan» qanday qöşimça?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Söz yasovçi qöşimça"
+      },
+      {
+        "id": "b",
+        "text": "Kelişik qöşimçasi"
+      },
+      {
+        "id": "c",
+        "text": "Köplik qöşimçasi"
+      },
+      {
+        "id": "d",
+        "text": "Egalik qöşimçasi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«-dan» çiqiş kelişigi qöşimçasi: «qayerdan?» söroğiga javob beradi.",
+    "hint": "«Maktabdan» qanday söroqqa javob beradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-02-04",
+    "skillId": "ona-tili-02",
+    "difficulty": 3,
+    "stem": "Qaysi sözda söz yasovçi qöşimça bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "daftarlar"
+      },
+      {
+        "id": "b",
+        "text": "uyga"
+      },
+      {
+        "id": "c",
+        "text": "kitobim"
+      },
+      {
+        "id": "d",
+        "text": "işçi"
+      }
+    ],
+    "correct": "d",
+    "explanation": "«Iş» sözidan «-çi» qöşimçasi yordamida yangi maʼnoli «işçi» sözi yasalgan. Qolganlarida şakl yasovçi qöşimçalar bor.",
+    "hint": "Qaysi sözda yangi maʼnoli söz hosil bölgan?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-02-05",
+    "skillId": "ona-tili-02",
+    "difficulty": 3,
+    "stem": "«Bolalarning» sözi qanday tuzilgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Özak + köplik + kelişik qöşimçasi"
+      },
+      {
+        "id": "b",
+        "text": "Özak + egalik + köplik qöşimçasi"
+      },
+      {
+        "id": "c",
+        "text": "Özak + söz yasovçi + kelişik qöşimçasi"
+      },
+      {
+        "id": "d",
+        "text": "Faqat özakdan iborat"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Bola-lar-ning: «bola» özak, «-lar» köplik, «-ning» qaratqiç kelişigi qöşimçasi.",
+    "hint": "Sözni özak va qöşimçalarga ajratib çiq.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-03-01",
+    "skillId": "ona-tili-03",
+    "difficulty": 1,
+    "stem": "Sözga qöşimça qöşib yangi söz hosil qiliş qanday usul deyiladi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Söz qöşiş usuli"
+      },
+      {
+        "id": "b",
+        "text": "Qöşimça qöşiş usuli"
+      },
+      {
+        "id": "c",
+        "text": "Takrorlaş usuli"
+      },
+      {
+        "id": "d",
+        "text": "Qisqartiriş usuli"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Qöşimça qöşiş usulida özakka söz yasovçi qöşimça qöşiladi: bilim + -don = bilimdon.",
+    "hint": "Usul nomi qanday qism qöşilişi bilan bağliq?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-03-02",
+    "skillId": "ona-tili-03",
+    "difficulty": 2,
+    "stem": "Qaysi söz qöşma söz?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "kitobçi"
+      },
+      {
+        "id": "b",
+        "text": "gullar"
+      },
+      {
+        "id": "c",
+        "text": "toşbaqa"
+      },
+      {
+        "id": "d",
+        "text": "yaxşilik"
+      }
+    ],
+    "correct": "c",
+    "explanation": "«Toşbaqa» ikki sözdan (toş + baqa) tuzilgan qöşma söz.",
+    "hint": "Qaysi söz ikki mustaqil sözdan tuzilgan?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-03-03",
+    "skillId": "ona-tili-03",
+    "difficulty": 2,
+    "stem": "Qaysi söz joy maʼnosini bildiruvçi qöşimça bilan yasalgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "paxtazor"
+      },
+      {
+        "id": "b",
+        "text": "paxtakor"
+      },
+      {
+        "id": "c",
+        "text": "işçi"
+      },
+      {
+        "id": "d",
+        "text": "bilimdon"
+      }
+    ],
+    "correct": "a",
+    "explanation": "«-zor» qöşimçasi joy maʼnosini beradi: paxtazor – paxta ekilgan joy.",
+    "hint": "Qaysi söz «qayer?» söroğiga javob beradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-03-04",
+    "skillId": "ona-tili-03",
+    "difficulty": 3,
+    "stem": "Qaysi qatorda juft söz berilgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "katta-katta"
+      },
+      {
+        "id": "b",
+        "text": "toşbaqa"
+      },
+      {
+        "id": "c",
+        "text": "ötkir"
+      },
+      {
+        "id": "d",
+        "text": "ota-ona"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Juft söz maʼnosi yaqin ikki sözdan tuziladi: ota-ona. «Katta-katta» esa bir sözning takrori.",
+    "hint": "Juft sözdagi ikki qism bir xil emas, lekin maʼnosi bir-biriga yaqin.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-03-05",
+    "skillId": "ona-tili-03",
+    "difficulty": 3,
+    "stem": "«Bilimdon» sözi qanday usulda yasalgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Söz qöşiş usulida"
+      },
+      {
+        "id": "b",
+        "text": "Juftlaş usulida"
+      },
+      {
+        "id": "c",
+        "text": "Qöşimça qöşiş usulida"
+      },
+      {
+        "id": "d",
+        "text": "Takrorlaş usulida"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Bilim + -don: özakka söz yasovçi qöşimça qöşilgan.",
+    "hint": "«-don» alohida söz bölib işlatiladimi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-04-01",
+    "skillId": "ona-tili-04",
+    "difficulty": 1,
+    "stem": "Ot qaysi söroqlarga javob beradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Qanday? qanaqa?"
+      },
+      {
+        "id": "b",
+        "text": "Kim? nima? qayer?"
+      },
+      {
+        "id": "c",
+        "text": "Nima qildi? nima qilyapti?"
+      },
+      {
+        "id": "d",
+        "text": "Qança? neçta?"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Ot predmetni bildiradi va kim? nima? qayer? söroqlariga javob beradi.",
+    "hint": "Ot predmetning nomini bildiradi.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-04-02",
+    "skillId": "ona-tili-04",
+    "difficulty": 2,
+    "stem": "Qaysi söz atoqli ot?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "daryo"
+      },
+      {
+        "id": "b",
+        "text": "şahar"
+      },
+      {
+        "id": "c",
+        "text": "kitob"
+      },
+      {
+        "id": "d",
+        "text": "Amudaryo"
+      }
+    ],
+    "correct": "d",
+    "explanation": "Atoqli ot bitta predmetning maxsus nomi va boş harf bilan yoziladi: Amudaryo.",
+    "hint": "Qaysi söz boş harf bilan yozilgan?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-04-03",
+    "skillId": "ona-tili-04",
+    "difficulty": 2,
+    "stem": "«Daftarim» sözidagi «-im» qöşimçasi nimani bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Köplikni"
+      },
+      {
+        "id": "b",
+        "text": "Egalikni"
+      },
+      {
+        "id": "c",
+        "text": "Kelişikni"
+      },
+      {
+        "id": "d",
+        "text": "Yangi söz yasaydi"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«-im» egalik qöşimçasi: daftar menga tegişli ekanini bildiradi.",
+    "hint": "Daftar kimga tegişli?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-04-04",
+    "skillId": "ona-tili-04",
+    "difficulty": 3,
+    "stem": "Qaysi gapda ot çiqiş kelişigida kelgan?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Men maktabga bordim."
+      },
+      {
+        "id": "b",
+        "text": "Maktabda kutubxona bor."
+      },
+      {
+        "id": "c",
+        "text": "Men maktabdan qaytdim."
+      },
+      {
+        "id": "d",
+        "text": "Maktabning hovlisi katta."
+      }
+    ],
+    "correct": "c",
+    "explanation": "Çiqiş kelişigi «-dan» qöşimçasi bilan yasaladi va «qayerdan?» söroğiga javob beradi.",
+    "hint": "«Qayerdan?» söroğiga javob beradigan sözni top.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-04-05",
+    "skillId": "ona-tili-04",
+    "difficulty": 3,
+    "stem": "Qaysi qatordagi sözlarning hammasi ot?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "daraxt, quvonç, Toşkent"
+      },
+      {
+        "id": "b",
+        "text": "çiroyli, daraxt, yugurdi"
+      },
+      {
+        "id": "c",
+        "text": "tez, kitob, öqidi"
+      },
+      {
+        "id": "d",
+        "text": "baland, katta, uy"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Daraxt, quvonç, Toşkent – hammasi «nima?» yoki «qayer?» söroğiga javob beradi.",
+    "hint": "Har bir sözga söroq berib kör.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-05-01",
+    "skillId": "ona-tili-05",
+    "difficulty": 1,
+    "stem": "Sifat qaysi söroqlarga javob beradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Kim? nima?"
+      },
+      {
+        "id": "b",
+        "text": "Nima qildi?"
+      },
+      {
+        "id": "c",
+        "text": "Qanday? qanaqa?"
+      },
+      {
+        "id": "d",
+        "text": "Qança? neçta?"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Sifat predmetning belgisini bildiradi va qanday? qanaqa? söroqlariga javob beradi.",
+    "hint": "Sifat predmetning belgisini bildiradi.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-05-02",
+    "skillId": "ona-tili-05",
+    "difficulty": 2,
+    "stem": "Qaysi söz sifat?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "kitob"
+      },
+      {
+        "id": "b",
+        "text": "yaşil"
+      },
+      {
+        "id": "c",
+        "text": "yugurmoq"
+      },
+      {
+        "id": "d",
+        "text": "beş"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«Yaşil» predmetning rangini bildiradi va «qanday?» söroğiga javob beradi.",
+    "hint": "Qaysi söz predmetning belgisini bildiradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-05-03",
+    "skillId": "ona-tili-05",
+    "difficulty": 2,
+    "stem": "«Kattaroq» sözi sifatning qaysi darajasida?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Oddiy daraja"
+      },
+      {
+        "id": "b",
+        "text": "Orttirma daraja"
+      },
+      {
+        "id": "c",
+        "text": "Sifat emas, ot"
+      },
+      {
+        "id": "d",
+        "text": "Qiyosiy daraja"
+      }
+    ],
+    "correct": "d",
+    "explanation": "«-roq» qöşimçasi sifatning qiyosiy darajasini yasaydi: katta – kattaroq.",
+    "hint": "«-roq» qöşimçasi nimani taqqoslaydi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-05-04",
+    "skillId": "ona-tili-05",
+    "difficulty": 3,
+    "stem": "Qaysi sözda sifat yasovçi qöşimça bor?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "aqlli"
+      },
+      {
+        "id": "b",
+        "text": "daftarlar"
+      },
+      {
+        "id": "c",
+        "text": "öqidi"
+      },
+      {
+        "id": "d",
+        "text": "maktabda"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Aql + -li = aqlli: otdan sifat yasalgan.",
+    "hint": "Qaysi söz «qanday?» söroğiga javob beradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-05-05",
+    "skillId": "ona-tili-05",
+    "difficulty": 3,
+    "stem": "«Qip-qizil olma» birikmasidagi sifat qaysi darajada?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Oddiy daraja"
+      },
+      {
+        "id": "b",
+        "text": "Qiyosiy daraja"
+      },
+      {
+        "id": "c",
+        "text": "Orttirma daraja"
+      },
+      {
+        "id": "d",
+        "text": "Sifat emas"
+      }
+    ],
+    "correct": "c",
+    "explanation": "«Qip-qizil» – belgining eng kuçli darajasi, yaʼni orttirma daraja.",
+    "hint": "Belgi oddiy «qizil»dan kuçliroqmi yoki kuçsizroqmi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-06-01",
+    "skillId": "ona-tili-06",
+    "difficulty": 1,
+    "stem": "Feʼl nimani bildiradi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Predmetning belgisini"
+      },
+      {
+        "id": "b",
+        "text": "Iş-harakatni"
+      },
+      {
+        "id": "c",
+        "text": "Predmetni"
+      },
+      {
+        "id": "d",
+        "text": "Sanoqni"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Feʼl iş-harakatni bildiradi va «nima qildi?», «nima qilyapti?» söroqlariga javob beradi.",
+    "hint": "Feʼl qanday söroqlarga javob beradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-06-02",
+    "skillId": "ona-tili-06",
+    "difficulty": 2,
+    "stem": "Qaysi söz feʼl?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "yozuv"
+      },
+      {
+        "id": "b",
+        "text": "yozuvçi"
+      },
+      {
+        "id": "c",
+        "text": "yozdi"
+      },
+      {
+        "id": "d",
+        "text": "yozma"
+      }
+    ],
+    "correct": "c",
+    "explanation": "«Yozdi» iş-harakatni bildiradi va «nima qildi?» söroğiga javob beradi.",
+    "hint": "Har bir sözga «nima qildi?» söroğini berib kör.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-06-03",
+    "skillId": "ona-tili-06",
+    "difficulty": 2,
+    "stem": "«Öqiyapman» feʼli qaysi zamonda?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Hozirgi zamon"
+      },
+      {
+        "id": "b",
+        "text": "Ötgan zamon"
+      },
+      {
+        "id": "c",
+        "text": "Kelasi zamon"
+      },
+      {
+        "id": "d",
+        "text": "Zamon bildirmaydi"
+      }
+    ],
+    "correct": "a",
+    "explanation": "«-yap» qöşimçasi iş-harakat ayni paytda davom etayotganini bildiradi: hozirgi zamon.",
+    "hint": "Iş-harakat qaçon bölyapti?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-06-04",
+    "skillId": "ona-tili-06",
+    "difficulty": 3,
+    "stem": "Qaysi feʼl ötgan zamonda?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "kelyapti"
+      },
+      {
+        "id": "b",
+        "text": "keladi"
+      },
+      {
+        "id": "c",
+        "text": "kel"
+      },
+      {
+        "id": "d",
+        "text": "keldi"
+      }
+    ],
+    "correct": "d",
+    "explanation": "«-di» qöşimçasi ötgan zamonni bildiradi: keldi.",
+    "hint": "Qaysi iş-harakat allaqaçon bölib ötgan?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-06-05",
+    "skillId": "ona-tili-06",
+    "difficulty": 3,
+    "stem": "«Kitobni öqima» gapidagi feʼl qanday şaklda?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Bölişli şakl"
+      },
+      {
+        "id": "b",
+        "text": "Bölişsiz şakl"
+      },
+      {
+        "id": "c",
+        "text": "Ötgan zamon"
+      },
+      {
+        "id": "d",
+        "text": "Söroq şakli"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«-ma» qöşimçasi iş-harakatning bajarilmasligini bildiradi: bölişsiz şakl.",
+    "hint": "Bu gap iş-harakatni bajarişni söraydimi yoki taqiqlaydimi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-07-01",
+    "skillId": "ona-tili-07",
+    "difficulty": 1,
+    "stem": "Gapning boş bölaklari qaysilar?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Aniqlovçi va hol"
+      },
+      {
+        "id": "b",
+        "text": "Töldiruvçi va hol"
+      },
+      {
+        "id": "c",
+        "text": "Ega va kesim"
+      },
+      {
+        "id": "d",
+        "text": "Ega va töldiruvçi"
+      }
+    ],
+    "correct": "c",
+    "explanation": "Ega va kesim gapning boş bölaklari, qolganlari ikkinçi darajali bölaklar.",
+    "hint": "Gap ularsiz tuzilmaydi.",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-07-02",
+    "skillId": "ona-tili-07",
+    "difficulty": 2,
+    "stem": "«Bolalar hovlida öynadi» gapida ega qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "hovlida"
+      },
+      {
+        "id": "b",
+        "text": "Bolalar"
+      },
+      {
+        "id": "c",
+        "text": "öynadi"
+      },
+      {
+        "id": "d",
+        "text": "hovli"
+      }
+    ],
+    "correct": "b",
+    "explanation": "Ega «kim?» söroğiga javob beradi: Kim öynadi? – Bolalar.",
+    "hint": "Iş-harakatni kim bajardi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-07-03",
+    "skillId": "ona-tili-07",
+    "difficulty": 2,
+    "stem": "«Anvar kitob öqidi» gapida kesim qaysi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "öqidi"
+      },
+      {
+        "id": "b",
+        "text": "Anvar"
+      },
+      {
+        "id": "c",
+        "text": "kitob"
+      },
+      {
+        "id": "d",
+        "text": "Anvar kitob"
+      }
+    ],
+    "correct": "a",
+    "explanation": "Kesim eganing iş-harakatini bildiradi: Anvar nima qildi? – öqidi.",
+    "hint": "Ega nima qildi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-07-04",
+    "skillId": "ona-tili-07",
+    "difficulty": 3,
+    "stem": "«Men keça maktabga erta keldim» gapida «erta» qaysi gap bölagi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Ega"
+      },
+      {
+        "id": "b",
+        "text": "Kesim"
+      },
+      {
+        "id": "c",
+        "text": "Aniqlovçi"
+      },
+      {
+        "id": "d",
+        "text": "Hol"
+      }
+    ],
+    "correct": "d",
+    "explanation": "«Erta» «qaçon?» söroğiga javob beradi, bu payt holi.",
+    "hint": "«Erta» sözi qaysi söroqqa javob beradi?",
+    "source": "bank"
+  },
+  {
+    "id": "ona-tili-07-05",
+    "skillId": "ona-tili-07",
+    "difficulty": 3,
+    "stem": "«Aqlli bola savolga javob berdi» gapida «aqlli» qaysi gap bölagi?",
+    "choices": [
+      {
+        "id": "a",
+        "text": "Töldiruvçi"
+      },
+      {
+        "id": "b",
+        "text": "Aniqlovçi"
+      },
+      {
+        "id": "c",
+        "text": "Hol"
+      },
+      {
+        "id": "d",
+        "text": "Ega"
+      }
+    ],
+    "correct": "b",
+    "explanation": "«Aqlli» «qanday bola?» söroğiga javob beradi va otga bağlanadi: aniqlovçi.",
+    "hint": "«Aqlli» qaysi sözni izohlayapti?",
+    "source": "bank"
+  }
+]
