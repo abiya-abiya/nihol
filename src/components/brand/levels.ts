@@ -17,13 +17,13 @@ export function levelColor(level: MasteryLevel): string {
 export function levelLabel(level: MasteryLevel): string {
   switch (level) {
     case "mastered":
-      return "Oʻzlashtirilgan";
+      return "Özlaştirilgan";
     case "shaky":
-      return "Mustahkamlash kerak";
+      return "Mustahkamlaş kerak";
     case "gap":
-      return "Boʻshliq";
+      return "Böşliq";
     default:
-      return "Tekshirilmagan";
+      return "Tekşirilmagan";
   }
 }
 

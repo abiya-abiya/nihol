@@ -139,7 +139,7 @@ export default function LearnPage() {
   return (
     <div className="mx-auto flex w-full max-w-xl flex-1 flex-col gap-5">
       <header className="flex items-center gap-2 pt-1">
-        <Button asChild variant="ghost" size="icon" className="size-10 rounded-xl" aria-label="Yoʻlga qaytish">
+        <Button asChild variant="ghost" size="icon" className="size-10 rounded-xl" aria-label="Yölga qaytiş">
           <Link href="/path">
             <ChevronLeft className="size-6" />
           </Link>
@@ -196,7 +196,7 @@ export default function LearnPage() {
                 animate={{ opacity: 1, y: 0 }}
                 className="font-hand text-mastered text-center text-3xl -rotate-1"
               >
-                toʻgʻri!
+                töğri!
               </motion.p>
             )}
 

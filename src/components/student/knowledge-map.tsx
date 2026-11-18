@@ -326,7 +326,7 @@ export function KnowledgeMap({
                 fill="var(--red-pen)"
                 transform={`rotate(-4 ${tx} ${n.cy - 18})`}
               >
-                ildiz shu yerda!
+                ildiz şu yerda!
               </text>
             </motion.g>
           );

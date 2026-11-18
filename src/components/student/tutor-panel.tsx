@@ -30,7 +30,7 @@ export function TutorPanel({ text, loading, onAsk }: { text: string; loading: bo
         <span className="bg-ink-wash grid size-9 place-items-center rounded-full">
           <LogoMark size={22} />
         </span>
-        <p className="font-display font-semibold">Ustoz tushuntiradi</p>
+        <p className="font-display font-semibold">Ustoz tuşuntiradi</p>
       </div>
       {text ? (
         <MathText text={safePartial(text)} className="text-[1.05rem]" />
@@ -44,7 +44,7 @@ export function TutorPanel({ text, loading, onAsk }: { text: string; loading: bo
       {loading && text && <span className="bg-ink inline-block h-4 w-1.5 animate-pulse rounded-sm align-middle" aria-hidden />}
       {!loading && text && (
         <Button variant="secondary" onClick={onAsk} className="h-11 rounded-xl">
-          <MessageCircleQuestion /> Nega? Ustozdan soʻrash
+          <MessageCircleQuestion /> Nega? Ustozdan söraş
         </Button>
       )}
     </motion.section>

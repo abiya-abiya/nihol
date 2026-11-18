@@ -101,7 +101,7 @@ export default function ResultPage() {
       <div className="lg:sticky lg:top-6">
       {!revealed && (
         <div className="text-muted-foreground hidden h-64 place-items-center rounded-3xl border-2 border-dashed border-grid text-center lg:grid">
-          Xarita chizilmoqda…
+          Xarita çizilmoqda…
         </div>
       )}
       <AnimatePresence>
@@ -137,36 +137,36 @@ export default function ResultPage() {
                 </ol>
                 {misconception && (
                   <div className="bg-paper space-y-1.5 rounded-2xl border border-dashed border-red-pen/40 p-4">
-                    <p className="text-sm font-semibold">Sen shunday oʻylagan boʻlishing mumkin:</p>
+                    <p className="text-sm font-semibold">Sen şunday öylagan bölişing mumkin:</p>
                     <p className="font-medium">{normalizeUz(misconception.title)}</p>
                     <MathText text={misconception.example} className="text-red-pen font-semibold" />
                   </div>
                 )}
                 <p className="text-muted-foreground">
-                  Yoʻlingni aynan shu yerdan — <span className="marker text-ink font-semibold">{short(trace.rootSkillId)}</span>
-                  dan boshlaymiz. Har bir qadam keyingisini osonlashtiradi.
+                  Yölingni aynan şu yerdan — <span className="marker text-ink font-semibold">{short(trace.rootSkillId)}</span>
+                  dan boşlaymiz. Har bir qadam keyingisini osonlaştiradi.
                 </p>
               </>
             ) : allGood ? (
               <>
-                <h2 className="text-[1.45rem] leading-snug font-bold">Ajoyib! Kasrlarni yaxshi bilasan.</h2>
-                <p className="text-muted-foreground">Xaritangda boʻshliq topilmadi. Endi murakkabroq mashqlar bilan mustahkamlaymiz.</p>
+                <h2 className="text-[1.45rem] leading-snug font-bold">Ajoyib! Kasrlarni yaxşi bilasan.</h2>
+                <p className="text-muted-foreground">Xaritangda böşliq topilmadi. Endi murakkabroq maşqlar bilan mustahkamlaymiz.</p>
               </>
             ) : (
               <>
-                <h2 className="text-[1.45rem] leading-snug font-bold">Bir nechta mavzuni mustahkamlash kerak</h2>
-                <p className="text-muted-foreground">Yoʻlingni eng asosiy mavzudan boshlaymiz.</p>
+                <h2 className="text-[1.45rem] leading-snug font-bold">Bir neçta mavzuni mustahkamlaş kerak</h2>
+                <p className="text-muted-foreground">Yölingni eng asosiy mavzudan boşlaymiz.</p>
               </>
             )}
             <Button asChild className="h-14 w-full rounded-2xl text-lg font-semibold">
               <Link href="/path">
                 {allGood ? (
                   <>
-                    Murakkabroq mashqlar <Sparkles className="size-5" />
+                    Murakkabroq maşqlar <Sparkles className="size-5" />
                   </>
                 ) : (
                   <>
-                    Shaxsiy yoʻlimni koʻrish <ArrowRight className="size-5" />
+                    Şaxsiy yölimni köriş <ArrowRight className="size-5" />
                   </>
                 )}
               </Link>
@@ -207,13 +207,13 @@ function SkillDetail({ skillId, snap, onClose }: { skillId: string; snap: Studen
           </p>
         </div>
         <button type="button" onClick={onClose} className="text-muted-foreground hover:text-ink text-sm underline-offset-4 hover:underline">
-          Yopish
+          Yopiş
         </button>
       </div>
       <p className="text-muted-foreground">{normalizeUz(skill.description)}</p>
       {m && (
         <p className="text-sm">
-          <span className="font-semibold">Koʻrilgan xato: </span>
+          <span className="font-semibold">Körilgan xato: </span>
           {normalizeUz(m.title)}
         </p>
       )}

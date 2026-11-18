@@ -23,7 +23,7 @@ const caveat = Caveat({
 
 export const metadata: Metadata = {
   title: "Ildiz — xatoning ildizini topadigan SI-tyutor",
-  description: "5–6-sinf kasrlar: bilimdagi boʻshliqning ildizini topadi va shaxsiy yoʻl tuzadi.",
+  description: "5–6-sinf kasrlar: bilimdagi böşliqning ildizini topadi va şaxsiy yöl tuzadi.",
 };
 
 export const viewport: Viewport = {

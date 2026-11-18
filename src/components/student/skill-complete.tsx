@@ -32,7 +32,7 @@ export function SkillComplete({
       animate={{ opacity: 1 }}
       role="dialog"
       aria-modal="true"
-      aria-label="Mavzu oʻzlashtirildi"
+      aria-label="Mavzu özlaştirildi"
     >
       <motion.div
         className="sheet w-full max-w-sm space-y-5 p-7 text-center"
@@ -53,7 +53,7 @@ export function SkillComplete({
             </Button>
           )}
           <Button variant={nextTitle ? "ghost" : "default"} onClick={onPath} className="h-12 w-full rounded-2xl">
-            <MapIcon /> Yoʻlimga qaytish
+            <MapIcon /> Yölimga qaytiş
           </Button>
         </div>
       </motion.div>

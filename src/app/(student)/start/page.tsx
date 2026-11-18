@@ -44,7 +44,7 @@ function StartForm() {
         <LogoMark size={56} />
         <h1 className="text-[2.1rem] leading-[1.12] font-bold sm:text-5xl">Bilimingning ildizini topamiz</h1>
         <p className="text-muted-foreground max-w-md text-lg leading-relaxed">
-          Kasrlar boʻyicha bir necha savolga javob ber. Keyin qayerdan boshlash kerakligini aniq koʻrsatamiz.
+          Kasrlar böyiça bir neça savolga javob ber. Keyin qayerdan boşlaş kerakligini aniq körsatamiz.
         </p>
       </FadeIn>
 
@@ -56,7 +56,7 @@ function StartForm() {
           </div>
           <Button asChild size="lg" className="h-11 rounded-xl px-4">
             <Link href={existing.done ? "/path" : "/diagnostic"}>
-              Davom etish <ArrowRight />
+              Davom etiş <ArrowRight />
             </Link>
           </Button>
         </FadeIn>
@@ -65,7 +65,7 @@ function StartForm() {
       <FadeIn delay={0.15}>
         <form onSubmit={start} className="space-y-4">
           <label className="block space-y-2">
-            <span className="text-sm font-semibold">{existing ? "Yoki yangi ism bilan boshla" : "Isming"}</span>
+            <span className="text-sm font-semibold">{existing ? "Yoki yangi ism bilan boşla" : "Isming"}</span>
             <input
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -92,7 +92,7 @@ function StartForm() {
               }}
               className="text-muted-foreground mx-auto flex items-center gap-1.5 text-sm underline-offset-4 hover:underline"
             >
-              <RotateCcw className="size-3.5" /> Bu qurilmadagi natijani oʻchirish
+              <RotateCcw className="size-3.5" /> Bu qurilmadagi natijani öçiriş
             </button>
           )}
         </form>

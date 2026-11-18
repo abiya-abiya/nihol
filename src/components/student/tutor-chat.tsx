@@ -13,7 +13,7 @@ import { useTextStream } from "./use-text-stream";
 
 type Msg = { role: "user" | "assistant"; content: string };
 
-const STARTERS = ["Nega shunday?", "Boshqa misol bilan tushuntir", "Qayerda adashdim?"];
+const STARTERS = ["Nega şunday?", "Boşqa misol bilan tuşuntir", "Qayerda adaşdim?"];
 
 /** Bottom drawer chat with the tutor about the current skill/question. */
 export function TutorChat({
@@ -62,8 +62,8 @@ export function TutorChat({
     <Drawer open={open} onOpenChange={onOpenChange}>
       <DrawerContent className="mx-auto max-h-[88dvh] max-w-xl">
         <DrawerHeader className="text-left">
-          <DrawerTitle className="font-display">Ustozdan soʻra</DrawerTitle>
-          <DrawerDescription>Savolingni yoz — ustoz javobni aytib qoʻymaydi, oʻylashga yordam beradi.</DrawerDescription>
+          <DrawerTitle className="font-display">Ustozdan söra</DrawerTitle>
+          <DrawerDescription>Savolingni yoz — ustoz javobni aytib qöymaydi, öylaşga yordam beradi.</DrawerDescription>
         </DrawerHeader>
         <div className="flex-1 space-y-3 overflow-y-auto px-4 pb-2">
           {msgs.length === 0 && !stream.loading && (
@@ -96,7 +96,7 @@ export function TutorChat({
               {stream.text ? (
                 <MathText text={safePartial(stream.text)} className="text-[0.98rem] leading-relaxed" />
               ) : (
-                <span className="text-muted-foreground text-sm">Ustoz oʻylayapti…</span>
+                <span className="text-muted-foreground text-sm">Ustoz öylayapti…</span>
               )}
             </div>
           )}

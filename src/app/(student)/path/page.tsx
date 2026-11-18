@@ -65,7 +65,7 @@ export default function PathPage() {
 
   function open(step: PathStep) {
     if (step.status === "locked") {
-      toast("Avval pastdagi qadamni tugat", { description: "Yoʻl ildizdan yuqoriga qarab ochiladi." });
+      toast("Avval pastdagi qadamni tugat", { description: "Yöl ildizdan yuqoriga qarab oçiladi." });
       return;
     }
     router.push(`/learn/${step.skillId}`);
@@ -76,7 +76,7 @@ export default function PathPage() {
       <header className="flex items-center gap-3 pt-1">
         <LogoMark size={30} />
         <div className="min-w-0 flex-1">
-          <h1 className="text-xl leading-tight font-bold">Shaxsiy yoʻling</h1>
+          <h1 className="text-xl leading-tight font-bold">Şaxsiy yöling</h1>
           <p className="text-muted-foreground truncate text-sm">
             {student.name}, {done} / {snap.path.length} qadam bajarildi
           </p>
@@ -103,7 +103,7 @@ export default function PathPage() {
         {finished && (
           <Button asChild variant="secondary" className="h-10 rounded-xl">
             <Link href="/start">
-              <RotateCcw /> Qayta tekshirish
+              <RotateCcw /> Qayta tekşiriş
             </Link>
           </Button>
         )}
@@ -111,8 +111,8 @@ export default function PathPage() {
 
       {finished && (
         <FadeIn className="sheet space-y-1 p-4">
-          <p className="font-display text-lg font-bold">Yoʻl tugadi!</p>
-          <p className="text-muted-foreground">Barcha qadamlar oʻzlashtirildi. Xohlagan qadamni qayta mashq qilishing mumkin.</p>
+          <p className="font-display text-lg font-bold">Yöl tugadi!</p>
+          <p className="text-muted-foreground">Barça qadamlar özlaştirildi. Xohlagan qadamni qayta maşq qilişing mumkin.</p>
         </FadeIn>
       )}
 

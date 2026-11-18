@@ -28,11 +28,11 @@ import {
 import type { ChoiceId, Student } from "@/lib/types";
 
 const CHEERS = [
-  "Shoshilma, oʻylab javob ber",
-  "Zoʻr, davom etamiz",
-  "Bilim xaritang chizilmoqda",
-  "Har bir javob xaritaga nuqta qoʻshadi",
-  "Yana bir nechta savol qoldi",
+  "Şoşilma, öylab javob ber",
+  "Zör, davom etamiz",
+  "Bilim xaritang çizilmoqda",
+  "Har bir javob xaritaga nuqta qöşadi",
+  "Yana bir neçta savol qoldi",
 ];
 
 export default function DiagnosticPage() {
@@ -176,7 +176,7 @@ export default function DiagnosticPage() {
       </AnimatePresence>
 
       <p className="text-muted-foreground mt-auto text-center text-sm">
-        Javoblaring toʻgʻri-notoʻgʻriligini oxirida, xaritada koʻrasan.
+        Javoblaring töğri-notöğriligini oxirida, xaritada körasan.
       </p>
     </div>
   );

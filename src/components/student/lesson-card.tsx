@@ -29,11 +29,11 @@ export function LessonCard({
 
       {misconception && (
         <StaggerItem className="sheet space-y-2 border-dashed border-red-pen/40 p-5">
-          <p className="font-hand text-red-pen -rotate-1 text-2xl">Sen shunday oʻylagan boʻlishing mumkin</p>
+          <p className="font-hand text-red-pen -rotate-1 text-2xl">Sen şunday öylagan bölişing mumkin</p>
           <p className="font-semibold">{normalizeUz(misconception.title)}</p>
           <MathText text={misconception.example} className="text-red-pen font-semibold line-through decoration-2" />
           <div className="bg-mastered/8 rounded-xl p-3">
-            <p className="text-mastered text-sm font-bold">Toʻgʻrisi</p>
+            <p className="text-mastered text-sm font-bold">Töğrisi</p>
             <MathText text={misconception.remedy} />
           </div>
         </StaggerItem>
@@ -56,7 +56,7 @@ export function LessonCard({
 
       <StaggerItem>
         <Button onClick={onStart} className="h-14 w-full rounded-2xl text-lg font-semibold">
-          Mashq qilish <ArrowRight className="size-5" />
+          Maşq qiliş <ArrowRight className="size-5" />
         </Button>
       </StaggerItem>
     </Stagger>

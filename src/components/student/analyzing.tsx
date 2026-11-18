@@ -11,7 +11,7 @@ const ROOTS = [
 ];
 
 /** Full-screen interlude between the last question and the result: roots draw themselves. */
-export function Analyzing({ text = "Bilim xaritang chizilmoqda…" }: { text?: string }) {
+export function Analyzing({ text = "Bilim xaritang çizilmoqda…" }: { text?: string }) {
   const reduce = useReducedMotion();
   return (
     <div className="flex min-h-[70dvh] flex-col items-center justify-center gap-6 text-center" role="status" aria-live="polite">
