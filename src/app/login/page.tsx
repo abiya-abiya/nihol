@@ -68,7 +68,7 @@ function LoginForm() {
               <LogoMark size={56} />
               <h1 className="text-[2.2rem] leading-[1.1] font-bold">Niholga kiriş</h1>
               <p className="text-muted-foreground text-lg">
-                Öqituvçi, öquvçi va ota-ona bir platformada. {next ? "Davom etiş uçun hisobingizga kiring." : ""}
+                Maktab, öqituvçi, öquvçi va ota-ona bir platformada. {next ? "Davom etiş uçun hisobingizga kiring." : ""}
               </p>
             </FadeIn>
 
