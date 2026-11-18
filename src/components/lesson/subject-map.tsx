@@ -25,7 +25,7 @@ export function SubjectMap({
   const snap = toSnapshot(studentId, progress);
   const lessons = subject.graph.skills;
   return (
-    <div className="grid gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] lg:items-start">
+    <div className="grid grid-cols-[minmax(0,1fr)] gap-5 lg:grid-cols-[minmax(0,1.25fr)_minmax(0,1fr)] lg:items-start">
       <div className="sheet px-1 pt-2 pb-1">
         <KnowledgeMap
           key={subject.meta.id}
@@ -38,7 +38,7 @@ export function SubjectMap({
           className="lg:mx-auto lg:h-[min(64dvh,640px)] lg:w-auto lg:max-w-full"
         />
       </div>
-      <ol className="grid gap-2">
+      <ol className="grid grid-cols-[minmax(0,1fr)] gap-2">
         {lessons.map((l, i) => {
           const st = snap.skills[l.id];
           const level = levelOf(st);

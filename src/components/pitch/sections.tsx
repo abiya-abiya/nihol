@@ -1,4 +1,4 @@
-import { GraduationCap, Heart, LayoutDashboard, School } from "lucide-react";
+import { Check, GraduationCap, Heart, LayoutDashboard, School } from "lucide-react";
 import Link from "next/link";
 import { SubjectIcon } from "@/components/brand/subject-icon";
 import { Button } from "@/components/ui/button";
@@ -31,7 +31,7 @@ export function Subjects({ subjects }: { subjects: SubjectMeta[] }) {
   return (
     <section aria-labelledby="subjects-title" className="mx-auto w-full max-w-[1500px] px-5 pt-4 pb-6 sm:px-8 lg:px-12">
       <h2 id="subjects-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-        Tayyor 4 ta fan, har birida 7 ta dars
+        Tayyor 5 ta fan, har birida 7 ta dars
       </h2>
       <p className="text-ink-soft mt-3 max-w-[40rem] text-[1.1rem] leading-relaxed">
         Hamma narsa birinçi kundan tayyor: darslar, savollar va sinf natijalari. Öqituvçi öz fani va darsini qöşa oladi.
@@ -74,7 +74,7 @@ export function Roles() {
   return (
     <section aria-labelledby="roles-title" className="mx-auto w-full max-w-[1500px] px-5 py-16 sm:px-8 lg:px-12">
       <h2 id="roles-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
-        Üç rol, bitta xarita
+        Uç rol, bitta xarita
       </h2>
       <ul className="mt-8 grid gap-4 md:grid-cols-3">
         {ROLES.map((r) => (
@@ -87,6 +87,55 @@ export function Roles() {
           </li>
         ))}
       </ul>
+    </section>
+  );
+}
+
+const PLANS = [
+  {
+    badge: "1-oy",
+    title: "Bepul sinov",
+    note: "Röyxatdan ötgan kundan boşlab bir oy",
+    points: ["Barça 5 fan va yangi fanlar qöşiş", "Cheksiz sinf, öquvçi va test", "Ota-ona kabineti va statistika", "Karta yoki tölov talab qilinmaydi"],
+  },
+  {
+    badge: "2-oydan",
+    title: "Maktab obunasi",
+    note: "Narx maktab bilan kelişiladi",
+    points: ["Obunani öqituvçilar uçun maktab oladi", "Öqituvçi öz çöntagidan tölamaydi", "Narx sinflar va öqituvçilar soniga qarab", "Sinov davridagi barça maʼlumotlar saqlanadi"],
+  },
+] as const;
+
+export function Pricing() {
+  return (
+    <section id="narx" aria-labelledby="pricing-title" className="mx-auto w-full max-w-[1500px] px-5 py-16 sm:px-8 lg:px-12">
+      <h2 id="pricing-title" className="text-[2rem] leading-tight font-bold sm:text-[2.6rem]">
+        Birinçi oy bepul
+      </h2>
+      <p className="text-ink-soft mt-3 max-w-2xl text-[1.08rem] leading-relaxed">
+        Bir oy hamma imkoniyat bilan sinab köring. Ikkinçi oydan obuna pullik bölib, uni öqituvçilar uçun maktab sotib oladi.
+      </p>
+      <ul className="mt-8 grid gap-4 md:grid-cols-2">
+        {PLANS.map((p) => (
+          <li key={p.title} className="sheet flex flex-col gap-4 p-6">
+            <div className="flex items-baseline justify-between gap-3">
+              <h3 className="font-display text-[1.5rem] font-bold">{p.title}</h3>
+              <span className="bg-highlight text-ink rounded-full px-3 py-1 text-sm font-bold">{p.badge}</span>
+            </div>
+            <p className="text-ink-soft font-semibold">{p.note}</p>
+            <ul className="flex flex-col gap-2">
+              {p.points.map((x) => (
+                <li key={x} className="flex items-start gap-2 text-[1.02rem]">
+                  <Check className="text-mastered mt-0.5 size-5 shrink-0" aria-hidden /> {x}
+                </li>
+              ))}
+            </ul>
+          </li>
+        ))}
+      </ul>
+      <Button asChild className="mt-8 h-14 rounded-[16px] px-8 text-[1.08rem] font-bold">
+        <Link href="/login">Bepul boşlaş</Link>
+      </Button>
     </section>
   );
 }
@@ -197,7 +246,7 @@ export function TeacherBand({ teacherUrl }: { teacherUrl: string }) {
 /** TODO(C): fill in names from the team chat; until then only roles are shown. */
 const TEAM: Array<{ name: string; role: string }> = [
   { name: "", role: "Platforma, rollar, öquvçi va ota‑ona sahifalari" },
-  { name: "", role: "Kontent: 4 fan, savollar, yangi alifbo" },
+  { name: "", role: "Kontent: 5 fan, savollar, yangi alifbo" },
   { name: "", role: "Deploy, demo maʼlumotlar, öqituvçi paneli, pitch" },
 ];
 

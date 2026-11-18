@@ -246,7 +246,7 @@
 
 /* Board pages that were built on paper (landing, teacher): ink utilities sitting straight on the
    board turn to chalk; light surfaces (cards, chips, white buttons, inputs, dialogs) keep ink. */
-.theme-doska :is(.bg-white, .bg-card, .bg-paper, .bg-white\/70, textarea) {
+.theme-doska :is(.bg-white, .bg-card, .bg-paper, .bg-white\/70, .bg-ink-wash, .bg-highlight, textarea) {
   color: var(--ink);
   --muted-foreground: var(--ink-soft);
 }
@@ -260,8 +260,15 @@
   border-color: rgb(246 243 234 / 0.7);
 }
 .theme-doska :is(.sheet, .bg-white, .bg-card, .bg-paper, .bg-white\/70, [role="dialog"]) .text-ink,
-.theme-doska .text-ink:is(.sheet, .bg-white, .bg-card, .bg-paper) {
+.theme-doska .text-ink:is(.sheet, .bg-white, .bg-card, .bg-paper, .bg-ink-wash, .bg-highlight) {
   color: var(--ink);
+}
+/* Red-pen text: lighter on the board, darker on light surfaces, so it passes AA on both. */
+.theme-doska .text-red-pen {
+  color: #ff9d95;
+}
+.text-red-pen:is(.sheet, .bg-white, .bg-card, .bg-paper, .sheet *, .bg-white *, .bg-card *, .bg-paper *) {
+  color: #c42b31;
 }
 /* Half-height highlighter strokes don't read on the board: chalk-yellow text instead. */
 .theme-doska .marker {

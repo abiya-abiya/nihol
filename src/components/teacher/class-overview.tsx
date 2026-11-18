@@ -12,6 +12,7 @@ import { levelOf } from "@/engine/bkt";
 import type { Assignment, ProgressResponse, SkillState, Submission, SubjectContent, SubjectProgress } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import { LiveBadge } from "./live-badge";
+import { PeriodStats } from "./period-stats";
 
 export type OverviewSubject = Pick<SubjectContent, "meta" | "graph">;
 export type OverviewAssignment = Pick<Assignment, "id" | "subjectId" | "lessonId" | "title" | "createdAt" | "studentIds">;
@@ -23,6 +24,7 @@ export interface OverviewData {
   progress: SubjectProgress[];
   submissions: Submission[];
   assignments: OverviewAssignment[];
+  history?: ProgressResponse["history"];
 }
 
 const POLL_MS = 4000;
@@ -73,7 +75,7 @@ export function ClassOverview({
     lastOk.current = Date.now();
   };
   const { data: prog } = useSWR<ProgressResponse>(`/api/progress?classId=${encodeURIComponent(classId)}`, getJson, {
-    fallbackData: { progress: initial.progress, history: [], submissions: initial.submissions },
+    fallbackData: { progress: initial.progress, history: initial.history ?? [], submissions: initial.submissions },
     refreshInterval: POLL_MS,
     keepPreviousData: true,
     onSuccess: ok,
@@ -92,6 +94,7 @@ export function ClassOverview({
   const progress = prog?.progress ?? initial.progress;
   const submissions = prog?.submissions ?? initial.submissions;
   const assignments = asg ?? initial.assignments;
+  const history = prog?.history ?? initial.history ?? [];
 
   const view = useMemo(() => {
     if (!subject) return null;
@@ -335,6 +338,8 @@ export function ClassOverview({
           )}
         </section>
       </div>
+
+      <PeriodStats subject={subject.meta} students={students} submissions={submissions} history={history} />
     </div>
   );
 }

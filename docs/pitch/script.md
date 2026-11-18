@@ -15,11 +15,11 @@ Tayyorgarlik (sahnaga çiqiştan 5 daqiqa oldin):
 | Vaqt | Ekranda | Spiker gapiradi | Kim bosadi |
 |---|---|---|---|
 | 0:00–0:20 | Slayd 1 → 2 (muammo) | «Bitta sinf, 25 öquvçi, bitta surʼat. TIMSS 2023 da 8‑sinf öquvçilarimiz matematikadan 421 ball oldi. Öqituvçi xatoni köradi — sababini emas. Ildiz — öqituvçi uçun tayyor vosita.» | Spiker |
-| 0:20–0:40 | Landing `/` → «Kiriş» → login `ustoz` | «Öqituvçi kiradi va butun sinfni fanlar böyiça köradi: 4 ta fan, har birida xarita va testlar.» Fan tablarini almaştirish. | Operator |
+| 0:20–0:40 | Landing `/` → «Kiriş» → login `ustoz` | «Öqituvçi kiradi va butun sinfni fanlar böyiça köradi: 5 ta fan, har birida xarita va testlar.» Fan tablarini almaştirish. | Operator |
 | 0:40–1:20 | Biologiya → dars → material yuklaş | PDF ni tortib tuşiradi. Animatsiya: fayl öqildi → betlar → asosiy tuşunçalar → savollar → tekşirildi (~7 s). «Ildiz materialdan beş savollik test tayyorladi.» Bir savolni tahrirlaydi, **«Öquvçilarga yuboriş»**. | Operator |
 | 1:20–1:50 | Telefon: `jasur` → yangi test | Hakam/Operator testni yeçadi, oxirida konfetti. «Natija şu zahoti sinf xaritasida.» | Hakam |
 | 1:50–2:20 | Proyektor: `/teacher` | Jasurning qatori yangilanadi (sariq yonib‑öçadi). **Matematika → «Ildiz tahlili»**: «Eng köp uçragan ildiz — EKUK». Qatorni bosiş → öquvçi sahifasi: iz va sabab. | Operator |
-| 2:20–2:45 | Login `ona` | Ota‑ona Jasurning 4 ta fan böyiça xaritasini va ösiş grafigini köradi. | Operator |
+| 2:20–2:45 | Login `ona` | Ota‑ona Jasurning 5 ta fan böyiça xaritasini va ösiş grafigini köradi. | Operator |
 | 2:45–3:00 | Slayd 6–7 | «Diagnoz aniq va tuşuntiriladigan: graf + Bayes modeli; SI faqat tuşuntiradi. Yangi fan = graf + savollar banki. Bizga 2 maktabda pilot kerak.» | Spiker |
 
 ## Agar biror narsa işlamasa

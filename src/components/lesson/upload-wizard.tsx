@@ -60,6 +60,7 @@ export function UploadWizard({
   bank,
   material,
   classLabel,
+  sampleUrl,
 }: {
   subject: SubjectMeta;
   lesson: Skill;
@@ -67,6 +68,8 @@ export function UploadWizard({
   material?: MaterialSample;
   /** Active class name for the success screen, e.g. "6-A sinf". */
   classLabel?: string;
+  /** Real sample file in public/demo-materials for this lesson, when one exists. */
+  sampleUrl?: string;
 }) {
   const reduce = useReducedMotion();
   const [step, setStep] = useState<Step>("drop");
@@ -178,6 +181,11 @@ export function UploadWizard({
               >
                 <FileText className="size-4" /> Namuna fayl bilan sinab köriş: {material.fileName}
               </button>
+            )}
+            {sampleUrl && (
+              <a href={sampleUrl} download className="text-ink-soft hover:text-ink mx-auto block w-fit text-sm underline underline-offset-4">
+                Namuna faylni yuklab oliş
+              </a>
             )}
           </motion.div>
         )}

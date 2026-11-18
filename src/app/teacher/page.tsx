@@ -32,7 +32,7 @@ export default async function TeacherPage({ searchParams }: PageProps<"/teacher"
     .map((u) => ({ id: u.id, name: u.name }))
     .sort((a, b) => a.name.localeCompare(b.name, "uz"));
   const ids = students.map((s) => s.id);
-  const [{ progress }, submissions] = await Promise.all([listProgress(ids), listSubmissions({ studentIds: ids })]);
+  const [{ progress, history }, submissions] = await Promise.all([listProgress(ids), listSubmissions({ studentIds: ids })]);
 
   const light: OverviewAssignment[] = assignments.map((a) => ({
     id: a.id,
@@ -52,7 +52,7 @@ export default async function TeacherPage({ searchParams }: PageProps<"/teacher"
         className={cls?.name ?? classId}
         subjects={subjects.map((s) => ({ meta: s.meta, graph: s.graph }))}
         students={students}
-        initial={{ progress, submissions, assignments: light }}
+        initial={{ progress, submissions, assignments: light, history }}
         initialSubject={subject}
       />
     </TeacherShell>

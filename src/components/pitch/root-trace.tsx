@@ -22,7 +22,7 @@ export function RootTrace({ className }: { className?: string }) {
   const from = (o: Record<string, number>) => (reduce ? false : o);
 
   return (
-    <div className={cn("relative", className)} aria-label="Misol: xatodan ildizgacha iz">
+    <div className={cn("relative", className)} aria-label="Misol: xatodan asl sababgaça iz">
       {/* the wrong answer */}
       <div className="relative inline-flex items-center gap-4">
         <div className="sheet font-display text-ink relative inline-flex items-center gap-2 px-5 py-3 text-[1.9rem] font-bold sm:text-[2.4rem]">
@@ -111,7 +111,7 @@ export function RootTrace({ className }: { className?: string }) {
                     animate={{ opacity: 1, x: 0 }}
                     transition={at(T.note)}
                   >
-                    ildiz şu yerda!
+                    nihol şu yerdan östadi!
                   </motion.span>
                 ) : null}
               </motion.li>

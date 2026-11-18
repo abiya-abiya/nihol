@@ -30,13 +30,13 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
         <div className="flex flex-col">
           <p className="text-ink-soft mb-4 text-sm font-semibold tracking-wide uppercase">Maktab uçun eng yaxşi SI‑vosita</p>
           <h1 className="text-[2.6rem] leading-[1.02] font-extrabold tracking-[-0.035em] sm:text-[3.6rem] xl:text-[4.6rem] 2xl:text-[5.2rem]">
-            Xatoning ildizini topadigan SI‑tyutor
+            Bilimni niholdek östiradigan SI‑ustoz
           </h1>
           <p className="text-ink-soft mt-6 max-w-[38rem] text-[1.12rem] leading-relaxed sm:text-[1.25rem] 2xl:text-[1.35rem]">
             Dars materialini yuklaysiz, Nihol <span className="text-ink font-semibold">test tayyorlaydi</span>. Öquvçi
             telefonda yeçadi, öqituvçi butun sinfni jonli köradi, ota‑ona esa bolasining{" "}
-            <span className="text-ink marker font-semibold">har bir fan böyiça xaritasini</span>. Matematikada SI xatoning
-            asl sababini — ildizini — topadi.
+            <span className="text-ink marker font-semibold">har bir fan böyiça xaritasini</span>. Xato qayerdan
+            boşlanganini topib, bilimni öşa yerdan qayta östiradi.
           </p>
           <div className="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
             <Button asChild className="h-16 rounded-[18px] px-9 text-[1.2rem] font-bold shadow-[var(--shadow-lift)]">
@@ -54,7 +54,7 @@ export function Hero({ studentUrl }: { studentUrl: string }) {
             </Button>
           </div>
           <p className="text-ink-soft mt-4 text-sm">
-            4 ta fan · 3 ta rol: öqituvçi, öquvçi, ota‑ona · internet uzilsa ham işlaydi
+            5 ta fan · 3 ta rol: öqituvçi, öquvçi, ota‑ona · internet uzilsa ham işlaydi
           </p>
         </div>
 

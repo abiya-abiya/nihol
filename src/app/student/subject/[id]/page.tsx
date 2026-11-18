@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { MasteryRing } from "@/components/brand/mastery-ring";
 import { FadeIn } from "@/components/brand/motion";
+import { SubjectBackdrop } from "@/components/brand/subject-backdrop";
 import { SubjectIcon } from "@/components/brand/subject-icon";
 import { subjectMastery } from "@/components/lesson/snapshot";
 import { SubjectMap } from "@/components/lesson/subject-map";
@@ -19,6 +20,7 @@ export default async function StudentSubject({ params }: PageProps<"/student/sub
   const prog = progress.find((p) => p.subjectId === subject.meta.id) ?? null;
   return (
     <div className="space-y-5 pt-2">
+      <SubjectBackdrop subjectId={subject.meta.id} color={subject.meta.color} />
       <Link href="/student" className="text-muted-foreground hover:text-ink inline-flex items-center gap-1 text-sm">
         <ChevronLeft className="size-4" /> Boş sahifa
       </Link>

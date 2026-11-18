@@ -91,7 +91,7 @@ export function ParentDashboard({
         </section>
       )}
 
-      <section className="grid gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+      <section className="grid grid-cols-[minmax(0,1fr)] gap-4 lg:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
         <div className="sheet space-y-3 p-5">
           <h2 className="text-lg font-bold">Özlaştiriş dinamikasi</h2>
           {rows.length >= 2 ? (

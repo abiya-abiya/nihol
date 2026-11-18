@@ -128,6 +128,15 @@ export function TeacherShell({ name, children, wide }: { name: string; children:
           })}
         </nav>
         <div className="ml-auto flex items-center gap-3">
+          {wide && (
+            <Link
+              href="/#narx"
+              title="Birinçi oy bepul, ikkinçi oydan maktab obunasi"
+              className="bg-highlight text-ink hidden rounded-full px-3 py-1 text-xs font-bold md:inline-block"
+            >
+              Sinov: 1-oy bepul
+            </Link>
+          )}
           <ClassSwitcher />
           <div className="hidden text-right sm:block">
             <p className="text-sm font-semibold">{name}</p>

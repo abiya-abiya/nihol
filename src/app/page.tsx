@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import { Backdrop } from "@/components/brand/backdrop";
 import { Hero } from "@/components/pitch/hero";
 import { HowItWorks } from "@/components/pitch/how-it-works";
-import { Problem, Roles, Subjects, TeacherBand, TeamStrip } from "@/components/pitch/sections";
+import { Pricing, Problem, Roles, Subjects, TeacherBand, TeamStrip } from "@/components/pitch/sections";
 import { subjects } from "@/content/subjects";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default async function Home() {
   const origin = await appOrigin();
   const classId = process.env.DEMO_CLASS_ID || "6a";
   return (
-    <main className="theme-doska flex flex-col">
+    <main className="theme-doska flex flex-col overflow-x-clip">
       <Backdrop variant="doska" formulas={false} />
       <Hero studentUrl={`${origin}/start?class=${classId}`} />
       <Subjects subjects={subjects.map((s) => s.meta)} />
@@ -34,6 +34,7 @@ export default async function Home() {
       <Roles />
       <Problem />
       <TeacherBand teacherUrl={`${origin}/teacher`} />
+      <Pricing />
       <TeamStrip />
     </main>
   );

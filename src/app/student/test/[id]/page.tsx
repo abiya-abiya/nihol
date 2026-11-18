@@ -6,6 +6,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import useSWR from "swr";
+import { SubjectBackdrop } from "@/components/brand/subject-backdrop";
 import { celebrate } from "@/components/brand/confetti";
 import { MasteryRing } from "@/components/brand/mastery-ring";
 import { MathText } from "@/components/brand/math-text";
@@ -80,6 +81,7 @@ export default function TestPage() {
     const correct = result.answers.filter((x) => x.correct).length;
     return (
       <div className="space-y-6 pt-4">
+        <SubjectBackdrop subjectId={a.subjectId} />
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -131,6 +133,7 @@ export default function TestPage() {
 
   return (
     <div className="space-y-5 pt-2">
+      <SubjectBackdrop subjectId={a.subjectId} />
       <div className="flex items-center gap-3">
         <Link href="/student" aria-label="Orqaga" className="text-muted-foreground hover:text-ink">
           <ChevronLeft className="size-6" />

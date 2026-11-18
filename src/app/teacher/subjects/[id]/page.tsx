@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FadeIn } from "@/components/brand/motion";
 import { SubjectIcon } from "@/components/brand/subject-icon";
+import { SubjectBackdrop } from "@/components/brand/subject-backdrop";
 import { TeacherShell } from "@/components/lesson/teacher-shell";
 import { TeacherSubject } from "@/components/lesson/teacher-subject";
 import { requireRole } from "@/lib/auth";
@@ -43,6 +44,7 @@ export default async function TeacherSubjectPage({ params }: PageProps<"/teacher
 
   return (
     <TeacherShell name={s.name} wide>
+      <SubjectBackdrop subjectId={subject.meta.id} color={subject.meta.color} tone="board" />
       <div className="space-y-5 pt-2">
         <Link href="/teacher/subjects" className="text-muted-foreground hover:text-ink inline-flex items-center gap-1 text-sm">
           <ChevronLeft className="size-4" /> Fanlar

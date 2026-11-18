@@ -19,5 +19,5 @@
 | Rol | Ism | Nima qildi |
 |---|---|---|
 | A | _töldiring_ | platforma, rollar, öquvçi / ota‑ona / öqituvçi sahifalari, SI‑tyutor |
-| B | _töldiring_ | 4 fan, savollar, bilim grafi, yangi alifbo |
+| B | _töldiring_ | 5 fan, savollar, bilim grafi, yangi alifbo |
 | C | _töldiring_ | deploy, demo maʼlumotlar, öqituvçi paneli, landing, pitch |

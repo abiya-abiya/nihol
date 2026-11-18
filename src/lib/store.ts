@@ -54,6 +54,7 @@ export function ensureSeeded(): Promise<void> {
     await setDoc(K.progress, demo.progress);
     await setDoc(K.history, demo.history);
     await setDoc(K.custom, []);
+    if (demo.classes) await setDoc(K.classes, demo.classes);
   })().catch((e) => {
     g.__ildizSeed = undefined;
     throw e;

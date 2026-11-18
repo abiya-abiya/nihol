@@ -42,7 +42,7 @@ function StartForm() {
     <div className="mx-auto flex w-full max-w-xl flex-1 flex-col justify-center gap-8 py-8">
       <FadeIn className="space-y-5">
         <LogoMark size={56} />
-        <h1 className="text-[2.1rem] leading-[1.12] font-bold sm:text-5xl">Bilimingning ildizini topamiz</h1>
+        <h1 className="text-[2.1rem] leading-[1.12] font-bold sm:text-5xl">Bilimingni niholdek östiramiz</h1>
         <p className="text-muted-foreground max-w-md text-lg leading-relaxed">
           Kasrlar böyiça bir neça savolga javob ber. Keyin qayerdan boşlaş kerakligini aniq körsatamiz.
         </p>
@@ -80,7 +80,7 @@ function StartForm() {
             <span className="font-hand text-red-pen -rotate-2 text-xl">≈ 5 daqiqa</span>
           </div>
           <Button type="submit" disabled={!name.trim() || busy} className="h-14 w-full rounded-2xl text-lg font-semibold">
-            {busy ? "Tayyorlanmoqda…" : "Boshlash"}
+            {busy ? "Tayyorlanmoqda…" : "Boşlaş"}
             {!busy && <ArrowRight className="size-5" />}
           </Button>
           {existing && (
