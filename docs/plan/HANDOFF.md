@@ -37,8 +37,8 @@ Everything below is on `main` and live after the next Netlify deploy
 ## Set up the new device
 
 ```
-git clone https://github.com/abiya-abiya/si-tyutor.git
-cd si-tyutor
+git clone https://github.com/abiya-abiya/nihol.git
+cd nihol
 npm install
 # .env.local (never commit): GEMINI_API_KEYS=key1,key2   AUTH_SECRET=any-long-string
 npm run dev     # http://localhost:3000/login

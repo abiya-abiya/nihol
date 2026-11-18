@@ -12,7 +12,7 @@
 | Maşq varaqasi (EKUK guruhi) | `https://niholsi.netlify.app/teacher/worksheet?skills=lcm,frac-common-denom&group=lcm&class=6a` |
 | Demo materiallar | `public/demo-materials/` (Biologiya, Ingliz tili, Kimyo, Matematika — PDF; Ona tili — DOCX) |
 | Eski Vercel nusxasi | https://si-tyutor.vercel.app (qölda deploy, eskirgan bölişi mumkin) |
-| Repo | https://github.com/abiya-abiya/si-tyutor |
+| Repo | https://github.com/abiya-abiya/nihol |
 | Slaydlar (Claude Slides, PPTX/PDF yuklab olinadi) | https://claude.ai/artifact/Kx2LZVPqzsiurrgB9mh9Da — egasi Share menyusidan jamoaga oçişi kerak |
 | Zaxira demo video | _deploydan keyin yoziladi_ |
 | Tadqiqot va manbalar | [research.md](research.md) |

@@ -36,8 +36,8 @@ Biologiya, Kimyo (har birida 7 dars). Interfeys yangi özbek alifbosida (Ö Ğ �
 ## Qanday boşlaş
 
 ```
-git clone https://github.com/abiya-abiya/si-tyutor.git
-cd si-tyutor
+git clone https://github.com/abiya-abiya/nihol.git
+cd nihol
 npm install
 # .env.local (gitga qöşilmaydi): GEMINI_API_KEYS=..., AUTH_SECRET=..., ixtiyoriy DATABASE_URL=...
 npm run dev
