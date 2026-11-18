@@ -43,3 +43,30 @@ Read `docs/plan/00-overview.md`. Inline execution, push every task.
 - [x] `/teacher/accounts`: list class accounts, create student (+ parent)
   with generated login/password, copy button.
 - [x] Convert every A-owned UI string to the new alphabet; freeze; deploy check.
+
+### Handoff (2026-11-18) — continue on another device
+Done after A7 (all on `main`):
+- Multi-class CRUD: `/teacher/classes`, header class switcher,
+  `GET/POST /api/classes`, `PATCH/DELETE /api/classes/[id]`,
+  `POST /api/classes/[id]/activate`; `[contract]` `ClassGroup` type.
+  Demo class `6a` can be renamed, not deleted; deleting a class removes its
+  students, parents, tests and results.
+- Knowledge map nodes are glass faces (`src/components/student/knowledge-map.tsx`):
+  liquid fills to mastery, mouth smiles with it, untested = sleeping face.
+- Rebrand to **Nihol** (logo = sprout in soil, favicon, apple icon, titles,
+  landing, login, worksheet, tutor prompt). "Ildiz" stays only as the
+  root-cause concept (Ildiz tahlili, "ildiz şu yerda!").
+- Local address: `http://nihol.localhost:3000` (QR codes follow the host;
+  `allowedDevOrigins` set for dev).
+
+Open:
+- [ ] Netlify deploy as `nihol.netlify.app` — decide the account and whether
+  to set `DATABASE_URL` / `GEMINI_API_KEYS` / `AUTH_SECRET` there; then set
+  `NEXT_PUBLIC_APP_URL=https://nihol.netlify.app` so QR codes point to it.
+- [ ] Vercel production is still `si-tyutor.vercel.app`, deployed manually by C
+  (`npx vercel --prod`).
+- [ ] GitHub repo rename/description needs the owner (our account has WRITE only).
+
+Setup on a new device: clone, `npm install`, put the team's `.env.local`
+(not in git), `node scripts/sync.mjs A`, `npm run dev` → `http://nihol.localhost:3000`.
+Demo logins: ustoz/ustoz123, jasur/jasur123, ona/ona123.
