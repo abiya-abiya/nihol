@@ -1,4 +1,19 @@
-# Ildiz (SI-tyutor) — instructions for every Claude session in this repo
+# Ildiz — instructions for every Claude session in this repo
+
+> **v2 SPRINT (3 hours) — read this first, it overrides older text below.**
+> Plan: `docs/plan/00-overview.md` and your role file `docs/plan/<ROLE>.md`
+> (v1 plan archived in `docs/plan/v1/`). Roles: **A 70%** (platform, roles,
+> student/parent/teacher flows), **B 15%** (content, new alphabet),
+> **C 15%** (deploy, seed, teacher overview, landing, pitch).
+> - Start working immediately on your first unchecked task; do not wait.
+> - **New Uzbek alphabet in all UI text and content:** Ö Ğ Ş Ç, tutuq ʼ
+>   (Öquvçi, Maşq, Öqituvçi, Çiqiş). English content stays English.
+> - Fast-development priorities: P0 before P1 before P2; no new tests beyond
+>   `npm run check`; small commits; sync + push to `main` every 20–30 min;
+>   `npm run build` only before the freeze (T+2:30); never refactor working v1 code.
+> - Edit only your paths (overview §5); otherwise mock, keep going, open an issue.
+> - Demo passwords may be hardcoded; API keys only in `.env.local` / Vercel env.
+
 
 Hackathon project: an Uzbek AI tutor that finds the *root* of a student's
 gaps in 5–6 grade fractions. Three people work in parallel, each with

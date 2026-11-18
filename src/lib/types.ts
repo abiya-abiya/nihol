@@ -245,3 +245,119 @@ export interface WorksheetRequest {
   misconceptionIds: MisconceptionId[];
   count?: number; // default 8
 }
+
+// =====================================================================
+// v2: multi-subject teacher tool (see docs/plan/00-overview.md §4)
+// =====================================================================
+
+export type Role = "teacher" | "student" | "parent";
+
+/** Demo-grade account. Plain demo passwords are allowed for the hackathon only. */
+export interface User {
+  id: string;
+  login: string;
+  password: string;
+  role: Role;
+  name: string;
+  classId?: string;
+  /** parent accounts: the child's student id */
+  childId?: string;
+}
+
+/** Session payload stored in the signed cookie. */
+export interface SessionUser {
+  id: string;
+  role: Role;
+  name: string;
+  classId?: string;
+  childId?: string;
+}
+
+export interface SubjectMeta {
+  id: string; // "matematika" | "ona-tili" | "ingliz-tili" | "biologiya" | teacher-made
+  name: string;
+  short: string;
+  /** hex colour for chips and cards */
+  color: string;
+  /** lucide icon name, e.g. "sigma", "book-open", "languages", "leaf" */
+  icon: string;
+  order: number;
+  description: string;
+  /** set on subjects a teacher created */
+  teacherId?: string;
+}
+
+/** Shown during the "AI is reading your material" animation. */
+export interface MaterialSample {
+  lessonId: SkillId;
+  fileName: string;
+  pages: number;
+  summary: string;
+}
+
+/** One subject = a knowledge map whose skills are lessons. */
+export interface SubjectContent {
+  meta: SubjectMeta;
+  graph: KnowledgeGraph;
+  questions: Question[];
+  materials: MaterialSample[];
+}
+
+export interface Assignment {
+  id: string;
+  subjectId: string;
+  lessonId: SkillId;
+  classId: string;
+  title: string;
+  questions: Question[];
+  materialName?: string;
+  teacherId: string;
+  createdAt: string;
+  dueAt?: string;
+  /** empty = whole class */
+  studentIds: string[];
+}
+
+export interface Submission {
+  id: string;
+  assignmentId: string;
+  studentId: string;
+  subjectId: string;
+  lessonId: SkillId;
+  answers: Array<{ questionId: string; choiceId: ChoiceId; correct: boolean }>;
+  /** 0..1 */
+  score: number;
+  submittedAt: string;
+}
+
+/** Mastery of one student in one subject (lessons are the skills). */
+export interface SubjectProgress {
+  studentId: string;
+  subjectId: string;
+  skills: Record<SkillId, SkillState>;
+  updatedAt: string;
+}
+
+/** One point of the parent's progress chart. */
+export interface ProgressPoint {
+  studentId: string;
+  subjectId: string;
+  /** ISO date (day) */
+  date: string;
+  /** average mastery 0..1 across the subject's lessons on that day */
+  avg: number;
+}
+
+export interface DemoV2 {
+  users: User[];
+  assignments: Assignment[];
+  submissions: Submission[];
+  progress: SubjectProgress[];
+  history: ProgressPoint[];
+}
+
+export interface ProgressResponse {
+  progress: SubjectProgress[];
+  history: ProgressPoint[];
+  submissions: Submission[];
+}
