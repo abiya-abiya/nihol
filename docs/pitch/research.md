@@ -57,12 +57,12 @@ as an argument.)
 | National concept of AI in education (with UNICEF MoU) | | [UzDaily](https://uzdaily.ru/en/uzbekistan-launches-development-of-national-ai-concept-in-education/) |
 | "Five million AI leaders" by 2030 | | [Kun.uz, 29.11.2025](https://kun.uz/en/news/2025/11/29/uzbekistan-sets-ambitious-plan-to-train-five-million-ai-specialists-by-2030) |
 
-Pitch line: *"Ildiz is exactly what PQ-358 asks for: AI inside the school,
+Pitch line: *"Nihol is exactly what PQ-358 asks for: AI inside the school,
 working for the teacher, in Uzbek."*
 
 ## 5. Competitor scan
 
-| Product | What it is | Why Ildiz is different |
+| Product | What it is | Why Nihol is different |
 |---|---|---|
 | **Khan Academy / Khanmigo** | strong content + GPT tutor; paid for families (US billing), free teacher tools in English only ([khanmigo.ai](https://www.khanmigo.ai/)) | no Uzbek, not tied to the Uzbek curriculum; LLM-first, so diagnosis is not deterministic |
 | **Eduten** (Finland) | adaptive maths platform; UNICEF-backed pilot in 17 Uzbek schools, grade 5 ([UNICEF](https://www.unicef.org/innovation/media/24166/file/Uzbekistan%20Eduten%20Piloting%20Imp)) | practice + gamification; does not trace a wrong answer to its root prerequisite; no generative tutor in Uzbek. It shows the Ministry already buys this category — a validation, not a threat |

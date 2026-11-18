@@ -1,4 +1,4 @@
-# Hakamlar savollari — qisqa javoblar (v2)
+# Hakamlar savollari — qisqa javoblar (Nihol)
 
 Har javob 20–30 soniyada aytiladi. Raqamlar manbasi: `research.md`.
 
@@ -23,8 +23,8 @@ tarifda. Manba: [Gemini API pricing](https://ai.google.dev/gemini-api/docs/prici
 
 **4. Davlat dasturiga mosmi?**
 Matematika — 5–6‑sinf «Kasrlar» (EKUK, EKUB, qisqartiriş, umumiy maxraj, aralaş sonlar,
-amallar, matnli masalalar), atamalar darslikdagidek. Ona tili, Ingliz tili va Biologiya
-6‑sinf darslari 7 tadan dars bilan tayyor. Öqituvçi öz fani va darsini qöşa oladi.
+amallar, matnli masalalar), atamalar darslikdagidek. Ona tili, Ingliz tili, Biologiya va Kimyo
+6‑sinf böyiça 7 tadan dars bilan tayyor (jami 5 fan). Öqituvçi öz fani va darsini qöşa oladi.
 
 **5. Dars materialidan test — bu haqiqiy SI-mi?**
 Demoda test tayyorlaş animatsiyasi körsatiladi, savollar esa tayyor savollar bankidan
@@ -41,12 +41,14 @@ SI örniga tayyor tuşuntirişlar çiqadi. Panel oxirgi maʼlumotni saqlaydi.
 varaqa oladi — u buni hozir qölda soatlab qiladi.
 
 **8. Ota‑ona nimani köradi?**
-Bolasining har bir fan böyiça bilim xaritasini va vaqt ötişi bilan ösiş grafigini, oxirgi
+Bolasining 5 ta fan böyiça bilim xaritasini va vaqt ötişi bilan ösiş grafigini, oxirgi
 test natijalarini. Bu ota‑onaga «baho nega şunday» degan savolga javob beradi.
 
 **9. Biznes model?**
-Öquvçi va öqituvçi uçun bepul; litsenziya maktab / tuman taʼlim bölimi darajasida (sinf
-boşiga yillik tölov) yoki davlat dasturi doirasida. PQ‑358 (SI strategiyasi 2030)
+Birinçi oy bepul sinov: barça fanlar, çeksiz sinf, öquvçi va test, karta talab qilinmaydi.
+Ikkinçi oydan maktab obunasi: obunani maktab oladi, öqituvçi öz çöntagidan tölamaydi,
+narx sinflar va öqituvçilar soniga qarab kelişiladi; sinov davridagi maʼlumotlar saqlanadi.
+Keyingi bosqich — tuman taʼlim bölimi yoki davlat dasturi doirasida. PQ‑358 (SI strategiyasi 2030)
 maktablarga SI joriy etişni közda tutadi.
 
 **10. Nega şunçaki ChatGPT emas?**
@@ -57,3 +59,13 @@ Bizda baholaş va diagnoz — deterministik; SI faqat tuşuntiradi, töğri javo
 **11. Jamoa kim?**
 Uç kişi: platforma va SI (A), kontent — fanlar, savollar, yangi alifbo (B), deploy,
 öqituvçi paneli va pitch (C). Ismlar: `links.md` dagi jamoa bölimiga qarang.
+
+**12. Bir öqituvçi bir neça sinfni yuritadimi?**
+Ha. Öqituvçi sinflarni özi yaratadi, nomini özgartiradi va yuqoridagi almaştirgiç bilan
+sinfdan sinfga ötadi; har bir sinf uçun hisoblarni (öquvçi + ota‑ona) bir bosişda yaratadi.
+Demoda 4 ta sinf bor: 6‑A, 6‑B, 5‑A, 7‑A.
+
+**13. Nega yangi alifbo?**
+2026‑yil 21‑oktabrda imzolangan qonun böyiça Oʻ, Gʻ, Sh, Ch örniga Ö, Ğ, Ş, Ç keladi
+(2027‑yil apreldan kuçga kiradi, darsliklar 2031‑yilgaça ötadi). Nihol bugundan yangi
+alifboda — maktablar ötişga tayyor.
