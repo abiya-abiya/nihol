@@ -42,3 +42,10 @@ export const attempts = pgTable(
   },
   (t) => [index("attempts_student_idx").on(t.studentId), index("attempts_ts_idx").on(t.ts)],
 );
+
+/** v2 JSON document store: one row per collection key. */
+export const kv = pgTable("kv", {
+  key: text("key").primaryKey(),
+  value: jsonb("value").notNull(),
+  updatedAt: text("updated_at").notNull(),
+});
