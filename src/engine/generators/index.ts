@@ -116,8 +116,8 @@ const natMul = (seed: number): Question => {
       num(c - 10, "times-table"),
       num(c + 1),
     ],
-    `Birliklar: ${a % 10} · ${b} = ${units}. O'nliklar: ${Math.floor(a / 10)} · ${b} = ${tens}, ya'ni ${tens * 10}. Qo'shamiz: ${tens * 10} + ${units} = ${c}.`,
-    `${a} ni o'nliklar va birliklarga ajrat: ${a - (a % 10)} + ${a % 10}.`,
+    `Birliklar: ${a % 10} · ${b} = ${units}. Önliklar: ${Math.floor(a / 10)} · ${b} = ${tens}, yaʼni ${tens * 10}. Qöşamiz: ${tens * 10} + ${units} = ${c}.`,
+    `${a} ni önliklar va birliklarga ajrat: ${a - (a % 10)} + ${a % 10}.`,
   );
 };
 
@@ -128,14 +128,14 @@ const natDiv = (seed: number): Question => {
   const r = int(rng, 1, b - 1);
   const n = b * q + r;
   const t = (qq: number, rr: number, m?: MisconceptionId): Cand => ({
-    text: `bo'linma ${qq}, qoldiq ${rr}`,
+    text: `bölinma ${qq}, qoldiq ${rr}`,
     misconceptionId: m,
   });
   return build(
     "nat-div",
     seed,
     rng,
-    `${n} ni ${b} ga qoldiqli bo'l. Bo'linma va qoldiq nechaga teng?`,
+    `${n} ni ${b} ga qoldiqli böl. Bölinma va qoldiq neçaga teng?`,
     t(q, r),
     [
       t(q - 1, r + b, "remainder-error"),
@@ -144,8 +144,8 @@ const natDiv = (seed: number): Question => {
       t(q, r - 1, "remainder-error"),
       t(q - 1, r, "remainder-error"),
     ],
-    `${b} · ${q} = ${b * q}, bu ${n} dan oshmaydi. ${b} · ${q + 1} = ${b * (q + 1)} esa oshib ketadi. Qoldiq: ${n} − ${b * q} = ${r}. Tekshiruv: ${b} · ${q} + ${r} = ${n}.`,
-    `Qoldiq doim bo'luvchidan, ya'ni ${b} dan kichik bo'lishi kerak.`,
+    `${b} · ${q} = ${b * q}, bu ${n} dan oşmaydi. ${b} · ${q + 1} = ${b * (q + 1)} esa oşib ketadi. Qoldiq: ${n} − ${b * q} = ${r}. Tekşiruv: ${b} · ${q} + ${r} = ${n}.`,
+    `Qoldiq doim böluvçidan, yaʼni ${b} dan kiçik bölişi kerak.`,
   );
 };
 
@@ -169,8 +169,8 @@ const gcdGen = (seed: number): Question => {
       num(g + 1),
       num(a + b),
     ],
-    `${a} ning bo'luvchilari: ${divisors(a).join(", ")}. ${b} ning bo'luvchilari: ${divisors(b).join(", ")}. Umumiylarining eng kattasi ${g}. Demak, EKUB(${a}; ${b}) = ${g}.`,
-    `Ikkala sonning bo'luvchilarini yoz va umumiylarining eng kattasini tanla.`,
+    `${a} ning böluvçilari: ${divisors(a).join(", ")}. ${b} ning böluvçilari: ${divisors(b).join(", ")}. Umumiylarining eng kattasi ${g}. Demak, EKUB(${a}; ${b}) = ${g}.`,
+    `Ikkala sonning böluvçilarini yoz va umumiylarining eng kattasini tanla.`,
   );
 };
 
@@ -191,8 +191,8 @@ const lcmGen = (seed: number): Question => {
     `EKUK(${a}; ${b}) ni top.`,
     num(L),
     [num(gcd(a, b), "lcm-gcd-swap"), num(a * b, "lcm-is-product"), num(a + b), num(big), num(2 * L)],
-    `${big} ning karralilari: ${multiples.join(", ")}. ${L} soni ${small} ga ham bo'linadi: ${L} : ${small} = ${L / small}. Demak, EKUK(${a}; ${b}) = ${L}.`,
-    `${big} ning karralilarini ketma-ket yoz va ulardan qaysi biri ${small} ga bo'linishini tekshir.`,
+    `${big} ning karralilari: ${multiples.join(", ")}. ${L} soni ${small} ga ham bölinadi: ${L} : ${small} = ${L / small}. Demak, EKUK(${a}; ${b}) = ${L}.`,
+    `${big} ning karralilarini ketma-ket yoz va ulardan qaysi biri ${small} ga bölinişini tekşir.`,
   );
 };
 
@@ -205,7 +205,7 @@ const fracEquiv = (seed: number): Question => {
     "frac-equiv",
     seed,
     rng,
-    `[[${n}/${d}]] ga teng, maxraji ${D} bo'lgan kasrni top.`,
+    `[[${n}/${d}]] ga teng, maxraji ${D} bölgan kasrni top.`,
     frac(n * k, D),
     [
       frac(n, D, "equiv-one-side"),
@@ -214,8 +214,8 @@ const fracEquiv = (seed: number): Question => {
       frac(n * k - 1, D),
       frac(n * k + 2, D),
     ],
-    `${D} : ${d} = ${k}, demak maxraj ${k} marta oshdi. Suratni ham ${k} ga ko'paytiramiz: ${n} · ${k} = ${n * k}. Javob: [[${n * k}/${D}]].`,
-    `Maxraj necha marta oshganini top, suratni ham shuncha marta oshir.`,
+    `${D} : ${d} = ${k}, demak maxraj ${k} marta oşdi. Suratni ham ${k} ga köpaytiramiz: ${n} · ${k} = ${n * k}. Javob: [[${n * k}/${D}]].`,
+    `Maxraj neça marta oşganini top, suratni ham şunça marta oşir.`,
   );
 };
 
@@ -228,7 +228,7 @@ const fracSimplify = (seed: number): Question => {
     "frac-simplify",
     seed,
     rng,
-    `[[${x}/${y}]] kasrini qisqarmas kasr ko'rinishida yoz.`,
+    `[[${x}/${y}]] kasrini qisqarmas kasr körinişida yoz.`,
     frac(p, q),
     [
       frac(x - 1, y - 1, "simplify-subtract"),
@@ -237,8 +237,8 @@ const fracSimplify = (seed: number): Question => {
       frac(p + 1, q),
       frac(p, q + 1),
     ],
-    `EKUB(${x}; ${y}) = ${k}. Surat va maxrajni ${k} ga bo'lamiz: ${x} : ${k} = ${p}, ${y} : ${k} = ${q}. Javob: [[${p}/${q}]].`,
-    `Surat va maxrajni bir xil songa bo'l, ayirma.`,
+    `EKUB(${x}; ${y}) = ${k}. Surat va maxrajni ${k} ga bölamiz: ${x} : ${k} = ${p}, ${y} : ${k} = ${q}. Javob: [[${p}/${q}]].`,
+    `Surat va maxrajni bir xil songa böl, ayirma.`,
   );
 };
 
@@ -262,11 +262,11 @@ const fracCommonDenom = (seed: number): Question => {
       "frac-common-denom",
       seed,
       rng,
-      `[[${a}/${b}]] va [[${c}/${d}]] kasrlarining eng kichik umumiy maxraji nechaga teng?`,
+      `[[${a}/${b}]] va [[${c}/${d}]] kasrlarining eng kiçik umumiy maxraji neçaga teng?`,
       num(L),
       [num(b * d, "lcm-is-product"), num(gcd(b, d), "lcm-gcd-swap"), num(b + d), num(2 * L), num(Math.max(b, d) + 1)],
-      `Eng kichik umumiy maxraj maxrajlarning EKUKi. ${L} soni ${b} ga ham, ${d} ga ham bo'linadi va undan kichik bunday son yo'q. Demak, EKUK(${b}; ${d}) = ${L}.`,
-      `Shunday eng kichik sonni top: u ${b} ga ham, ${d} ga ham bo'linsin.`,
+      `Eng kiçik umumiy maxraj maxrajlarning EKUKi. ${L} soni ${b} ga ham, ${d} ga ham bölinadi va undan kiçik bunday son yöq. Demak, EKUK(${b}; ${d}) = ${L}.`,
+      `Şunday eng kiçik sonni top: u ${b} ga ham, ${d} ga ham bölinsin.`,
     );
   }
   // convert the fraction whose denominator is smaller than L
@@ -276,7 +276,7 @@ const fracCommonDenom = (seed: number): Question => {
     "frac-common-denom",
     seed,
     rng,
-    `[[${n0}/${d0}]] kasrini maxraji ${L} bo'lgan kasr ko'rinishida yoz.`,
+    `[[${n0}/${d0}]] kasrini maxraji ${L} bölgan kasr körinişida yoz.`,
     frac(n0 * f, L),
     [
       frac(n0, L, "common-denom-keep-num"),
@@ -285,8 +285,8 @@ const fracCommonDenom = (seed: number): Question => {
       frac(n0 * f + 1, L),
       frac(n0 * f - 1, L),
     ],
-    `${L} : ${d0} = ${f}, demak qo'shimcha ko'paytuvchi ${f}. Suratni ham ${f} ga ko'paytiramiz: ${n0} · ${f} = ${n0 * f}. Javob: [[${n0 * f}/${L}]].`,
-    `Avval qo'shimcha ko'paytuvchini top: ${L} ni ${d0} ga bo'l.`,
+    `${L} : ${d0} = ${f}, demak qöşimça köpaytuvçi ${f}. Suratni ham ${f} ga köpaytiramiz: ${n0} · ${f} = ${n0 * f}. Javob: [[${n0 * f}/${L}]].`,
+    `Avval qöşimça köpaytuvçini top: ${L} ni ${d0} ga böl.`,
   );
 };
 
@@ -320,7 +320,7 @@ const fracCompare = (seed: number): Question => {
     frac(best.n, best.d),
     wrong.map((f) => frac(f.n, f.d, f === tagged ? "bigger-den-bigger" : undefined)),
     `Umumiy maxraj ${L}: ${fs.map((f) => `[[${f.n}/${f.d}]] = [[${(f.n * L) / f.d}/${L}]]`).join(", ")}. Eng katta surat ${(best.n * L) / best.d}, demak eng katta kasr [[${best.n}/${best.d}]].`,
-    `Kasrlarni umumiy maxrajga keltir, keyin suratlarni solishtir.`,
+    `Kasrlarni umumiy maxrajga keltir, keyin suratlarni soliştir.`,
   );
 };
 
@@ -343,8 +343,8 @@ const fracAddSame = (seed: number): Question => {
       frac(a + b + 1, d),
       frac(a + b, d + 1),
     ],
-    `Maxrajlar bir xil, shuning uchun suratlarni qo'shamiz: ${a} + ${b} = ${a + b}. Maxraj o'zgarmaydi: [[${a + b}/${d}]].`,
-    `Maxrajlar teng bo'lsa, faqat suratlar bilan amal bajariladi.`,
+    `Maxrajlar bir xil, şuning uçun suratlarni qöşamiz: ${a} + ${b} = ${a + b}. Maxraj özgarmaydi: [[${a + b}/${d}]].`,
+    `Maxrajlar teng bölsa, faqat suratlar bilan amal bajariladi.`,
   );
 };
 
@@ -371,8 +371,8 @@ const fracAddDiff = (seed: number): Question => {
       frac(S + 1, L),
       frac(S - 1, L),
     ],
-    `EKUK(${b}; ${d}) = ${L}. [[${a}/${b}]] = [[${a * fa}/${L}]], [[${c}/${d}]] = [[${c * fc}/${L}]]. Suratlarni qo'shamiz: [[${a * fa}/${L}]] + [[${c * fc}/${L}]] = [[${S}/${L}]]${simplified}.`,
-    `Maxrajlarni qo'shib bo'lmaydi. Avval ikkala kasrni bir xil maxrajga keltir.`,
+    `EKUK(${b}; ${d}) = ${L}. [[${a}/${b}]] = [[${a * fa}/${L}]], [[${c}/${d}]] = [[${c * fc}/${L}]]. Suratlarni qöşamiz: [[${a * fa}/${L}]] + [[${c * fc}/${L}]] = [[${S}/${L}]]${simplified}.`,
+    `Maxrajlarni qöşib bölmaydi. Avval ikkala kasrni bir xil maxrajga keltir.`,
   );
 };
 
@@ -384,7 +384,7 @@ const mixedNumbers = (seed: number): Question => {
     "mixed-numbers",
     seed,
     rng,
-    `[[${w} ${n}/${d}]] ni noto'g'ri kasrga aylantir.`,
+    `[[${w} ${n}/${d}]] ni notöğri kasrga aylantir.`,
     frac(w * d + n, d),
     [
       frac(w + n, d, "mixed-convert"),
@@ -393,8 +393,8 @@ const mixedNumbers = (seed: number): Question => {
       frac(w * n + d, d),
       frac(w * d + n + 1, d),
     ],
-    `Butun qismni maxrajga ko'paytiramiz va suratni qo'shamiz: ${w} · ${d} + ${n} = ${w * d + n}. Maxraj o'zgarmaydi: [[${w} ${n}/${d}]] = [[${w * d + n}/${d}]].`,
-    `${w} butunda nechta [[1/${d}]] bor? Unga yana ${n} tasini qo'sh.`,
+    `Butun qismni maxrajga köpaytiramiz va suratni qöşamiz: ${w} · ${d} + ${n} = ${w * d + n}. Maxraj özgarmaydi: [[${w} ${n}/${d}]] = [[${w * d + n}/${d}]].`,
+    `${w} butunda neçta [[1/${d}]] bor? Unga yana ${n} tasini qöş.`,
   );
 };
 
@@ -423,7 +423,7 @@ const mixedAdd = (seed: number): Question => {
       val(add(diff, fr(1)), undefined, true),
       val(add(diff, fr(1, d)), undefined, true),
     ],
-    `[[${n1}/${d}]] dan [[${n2}/${d}]] ni ayirib bo'lmaydi. Butun qismdan bittasini olamiz: [[${w1} ${n1}/${d}]] = [[${w1 - 1} ${d + n1}/${d}]]. Endi ayiramiz: [[${w1 - 1} ${d + n1}/${d}]] − [[${w2} ${n2}/${d}]] = ${raw}${raw === rawText ? "" : ` = ${rawText}`}.`,
+    `[[${n1}/${d}]] dan [[${n2}/${d}]] ni ayirib bölmaydi. Butun qismdan bittasini olamiz: [[${w1} ${n1}/${d}]] = [[${w1 - 1} ${d + n1}/${d}]]. Endi ayiramiz: [[${w1 - 1} ${d + n1}/${d}]] − [[${w2} ${n2}/${d}]] = ${raw}${raw === rawText ? "" : ` = ${rawText}`}.`,
     `Kasr qism yetmasa, butun qismdan bitta butunni kasrga aylantir.`,
   );
 };
@@ -440,8 +440,8 @@ const fracMul = (seed: number): Question => {
       `Hisobla: ${k} · [[${a}/${b}]]`,
       frac(k * a, b),
       [frac(k * a, k * b, "whole-times-both"), frac(a, k * b), frac(a + k, b), frac(k * a + 1, b), frac(k * a, b + 1)],
-      `Natural songa ko'paytirganda faqat surat ko'paytiriladi: ${k} · ${a} = ${k * a}, maxraj ${b} qoladi. Javob: [[${k * a}/${b}]].`,
-      `${k} · [[${a}/${b}]] bu [[${a}/${b}]] ni ${k} marta qo'shish demak.`,
+      `Natural songa köpaytirganda faqat surat köpaytiriladi: ${k} · ${a} = ${k * a}, maxraj ${b} qoladi. Javob: [[${k * a}/${b}]].`,
+      `${k} · [[${a}/${b}]] bu [[${a}/${b}]] ni ${k} marta qöşiş demak.`,
     );
   }
   const b = int(rng, 3, 6);
@@ -460,8 +460,8 @@ const fracMul = (seed: number): Question => {
       frac(a * c + 1, b * b),
       frac(a + c, b * b),
     ],
-    `Suratlar: ${a} · ${c} = ${a * c}. Maxrajlar: ${b} · ${b} = ${b * b}. Javob: [[${a * c}/${b * b}]]. Ko'paytirishda maxrajlar bir xil bo'lsa ham ko'paytiriladi.`,
-    `Suratni suratga, maxrajni maxrajga ko'paytir.`,
+    `Suratlar: ${a} · ${c} = ${a * c}. Maxrajlar: ${b} · ${b} = ${b * b}. Javob: [[${a * c}/${b * b}]]. Köpaytirişda maxrajlar bir xil bölsa ham köpaytiriladi.`,
+    `Suratni suratga, maxrajni maxrajga köpaytir.`,
   );
 };
 
@@ -488,8 +488,8 @@ const fracDiv = (seed: number): Question => {
       val(add(q, fr(1, q.d))),
       val(mul(q, fr(2))),
     ],
-    `[[${b.n}/${b.d}]] ga teskari kasr [[${b.d}/${b.n}]]. Ko'paytiramiz: [[${a.n}/${a.d}]] · [[${b.d}/${b.n}]] = ${F(raw)}${tail}.`,
-    `Bo'lishni ko'paytirishga almashtir: ikkinchi kasrni ag'dar.`,
+    `[[${b.n}/${b.d}]] ga teskari kasr [[${b.d}/${b.n}]]. Köpaytiramiz: [[${a.n}/${a.d}]] · [[${b.d}/${b.n}]] = ${F(raw)}${tail}.`,
+    `Bölişni köpaytirişga almaştir: ikkinçi kasrni ağdar.`,
   );
 };
 

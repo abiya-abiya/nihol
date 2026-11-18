@@ -20,7 +20,7 @@ function solve(q: Question): { value?: Fr; text?: string } {
     case "nat-mul":
       return { value: { n: whole(0) * whole(1), d: 1 } };
     case "nat-div":
-      return { text: `bo'linma ${Math.floor(whole(0) / whole(1))}, qoldiq ${whole(0) % whole(1)}` };
+      return { text: `bölinma ${Math.floor(whole(0) / whole(1))}, qoldiq ${whole(0) % whole(1)}` };
     case "gcd":
       return { value: { n: gcd(whole(0), whole(1)), d: 1 } };
     case "lcm":

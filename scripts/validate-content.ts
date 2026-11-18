@@ -6,6 +6,7 @@ import { z } from "zod";
 import * as content from "../src/content/index";
 import { subjects } from "../src/content/subjects/index";
 import { checkGenerators } from "../src/engine/generators/check";
+import { generators } from "../src/engine/generators/index";
 
 const ROOT = join(process.cwd(), "src", "content"); // npm runs scripts from the repo root
 const errors: string[] = [];
@@ -248,7 +249,9 @@ for (const t of [
   ...content.misconceptions.flatMap((m) => [m.title, m.example, m.remedy]),
   ...content.glossary.flatMap((g) => [g.term, g.definition]),
   ...content.tutorExamples.flatMap((e) => [e.stem, e.correctText, e.chosenText, e.idealExplanation]),
-  ...content.questions.flatMap((q) => [q.stem, q.explanation, q.hint, ...q.choices.map((c) => c.text)]),
+  ...[...content.questions, ...Object.values(generators).flatMap((g) => [1, 2, 3, 4, 5].map((seed) => g!(seed)))].flatMap((q) => [
+    q.stem, q.explanation, q.hint, ...q.choices.map((c) => c.text),
+  ]),
 ])
   if (OLD_ALPHABET.test(t)) err("v1 math content", `old alphabet in "${t}"`);
 {
