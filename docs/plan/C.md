@@ -28,17 +28,17 @@ the whole team: start it before anything else.
   alphabet (Şahnoza, Çinara…).
 
 ### C3. Teacher overview v2 — target T+1:45 (P0/P1)
-- [ ] `/teacher`: subject tabs (Matematika first, B's colours/icons). Per
+- [x] `/teacher`: subject tabs (Matematika first, B's colours/icons). Per
   subject: class heatmap students × lessons (reuse your heatmap; data from
   `GET /api/progress?classId=6a`), assignments list with completion % and
   average score (`GET /api/assignments?classId=6a`), live polling as now.
-- [ ] Teacher layout nav: "Sinf" (`/teacher`), "Fanlar"
+- [x] Teacher layout nav: "Sinf" (`/teacher`), "Fanlar"
   (`/teacher/subjects`, A builds), "Hisoblar" (`/teacher/accounts`, A
   builds), user name + "Çiqiş" (`POST /api/auth/logout`).
-- [ ] All C-owned UI text in the new alphabet.
+- [x] All C-owned UI text in the new alphabet.
 
 ### C4. Landing + pitch — target T+2:15 (P1)
-- [ ] Landing: Ildiz = tayyor vosita for teachers, 4 subjects, 3 roles,
+- [x] Landing: Ildiz = tayyor vosita for teachers, 4 subjects, 3 roles,
   big "Kiriş" button → `/login`, keep the QR to `/start` ("Sinab köriş").
   New alphabet everywhere.
 - [ ] Update slides, `script.md`, `qa.md` to v2 (3 roles, upload→test,

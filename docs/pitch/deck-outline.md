@@ -1,18 +1,19 @@
-# Slaydlar rejasi (7 slayd, 16:9)
+# Slaydlar rejasi (7 slayd, 16:9) — v2
 
-Uslub: «Katak daftar» — qogʻoz, koʻk katak, siyoh-koʻk matn, qizil ruchka. Shrift:
-Unbounded (sarlavha), Onest (matn), Caveat (qoʻlyozma izoh). Har slaydda bitta fikr.
+Uslub: «Katak daftar» — qoğoz, kök katak, siyoh‑kök matn, qizil ruçka. Shrift:
+Unbounded (sarlavha), Onest (matn), Caveat (qölyozma izoh). Har slaydda bitta fikr.
+Matn yangi alifboda: Ö Ğ Ş Ç, tutuq ʼ.
 
-1. **Ildiz** — «Xatoning ildizini topadigan SI-tyutor». Pastda: [[1/2]] + [[1/3]] = [[2/5]]
-   qizil bilan chizilgan, «nega?» qoʻlyozmasi. Jamoa nomi, xakaton.
-2. **Muammo** — «Oʻqituvchi xatoni koʻradi, sababini emas». 421 (TIMSS 2023, 8-sinf),
-   60%+ (PISA 2022, 2-darajadan past), 6,87 mln oʻquvchi / 25 kishilik sinf. Manbalar pastda.
-3. **Gʻoya** — «Kasrni qoʻshishdagi xato — EKUKdagi boʻshliq». Iz: Matnli masala →
-   Har xil maxraj → Umumiy maxraj → EKUK (ildiz). Bitta jumla: biz *nega* ni topamiz.
-4. **Jonli demo** — katta QR + «Telefoningizda sinab koʻring». (Bu yerda demo boshlanadi.)
-5. **Qanday ishlaydi** — 3 qatlam: Bilim grafi (17 koʻnikma) → Bayes modeli (BKT,
-   deterministik, tushuntiriladigan) → SI faqat oʻzbek tilida tushuntiradi. Oflayn ishlaydi.
-6. **Oʻqituvchi uchun** — panel skrinshoti: issiqlik xaritasi, «7 oʻquvchi — ildiz EKUK»,
-   bir bosishda A4 mashq varaqasi.
-7. **Keyingi qadam** — yangi mavzu = graf + savollar banki; rus/qoraqalpoq tili;
-   PQ-358 bilan mos. **Soʻrovimiz: 2 maktabda 1 oylik pilot.** Jamoa.
+1. **Ildiz** — «Öqituvçi uçun tayyor vosita: xatoning ildizini topadigan SI‑tyutor».
+   Pastda: [[1/2]] + [[1/3]] = [[2/5]] qizil bilan çizilgan, «nega?» qölyozmasi. Jamoa, xakaton.
+2. **Muammo** — «Öqituvçi xatoni köradi, sababini emas». 421 (TIMSS 2023, 8‑sinf),
+   60%+ (PISA 2022, 2‑darajadan past), 6,87 mln öquvçi / 25 kişilik sinf. Manbalar pastda.
+3. **Üç rol, bitta xarita** — Öqituvçi: material yuklaydi, test yuboradi, sinfni köradi.
+   Öquvçi: testni yeçadi, şaxsiy xaritasini köradi. Ota‑ona: bolasining 4 ta fan böyiça ösişi.
+4. **Jonli demo** — katta QR + «Sinab köriş». (Bu yerda demo boşlanadi: `script.md`.)
+5. **Qanday işlaydi** — Material → test (tahrirlanadi) → bilim grafi (Matematikada 17 könikma)
+   → Bayes modeli (BKT, deterministik) → SI faqat özbek tilida tuşuntiradi. Oflayn işlaydi.
+6. **Öqituvçi uçun** — panel skrinşoti: fanlar tabi, sinf xaritasi, «Ildiz tahlili»
+   («7 öquvçi — ildiz EKUK»), bir bosişda A4 maşq varaqasi.
+7. **Keyingi qadam** — yangi fan = graf + savollar banki; material → test uçun haqiqiy SI;
+   rus/qoraqalpoq tili; PQ‑358 bilan mos. **Sörovimiz: 2 maktabda 1 oylik pilot.** Jamoa.

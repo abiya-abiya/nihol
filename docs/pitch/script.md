@@ -1,43 +1,30 @@
-# Demo ssenariysi — 3 daqiqa
+# Demo ssenariysi — 3 daqiqa (v2)
 
-Kim nima qiladi: **Spiker** (gapiradi, slaydlarni almashtiradi), **Operator** (noutbukda
-`/teacher` proyektorda), **Hakam** (oʻz telefonida). Zaxira: agar hakam
-qatnashmasa, Operator ikkinchi telefonda «Jasur» boʻlib oʻtadi.
+Kim nima qiladi: **Spiker** (gapiradi, slaydlarni almaştiradi), **Operator** (noutbukda
+proyektorda `/teacher`), **Hakam** (öz telefonida). Zaxira: hakam qatnaşmasa,
+Operator ikkinçi telefonda `jasur` bölib kiradi.
 
-Tayyorgarlik (sahnaga chiqishdan 5 daqiqa oldin):
-- `/teacher` → ⋯ → **Demo holatini tiklash** (24 namunaviy oʻquvchi, «Jasur» yoʻq).
-- Proyektorda 1-oyna: landing `/` (QR koʻrinib turadi). 2-oyna: `/teacher`.
-- Internet: telefon hotspoti yoqilgan. AI ishlamasa ham demo ishlaydi (tayyor matnlar).
+Hisoblar (parol): `ustoz / ustoz123` (öqituvçi), `jasur / jasur123` (öquvçi), `ona / ona123` (ota‑ona).
+
+Tayyorgarlik (sahnaga çiqiştan 5 daqiqa oldin):
+- `/teacher` → «Ildiz tahlili» → ⋯ → **Demo holatini tiklaş** (24 namunaviy öquvçi, testlar tarixi).
+- Proyektorda 1‑oyna: landing `/`. 2‑oyna: `ustoz` bilan `/teacher`. Telefon: `jasur` bilan `/student`.
+- Internet: telefon hotspoti yoqilgan. AI işlamasa ham demo işlaydi (tayyor matnlar).
+- Material fayllari: `public/demo-materials/` (Biologiya PDF, Ona tili DOCX, Matematika PDF).
 
 | Vaqt | Ekranda | Spiker gapiradi | Kim bosadi |
 |---|---|---|---|
-| 0:00–0:20 | Slayd 1 → 2 (muammo) | «Bitta sinf, 25 oʻquvchi, bitta sur'at. TIMSS 2023 da 8-sinf oʻquvchilarimiz matematikadan 421 ball oldi, bironta oʻquvchi yuqori darajaga chiqmadi. Oʻqituvchi xatoni koʻradi — sababini emas.» | Spiker |
-| 0:20–0:30 | Landing `/` | «Ildiz xatoning sababini topadi. Iltimos, QR kodni skanerlang.» | Hakam skanerlaydi |
-| 0:30–1:35 | Hakam telefoni (agar ekran ulashilsa) / proyektorda `/teacher` | Hakam ismini yozadi va 8–10 savolga javob beradi. Spiker: «Har javob keyingi savolni tanlaydi: xato boʻlsa, bilim grafida bir pogʻona pastga tushamiz.» Natija ekrani: xarita chiziladi, qizil iz pastga tushadi: **«Kasrlarni qoʻshishdagi xatoning ildizi — EKUK»**. Shaxsiy yoʻl ildizdan oʻsadi. | Hakam |
-| 1:35–2:05 | Telefon: `/learn/lcm` | Mashq savoli, ataylab xato javob (24). SI-tyutor oʻzbek tilida *aynan shu xato fikrni* tushuntiradi (koʻpaytma — umumiy karrali, lekin eng kichigi emas). «Nega?» → chatda savol. | Hakam / Operator |
-| 2:05–2:45 | Proyektor: `/teacher` | «Hakamning qatori hozirgina paydo boʻldi» (sariq yonib-oʻchadi). «Eng koʻp uchragan ildiz — EKUK, 7 (endi 8) oʻquvchi.» Qatorni bosish → oʻquvchi sahifasi: iz va sabab. Orqaga → **Mashq varaqasi** → A4 varaqa: 1-bet topshiriqlar, 2-bet javoblar kaliti. | Operator |
-| 2:45–3:00 | Slayd 6–7 | «Diagnoz aniq va tushuntiriladigan: graf + Bayes modeli; SI faqat tushuntiradi. Yangi mavzu = graf + savollar banki. Bizga 2 maktabda pilot kerak.» | Spiker |
+| 0:00–0:20 | Slayd 1 → 2 (muammo) | «Bitta sinf, 25 öquvçi, bitta surʼat. TIMSS 2023 da 8‑sinf öquvçilarimiz matematikadan 421 ball oldi. Öqituvçi xatoni köradi — sababini emas. Ildiz — öqituvçi uçun tayyor vosita.» | Spiker |
+| 0:20–0:40 | Landing `/` → «Kiriş» → login `ustoz` | «Öqituvçi kiradi va butun sinfni fanlar böyiça köradi: 4 ta fan, har birida xarita va testlar.» Fan tablarini almaştirish. | Operator |
+| 0:40–1:20 | Biologiya → dars → material yuklaş | PDF ni tortib tuşiradi. Animatsiya: fayl öqildi → betlar → asosiy tuşunçalar → savollar → tekşirildi (~7 s). «Ildiz materialdan beş savollik test tayyorladi.» Bir savolni tahrirlaydi, **«Öquvçilarga yuboriş»**. | Operator |
+| 1:20–1:50 | Telefon: `jasur` → yangi test | Hakam/Operator testni yeçadi, oxirida konfetti. «Natija şu zahoti sinf xaritasida.» | Hakam |
+| 1:50–2:20 | Proyektor: `/teacher` | Jasurning qatori yangilanadi (sariq yonib‑öçadi). **Matematika → «Ildiz tahlili»**: «Eng köp uçragan ildiz — EKUK». Qatorni bosiş → öquvçi sahifasi: iz va sabab. | Operator |
+| 2:20–2:45 | Login `ona` | Ota‑ona Jasurning 4 ta fan böyiça xaritasini va ösiş grafigini köradi. | Operator |
+| 2:45–3:00 | Slayd 6–7 | «Diagnoz aniq va tuşuntiriladigan: graf + Bayes modeli; SI faqat tuşuntiradi. Yangi fan = graf + savollar banki. Bizga 2 maktabda pilot kerak.» | Spiker |
 
-## «Jasur» uchun javoblar (zaxira oʻquvchi)
+## Agar biror narsa işlamasa
 
-> B ning `docs/pitch/demo-answers.md` fayli tayyor boʻlganda shu boʻlimni almashtiring.
-> Hozirgi vaqtinchalik savollar banki (A fixture) uchun:
-
-Maqsad: ildiz **EKUK** chiqishi. Qoida: quyidagi mavzulardagi savollarga **notoʻgʻri**,
-qolgan hammasiga **toʻgʻri** javob bering.
-
-| Savol mavzusi | Javob |
-|---|---|
-| Matnli masala (30 oʻquvchi, [[2/5]] qismi qizlar) | **12** (xato: qolgan qism oʻrniga ulush) |
-| [[1/2]] + [[1/3]] | **[[2/5]]** (xato: suratlar va maxrajlarni alohida qoʻshish) |
-| [[1/4]] va [[1/6]] ni umumiy maxrajga | **[[6/24]] va [[4/24]]** (xato: maxrajlar koʻpaytmasi) |
-| EKUK(4, 6) | **24** (xato: koʻpaytma) |
-| Qolgan barcha savollar | toʻgʻri javob |
-
-Kutilgan natija: iz «Matnli masala → Har xil maxraj → Umumiy maxraj → EKUK».
-
-## Agar biror narsa ishlamasa
-
-- **Internet yoʻq:** diagnostika brauzerda ishlaydi; SI tushuntirishlar tayyor matnga oʻtadi. Oʻqituvchi paneli «Aloqa yoʻq — oxirgi maʼlumot» deb koʻrsatadi va qayta ulanadi.
-- **Hakam telefoni QR ni oʻqimaydi:** QR ostidagi manzilni aytib bering yoki Operator «Jasur» boʻlib oʻtadi.
-- **Hammasi ishlamasa:** zaxira video (`links.md`).
+- **Internet yöq:** diagnostika brauzerda işlaydi; SI tuşuntirişlari tayyor matnga ötadi. Panel «Aloqa yöq — oxirgi maʼlumot» deb körsatadi va qayta ulanadi.
+- **Material yuklaş qotib qolsa:** sahifani yangilang; test baribir tayyor savollar bankidan çiqadi.
+- **Hakam telefoni QR ni öqimasa:** QR ostidagi manzilni ayting yoki Operator `jasur` bölib kiradi.
+- **Hammasi işlamasa:** zaxira video (`links.md`).
